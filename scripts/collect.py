@@ -83,8 +83,8 @@ WEAK_SECURITY_TERMS = [
 
 # Category rules are simple keyword matches over title+abstract.
 CATEGORY_RULES: Dict[str, List[str]] = {
+    "Agent & Tool Security": ["agent", "tool call", "tool-calling", "function calling", "workflow", "side effect", "mcp", "model context protocol"],
     "Prompt Injection": ["prompt injection", "indirect prompt", "instruction injection", "unicode", "invisible"],
-    "Agent & Tool Security": ["agent", "tool call", "tool-calling", "function calling", "workflow", "side effect"],
     "RAG & Retrieval Attacks": ["rag", "retrieval", "vector", "embedding", "knowledge base", "document poisoning", "context injection"],
     "Poisoning & Backdoors": ["poison", "data poisoning", "training data", "backdoor", "trojan"],
     "Model Extraction & Privacy": ["model extraction", "membership inference", "privacy leakage", "data leakage", "exfiltration"],
@@ -250,7 +250,12 @@ def _filter_recent(entries: List[Dict[str, Any]], days: int) -> List[Dict[str, A
 
 def _is_security_related(entry: Dict[str, Any]) -> bool:
     text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
-    return any(term in text for term in SECURITY_TERMS)
+
+    if any(term in text for term in STRONG_SECURITY_TERMS):
+        return True
+
+    weak_hits = sum(1 for term in WEAK_SECURITY_TERMS if term in text)
+    return weak_hits >= 2
 
 
 def _categorize(entry: Dict[str, Any]) -> str:
