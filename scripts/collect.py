@@ -379,6 +379,7 @@ def _prepend_weekly_digest(run_ts: dt.datetime, entries: List[Dict[str, Any]]) -
     new_content = header + "\n".join(top).rstrip() + "\n\n---\n\n" + body.lstrip()
     return new_content
 
+
 def _github_api_request(method: str, url: str, token: str, payload: dict | None = None) -> dict:
     data = None
     if payload is not None:
