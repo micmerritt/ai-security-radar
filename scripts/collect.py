@@ -39,9 +39,15 @@ WEEKLY_MD = os.path.join(REPO_ROOT, "radar", "weekly-digest.md")
 # Collection + display knobs
 # ----------------------------
 RECENT_DAYS = 10
-MAX_PULL = 30           # how many arXiv results to pull before filtering
-MAX_SHOW_LATEST = 14    # how many to show on radar/latest.md after filtering
-MAX_SHOW_WEEKLY = 6     # how many to list in the weekly run section
+MAX_PULL = 30
+MAX_SHOW_LATEST = 14
+MAX_SHOW_WEEKLY = 6
+
+# ----------------------------
+# Issue automation settings
+# ----------------------------
+OPEN_ISSUES_FOR_TOP_N = 3
+ISSUE_LABELS = ["radar", "paper"]
 
 ARXIV_ATOM_ENDPOINT = "https://export.arxiv.org/api/query"
 
