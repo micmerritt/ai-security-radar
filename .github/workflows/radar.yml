@@ -2,8 +2,6 @@ name: AI Security Radar
 
 on:
   schedule:
-    # Daily at 07:10 America/Denver-ish. GitHub Actions uses UTC.
-    # 07:10 MDT (UTC-6) ~= 13:10 UTC. Adjust if you want.
     - cron: "10 13 * * *"
   workflow_dispatch:
 
@@ -17,6 +15,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,16 +25,20 @@ jobs:
           python-version: "3.11"
 
       - name: Run collector
+        env:
+          # Make the built-in Actions token visible to your Python script
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_REPOSITORY is already set by Actions, but keeping it explicit is harmless
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python scripts/collect.py
 
       - name: Commit and push if changed
         run: |
-          git status --porcelain
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "ai-security-radar-bot"
             git config user.email "ai-security-radar-bot@users.noreply.github.com"
-            git add radar/latest.md radar/weekly-digest.md
+            git add -A
             git commit -m "Radar update"
             git push
           else
