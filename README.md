@@ -17,30 +17,10 @@ Each week the radar highlights:
 
 ---
 
-## Why This Exists
-
-AI systems are rapidly becoming part of enterprise infrastructure. However, the security community is still developing the frameworks needed to defend these systems.
-
-AI Security Radar helps surface:
-- early research signals
-- new attack surfaces
-- defensive techniques worth exploring
-
----
-
 ## Weekly Radar
 
 See the latest findings here:
-- [Latest Radar](radar/latest.md)
-- [Weekly Digest](radar/weekly-digest.md)
 
----
-
-## Topics Tracked
-- prompt injection
-- RAG poisoning
-- agent security
-- adversarial machine learning
-- model extraction
-- training data poisoning
-- LLM safety bypass techniques
+- [Latest Radar](radar/latest.md) – Most recent research signals discovered by the radar.
+- [Weekly Digest](radar/weekly-digest.md) – Running log of radar runs and emerging patterns.
+- [Weekly Report](radar/weekly-report-latest.md) – A curated summary generated from radar issues for writing and analysis.
