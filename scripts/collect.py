@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-AI Security Radar - v1 Collector
+AI Security Radar - v1.1 Collector (arXiv)
 
+What it does:
 - Reads keywords from sources/keywords.yml
 - Queries arXiv Atom API for recent matching papers
+- Filters out likely non-security noise
+- Categorizes results into readable sections
 - Writes radar/latest.md and prepends a run section to radar/weekly-digest.md
 
 No external dependencies.
@@ -20,15 +23,75 @@ import textwrap
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from typing import List, Dict, Any, Tuple
+from typing import Any, Dict, List
 
 
+# ----------------------------
+# Paths
+# ----------------------------
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 KEYWORDS_FILE = os.path.join(REPO_ROOT, "sources", "keywords.yml")
 LATEST_MD = os.path.join(REPO_ROOT, "radar", "latest.md")
 WEEKLY_MD = os.path.join(REPO_ROOT, "radar", "weekly-digest.md")
 
+
+# ----------------------------
+# Collection + display knobs
+# ----------------------------
+RECENT_DAYS = 10
+MAX_PULL = 30           # how many arXiv results to pull before filtering
+MAX_SHOW_LATEST = 14    # how many to show on radar/latest.md after filtering
+MAX_SHOW_WEEKLY = 6     # how many to list in the weekly run section
+
 ARXIV_ATOM_ENDPOINT = "https://export.arxiv.org/api/query"
+
+# If a paper doesn't hit at least one of these "security-ish" terms
+# in title+abstract, we drop it to reduce noise (video gen, medical ML, etc.).
+SECURITY_TERMS = [
+    "prompt injection",
+    "indirect prompt",
+    "instruction injection",
+    "jailbreak",
+    "unicode",
+    "invisible",
+    "backdoor",
+    "poison",
+    "data poisoning",
+    "training data",
+    "model extraction",
+    "membership inference",
+    "privacy leakage",
+    "data leakage",
+    "leak",
+    "exfiltration",
+    "vulnerability",
+    "exploit",
+    "attack",
+    "adversarial",
+    "red team",
+    "agent",
+    "tool call",
+    "tool-calling",
+    "function calling",
+    "rag",
+    "retrieval",
+    "vector",
+    "embedding",
+    "guardrail",
+    "sandbox",
+    "mitigation",
+    "detection",
+]
+
+# Category rules are simple keyword matches over title+abstract.
+CATEGORY_RULES: Dict[str, List[str]] = {
+    "Prompt Injection": ["prompt injection", "indirect prompt", "instruction injection", "unicode", "invisible"],
+    "Agent & Tool Security": ["agent", "tool call", "tool-calling", "function calling", "workflow", "side effect"],
+    "RAG & Retrieval Attacks": ["rag", "retrieval", "vector", "embedding", "knowledge base", "document poisoning", "context injection"],
+    "Poisoning & Backdoors": ["poison", "data poisoning", "training data", "backdoor", "trojan"],
+    "Model Extraction & Privacy": ["model extraction", "membership inference", "privacy leakage", "data leakage", "exfiltration"],
+    "Adversarial ML": ["adversarial example", "adversarial", "evasion", "robust", "robustness"],
+}
 
 
 def _utc_now() -> dt.datetime:
@@ -44,7 +107,7 @@ def _read_keywords_from_simple_yaml(path: str) -> List[str]:
       - rag poisoning
       - ...
 
-    We intentionally avoid PyYAML dependency.
+    Avoids external deps (PyYAML).
     """
     if not os.path.exists(path):
         raise FileNotFoundError(f"Missing keywords file: {path}")
@@ -66,9 +129,10 @@ def _read_keywords_from_simple_yaml(path: str) -> List[str]:
                     if kw:
                         keywords.append(kw)
                 else:
-                    # Stop if the keywords list ends and another section begins
+                    # stop if list ends
                     if re.match(r"^[A-Za-z0-9_]+\s*:\s*$", line):
                         break
+
     # De-dupe while preserving order
     seen = set()
     out: List[str] = []
@@ -82,49 +146,48 @@ def _read_keywords_from_simple_yaml(path: str) -> List[str]:
 
 def _build_arxiv_search_query(keywords: List[str]) -> str:
     """
-    Build an arXiv query string.
-    We use a conservative OR query across title+abstract to keep results relevant.
+    Build an arXiv query string that searches in title+abstract.
     """
-    # arXiv supports search in title (ti:) and abstract (abs:)
-    # We'll OR keywords across both fields.
     clauses = []
     for kw in keywords:
         safe = kw.replace('"', "")
-        # Wrap multiword phrases in quotes for better precision.
         if " " in safe:
             safe = f'"{safe}"'
         clauses.append(f"ti:{safe} OR abs:{safe}")
-
-    # Group all clauses into a big OR
     return "(" + ") OR (".join(clauses) + ")"
 
 
-def _fetch_arxiv_atom(search_query: str, max_results: int = 12, sort_by: str = "submittedDate") -> str:
+def _fetch_arxiv_atom(search_query: str, max_results: int) -> str:
     params = {
         "search_query": search_query,
         "start": "0",
         "max_results": str(max_results),
-        "sortBy": sort_by,
+        "sortBy": "submittedDate",
         "sortOrder": "descending",
     }
     url = ARXIV_ATOM_ENDPOINT + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(
         url,
-        headers={
-            "User-Agent": "ai-security-radar/1.0 (GitHub Actions; contact: noreply)",
-        },
+        headers={"User-Agent": "ai-security-radar/1.1 (GitHub Actions; contact: noreply)"},
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
 
+def _fetch_with_retries(search_query: str, max_results: int, tries: int = 3) -> str:
+    last: Exception | None = None
+    for _ in range(tries):
+        try:
+            return _fetch_arxiv_atom(search_query, max_results=max_results)
+        except Exception as ex:
+            last = ex
+    assert last is not None
+    raise last
+
+
 def _parse_arxiv_entries(atom_xml: str) -> List[Dict[str, Any]]:
-    """
-    Parse arXiv Atom feed entries.
-    """
     ns = {
         "atom": "http://www.w3.org/2005/Atom",
-        "arxiv": "http://arxiv.org/schemas/atom",
     }
     root = ET.fromstring(atom_xml)
 
@@ -135,7 +198,6 @@ def _parse_arxiv_entries(atom_xml: str) -> List[Dict[str, Any]]:
         published = (e.findtext("atom:published", default="", namespaces=ns) or "").strip()
         updated = (e.findtext("atom:updated", default="", namespaces=ns) or "").strip()
 
-        # Prefer "id" as canonical URL; also try link rel=alternate
         entry_id = (e.findtext("atom:id", default="", namespaces=ns) or "").strip()
         link = entry_id
         for l in e.findall("atom:link", ns):
@@ -149,7 +211,6 @@ def _parse_arxiv_entries(atom_xml: str) -> List[Dict[str, Any]]:
             if name:
                 authors.append(name)
 
-        # Clean up whitespace and HTML entities
         title = html.unescape(re.sub(r"\s+", " ", title)).strip()
         summary = html.unescape(re.sub(r"\s+", " ", summary)).strip()
 
@@ -166,37 +227,64 @@ def _parse_arxiv_entries(atom_xml: str) -> List[Dict[str, Any]]:
     return entries
 
 
-def _filter_recent(entries: List[Dict[str, Any]], days: int = 10) -> List[Dict[str, Any]]:
-    """
-    Keep only entries published/updated within N days (UTC).
-    """
+def _parse_iso_utc(s: str) -> dt.datetime | None:
+    if not s:
+        return None
+    try:
+        # arXiv uses ISO8601 like 2026-03-02T18:22:01Z
+        if s.endswith("Z"):
+            s = s[:-1] + "+00:00"
+        return dt.datetime.fromisoformat(s).astimezone(dt.timezone.utc)
+    except Exception:
+        return None
+
+
+def _filter_recent(entries: List[Dict[str, Any]], days: int) -> List[Dict[str, Any]]:
     cutoff = _utc_now() - dt.timedelta(days=days)
-
-    def parse_iso(s: str) -> dt.datetime | None:
-        if not s:
-            return None
-        try:
-            # arXiv uses ISO8601 like 2026-03-02T18:22:01Z
-            if s.endswith("Z"):
-                s = s[:-1] + "+00:00"
-            return dt.datetime.fromisoformat(s).astimezone(dt.timezone.utc)
-        except Exception:
-            return None
-
-    recent: List[Dict[str, Any]] = []
+    out: List[Dict[str, Any]] = []
     for e in entries:
-        t = parse_iso(e.get("published", "")) or parse_iso(e.get("updated", ""))
+        t = _parse_iso_utc(e.get("published", "")) or _parse_iso_utc(e.get("updated", ""))
         if t and t >= cutoff:
             e["_ts"] = t
-            recent.append(e)
-    return recent
+            out.append(e)
+    return out
+
+
+def _is_security_related(entry: Dict[str, Any]) -> bool:
+    text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
+    return any(term in text for term in SECURITY_TERMS)
+
+
+def _categorize(entry: Dict[str, Any]) -> str:
+    text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
+    for cat, terms in CATEGORY_RULES.items():
+        if any(t in text for t in terms):
+            return cat
+    return "Other (Review)"
+
+
+def _build_idea_stub(category: str) -> str:
+    # Deterministic, lightweight templates (no model calls)
+    if category == "Prompt Injection":
+        return "Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline."
+    if category == "Agent & Tool Security":
+        return "Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects."
+    if category == "RAG & Retrieval Attacks":
+        return "Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes."
+    if category == "Poisoning & Backdoors":
+        return "Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines)."
+    if category == "Model Extraction & Privacy":
+        return "Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?"
+    if category == "Adversarial ML":
+        return "Build a robustness benchmark harness with standard perturbations and report concrete failure modes."
+    return "Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk."
 
 
 def _format_latest_md(run_ts: dt.datetime, keywords: List[str], entries: List[Dict[str, Any]]) -> str:
     run_date = run_ts.astimezone(dt.timezone.utc).strftime("%Y-%m-%d")
     kw_line = ", ".join(keywords[:12]) + ("…" if len(keywords) > 12 else "")
 
-    lines = []
+    lines: List[str] = []
     lines.append("# AI Security Radar\n")
     lines.append(f"_Last updated (UTC): **{run_date}**_\n")
     lines.append("## What this is\n")
@@ -205,32 +293,38 @@ def _format_latest_md(run_ts: dt.datetime, keywords: List[str], entries: List[Di
         "and the build ideas they suggest.\n"
     )
     lines.append("## Tracked keywords\n")
-    lines.append(f"`{kw_line}`\n")
+    lines.append(f"{kw_line}\n")
 
     lines.append("## New / recent research (arXiv)\n")
     if not entries:
-        lines.append("_No recent matches in the selected window._\n")
-    else:
-        for e in entries[:10]:
+        lines.append("_No recent security-relevant matches in the selected window._\n")
+        return "\n".join(lines).rstrip() + "\n"
+
+    # Group entries by category, with preferred ordering
+    groups: Dict[str, List[Dict[str, Any]]] = {}
+    for e in entries[:MAX_SHOW_LATEST]:
+        groups.setdefault(e.get("category", "Other (Review)"), []).append(e)
+
+    preferred_order = list(CATEGORY_RULES.keys()) + ["Other (Review)"]
+    for cat in preferred_order:
+        if cat not in groups:
+            continue
+
+        lines.append(f"### {cat}\n")
+        for e in groups[cat]:
             title = e["title"]
             link = e["link"]
             published = e.get("published", "")[:10]
             authors = e.get("authors", [])
             author_str = ", ".join(authors[:3]) + (" et al." if len(authors) > 3 else "")
-            summary = e.get("summary", "")
-            # Keep summary short
-            summary = textwrap.shorten(summary, width=260, placeholder="…")
+            summary = textwrap.shorten(e.get("summary", ""), width=260, placeholder="…")
 
-            lines.append(f"### {title}\n")
-            lines.append(f"- **Date:** {published}\n")
-            lines.append(f"- **Authors:** {author_str if author_str else 'Unknown'}\n")
-            lines.append(f"- **Link:** {link}\n")
-            lines.append(f"- **Why it matters:** {summary}\n")
-
-            # Light “build hook” prompt so you can expand later
-            lines.append(
-                "- **Build hook:** What would a minimal test harness / dataset / detection rule look like for this?\n"
-            )
+            lines.append(f"**{title}**  ")
+            lines.append(f"- **Date:** {published}")
+            lines.append(f"- **Authors:** {author_str if author_str else 'Unknown'}")
+            lines.append(f"- **Link:** {link}")
+            lines.append(f"- **Security insight:** {summary}")
+            lines.append(f"- **Build idea:** {_build_idea_stub(cat)}")
             lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
@@ -247,28 +341,28 @@ def _prepend_weekly_digest(run_ts: dt.datetime, entries: List[Dict[str, Any]]) -
         with open(WEEKLY_MD, "r", encoding="utf-8") as f:
             existing = f.read()
 
-    # Ensure header exists once
     body = existing
     if existing.startswith(header):
         body = existing[len(header):]
     else:
-        # Strip any stray top-level header to avoid duplication
         body = re.sub(r"^\s*#\s+AI Security Radar Weekly Digest\s*\n+", "", existing, flags=re.IGNORECASE)
 
-    top = []
+    top: List[str] = []
     top.append(f"## Radar Run — {run_date} (UTC)\n")
+
     if not entries:
-        top.append("- No recent arXiv matches in the selected window.\n")
+        top.append("- No recent security-relevant arXiv matches in the selected window.\n")
     else:
         top.append("Top items:\n")
-        for e in entries[:5]:
+        for e in entries[:MAX_SHOW_WEEKLY]:
             title = e["title"]
             link = e["link"]
             pub = e.get("published", "")[:10]
-            top.append(f"- **{title}** ({pub})  \n  {link}\n")
+            cat = e.get("category", "Other (Review)")
+            top.append(f"- **{title}** ({pub}) [{cat}]  \n  {link}\n")
 
         top.append("Theme signal (manual):\n")
-        top.append("- _Add 1–2 sentences here after you skim the list._\n")
+        top.append("- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ \n")
 
         top.append("Build idea (manual):\n")
         top.append("- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)\n")
@@ -285,12 +379,22 @@ def main() -> int:
 
         query = _build_arxiv_search_query(keywords)
 
-        atom = _fetch_arxiv_atom(query, max_results=25)
+        atom = _fetch_with_retries(query, max_results=MAX_PULL, tries=3)
         entries = _parse_arxiv_entries(atom)
-        entries = _filter_recent(entries, days=10)
+        entries = _filter_recent(entries, days=RECENT_DAYS)
 
-        # Sort by timestamp if available
-        entries.sort(key=lambda x: x.get("_ts", dt.datetime.min.replace(tzinfo=dt.timezone.utc)), reverse=True)
+        # Reduce noise: keep only security-related entries
+        entries = [e for e in entries if _is_security_related(e)]
+
+        # Categorize
+        for e in entries:
+            e["category"] = _categorize(e)
+
+        # Sort by time desc
+        entries.sort(
+            key=lambda x: x.get("_ts", dt.datetime.min.replace(tzinfo=dt.timezone.utc)),
+            reverse=True,
+        )
 
         run_ts = _utc_now()
 
