@@ -490,16 +490,17 @@ def main() -> int:
         with open(WEEKLY_MD, "w", encoding="utf-8") as f:
             f.write(weekly_md)
 
-# Create GitHub issues for top radar items
+        # Create GitHub issues for top radar items
         _open_radar_issues(entries)
 
         print(f"Updated {os.path.relpath(LATEST_MD, REPO_ROOT)} and {os.path.relpath(WEEKLY_MD, REPO_ROOT)}")
         return 0
 
-        except Exception as ex:
-            print(f"[ERROR] {ex}", file=sys.stderr)
+    except Exception as ex:
+        print(f"[ERROR] {ex}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
         return 1
-
-
+        
 if __name__ == "__main__":
     raise SystemExit(main())
