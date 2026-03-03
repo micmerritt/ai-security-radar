@@ -422,8 +422,16 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
 
     repo_api = f"https://api.github.com/repos/{repo}"
 
+    def normalize_label(s: str) -> str:
+        s = s.lower().strip()
+        s = s.replace("&", "and")
+        s = re.sub(r"[^a-z0-9\- ]+", "", s)
+        s = s.replace(" ", "-")
+        s = re.sub(r"-{2,}", "-", s)
+        return s[:50] if s else "other"
+
     for e in entries[:OPEN_ISSUES_FOR_TOP_N]:
-        title = e.get("title", "").strip()
+        title = (e.get("title") or "").strip()
         if not title:
             continue
 
@@ -437,19 +445,42 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
         insight = textwrap.shorten(e.get("summary", ""), width=420, placeholder="…")
         build_idea = _build_idea_stub(cat)
 
+        arxiv_id = ""
+        if link:
+            arxiv_id = link.rstrip("/").split("/")[-1]
+
         body = (
             f"**Category:** {cat}\n\n"
             f"**Date:** {pub}\n\n"
             f"**Link:** {link}\n\n"
+            f"**arXiv:** {arxiv_id}\n\n"
             f"**Security insight:** {insight}\n\n"
             f"**Build idea:** {build_idea}\n\n"
             f"**Writing angle:** What would you tell a CISO about this in 5 sentences?\n"
+            "\n---\n\n"
+            "## LinkedIn post draft (short)\n"
+            "- Hook: The real risk isn’t the model, it’s the pipeline.\n"
+            f"- Signal: {title}\n"
+            f"- Why it matters: {insight}\n"
+            f"- What to do: {build_idea}\n"
+            "- Question: What are you doing to test this class of failure?\n"
+            "\n"
+            "## Medium outline (long)\n"
+            "1. The problem in plain language\n"
+            "2. What the paper shows (key idea)\n"
+            "3. Threat model (attacker goal + access)\n"
+            "4. Where defenses break in real systems\n"
+            "5. Practical mitigations (engineering controls)\n"
+            "6. What to test next (your harness idea)\n"
         )
+
+        labels = list(ISSUE_LABELS)
+        labels.append(normalize_label(cat))
 
         payload = {
             "title": issue_title,
             "body": body,
-            "labels": ISSUE_LABELS,
+            "labels": labels,
         }
         _github_api_request("POST", f"{repo_api}/issues", token, payload)
 
