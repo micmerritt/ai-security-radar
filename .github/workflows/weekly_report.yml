@@ -1,4 +1,4 @@
-name: AI Security Radar Weekly Report
+name: AI Security Radar Weekly Email
 
 on:
   schedule:
@@ -7,39 +7,31 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
   issues: read
 
 jobs:
-  report:
+  email:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Generate weekly report from issues
+      - name: Generate and email weekly report
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: |
-          python scripts/weekly_report.py
 
-      - name: Commit and push if changed
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_TLS: ${{ secrets.SMTP_TLS }}
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "ai-security-radar-bot"
-            git config user.email "ai-security-radar-bot@users.noreply.github.com"
-            git add -A
-            git commit -m "Weekly radar report"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          python scripts/weekly_report_email.py
