@@ -1,1 +1,13 @@
+sources:
 
+  arxiv:
+    category: research
+    query: "LLM security OR adversarial machine learning OR prompt injection"
+
+  github:
+    category: tools
+    query: "llm security OR adversarial machine learning"
+
+  huggingface:
+    category: datasets
+    query: "adversarial OR jailbreak OR prompt injection"
