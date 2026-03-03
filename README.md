@@ -23,4 +23,3 @@ See the latest findings here:
 
 - [Latest Radar](radar/latest.md) – Most recent research signals discovered by the radar.
 - [Weekly Digest](radar/weekly-digest.md) – Running log of radar runs and emerging patterns.
-- [Weekly Report](radar/weekly-report-latest.md) – A curated summary generated from radar issues for writing and analysis.
