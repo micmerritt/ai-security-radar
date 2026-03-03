@@ -453,9 +453,7 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
             continue
 
         issue_title = f"Radar: {title}"
-        if _issue_already_exists(repo, token, issue_title, arxiv_id):
-            continue
-
+       
         cat = e.get("category", "Other (Review)")
         pub = (e.get("published") or "")[:10]
         link = e.get("link") or ""
@@ -466,6 +464,9 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
         if link:
             arxiv_id = link.rstrip("/").split("/")[-1]
 
+         if _issue_already_exists(repo, token, issue_title, arxiv_id):
+            continue
+        
         body = (
             f"**Category:** {cat}\n\n"
             f"**Date:** {pub}\n\n"
