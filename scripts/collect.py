@@ -47,28 +47,27 @@ ARXIV_ATOM_ENDPOINT = "https://export.arxiv.org/api/query"
 
 # If a paper doesn't hit at least one of these "security-ish" terms
 # in title+abstract, we drop it to reduce noise (video gen, medical ML, etc.).
-SECURITY_TERMS = [
+STRONG_SECURITY_TERMS = [
     "prompt injection",
     "indirect prompt",
     "instruction injection",
     "jailbreak",
-    "unicode",
-    "invisible",
     "backdoor",
     "poison",
     "data poisoning",
-    "training data",
     "model extraction",
     "membership inference",
     "privacy leakage",
     "data leakage",
-    "leak",
     "exfiltration",
     "vulnerability",
     "exploit",
     "attack",
     "adversarial",
     "red team",
+]
+
+WEAK_SECURITY_TERMS = [
     "agent",
     "tool call",
     "tool-calling",
@@ -79,8 +78,7 @@ SECURITY_TERMS = [
     "embedding",
     "guardrail",
     "sandbox",
-    "mitigation",
-    "detection",
+    "leak",
 ]
 
 # Category rules are simple keyword matches over title+abstract.
