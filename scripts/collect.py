@@ -404,15 +404,31 @@ def _github_api_request(method: str, url: str, token: str, payload: dict | None 
         return {}
 
 
-def _issue_already_exists(repo_api: str, token: str, title: str) -> bool:
-    # Search open issues for matching title (simple, good enough for v1)
-    q = urllib.parse.quote(title)
-    url = f"{repo_api}/issues?state=open&per_page=100"
-    issues = _github_api_request("GET", url, token)
-    for it in issues:
-        if (it.get("title") or "").strip() == title.strip():
+def _issue_already_exists(repo: str, token: str, issue_title: str, arxiv_id: str) -> bool:
+    """
+    Returns True if an issue already exists (open or closed) for this radar item.
+
+    We prefer searching by arXiv id in the issue body (most reliable),
+    and fall back to title if arXiv id is missing.
+    """
+    # Use GitHub's search API (covers open + closed)
+    # Docs: https://docs.github.com/en/rest/search/search
+    base = "https://api.github.com/search/issues"
+
+    def search(q: str) -> bool:
+        url = f"{base}?q={urllib.parse.quote(q)}&per_page=5"
+        data = _github_api_request("GET", url, token)
+        return bool(data.get("total_count", 0))
+
+    # Prefer body marker search (stable)
+    if arxiv_id:
+        q = f'repo:{repo} is:issue "arXiv: {arxiv_id}"'
+        if search(q):
             return True
-    return False
+
+    # Fallback: title match
+    q = f'repo:{repo} is:issue in:title "{issue_title}"'
+    return search(q)
 
 
 def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
