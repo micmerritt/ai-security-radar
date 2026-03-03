@@ -379,6 +379,79 @@ def _prepend_weekly_digest(run_ts: dt.datetime, entries: List[Dict[str, Any]]) -
     new_content = header + "\n".join(top).rstrip() + "\n\n---\n\n" + body.lstrip()
     return new_content
 
+def _github_api_request(method: str, url: str, token: str, payload: dict | None = None) -> dict:
+    data = None
+    if payload is not None:
+        import json
+        data = json.dumps(payload).encode("utf-8")
+
+    req = urllib.request.Request(
+        url,
+        data=data,
+        method=method,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "ai-security-radar/1.1",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        raw = resp.read().decode("utf-8", errors="replace")
+        if raw.strip():
+            import json
+            return json.loads(raw)
+        return {}
+
+
+def _issue_already_exists(repo_api: str, token: str, title: str) -> bool:
+    # Search open issues for matching title (simple, good enough for v1)
+    q = urllib.parse.quote(title)
+    url = f"{repo_api}/issues?state=open&per_page=100"
+    issues = _github_api_request("GET", url, token)
+    for it in issues:
+        if (it.get("title") or "").strip() == title.strip():
+            return True
+    return False
+
+
+def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
+    token = os.getenv("GITHUB_TOKEN")
+    repo = os.getenv("GITHUB_REPOSITORY")  # e.g., owner/name
+    if not token or not repo:
+        return
+
+    repo_api = f"https://api.github.com/repos/{repo}"
+
+    for e in entries[:OPEN_ISSUES_FOR_TOP_N]:
+        title = e.get("title", "").strip()
+        if not title:
+            continue
+
+        issue_title = f"Radar: {title}"
+        if _issue_already_exists(repo_api, token, issue_title):
+            continue
+
+        cat = e.get("category", "Other (Review)")
+        pub = (e.get("published") or "")[:10]
+        link = e.get("link") or ""
+        insight = textwrap.shorten(e.get("summary", ""), width=420, placeholder="…")
+        build_idea = _build_idea_stub(cat)
+
+        body = (
+            f"**Category:** {cat}\n\n"
+            f"**Date:** {pub}\n\n"
+            f"**Link:** {link}\n\n"
+            f"**Security insight:** {insight}\n\n"
+            f"**Build idea:** {build_idea}\n\n"
+            f"**Writing angle:** What would you tell a CISO about this in 5 sentences?\n"
+        )
+
+        payload = {
+            "title": issue_title,
+            "body": body,
+            "labels": ISSUE_LABELS,
+        }
+        _github_api_request("POST", f"{repo_api}/issues", token, payload)
 
 def main() -> int:
     try:
@@ -417,11 +490,14 @@ def main() -> int:
         with open(WEEKLY_MD, "w", encoding="utf-8") as f:
             f.write(weekly_md)
 
+# Create GitHub issues for top radar items
+        _open_radar_issues(entries)
+
         print(f"Updated {os.path.relpath(LATEST_MD, REPO_ROOT)} and {os.path.relpath(WEEKLY_MD, REPO_ROOT)}")
         return 0
 
-    except Exception as ex:
-        print(f"[ERROR] {ex}", file=sys.stderr)
+        except Exception as ex:
+            print(f"[ERROR] {ex}", file=sys.stderr)
         return 1
 
 
