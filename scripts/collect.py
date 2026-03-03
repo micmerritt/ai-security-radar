@@ -453,7 +453,7 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
             continue
 
         issue_title = f"Radar: {title}"
-        if _issue_already_exists(repo_api, token, issue_title):
+        if _issue_already_exists(repo, token, issue_title, arxiv_id):
             continue
 
         cat = e.get("category", "Other (Review)")
