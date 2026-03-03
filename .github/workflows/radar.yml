@@ -1,1 +1,40 @@
-cron: '0 13 * * *'
+name: AI Security Radar
+
+on:
+  schedule:
+    # Daily at 07:10 America/Denver-ish. GitHub Actions uses UTC.
+    # 07:10 MDT (UTC-6) ~= 13:10 UTC. Adjust if you want.
+    - cron: "10 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run collector
+        run: |
+          python scripts/collect.py
+
+      - name: Commit and push if changed
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "ai-security-radar-bot"
+            git config user.email "ai-security-radar-bot@users.noreply.github.com"
+            git add radar/latest.md radar/weekly-digest.md
+            git commit -m "Radar update"
+            git push
+          else
+            echo "No changes to commit."
+          fi
