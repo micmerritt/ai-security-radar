@@ -464,7 +464,7 @@ def _open_radar_issues(entries: List[Dict[str, Any]]) -> None:
         if link:
             arxiv_id = link.rstrip("/").split("/")[-1]
 
-         if _issue_already_exists(repo, token, issue_title, arxiv_id):
+        if _issue_already_exists(repo, token, issue_title, arxiv_id):
             continue
         
         body = (
