@@ -3,7 +3,7 @@ name: AI Security Radar Weekly Email
 on:
   schedule:
     # Mondays at 07:30 MDT-ish (13:30 UTC)
-    - cron: "30 13 * * 1"
+    - cron: "0 13 * * 4"
   workflow_dispatch:
 
 permissions:
