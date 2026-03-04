@@ -2,7 +2,7 @@ name: AI Security Radar
 
 on:
   schedule:
-    - cron: "10 13 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 permissions:
