@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-04**_
+_Last updated (UTC): **2026-03-05**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Goal-Driven Risk Assessment for LLM-Powered Systems: A Healthcare Case Study**  
+- **Date:** 2026-03-04
+- **Authors:** Neha Nagaraja, Hayretdin Bahsi
+- **Link:** https://arxiv.org/abs/2603.03633v1
+- **Security insight:** While incorporating LLMs into systems offers significant benefits in critical application areas such as healthcare, new security challenges emerge due to the potential cyber kill chain cycles that combine adversarial model, prompt injection and conventional…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Learning When to Act or Refuse: Guarding Agentic Reasoning Models for Safe Multi-Step Tool Use**  
 - **Date:** 2026-03-03
@@ -56,21 +63,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Agentic large language model systems increasingly automate tasks by retrieving URLs and calling external tools. We show that this workflow gives rise to implicit prompt injection: adversarial instructions embedded in automatically generated URL previews,…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**"Are You Sure?": An Empirical Study of Human Perception Vulnerability in LLM-Driven Agentic Systems**  
-- **Date:** 2026-02-24
-- **Authors:** Xinfeng Li, Shenyu Dai, Kelong Zheng et al.
-- **Link:** https://arxiv.org/abs/2602.21127v1
-- **Security insight:** Large language model (LLM) agents are rapidly becoming trusted copilots in high-stakes domains like software development and healthcare. However, this deepening trust introduces a novel attack surface: Agent-Mediated Deception (AMD), where compromised agents…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**SoK: Agentic Skills -- Beyond Tool Use in LLM Agents**  
-- **Date:** 2026-02-24
-- **Authors:** Yanna Jiang, Delong Li, Haiyu Deng et al.
-- **Link:** https://arxiv.org/abs/2602.20867v1
-- **Security insight:** Agentic systems increasingly rely on reusable procedural capabilities, \textit{a.k.a., agentic skills}, to execute long-horizon workflows reliably. These capabilities are callable modules that package procedural knowledge with explicit applicability…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions**  
+- **Date:** 2026-03-04
+- **Authors:** Neha Nagaraja, Lan Zhang, Zhilong Wang et al.
+- **Link:** https://arxiv.org/abs/2603.03637v1
+- **Security insight:** Multimodal Large Language Models (MLLMs) integrate vision and text to power applications, but this integration introduces new vulnerabilities. We study Image-based Prompt Injection (IPI), a black-box attack in which adversarial instructions are embedded into…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **DualSentinel: A Lightweight Framework for Detecting Targeted Attacks in Black-box LLM via Dual Entropy Lull Pattern**  
 - **Date:** 2026-03-02
