@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-05**_
+_Last updated (UTC): **2026-03-06**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Beyond Input Guardrails: Reconstructing Cross-Agent Semantic Flows for Execution-Aware Attack Detection**  
+- **Date:** 2026-03-04
+- **Authors:** Yangyang Wei, Yijie Xu, Zhenyuan Li et al.
+- **Link:** https://arxiv.org/abs/2603.04469v1
+- **Security insight:** Multi-Agent System is emerging as the \textit{de facto} standard for complex task orchestration. However, its reliance on autonomous execution and unstructured inter-agent communication introduces severe risks, such as indirect prompt injection, that easily…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Goal-Driven Risk Assessment for LLM-Powered Systems: A Healthcare Case Study**  
 - **Date:** 2026-03-04
@@ -56,13 +63,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language model (LLM) agents increasingly rely on external tools and retrieval systems to autonomously complete complex tasks. However, this design exposes agents to indirect prompt injection (IPI), where attacker-controlled context embedded in tool…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace**  
-- **Date:** 2026-02-25
-- **Authors:** Qianlong Lan, Anuj Kaul, Shaun Jones et al.
-- **Link:** https://arxiv.org/abs/2602.22450v1
-- **Security insight:** Agentic large language model systems increasingly automate tasks by retrieving URLs and calling external tools. We show that this workflow gives rise to implicit prompt injection: adversarial instructions embedded in automatically generated URL previews,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions**  
@@ -70,6 +70,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Neha Nagaraja, Lan Zhang, Zhilong Wang et al.
 - **Link:** https://arxiv.org/abs/2603.03637v1
 - **Security insight:** Multimodal Large Language Models (MLLMs) integrate vision and text to power applications, but this integration introduces new vulnerabilities. We study Image-based Prompt Injection (IPI), a black-box attack in which adversarial instructions are embedded into…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Benchmark of Benchmarks: Unpacking Influence and Code Repository Quality in LLM Safety Benchmarks**  
+- **Date:** 2026-03-03
+- **Authors:** Junjie Chu, Xinyue Shen, Ye Leng et al.
+- **Link:** https://arxiv.org/abs/2603.04459v1
+- **Security insight:** The rapid growth of research in LLM safety makes it hard to track all advances. Benchmarks are therefore crucial for capturing key trends and enabling systematic comparisons. Yet, it remains unclear why certain benchmarks gain prominence, and no systematic…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **DualSentinel: A Lightweight Framework for Detecting Targeted Attacks in Black-box LLM via Dual Entropy Lull Pattern**  
@@ -101,15 +108,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2603.02588v1
 - **Security insight:** With the growing deployment of large language models (LLMs) in real-world applications, establishing robust safety guardrails to moderate their inputs and outputs has become essential to ensure adherence to safety policies. Current guardrail models…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Poisoning & Backdoors
-
-**Poisoned Acoustics**  
-- **Date:** 2026-02-25
-- **Authors:** Harrison Dahme
-- **Link:** https://arxiv.org/abs/2602.22258v1
-- **Security insight:** Training-data poisoning attacks can induce targeted, undetectable failure in deep neural networks by corrupting a vanishingly small fraction of training labels. We demonstrate this on acoustic vehicle classification using the MELAUDIS urban intersection…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Model Extraction & Privacy
 
