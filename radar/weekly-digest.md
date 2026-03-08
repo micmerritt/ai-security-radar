@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-08 (UTC)
+
+Top items:
+
+- **Beyond Input Guardrails: Reconstructing Cross-Agent Semantic Flows for Execution-Aware Attack Detection** (2026-03-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.04469v1
+
+- **Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions** (2026-03-04) [Prompt Injection]  
+  https://arxiv.org/abs/2603.03637v1
+
+- **Goal-Driven Risk Assessment for LLM-Powered Systems: A Healthcare Case Study** (2026-03-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.03633v1
+
+- **Learning When to Act or Refuse: Guarding Agentic Reasoning Models for Safe Multi-Step Tool Use** (2026-03-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.03205v1
+
+- **Kraken: Higher-order EM Side-Channel Attacks on DNNs in Near and Far Field** (2026-03-03) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2603.02891v1
+
+- **Benchmark of Benchmarks: Unpacking Influence and Code Repository Quality in LLM Safety Benchmarks** (2026-03-03) [Prompt Injection]  
+  https://arxiv.org/abs/2603.04459v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-07 (UTC)
 
 Top items:
