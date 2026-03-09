@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-08**_
+_Last updated (UTC): **2026-03-09**_
 
 ## What this is
 
@@ -49,13 +49,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Agentic AI systems exhibit numerous crosscutting concerns -- security, observability, cost management, fault tolerance -- that are poorly modularized in current implementations, contributing to the high failure rate of AI projects in reaching production. The…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**LiaisonAgent: An Multi-Agent Framework for Autonomous Risk Investigation and Governance**  
-- **Date:** 2026-02-27
-- **Authors:** Chuanming Tang, Ling Qing, Shifeng Chen
-- **Link:** https://arxiv.org/abs/2603.00200v1
-- **Security insight:** The rapid evolution of sophisticated cyberattacks has strained modern Security Operations Centers (SOC), which traditionally rely on rule-based or signature-driven detection systems. These legacy frameworks often generate high volumes of technical alerts that…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions**  
@@ -77,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Xiaoyi Pang, Xuanyi Hao, Pengyu Liu et al.
 - **Link:** https://arxiv.org/abs/2603.01574v1
 - **Security insight:** Recent intelligent systems integrate powerful Large Language Models (LLMs) through APIs, but their trustworthiness may be critically undermined by targeted attacks like backdoor and prompt injection attacks, which secretly force LLMs to generate specific…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**SwitchCraft: Training-Free Multi-Event Video Generation with Attention Controls**  
-- **Date:** 2026-02-27
-- **Authors:** Qianxun Xu, Chenxi Song, Yujun Cai et al.
-- **Link:** https://arxiv.org/abs/2602.23956v1
-- **Security insight:** Recent advances in text-to-video diffusion models have enabled high-fidelity and temporally coherent videos synthesis. However, current models are predominantly optimized for single-event generation. When handling multi-event prompts, without explicit…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
