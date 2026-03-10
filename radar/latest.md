@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-09**_
+_Last updated (UTC): **2026-03-10**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**SlowBA: An efficiency backdoor attack towards VLM-based GUI agents**  
+- **Date:** 2026-03-09
+- **Authors:** Junxian Li, Tu Lan, Haozhen Tan et al.
+- **Link:** https://arxiv.org/abs/2603.08316v1
+- **Security insight:** Modern vision-language-model (VLM) based graphical user interface (GUI) agents are expected not only to execute actions accurately but also to respond to user instructions with low latency. While existing research on GUI-agent security mainly focuses on…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice**  
+- **Date:** 2026-03-07
+- **Authors:** Yuxu Ge
+- **Link:** https://arxiv.org/abs/2603.07191v1
+- **Security insight:** Autonomous agents powered by large language models introduce a class of execution-layer vulnerabilities -- prompt injection, retrieval poisoning, and uncontrolled tool invocation -- that existing guardrails fail to address systematically. In this work, we…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Beyond Input Guardrails: Reconstructing Cross-Agent Semantic Flows for Execution-Aware Attack Detection**  
 - **Date:** 2026-03-04
@@ -42,14 +56,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** AI agents that interact with the real world through tool calls pose fundamental safety challenges: agents might leak private information, cause unintended side effects, or be manipulated through prompt injection. To address these challenges, we propose to put…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**From Goals to Aspects, Revisited: An NFR Pattern Language for Agentic AI Systems**  
-- **Date:** 2026-02-28
-- **Authors:** Yijun Yu
-- **Link:** https://arxiv.org/abs/2603.00472v1
-- **Security insight:** Agentic AI systems exhibit numerous crosscutting concerns -- security, observability, cost management, fault tolerance -- that are poorly modularized in current implementations, contributing to the high failure rate of AI projects in reaching production. The…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**VoiceSHIELD-Small: Real-Time Malicious Speech Detection and Transcription**  
+- **Date:** 2026-03-08
+- **Authors:** Sumit Ranjan, Sugandha Sharma, Ubaid Abbas et al.
+- **Link:** https://arxiv.org/abs/2603.07708v1
+- **Security insight:** Voice interfaces are quickly becoming a common way for people to interact with AI systems. This also brings new security risks, such as prompt injection, social engineering, and harmful voice commands. Traditional security methods rely on converting speech to…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions**  
 - **Date:** 2026-03-04
@@ -80,6 +94,15 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2603.02588v1
 - **Security insight:** With the growing deployment of large language models (LLMs) in real-world applications, establishing robust safety guardrails to moderate their inputs and outputs has become essential to ensure adherence to safety policies. Current guardrail models…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Poisoning & Backdoors
+
+**Client-Cooperative Split Learning**  
+- **Date:** 2026-03-09
+- **Authors:** Haiyu Deng, Yanna Jiang, Guangsheng Yu et al.
+- **Link:** https://arxiv.org/abs/2603.08421v1
+- **Security insight:** Model training is increasingly offered as a service for resource-constrained data owners to build customized models. Split Learning (SL) enables such services by offloading training computation under privacy constraints, and evolves toward serverless and…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Model Extraction & Privacy
 

@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-10 (UTC)
+
+Top items:
+
+- **Client-Cooperative Split Learning** (2026-03-09) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2603.08421v1
+
+- **SlowBA: An efficiency backdoor attack towards VLM-based GUI agents** (2026-03-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.08316v1
+
+- **VoiceSHIELD-Small: Real-Time Malicious Speech Detection and Transcription** (2026-03-08) [Prompt Injection]  
+  https://arxiv.org/abs/2603.07708v1
+
+- **Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice** (2026-03-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.07191v1
+
+- **Beyond Input Guardrails: Reconstructing Cross-Agent Semantic Flows for Execution-Aware Attack Detection** (2026-03-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.04469v1
+
+- **Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions** (2026-03-04) [Prompt Injection]  
+  https://arxiv.org/abs/2603.03637v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-09 (UTC)
 
 Top items:
