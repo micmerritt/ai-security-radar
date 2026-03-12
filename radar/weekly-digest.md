@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-12 (UTC)
+
+Top items:
+
+- **Risk-Adjusted Harm Scoring for Automated Red Teaming for LLMs in Financial Services** (2026-03-11) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.10807v1
+
+- **AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations** (2026-03-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.10749v1
+
+- **IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs** (2026-03-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.10521v1
+
+- **Compatibility at a Cost: Systematic Discovery and Exploitation of MCP Clause-Compliance Vulnerabilities** (2026-03-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.10163v1
+
+- **Why LLMs Fail: A Failure Analysis and Partial Success Measurement for Automated Security Patch Generation** (2026-03-10) [Other (Review)]  
+  https://arxiv.org/abs/2603.10072v1
+
+- **Security Considerations for Multi-agent Systems** (2026-03-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.09002v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-10 (UTC)
 
 Top items:
