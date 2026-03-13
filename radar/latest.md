@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-12**_
+_Last updated (UTC): **2026-03-13**_
 
 ## What this is
 
@@ -14,6 +14,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Security Considerations for Artificial Intelligence Agents**  
+- **Date:** 2026-03-12
+- **Authors:** Ninghui Li, Kaiyuan Zhang, Kyle Polley et al.
+- **Link:** https://arxiv.org/abs/2603.12230v1
+- **Security insight:** This article, a lightly adapted version of Perplexity's response to NIST/CAISI Request for Information 2025-0035, details our observations and recommendations concerning the security of frontier AI agents. These insights are informed by Perplexity's…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Cascade: Composing Software-Hardware Attack Gadgets for Adversarial Threat Amplification in Compound AI Systems**  
+- **Date:** 2026-03-12
+- **Authors:** Sarbartha Banerjee, Prateek Sahu, Anjo Vahldiek-Oberwagner et al.
+- **Link:** https://arxiv.org/abs/2603.12023v1
+- **Security insight:** Rapid progress in generative AI has given rise to Compound AI systems - pipelines comprised of multiple large language models (LLM), software tools and database systems. Compound AI systems are constructed on a layered traditional software stack running on a…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**OpenClaw PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents**  
+- **Date:** 2026-03-12
+- **Authors:** Frank Li
+- **Link:** https://arxiv.org/abs/2603.11853v1
+- **Security insight:** Tool-augmented LLM agents introduce security risks that extend beyond user-input filtering, including indirect prompt injection through fetched content, unsafe tool execution, credential leakage, and tampering with local control files. We present OpenClaw…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats**  
+- **Date:** 2026-03-12
+- **Authors:** Xinhao Deng, Yixiang Zhang, Jiaqing Wu et al.
+- **Link:** https://arxiv.org/abs/2603.11619v1
+- **Security insight:** Autonomous Large Language Model (LLM) agents, exemplified by OpenClaw, demonstrate remarkable capabilities in executing complex, long-horizon tasks. However, their tightly coupled instant-messaging interaction paradigm and high-privilege execution…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations**  
 - **Date:** 2026-03-11
 - **Authors:** Yu He, Haozhe Zhu, Yiming Li et al.
@@ -26,6 +54,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Chuan Guo, Juan Felipe Ceron Uribe, Sicheng Zhu et al.
 - **Link:** https://arxiv.org/abs/2603.10521v1
 - **Security insight:** Instruction hierarchy (IH) defines how LLMs prioritize system, developer, user, and tool instructions under conflict, providing a concrete, trust-ordered policy for resolving instruction conflicts. IH is key to defending against jailbreaks, system prompt…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey**  
+- **Date:** 2026-03-11
+- **Authors:** Juhee Kim, Xiaoyuan Liu, Zhun Wang et al.
+- **Link:** https://arxiv.org/abs/2603.11088v1
+- **Security insight:** AI agents that combine large language models with non-AI system components are rapidly emerging in real-world applications, offering unprecedented automation and flexibility. However, this unprecedented flexibility introduces complex security challenges…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Compatibility at a Cost: Systematic Discovery and Exploitation of MCP Clause-Compliance Vulnerabilities**  
@@ -42,55 +77,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Multi-agent artificial intelligence systems or MAS are systems of autonomous agents that exercise delegated tool authority, share persistent memory, and coordinate via inter-agent communication. MAS introduces qualitatively distinct security vulnerabilities…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**SlowBA: An efficiency backdoor attack towards VLM-based GUI agents**  
-- **Date:** 2026-03-09
-- **Authors:** Junxian Li, Tu Lan, Haozhen Tan et al.
-- **Link:** https://arxiv.org/abs/2603.08316v2
-- **Security insight:** Modern vision-language-model (VLM) based graphical user interface (GUI) agents are expected not only to execute actions accurately but also to respond to user instructions with low latency. While existing research on GUI-agent security mainly focuses on…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice**  
-- **Date:** 2026-03-07
-- **Authors:** Yuxu Ge
-- **Link:** https://arxiv.org/abs/2603.07191v2
-- **Security insight:** Autonomous agents powered by large language models introduce a class of execution-layer vulnerabilities -- prompt injection, retrieval poisoning, and uncontrolled tool invocation -- that existing guardrails fail to address systematically. In this work, we…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Beyond Input Guardrails: Reconstructing Cross-Agent Semantic Flows for Execution-Aware Attack Detection**  
-- **Date:** 2026-03-04
-- **Authors:** Yangyang Wei, Yijie Xu, Zhenyuan Li et al.
-- **Link:** https://arxiv.org/abs/2603.04469v1
-- **Security insight:** Multi-Agent System is emerging as the \textit{de facto} standard for complex task orchestration. However, its reliance on autonomous execution and unstructured inter-agent communication introduces severe risks, such as indirect prompt injection, that easily…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Goal-Driven Risk Assessment for LLM-Powered Systems: A Healthcare Case Study**  
-- **Date:** 2026-03-04
-- **Authors:** Neha Nagaraja, Hayretdin Bahsi
-- **Link:** https://arxiv.org/abs/2603.03633v1
-- **Security insight:** While incorporating LLMs into systems offers significant benefits in critical application areas such as healthcare, new security challenges emerge due to the potential cyber kill chain cycles that combine adversarial model, prompt injection and conventional…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Learning When to Act or Refuse: Guarding Agentic Reasoning Models for Safe Multi-Step Tool Use**  
-- **Date:** 2026-03-03
-- **Authors:** Aradhye Agarwal, Gurdit Siyan, Yash Pandya et al.
-- **Link:** https://arxiv.org/abs/2603.03205v1
-- **Security insight:** Agentic language models operate in a fundamentally different safety regime than chat models: they must plan, call tools, and execute long-horizon actions where a single misstep, such as accessing files or entering credentials, can cause irreversible harm.…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
-**VoiceSHIELD-Small: Real-Time Malicious Speech Detection and Transcription**  
-- **Date:** 2026-03-08
-- **Authors:** Sumit Ranjan, Sugandha Sharma, Ubaid Abbas et al.
-- **Link:** https://arxiv.org/abs/2603.07708v1
-- **Security insight:** Voice interfaces are quickly becoming a common way for people to interact with AI systems. This also brings new security risks, such as prompt injection, social engineering, and harmful voice commands. Traditional security methods rely on converting speech to…
+**The Mirror Design Pattern: Strict Data Geometry over Model Scale for Prompt Injection Detection**  
+- **Date:** 2026-03-12
+- **Authors:** J Alex Corll
+- **Link:** https://arxiv.org/abs/2603.11875v1
+- **Security insight:** Prompt injection defenses are often framed as semantic understanding problems and delegated to increasingly large neural detectors. For the first screening layer, however, the requirements are different: the detector runs on every request and therefore must…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Image-based Prompt Injection: Hijacking Multimodal LLMs through Visually Embedded Adversarial Instructions**  
-- **Date:** 2026-03-04
-- **Authors:** Neha Nagaraja, Lan Zhang, Zhilong Wang et al.
-- **Link:** https://arxiv.org/abs/2603.03637v1
-- **Security insight:** Multimodal Large Language Models (MLLMs) integrate vision and text to power applications, but this integration introduces new vulnerabilities. We study Image-based Prompt Injection (IPI), a black-box attack in which adversarial instructions are embedded into…
+**Jailbreak Scaling Laws for Large Language Models: Polynomial-Exponential Crossover**  
+- **Date:** 2026-03-11
+- **Authors:** Indranil Halder, Annesya Banerjee, Cengiz Pehlevan
+- **Link:** https://arxiv.org/abs/2603.11331v1
+- **Security insight:** Adversarial attacks can reliably steer safety-aligned large language models toward unsafe behavior. Empirically, we find that adversarial prompt-injection attacks can amplify attack success rate from the slow polynomial growth observed without injection to…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
