@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-15 (UTC)
+
+Top items:
+
+- **Security Considerations for Artificial Intelligence Agents** (2026-03-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.12230v1
+
+- **Cascade: Composing Software-Hardware Attack Gadgets for Adversarial Threat Amplification in Compound AI Systems** (2026-03-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.12023v1
+
+- **The Mirror Design Pattern: Strict Data Geometry over Model Scale for Prompt Injection Detection** (2026-03-12) [Prompt Injection]  
+  https://arxiv.org/abs/2603.11875v1
+
+- **OpenClaw PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents** (2026-03-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.11853v1
+
+- **Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats** (2026-03-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.11619v1
+
+- **Jailbreak Scaling Laws for Large Language Models: Polynomial-Exponential Crossover** (2026-03-11) [Prompt Injection]  
+  https://arxiv.org/abs/2603.11331v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-14 (UTC)
 
 Top items:
