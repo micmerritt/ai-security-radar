@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-15**_
+_Last updated (UTC): **2026-03-16**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses**  
+- **Date:** 2026-03-13
+- **Authors:** Chenlong Yin, Runpeng Geng, Yanting Wang et al.
+- **Link:** https://arxiv.org/abs/2603.13026v1
+- **Security insight:** Prompt injection poses serious security risks to real-world LLM applications, particularly autonomous agents. Although many defenses have been proposed, their robustness against adaptive attacks remains insufficiently evaluated, potentially creating a false…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Uncovering Security Threats and Architecting Defenses in Autonomous Agents: A Case Study of OpenClaw**  
+- **Date:** 2026-03-13
+- **Authors:** Zonghao Ying, Xiao Yang, Siyang Wu et al.
+- **Link:** https://arxiv.org/abs/2603.12644v1
+- **Security insight:** The rapid evolution of Large Language Models (LLMs) into autonomous, tool-calling agents has fundamentally altered the cybersecurity landscape. Frameworks like OpenClaw grant AI systems operating-system-level permissions and the autonomy to execute complex…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Security Considerations for Artificial Intelligence Agents**  
 - **Date:** 2026-03-12
@@ -70,13 +84,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The Model Context Protocol (MCP) is a recently proposed interoperability standard that unifies how AI agents connect with external tools and data sources. By defining a set of common client-server message exchange clauses, MCP replaces fragmented integrations…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Security Considerations for Multi-agent Systems**  
-- **Date:** 2026-03-09
-- **Authors:** Tam Nguyen, Moses Ndebugre, Dheeraj Arremsetty
-- **Link:** https://arxiv.org/abs/2603.09002v1
-- **Security insight:** Multi-agent artificial intelligence systems or MAS are systems of autonomous agents that exercise delegated tool authority, share persistent memory, and coordinate via inter-agent communication. MAS introduces qualitatively distinct security vulnerabilities…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **The Mirror Design Pattern: Strict Data Geometry over Model Scale for Prompt Injection Detection**  
@@ -101,15 +108,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2603.10807v1
 - **Security insight:** The rapid adoption of large language models (LLMs) in financial services introduces new operational, regulatory, and security risks. Yet most red-teaming benchmarks remain domain-agnostic and fail to capture failure modes specific to regulated BFSI settings,…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Poisoning & Backdoors
-
-**Client-Cooperative Split Learning**  
-- **Date:** 2026-03-09
-- **Authors:** Haiyu Deng, Yanna Jiang, Guangsheng Yu et al.
-- **Link:** https://arxiv.org/abs/2603.08421v1
-- **Security insight:** Model training is increasingly offered as a service for resource-constrained data owners to build customized models. Split Learning (SL) enables such services by offloading training computation under privacy constraints, and evolves toward serverless and…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Other (Review)
 
