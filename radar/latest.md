@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-16**_
+_Last updated (UTC): **2026-03-17**_
 
 ## What this is
 
@@ -26,6 +26,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Zonghao Ying, Xiao Yang, Siyang Wu et al.
 - **Link:** https://arxiv.org/abs/2603.12644v1
 - **Security insight:** The rapid evolution of Large Language Models (LLMs) into autonomous, tool-calling agents has fundamentally altered the cybersecurity landscape. Frameworks like OpenClaw grant AI systems operating-system-level permissions and the autonomy to execute complex…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Agent Privilege Separation in OpenClaw: A Structural Defense Against Prompt Injection**  
+- **Date:** 2026-03-13
+- **Authors:** Darren Cheng, Wen-Kwang Tsao
+- **Link:** https://arxiv.org/abs/2603.13424v1
+- **Security insight:** Prompt injection remains one of the most practical attack vectors against LLM-integrated applications. We replicate the Microsoft LLMail-Inject benchmark (Greshake et al., 2024) against current generation models running inside OpenClaw, an open source…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Security Considerations for Artificial Intelligence Agents**  
@@ -56,35 +63,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Autonomous Large Language Model (LLM) agents, exemplified by OpenClaw, demonstrate remarkable capabilities in executing complex, long-horizon tasks. However, their tightly coupled instant-messaging interaction paradigm and high-privilege execution…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations**  
-- **Date:** 2026-03-11
-- **Authors:** Yu He, Haozhe Zhu, Yiming Li et al.
-- **Link:** https://arxiv.org/abs/2603.10749v1
-- **Security insight:** LLM agents are highly vulnerable to Indirect Prompt Injection (IPI), where adversaries embed malicious directives in untrusted tool outputs to hijack execution. Most existing defenses treat IPI as an input-level semantic discrimination problem, which often…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs**  
-- **Date:** 2026-03-11
-- **Authors:** Chuan Guo, Juan Felipe Ceron Uribe, Sicheng Zhu et al.
-- **Link:** https://arxiv.org/abs/2603.10521v1
-- **Security insight:** Instruction hierarchy (IH) defines how LLMs prioritize system, developer, user, and tool instructions under conflict, providing a concrete, trust-ordered policy for resolving instruction conflicts. IH is key to defending against jailbreaks, system prompt…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The Attack and Defense Landscape of Agentic AI: A Comprehensive Survey**  
-- **Date:** 2026-03-11
-- **Authors:** Juhee Kim, Xiaoyuan Liu, Zhun Wang et al.
-- **Link:** https://arxiv.org/abs/2603.11088v1
-- **Security insight:** AI agents that combine large language models with non-AI system components are rapidly emerging in real-world applications, offering unprecedented automation and flexibility. However, this unprecedented flexibility introduces complex security challenges…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Compatibility at a Cost: Systematic Discovery and Exploitation of MCP Clause-Compliance Vulnerabilities**  
-- **Date:** 2026-03-10
-- **Authors:** Nanzi Yang, Weiheng Bai, Kangjie Lu
-- **Link:** https://arxiv.org/abs/2603.10163v1
-- **Security insight:** The Model Context Protocol (MCP) is a recently proposed interoperability standard that unifies how AI agents connect with external tools and data sources. By defining a set of common client-server message exchange clauses, MCP replaces fragmented integrations…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities**  
+- **Date:** 2026-03-16
+- **Authors:** Vanshaj Khattar, Md Rafi ur Rashid, Moumita Choudhury et al.
+- **Link:** https://arxiv.org/abs/2603.15417v1
+- **Security insight:** Test-time training (TTT) has recently emerged as a promising method to improve the reasoning abilities of large language models (LLMs), in which the model directly learns from test data without access to labels. However, this reliance on test data also makes…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **The Mirror Design Pattern: Strict Data Geometry over Model Scale for Prompt Injection Detection**  
 - **Date:** 2026-03-12
@@ -102,18 +88,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### RAG & Retrieval Attacks
 
-**Risk-Adjusted Harm Scoring for Automated Red Teaming for LLMs in Financial Services**  
-- **Date:** 2026-03-11
-- **Authors:** Fabrizio Dimino, Bhaskarjit Sarmah, Stefano Pasquali
-- **Link:** https://arxiv.org/abs/2603.10807v1
-- **Security insight:** The rapid adoption of large language models (LLMs) in financial services introduces new operational, regulatory, and security risks. Yet most red-teaming benchmarks remain domain-agnostic and fail to capture failure modes specific to regulated BFSI settings,…
+**Mechanistic Origin of Moral Indifference in Language Models**  
+- **Date:** 2026-03-16
+- **Authors:** Lingyu Li, Yan Teng, Yingchun Wang
+- **Link:** https://arxiv.org/abs/2603.15615v1
+- **Security insight:** Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+**TabKD: Tabular Knowledge Distillation through Interaction Diversity of Learned Feature Bins**  
+- **Date:** 2026-03-16
+- **Authors:** Shovon Niverd Pereira, Krishna Khadka, Yu Lei
+- **Link:** https://arxiv.org/abs/2603.15481v1
+- **Security insight:** Data-free knowledge distillation enables model compression without original training data, critical for privacy-sensitive tabular domains. However, existing methods does not perform well on tabular data because they do not explicitly address feature…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Adversarial ML
+
+**Sirens' Whisper: Inaudible Near-Ultrasonic Jailbreaks of Speech-Driven LLMs**  
+- **Date:** 2026-03-14
+- **Authors:** Zijian Ling, Pingyi Hu, Xiuyong Gao et al.
+- **Link:** https://arxiv.org/abs/2603.13847v1
+- **Security insight:** Speech-driven large language models (LLMs) are increasingly accessed through speech interfaces, introducing new security risks via open acoustic channels. We present Sirens' Whisper (SWhisper), the first practical framework for covert prompt-based attacks…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 ### Other (Review)
 
-**Why LLMs Fail: A Failure Analysis and Partial Success Measurement for Automated Security Patch Generation**  
-- **Date:** 2026-03-10
-- **Authors:** Amir Al-Maamari
-- **Link:** https://arxiv.org/abs/2603.10072v1
-- **Security insight:** Large Language Models (LLMs) show promise for Automated Program Repair (APR), yet their effectiveness on security vulnerabilities remains poorly characterized. This study analyzes 319 LLM-generated security patchesacross 64 Java vulnerabilities from the Vul4J…
+**When Scanners Lie: Evaluator Instability in LLM Red-Teaming**  
+- **Date:** 2026-03-15
+- **Authors:** Lidor Erez, Omer Hofman, Tamir Nizri et al.
+- **Link:** https://arxiv.org/abs/2603.14633v1
+- **Security insight:** Automated LLM vulnerability scanners are increasingly used to assess security risks by measuring different attack type success rates (ASR). Yet the validity of these measurements hinges on an often-overlooked component: the evaluator who determines whether an…
 - **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
