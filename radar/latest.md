@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-17**_
+_Last updated (UTC): **2026-03-18**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview Evaluation**  
+- **Date:** 2026-03-17
+- **Authors:** Gengxin Sun, Ruihao Yu, Liangyi Yin et al.
+- **Link:** https://arxiv.org/abs/2603.16215v1
+- **Security insight:** Ensuring robust and fair interview assessment remains a key challenge in AI-driven evaluation. This paper presents CoMAI, a general-purpose multi-agent interview framework designed for diverse assessment scenarios. In contrast to monolithic single-agent…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition**  
+- **Date:** 2026-03-16
+- **Authors:** Mateusz Dziemian, Maxwell Lin, Xiaohan Fu et al.
+- **Link:** https://arxiv.org/abs/2603.15714v1
+- **Security insight:** LLM based agents are increasingly deployed in high stakes settings where they process external data sources such as emails, documents, and code repositories. This creates exposure to indirect prompt injection attacks, where adversarial instructions embedded…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses**  
 - **Date:** 2026-03-13
@@ -56,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Tool-augmented LLM agents introduce security risks that extend beyond user-input filtering, including indirect prompt injection through fetched content, unsafe tool execution, credential leakage, and tampering with local control files. We present OpenClaw…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats**  
-- **Date:** 2026-03-12
-- **Authors:** Xinhao Deng, Yixiang Zhang, Jiaqing Wu et al.
-- **Link:** https://arxiv.org/abs/2603.11619v1
-- **Security insight:** Autonomous Large Language Model (LLM) agents, exemplified by OpenClaw, demonstrate remarkable capabilities in executing complex, long-horizon tasks. However, their tightly coupled instant-messaging interaction paradigm and high-privilege execution…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities**  
@@ -77,13 +84,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** J Alex Corll
 - **Link:** https://arxiv.org/abs/2603.11875v1
 - **Security insight:** Prompt injection defenses are often framed as semantic understanding problems and delegated to increasingly large neural detectors. For the first screening layer, however, the requirements are different: the detector runs on every request and therefore must…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Jailbreak Scaling Laws for Large Language Models: Polynomial-Exponential Crossover**  
-- **Date:** 2026-03-11
-- **Authors:** Indranil Halder, Annesya Banerjee, Cengiz Pehlevan
-- **Link:** https://arxiv.org/abs/2603.11331v1
-- **Security insight:** Adversarial attacks can reliably steer safety-aligned large language models toward unsafe behavior. Empirically, we find that adversarial prompt-injection attacks can amplify attack success rate from the slow polynomial growth observed without injection to…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks

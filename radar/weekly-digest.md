@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-18 (UTC)
+
+Top items:
+
+- **CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview Evaluation** (2026-03-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.16215v1
+
+- **Mechanistic Origin of Moral Indifference in Language Models** (2026-03-16) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.15615v1
+
+- **TabKD: Tabular Knowledge Distillation through Interaction Diversity of Learned Feature Bins** (2026-03-16) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.15481v1
+
+- **Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities** (2026-03-16) [Prompt Injection]  
+  https://arxiv.org/abs/2603.15417v1
+
+- **How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition** (2026-03-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.15714v1
+
+- **When Scanners Lie: Evaluator Instability in LLM Red-Teaming** (2026-03-15) [Other (Review)]  
+  https://arxiv.org/abs/2603.14633v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-17 (UTC)
 
 Top items:
