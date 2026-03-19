@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-19 (UTC)
+
+Top items:
+
+- **Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation** (2026-03-18) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.17705v1
+
+- **VeriGrey: Greybox Agent Validation** (2026-03-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17639v1
+
+- **Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare** (2026-03-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17419v1
+
+- **PAuth - Precise Task-Scoped Authorization For Agents** (2026-03-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17170v1
+
+- **CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview Evaluation** (2026-03-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.16215v1
+
+- **Mechanistic Origin of Moral Indifference in Language Models** (2026-03-16) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.15615v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-18 (UTC)
 
 Top items:

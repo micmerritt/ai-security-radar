@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-18**_
+_Last updated (UTC): **2026-03-19**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**VeriGrey: Greybox Agent Validation**  
+- **Date:** 2026-03-18
+- **Authors:** Yuntong Zhang, Sungmin Kang, Ruijie Meng et al.
+- **Link:** https://arxiv.org/abs/2603.17639v1
+- **Security insight:** Agentic AI has been a topic of great interest recently. A Large Language Model (LLM) agent involves one or more LLMs in the back-end. In the front end, it conducts autonomous decision-making by combining the LLM outputs with results obtained by invoking…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare**  
+- **Date:** 2026-03-18
+- **Authors:** Saikat Maiti
+- **Link:** https://arxiv.org/abs/2603.17419v1
+- **Security insight:** Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**PAuth - Precise Task-Scoped Authorization For Agents**  
+- **Date:** 2026-03-17
+- **Authors:** Reshabh K Sharma, Linxi Jiang, Zhiqiang Lin et al.
+- **Link:** https://arxiv.org/abs/2603.17170v1
+- **Security insight:** The emerging agentic web envisions AI agents that reliably fulfill users' natural-language (NL)-based tasks by interacting with existing web services. However, existing authorization models are misaligned with this vision. In particular, today's operator-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview Evaluation**  
 - **Date:** 2026-03-17
@@ -49,27 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Prompt injection remains one of the most practical attack vectors against LLM-integrated applications. We replicate the Microsoft LLMail-Inject benchmark (Greshake et al., 2024) against current generation models running inside OpenClaw, an open source…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Security Considerations for Artificial Intelligence Agents**  
-- **Date:** 2026-03-12
-- **Authors:** Ninghui Li, Kaiyuan Zhang, Kyle Polley et al.
-- **Link:** https://arxiv.org/abs/2603.12230v1
-- **Security insight:** This article, a lightly adapted version of Perplexity's response to NIST/CAISI Request for Information 2025-0035, details our observations and recommendations concerning the security of frontier AI agents. These insights are informed by Perplexity's…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Cascade: Composing Software-Hardware Attack Gadgets for Adversarial Threat Amplification in Compound AI Systems**  
-- **Date:** 2026-03-12
-- **Authors:** Sarbartha Banerjee, Prateek Sahu, Anjo Vahldiek-Oberwagner et al.
-- **Link:** https://arxiv.org/abs/2603.12023v1
-- **Security insight:** Rapid progress in generative AI has given rise to Compound AI systems - pipelines comprised of multiple large language models (LLM), software tools and database systems. Compound AI systems are constructed on a layered traditional software stack running on a…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**OpenClaw PRISM: A Zero-Fork, Defense-in-Depth Runtime Security Layer for Tool-Augmented LLM Agents**  
-- **Date:** 2026-03-12
-- **Authors:** Frank Li
-- **Link:** https://arxiv.org/abs/2603.11853v1
-- **Security insight:** Tool-augmented LLM agents introduce security risks that extend beyond user-input filtering, including indirect prompt injection through fetched content, unsafe tool execution, credential leakage, and tampering with local control files. We present OpenClaw…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities**  
@@ -79,14 +79,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Test-time training (TTT) has recently emerged as a promising method to improve the reasoning abilities of large language models (LLMs), in which the model directly learns from test data without access to labels. However, this reliance on test data also makes…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**The Mirror Design Pattern: Strict Data Geometry over Model Scale for Prompt Injection Detection**  
-- **Date:** 2026-03-12
-- **Authors:** J Alex Corll
-- **Link:** https://arxiv.org/abs/2603.11875v1
-- **Security insight:** Prompt injection defenses are often framed as semantic understanding problems and delegated to increasingly large neural detectors. For the first screening layer, however, the requirements are different: the detector runs on every request and therefore must…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
+
+**Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation**  
+- **Date:** 2026-03-18
+- **Authors:** Haocheng Li, Juepeng Zheng, Shuangxi Miao et al.
+- **Link:** https://arxiv.org/abs/2603.17705v1
+- **Security insight:** Multimodal remote sensing semantic segmentation enhances scene interpretation by exploiting complementary physical cues from heterogeneous data. Although pretrained Vision Foundation Models (VFMs) provide strong general-purpose representations, adapting them…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 **Mechanistic Origin of Moral Indifference in Language Models**  
 - **Date:** 2026-03-16
