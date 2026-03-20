@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-19**_
+_Last updated (UTC): **2026-03-20**_
 
 ## What this is
 
@@ -26,6 +26,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Saikat Maiti
 - **Link:** https://arxiv.org/abs/2603.17419v1
 - **Security insight:** Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0)**  
+- **Date:** 2026-03-18
+- **Authors:** Yi Ting Shen, Kentaroh Toyoda, Alex Leung
+- **Link:** https://arxiv.org/abs/2603.18063v1
+- **Security insight:** The Model Context Protocol (MCP) introduces a structurally distinct attack surface that existing threat frameworks, designed for traditional software systems or generic LLM deployments, do not adequately cover. This paper presents MCP-38, a protocol-specific…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **PAuth - Precise Task-Scoped Authorization For Agents**  
@@ -56,21 +63,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Prompt injection poses serious security risks to real-world LLM applications, particularly autonomous agents. Although many defenses have been proposed, their robustness against adaptive attacks remains insufficiently evaluated, potentially creating a false…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Uncovering Security Threats and Architecting Defenses in Autonomous Agents: A Case Study of OpenClaw**  
-- **Date:** 2026-03-13
-- **Authors:** Zonghao Ying, Xiao Yang, Siyang Wu et al.
-- **Link:** https://arxiv.org/abs/2603.12644v1
-- **Security insight:** The rapid evolution of Large Language Models (LLMs) into autonomous, tool-calling agents has fundamentally altered the cybersecurity landscape. Frameworks like OpenClaw grant AI systems operating-system-level permissions and the autonomy to execute complex…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Agent Privilege Separation in OpenClaw: A Structural Defense Against Prompt Injection**  
-- **Date:** 2026-03-13
-- **Authors:** Darren Cheng, Wen-Kwang Tsao
-- **Link:** https://arxiv.org/abs/2603.13424v1
-- **Security insight:** Prompt injection remains one of the most practical attack vectors against LLM-integrated applications. We replicate the Microsoft LLMail-Inject benchmark (Greshake et al., 2024) against current generation models running inside OpenClaw, an open source…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt Injection in LLM Systems**  
+- **Date:** 2026-03-19
+- **Authors:** Md Takrim Ul Alam, Akif Islam, Mohd Ruhul Ameen et al.
+- **Link:** https://arxiv.org/abs/2603.18433v1
+- **Security insight:** Large language models (LLMs) deployed behind APIs and retrieval-augmented generation (RAG) stacks are vulnerable to prompt injection attacks that may override system policies, subvert intended behavior, and induce unsafe outputs. Existing defenses often treat…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Amplification Effects in Test-Time Reinforcement Learning: Safety and Reasoning Vulnerabilities**  
 - **Date:** 2026-03-16
