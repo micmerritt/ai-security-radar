@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-21 (UTC)
+
+Top items:
+
+- **Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt Injection in LLM Systems** (2026-03-19) [Prompt Injection]  
+  https://arxiv.org/abs/2603.18433v1
+
+- **Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation** (2026-03-18) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.17705v1
+
+- **VeriGrey: Greybox Agent Validation** (2026-03-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17639v1
+
+- **Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare** (2026-03-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17419v1
+
+- **MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0)** (2026-03-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.18063v1
+
+- **PAuth - Precise Task-Scoped Authorization For Agents** (2026-03-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.17170v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-20 (UTC)
 
 Top items:
