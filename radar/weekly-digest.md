@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-25 (UTC)
+
+Top items:
+
+- **Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution** (2026-03-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.23064v1
+
+- **SoK: The Attack Surface of Agentic AI -- Tools, and Autonomy** (2026-03-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.22928v1
+
+- **LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface** (2026-03-23) [Prompt Injection]  
+  https://arxiv.org/abs/2603.22519v1
+
+- **Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning** (2026-03-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.22489v1
+
+- **SecureBreak -- A dataset towards safe and secure models** (2026-03-23) [Prompt Injection]  
+  https://arxiv.org/abs/2603.21975v1
+
+- **Are AI-assisted Development Tools Immune to Prompt Injection?** (2026-03-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.21642v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-22 (UTC)
 
 Top items:
