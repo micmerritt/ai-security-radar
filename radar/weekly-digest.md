@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-26 (UTC)
+
+Top items:
+
+- **Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms for LLMs** (2026-03-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.24511v1
+
+- **Invisible Threats from Model Context Protocol: Generating Stealthy Injection Payload via Tree-based Adaptive Search** (2026-03-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.24203v1
+
+- **The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense** (2026-03-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.23791v1
+
+- **Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution** (2026-03-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.23064v2
+
+- **SoK: The Attack Surface of Agentic AI -- Tools, and Autonomy** (2026-03-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.22928v1
+
+- **LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface** (2026-03-23) [Prompt Injection]  
+  https://arxiv.org/abs/2603.22519v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-25 (UTC)
 
 Top items:
