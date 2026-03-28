@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-28 (UTC)
+
+Top items:
+
+- **On the Vulnerability of Deep Automatic Modulation Classifiers to Explainable Backdoor Threats** (2026-03-26) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2603.25310v1
+
+- **Physical Backdoor Attack Against Deep Learning-Based Modulation Classification** (2026-03-26) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2603.25304v1
+
+- **Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models** (2026-03-26) [Prompt Injection]  
+  https://arxiv.org/abs/2603.25176v1
+
+- **PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems** (2026-03-26) [Prompt Injection]  
+  https://arxiv.org/abs/2603.25164v1
+
+- **A Public Theory of Distillation Resistance via Constraint-Coupled Reasoning Architectures** (2026-03-26) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2603.25022v1
+
+- **AI Security in the Foundation Model Era: A Comprehensive Survey from a Unified Perspective** (2026-03-25) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.24857v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-26 (UTC)
 
 Top items:

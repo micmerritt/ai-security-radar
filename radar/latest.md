@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-26**_
+_Last updated (UTC): **2026-03-28**_
 
 ## What this is
 
@@ -56,42 +56,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The Model Context Protocol (MCP) has rapidly emerged as a universal standard for connecting AI assistants to external tools and data sources. While MCP simplifies integration between AI applications and various services, it introduces significant security…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Are AI-assisted Development Tools Immune to Prompt Injection?**  
-- **Date:** 2026-03-23
-- **Authors:** Charoes Huang, Xin Huang, Amin Milani Fard
-- **Link:** https://arxiv.org/abs/2603.21642v1
-- **Security insight:** Prompt injection is listed as the number-one vulnerability class in the OWASP Top 10 for LLM Applications that can subvert LLM guardrails, disclose sensitive data, and trigger unauthorized tool use. Developers are rapidly adopting AI-assisted development…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Detection of adversarial intent in Human-AI teams using LLMs**  
-- **Date:** 2026-03-21
-- **Authors:** Abed K. Musaffar, Ambuj Singh, Francesco Bullo
-- **Link:** https://arxiv.org/abs/2603.20976v1
-- **Security insight:** Large language models (LLMs) are increasingly deployed in human-AI teams as support agents for complex tasks such as information retrieval, programming, and decision-making assistance. While these agents' autonomy and contextual knowledge enables them to be…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The production of meaning in the processing of natural language**  
-- **Date:** 2026-03-20
-- **Authors:** Christopher J. Agostino, Quan Le Thien, Nayan D'Souza et al.
-- **Link:** https://arxiv.org/abs/2603.20381v1
-- **Security insight:** Understanding the fundamental mechanisms governing the production of meaning in the processing of natural language is critical for designing safe, thoughtful, engaging, and empowering human-agent interactions. Experiments in cognitive science and social…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance**  
-- **Date:** 2026-03-20
-- **Authors:** Fazhong Liu, Zhuoyan Chen, Tu Lan et al.
-- **Link:** https://arxiv.org/abs/2603.19974v1
-- **Security insight:** Autonomous coding agents are increasingly integrated into software development workflows, offering capabilities that extend beyond code suggestion to active system interaction and environment management. OpenClaw, a representative platform in this emerging…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**A Framework for Formalizing LLM Agent Security**  
-- **Date:** 2026-03-19
-- **Authors:** Vincent Siu, Jingxuan He, Kyle Montgomery et al.
-- **Link:** https://arxiv.org/abs/2603.19469v1
-- **Security insight:** Security in LLM agents is inherently contextual. For example, the same action taken by an agent may represent legitimate behavior or a security violation depending on whose instruction led to the action, what objective is being pursued, and whether the action…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models**  
+- **Date:** 2026-03-26
+- **Authors:** Hieu Xuan Le, Benjamin Goh, Quy Anh Tang
+- **Link:** https://arxiv.org/abs/2603.25176v1
+- **Security insight:** Prompt attacks, including jailbreaks and prompt injections, pose a critical security risk to Large Language Model (LLM) systems. In production, guardrails must mitigate these attacks under strict low-latency constraints, resulting in a deployment gap in which…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems**  
+- **Date:** 2026-03-26
+- **Authors:** Haozhen Wang, Haoyue Liu, Jionghao Zhu et al.
+- **Link:** https://arxiv.org/abs/2603.25164v1
+- **Security insight:** Large Language Models (LLMs) have demonstrated remarkable performance across a wide range of applications. However, their practical deployment is often hindered by issues such as outdated knowledge and the tendency to generate hallucinations. To address these…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface**  
 - **Date:** 2026-03-23
@@ -107,11 +86,36 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language models are becoming pervasive core components in many real-world applications. As a consequence, security alignment represents a critical requirement for their safe deployment. Although previous related works focused primarily on model…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-### Adversarial ML
+### RAG & Retrieval Attacks
 
-**LJ-Bench: Ontology-Based Benchmark for U.S. Crime**  
-- **Date:** 2026-03-21
-- **Authors:** Hung Yun Tseng, Wuzhen Li, Blerina Gkotse et al.
-- **Link:** https://arxiv.org/abs/2603.20572v1
-- **Security insight:** The potential of Large Language Models (LLMs) to provide harmful information remains a significant concern due to the vast breadth of illegal queries they may encounter. Unfortunately, existing benchmarks only focus on a handful types of illegal activities,…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
+**AI Security in the Foundation Model Era: A Comprehensive Survey from a Unified Perspective**  
+- **Date:** 2026-03-25
+- **Authors:** Zhenyi Wang, Siyu Luan
+- **Link:** https://arxiv.org/abs/2603.24857v1
+- **Security insight:** As machine learning (ML) systems expand in both scale and functionality, the security landscape has become increasingly complex, with a proliferation of attacks and defenses. However, existing studies largely treat these threats in isolation, lacking a…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Poisoning & Backdoors
+
+**On the Vulnerability of Deep Automatic Modulation Classifiers to Explainable Backdoor Threats**  
+- **Date:** 2026-03-26
+- **Authors:** Younes Salmi, Hanna Bogucka
+- **Link:** https://arxiv.org/abs/2603.25310v1
+- **Security insight:** Deep learning (DL) has been widely studied for assisting applications of modern wireless communications. One of the applications is automatic modulation classification (AMC). However, DL models are found to be vulnerable to adversarial machine learning (AML)…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
+
+**Physical Backdoor Attack Against Deep Learning-Based Modulation Classification**  
+- **Date:** 2026-03-26
+- **Authors:** Younes Salmi, Hanna Bogucka
+- **Link:** https://arxiv.org/abs/2603.25304v1
+- **Security insight:** Deep Learning (DL) has become a key technology that assists radio frequency (RF) signal classification applications, such as modulation classification. However, the DL models are vulnerable to adversarial machine learning threats, such as data manipulation…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
+
+### Model Extraction & Privacy
+
+**A Public Theory of Distillation Resistance via Constraint-Coupled Reasoning Architectures**  
+- **Date:** 2026-03-26
+- **Authors:** Peng Wei, Wesley Shu
+- **Link:** https://arxiv.org/abs/2603.25022v1
+- **Security insight:** Knowledge distillation, model extraction, and behavior transfer have become central concerns in frontier AI. The main risk is not merely copying, but the possibility that useful capability can be transferred more cheaply than the governance structure that…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
