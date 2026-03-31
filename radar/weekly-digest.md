@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-03-31 (UTC)
+
+Top items:
+
+- **Crossing the NL/PL Divide: Information Flow Analysis Across the NL/PL Boundary in LLM-Integrated Code** (2026-03-30) [Prompt Injection]  
+  https://arxiv.org/abs/2603.28345v1
+
+- **Evaluating Privilege Usage of Agents on Real-World Tools** (2026-03-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.28166v1
+
+- **Kill-Chain Canaries: Stage-Level Tracking of Prompt Injection Across Attack Surfaces and Model Safety Tiers** (2026-03-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.28013v1
+
+- **Hidden Ads: Behavior Triggered Semantic Backdoors for Advertisement Injection in Vision Language Models** (2026-03-29) [Prompt Injection]  
+  https://arxiv.org/abs/2603.27522v1
+
+- **A Systematic Taxonomy of Security Vulnerabilities in the OpenClaw AI Agent Framework** (2026-03-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.27517v1
+
+- **Poisoning the Genome: Targeted Backdoor Attacks on DNA Foundation Models** (2026-03-29) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2603.27465v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-28 (UTC)
 
 Top items:
