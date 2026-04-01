@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-01 (UTC)
+
+Top items:
+
+- **Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks** (2026-03-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.30016v1
+
+- **Performative Scenario Optimization** (2026-03-31) [Adversarial ML]  
+  https://arxiv.org/abs/2603.29982v1
+
+- **Loop-Checking and Counter-Model Extraction for Intuitionistic Tense Logics via Nested Sequents** (2026-03-31) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2603.29424v1
+
+- **Adversarial Prompt Injection Attack on Multimodal Large Language Models** (2026-03-31) [Prompt Injection]  
+  https://arxiv.org/abs/2603.29418v1
+
+- **Crossing the NL/PL Divide: Information Flow Analysis Across the NL/PL Boundary in LLM-Integrated Code** (2026-03-30) [Prompt Injection]  
+  https://arxiv.org/abs/2603.28345v1
+
+- **Evaluating Privilege Usage of Agents on Real-World Tools** (2026-03-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.28166v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-03-31 (UTC)
 
 Top items:

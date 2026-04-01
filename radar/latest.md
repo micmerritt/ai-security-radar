@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-03-31**_
+_Last updated (UTC): **2026-04-01**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks**  
+- **Date:** 2026-03-31
+- **Authors:** Chong Xiang, Drew Zagieboylo, Shaona Ghosh et al.
+- **Link:** https://arxiv.org/abs/2603.30016v1
+- **Security insight:** AI agents, predominantly powered by large language models (LLMs), are vulnerable to indirect prompt injection, in which malicious instructions embedded in untrusted data can trigger dangerous agent actions. This position paper discusses our vision for system-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Evaluating Privilege Usage of Agents on Real-World Tools**  
 - **Date:** 2026-03-30
@@ -35,21 +42,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** AI agent frameworks connecting large language model (LLM) reasoning to host execution surfaces--shell, filesystem, containers, and messaging--introduce security challenges structurally distinct from conventional software. We present a systematic taxonomy of…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms for LLMs**  
-- **Date:** 2026-03-25
-- **Authors:** Alexander Panfilov, Peter Romov, Igor Shilov et al.
-- **Link:** https://arxiv.org/abs/2603.24511v1
-- **Security insight:** LLM agents like Claude Code can not only write code but also be used for autonomous AI research and engineering \citep{rank2026posttrainbench, novikov2025alphaevolve}. We show that an \emph{autoresearch}-style pipeline \citep{karpathy2026autoresearch} powered…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Invisible Threats from Model Context Protocol: Generating Stealthy Injection Payload via Tree-based Adaptive Search**  
-- **Date:** 2026-03-25
-- **Authors:** Yulin Shen, Xudong Pan, Geng Hong et al.
-- **Link:** https://arxiv.org/abs/2603.24203v1
-- **Security insight:** Recent advances in the Model Context Protocol (MCP) have enabled large language models (LLMs) to invoke external tools with unprecedented ease. This creates a new class of powerful and tool augmented agents. Unfortunately, this capability also introduces an…
+**SafeClaw-R: Towards Safe and Secure Multi-Agent Personal Assistants**  
+- **Date:** 2026-03-28
+- **Authors:** Haoyu Wang, Zibo Xiao, Yedi Zhang et al.
+- **Link:** https://arxiv.org/abs/2603.28807v1
+- **Security insight:** LLM-based multi-agent systems (MASs) are transforming personal productivity by autonomously executing complex, cross-platform tasks. Frameworks such as OpenClaw demonstrate the potential of locally deployed agents integrated with personal data and services,…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
+
+**Adversarial Prompt Injection Attack on Multimodal Large Language Models**  
+- **Date:** 2026-03-31
+- **Authors:** Meiwen Ding, Song Xia, Chenqi Kong et al.
+- **Link:** https://arxiv.org/abs/2603.29418v1
+- **Security insight:** Although multimodal large language models (MLLMs) are increasingly deployed in real-world applications, their instruction-following behavior leaves them vulnerable to prompt injection attacks. Existing prompt injection methods predominantly rely on textual…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Crossing the NL/PL Divide: Information Flow Analysis Across the NL/PL Boundary in LLM-Integrated Code**  
 - **Date:** 2026-03-30
@@ -72,13 +79,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Prompt attacks, including jailbreaks and prompt injections, pose a critical security risk to Large Language Model (LLM) systems. In production, guardrails must mitigate these attacks under strict low-latency constraints, resulting in a deployment gap in which…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems**  
-- **Date:** 2026-03-26
-- **Authors:** Haozhen Wang, Haoyue Liu, Jionghao Zhu et al.
-- **Link:** https://arxiv.org/abs/2603.25164v1
-- **Security insight:** Large Language Models (LLMs) have demonstrated remarkable performance across a wide range of applications. However, their practical deployment is often hindered by issues such as outdated knowledge and the tendency to generate hallucinations. To address these…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **Poisoning the Genome: Targeted Backdoor Attacks on DNA Foundation Models**  
@@ -86,13 +86,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Charalampos Koilakos, Ioannis Mouratidis, Ilias Georgakopoulos-Soares
 - **Link:** https://arxiv.org/abs/2603.27465v1
 - **Security insight:** Genomic foundation models trained on DNA sequences have demonstrated remarkable capabilities across diverse biological tasks, from variant effect prediction to genome design. These models are typically trained on massive, publicly sourced genomic datasets…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-**AI Security in the Foundation Model Era: A Comprehensive Survey from a Unified Perspective**  
-- **Date:** 2026-03-25
-- **Authors:** Zhenyi Wang, Siyu Luan
-- **Link:** https://arxiv.org/abs/2603.24857v1
-- **Security insight:** As machine learning (ML) systems expand in both scale and functionality, the security landscape has become increasingly complex, with a proliferation of attacks and defenses. However, existing studies largely treat these threats in isolation, lacking a…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Poisoning & Backdoors
@@ -113,9 +106,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Model Extraction & Privacy
 
-**A Public Theory of Distillation Resistance via Constraint-Coupled Reasoning Architectures**  
-- **Date:** 2026-03-26
-- **Authors:** Peng Wei, Wesley Shu
-- **Link:** https://arxiv.org/abs/2603.25022v1
-- **Security insight:** Knowledge distillation, model extraction, and behavior transfer have become central concerns in frontier AI. The main risk is not merely copying, but the possibility that useful capability can be transferred more cheaply than the governance structure that…
+**Loop-Checking and Counter-Model Extraction for Intuitionistic Tense Logics via Nested Sequents**  
+- **Date:** 2026-03-31
+- **Authors:** Tim S. Lyon
+- **Link:** https://arxiv.org/abs/2603.29424v1
+- **Security insight:** This paper develops a novel nested sequent proof-search methodology for intuitionistic tense logics (ITLs), supporting finite counter-model extraction. We introduce a new loop-checking method that detects repeating nested sequents using homomorphisms, thereby…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+
+### Adversarial ML
+
+**Performative Scenario Optimization**  
+- **Date:** 2026-03-31
+- **Authors:** Quanyan Zhu, Zhengye Han
+- **Link:** https://arxiv.org/abs/2603.29982v1
+- **Security insight:** This paper introduces a performative scenario optimization framework for decision-dependent chance-constrained problems. Unlike classical stochastic optimization, we account for the feedback loop where decisions actively shape the underlying data-generating…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
