@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-01**_
+_Last updated (UTC): **2026-04-03**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**ClawSafety: "Safe" LLMs, Unsafe Agents**  
+- **Date:** 2026-04-01
+- **Authors:** Bowen Wei, Yunbei Zhang, Jinhao Pan et al.
+- **Link:** https://arxiv.org/abs/2604.01438v1
+- **Security insight:** Personal AI agents like OpenClaw run with elevated privileges on users' local machines, where a single successful prompt injection can leak credentials, redirect financial transactions, or destroy files. This threat goes well beyond conventional text-level…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Safety, Security, and Cognitive Risks in World Models**  
+- **Date:** 2026-04-01
+- **Authors:** Manoj Parmar
+- **Link:** https://arxiv.org/abs/2604.01346v1
+- **Security insight:** World models -- learned internal simulators of environment dynamics -- are rapidly becoming foundational to autonomous decision-making in robotics, autonomous vehicles, and agentic AI. Yet this predictive power introduces a distinctive set of safety,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**AgentWatcher: A Rule-based Prompt Injection Monitor**  
+- **Date:** 2026-04-01
+- **Authors:** Yanting Wang, Wei Zou, Runpeng Geng et al.
+- **Link:** https://arxiv.org/abs/2604.01194v1
+- **Security insight:** Large language models (LLMs) and their applications, such as agents, are highly vulnerable to prompt injection attacks. State-of-the-art prompt injection detection methods have the following limitations: (1) their effectiveness degrades significantly as…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks**  
 - **Date:** 2026-03-31
@@ -72,13 +93,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Vision-Language Models (VLMs) are increasingly deployed in consumer applications where users seek recommendations about products, dining, and services. We introduce Hidden Ads, a new class of backdoor attacks that exploit this recommendation-seeking behavior…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models**  
-- **Date:** 2026-03-26
-- **Authors:** Hieu Xuan Le, Benjamin Goh, Quy Anh Tang
-- **Link:** https://arxiv.org/abs/2603.25176v1
-- **Security insight:** Prompt attacks, including jailbreaks and prompt injections, pose a critical security risk to Large Language Model (LLM) systems. In production, guardrails must mitigate these attacks under strict low-latency constraints, resulting in a deployment gap in which…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **Poisoning the Genome: Targeted Backdoor Attacks on DNA Foundation Models**  
@@ -87,22 +101,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2603.27465v1
 - **Security insight:** Genomic foundation models trained on DNA sequences have demonstrated remarkable capabilities across diverse biological tasks, from variant effect prediction to genome design. These models are typically trained on massive, publicly sourced genomic datasets…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Poisoning & Backdoors
-
-**On the Vulnerability of Deep Automatic Modulation Classifiers to Explainable Backdoor Threats**  
-- **Date:** 2026-03-26
-- **Authors:** Younes Salmi, Hanna Bogucka
-- **Link:** https://arxiv.org/abs/2603.25310v1
-- **Security insight:** Deep learning (DL) has been widely studied for assisting applications of modern wireless communications. One of the applications is automatic modulation classification (AMC). However, DL models are found to be vulnerable to adversarial machine learning (AML)…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
-
-**Physical Backdoor Attack Against Deep Learning-Based Modulation Classification**  
-- **Date:** 2026-03-26
-- **Authors:** Younes Salmi, Hanna Bogucka
-- **Link:** https://arxiv.org/abs/2603.25304v1
-- **Security insight:** Deep Learning (DL) has become a key technology that assists radio frequency (RF) signal classification applications, such as modulation classification. However, the DL models are vulnerable to adversarial machine learning threats, such as data manipulation…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Model Extraction & Privacy
 
