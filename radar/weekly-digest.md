@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-04 (UTC)
+
+Top items:
+
+- **ClawSafety: "Safe" LLMs, Unsafe Agents** (2026-04-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.01438v1
+
+- **Safety, Security, and Cognitive Risks in World Models** (2026-04-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.01346v1
+
+- **AgentWatcher: A Rule-based Prompt Injection Monitor** (2026-04-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.01194v1
+
+- **Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks** (2026-03-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2603.30016v1
+
+- **Performative Scenario Optimization** (2026-03-31) [Adversarial ML]  
+  https://arxiv.org/abs/2603.29982v1
+
+- **Loop-Checking and Counter-Model Extraction for Intuitionistic Tense Logics via Nested Sequents** (2026-03-31) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2603.29424v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-03 (UTC)
 
 Top items:
