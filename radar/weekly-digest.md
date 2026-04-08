@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-08 (UTC)
+
+Top items:
+
+- **Gradient-Controlled Decoding: A Safety Guardrail for LLMs with Dual-Anchor Steering** (2026-04-06) [Prompt Injection]  
+  https://arxiv.org/abs/2604.05179v1
+
+- **Compiled AI: Deterministic Code Generation for LLM-Based Workflow Automation** (2026-04-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.05150v1
+
+- **ShieldNet: Network-Level Guardrails against Emerging Supply-Chain Injections in Agentic Systems** (2026-04-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.04426v1
+
+- **LLM-Enabled Open-Source Systems in the Wild: An Empirical Study of Vulnerabilities in GitHub Security Advisories** (2026-04-05) [Prompt Injection]  
+  https://arxiv.org/abs/2604.04288v1
+
+- **Automating Cloud Security and Forensics Through a Secure-by-Design Generative AI Framework** (2026-04-05) [Prompt Injection]  
+  https://arxiv.org/abs/2604.03912v1
+
+- **Your Agent is More Brittle Than You Think: Uncovering Indirect Injection Vulnerabilities in Agentic LLMs** (2026-04-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.03870v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-05 (UTC)
 
 Top items:
