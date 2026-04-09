@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-09 (UTC)
+
+Top items:
+
+- **TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories** (2026-04-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.07223v1
+
+- **ARuleCon: Agentic Security Rule Conversion** (2026-04-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.06762v1
+
+- **SkillSieve: A Hierarchical Triage Framework for Detecting Malicious AI Agent Skills** (2026-04-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.06550v1
+
+- **The Defense Trilemma: Why Prompt Injection Defense Wrappers Fail?** (2026-04-07) [Prompt Injection]  
+  https://arxiv.org/abs/2604.06436v1
+
+- **Gradient-Controlled Decoding: A Safety Guardrail for LLMs with Dual-Anchor Steering** (2026-04-06) [Prompt Injection]  
+  https://arxiv.org/abs/2604.05179v1
+
+- **Compiled AI: Deterministic Code Generation for LLM-Based Workflow Automation** (2026-04-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.05150v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-08 (UTC)
 
 Top items:

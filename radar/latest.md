@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-08**_
+_Last updated (UTC): **2026-04-09**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories**  
+- **Date:** 2026-04-08
+- **Authors:** Yen-Shan Chen, Sian-Yao Huang, Cheng-Lin Yang et al.
+- **Link:** https://arxiv.org/abs/2604.07223v1
+- **Security insight:** As large language models (LLMs) evolve from static chatbots into autonomous agents, the primary vulnerability surface shifts from final outputs to intermediate execution traces. While safety guardrails are well-benchmarked for natural language responses,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ARuleCon: Agentic Security Rule Conversion**  
+- **Date:** 2026-04-08
+- **Authors:** Ming Xu, Hongtai Wang, Yanpei Guo et al.
+- **Link:** https://arxiv.org/abs/2604.06762v1
+- **Security insight:** Security Information and Event Management (SIEM) systems make it possible for detecting intrusion anomalies in real-time manner by their applied security rules. However, the heterogeneity of vendor-specific rules (e.g., Splunk SPL, Microsoft KQL, IBM AQL,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**SkillSieve: A Hierarchical Triage Framework for Detecting Malicious AI Agent Skills**  
+- **Date:** 2026-04-08
+- **Authors:** Yinghan Hou, Zongyou Yang
+- **Link:** https://arxiv.org/abs/2604.06550v1
+- **Security insight:** OpenClaw's ClawHub marketplace hosts over 13,000 community-contributed agent skills, and between 13% and 26% of them contain security vulnerabilities according to recent audits. Regex scanners miss obfuscated payloads; formal static analyzers cannot read the…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Compiled AI: Deterministic Code Generation for LLM-Based Workflow Automation**  
 - **Date:** 2026-04-06
@@ -42,48 +63,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Third-party skills extend LLM agents with powerful capabilities but often handle sensitive credentials in privileged environments, making leakage risks poorly understood. We present the first large-scale empirical study of this problem, analyzing 17,022…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**ClawSafety: "Safe" LLMs, Unsafe Agents**  
-- **Date:** 2026-04-01
-- **Authors:** Bowen Wei, Yunbei Zhang, Jinhao Pan et al.
-- **Link:** https://arxiv.org/abs/2604.01438v2
-- **Security insight:** Personal AI agents like OpenClaw run with elevated privileges on users' local machines, where a single successful prompt injection can leak credentials, redirect financial transactions, or destroy files. This threat goes well beyond conventional text-level…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Safety, Security, and Cognitive Risks in World Models**  
-- **Date:** 2026-04-01
-- **Authors:** Manoj Parmar
-- **Link:** https://arxiv.org/abs/2604.01346v2
-- **Security insight:** World models - learned internal simulators of environment dynamics - are rapidly becoming foundational to autonomous decision-making in robotics, autonomous vehicles, and agentic AI. By predicting future states in compressed latent spaces, they enable sample-…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**AgentWatcher: A Rule-based Prompt Injection Monitor**  
-- **Date:** 2026-04-01
-- **Authors:** Yanting Wang, Wei Zou, Runpeng Geng et al.
-- **Link:** https://arxiv.org/abs/2604.01194v1
-- **Security insight:** Large language models (LLMs) and their applications, such as agents, are highly vulnerable to prompt injection attacks. State-of-the-art prompt injection detection methods have the following limitations: (1) their effectiveness degrades significantly as…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**KAIJU: An Executive Kernel for Intent-Gated Execution of LLM Agents**  
-- **Date:** 2026-03-31
-- **Authors:** Cormac Guerin, Frank Guerin
-- **Link:** https://arxiv.org/abs/2604.02375v1
-- **Security insight:** Tool-calling autonomous agents based on large language models using ReAct exhibit three limitations: serial latency, quadratic context growth, and vulnerability to prompt injection and hallucination. Recent work moves towards separating planning from…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Architecting Secure AI Agents: Perspectives on System-Level Defenses Against Indirect Prompt Injection Attacks**  
-- **Date:** 2026-03-31
-- **Authors:** Chong Xiang, Drew Zagieboylo, Shaona Ghosh et al.
-- **Link:** https://arxiv.org/abs/2603.30016v1
-- **Security insight:** AI agents, predominantly powered by large language models (LLMs), are vulnerable to indirect prompt injection, in which malicious instructions embedded in untrusted data can trigger dangerous agent actions. This position paper discusses our vision for system-…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**The Defense Trilemma: Why Prompt Injection Defense Wrappers Fail?**  
+- **Date:** 2026-04-07
+- **Authors:** Manish Bhatt, Sarthak Munshi, Vineeth Sai Narajala et al.
+- **Link:** https://arxiv.org/abs/2604.06436v1
+- **Security insight:** We prove that no continuous, utility-preserving wrapper defense-a function $D: X\to X$ that preprocesses inputs before the model sees them-can make all outputs strictly safe for a language model with connected prompt space, and we characterize exactly where…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Gradient-Controlled Decoding: A Safety Guardrail for LLMs with Dual-Anchor Steering**  
 - **Date:** 2026-04-06
 - **Authors:** Purva Chiniya, Kevin Scaria, Sagar Chaturvedi
 - **Link:** https://arxiv.org/abs/2604.05179v1
 - **Security insight:** Large language models (LLMs) remain susceptible to jailbreak and direct prompt-injection attacks, yet the strongest defensive filters frequently over-refuse benign queries and degrade user experience. Previous work on jailbreak and prompt injection detection…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**SALLIE: Safeguarding Against Latent Language & Image Exploits**  
+- **Date:** 2026-04-06
+- **Authors:** Guy Azov, Ofer Rivlin, Guy Shtar
+- **Link:** https://arxiv.org/abs/2604.06247v1
+- **Security insight:** Large Language Models (LLMs) and Vision-Language Models (VLMs) remain highly vulnerable to textual and visual jailbreaks, as well as prompt injections (arXiv:2307.15043, Greshake et al., 2023, arXiv:2306.13213). Existing defenses often degrade performance…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **LLM-Enabled Open-Source Systems in the Wild: An Empirical Study of Vulnerabilities in GitHub Security Advisories**  
