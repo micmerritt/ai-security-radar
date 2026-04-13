@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-13 (UTC)
+
+Top items:
+
+- **BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning** (2026-04-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.09378v1
+
+- **Leave My Images Alone: Preventing Multi-Modal Large Language Models from Analyzing Images via Visual Prompt Injection** (2026-04-10) [Prompt Injection]  
+  https://arxiv.org/abs/2604.09024v1
+
+- **PIArena: A Platform for Prompt Injection Evaluation** (2026-04-09) [Prompt Injection]  
+  https://arxiv.org/abs/2604.08499v1
+
+- **Security Concerns in Generative AI Coding Assistants: Insights from Online Discussions on GitHub Copilot** (2026-04-09) [Prompt Injection]  
+  https://arxiv.org/abs/2604.08352v1
+
+- **Are GUI Agents Focused Enough? Automated Distraction via Semantic-level UI Element Injection** (2026-04-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.07831v1
+
+- **TRUSTDESC: Preventing Tool Poisoning in LLM Applications via Trusted Description Generation** (2026-04-08) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2604.07536v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-12 (UTC)
 
 Top items:

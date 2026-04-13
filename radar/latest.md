@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-12**_
+_Last updated (UTC): **2026-04-13**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning**  
+- **Date:** 2026-04-10
+- **Authors:** Guiyao Tie, Jiawen Shi, Pan Zhou et al.
+- **Link:** https://arxiv.org/abs/2604.09378v1
+- **Security insight:** Agent ecosystems increasingly rely on installable skills to extend functionality, and some skills bundle learned model artifacts as part of their execution logic. This creates a supply-chain risk that is not captured by prompt injection or ordinary plugin…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Are GUI Agents Focused Enough? Automated Distraction via Semantic-level UI Element Injection**  
 - **Date:** 2026-04-09
@@ -58,6 +65,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Prompt Injection
 
+**Leave My Images Alone: Preventing Multi-Modal Large Language Models from Analyzing Images via Visual Prompt Injection**  
+- **Date:** 2026-04-10
+- **Authors:** Zedian Shao, Hongbin Liu, Yuepeng Hu et al.
+- **Link:** https://arxiv.org/abs/2604.09024v1
+- **Security insight:** Multi-modal large language models (MLLMs) have emerged as powerful tools for analyzing Internet-scale image data, offering significant benefits but also raising critical safety and societal concerns. In particular, open-weight MLLMs may be misused to extract…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
 **PIArena: A Platform for Prompt Injection Evaluation**  
 - **Date:** 2026-04-09
 - **Authors:** Runpeng Geng, Chenlong Yin, Yanting Wang et al.
@@ -91,20 +105,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Guy Azov, Ofer Rivlin, Guy Shtar
 - **Link:** https://arxiv.org/abs/2604.06247v1
 - **Security insight:** Large Language Models (LLMs) and Vision-Language Models (VLMs) remain highly vulnerable to textual and visual jailbreaks, as well as prompt injections (arXiv:2307.15043, Greshake et al., 2023, arXiv:2306.13213). Existing defenses often degrade performance…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**LLM-Enabled Open-Source Systems in the Wild: An Empirical Study of Vulnerabilities in GitHub Security Advisories**  
-- **Date:** 2026-04-05
-- **Authors:** Fariha Tanjim Shifat, Hariswar Baburaj, Ce Zhou et al.
-- **Link:** https://arxiv.org/abs/2604.04288v1
-- **Security insight:** Large language models (LLMs) are increasingly embedded in open-source software (OSS) ecosystems, creating complex interactions among natural language prompts, probabilistic model outputs, and execution-capable components. However, it remains unclear whether…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Automating Cloud Security and Forensics Through a Secure-by-Design Generative AI Framework**  
-- **Date:** 2026-04-05
-- **Authors:** Dalal Alharthi, Ivan Roberto Kawaminami Garcia
-- **Link:** https://arxiv.org/abs/2604.03912v1
-- **Security insight:** As cloud environments become increasingly complex, cybersecurity and forensic investigations must evolve to meet emerging threats. Large Language Models (LLMs) have shown promise in automating log analysis and reasoning tasks, yet they remain vulnerable to…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
