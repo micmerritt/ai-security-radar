@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-14 (UTC)
+
+Top items:
+
+- **Detecting Safety Violations Across Many Agent Traces** (2026-04-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.11806v1
+
+- **ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection** (2026-04-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.11790v1
+
+- **The Salami Slicing Threat: Exploiting Cumulative Risks in LLM Systems** (2026-04-13) [Adversarial ML]  
+  https://arxiv.org/abs/2604.11309v1
+
+- **RECIPER: A Dual-View Retrieval Pipeline for Procedure-Oriented Materials Question Answering** (2026-04-13) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2604.11229v1
+
+- **The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents** (2026-04-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.10577v1
+
+- **STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems** (2026-04-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.10286v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-13 (UTC)
 
 Top items:
