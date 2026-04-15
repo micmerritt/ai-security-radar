@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-15 (UTC)
+
+Top items:
+
+- **DeepSeek Robustness Against Semantic-Character Dual-Space Mutated Prompt Injection** (2026-04-14) [Prompt Injection]  
+  https://arxiv.org/abs/2604.12548v1
+
+- **Reading Between the Pixels: Linking Text-Image Embedding Alignment to Typographic Attack Success on Vision-Language Models** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.12371v1
+
+- **WebAgentGuard: A Reasoning-Driven Guard Model for Detecting Prompt Injection Attacks in Web Agents** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.12284v1
+
+- **TEMPLATEFUZZ: Fine-Grained Chat Template Fuzzing for Jailbreaking and Red Teaming LLMs** (2026-04-14) [Prompt Injection]  
+  https://arxiv.org/abs/2604.12232v1
+
+- **Fully Homomorphic Encryption on Llama 3 model for privacy preserving LLM inference** (2026-04-14) [Prompt Injection]  
+  https://arxiv.org/abs/2604.12168v1
+
+- **Detecting Safety Violations Across Many Agent Traces** (2026-04-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.11806v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-14 (UTC)
 
 Top items:
