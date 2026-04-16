@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-15**_
+_Last updated (UTC): **2026-04-16**_
 
 ## What this is
 
@@ -14,10 +14,17 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Can Agents Secure Hardware? Evaluating Agentic LLM-Driven Obfuscation for IP Protection**  
+- **Date:** 2026-04-14
+- **Authors:** Sujan Ghimire, Parsa Mirfasihi, Muhtasim Alam Chowdhury et al.
+- **Link:** https://arxiv.org/abs/2604.13298v1
+- **Security insight:** The globalization of integrated circuit (IC) design and manufacturing has increased the exposure of hardware intellectual property (IP) to untrusted stages of the supply chain, raising concerns about reverse engineering, piracy, tampering, and overbuilding.…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Reading Between the Pixels: Linking Text-Image Embedding Alignment to Typographic Attack Success on Vision-Language Models**  
 - **Date:** 2026-04-14
 - **Authors:** Ravikumar Balakrishnan, Sanket Mendapara, Ankit Garg
-- **Link:** https://arxiv.org/abs/2604.12371v1
+- **Link:** https://arxiv.org/abs/2604.12371v2
 - **Security insight:** We study typographic prompt injection attacks on vision-language models (VLMs), where adversarial text is rendered as images to bypass safety mechanisms, posing a growing threat as VLMs serve as the perceptual backbone of autonomous agents, from browser…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -63,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Model (LLM) agents are increasingly integrated into critical systems, leveraging external tools to interact with the real world. However, this capability exposes them to Indirect Prompt Injection (IPI), where attackers embed malicious…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning**  
-- **Date:** 2026-04-10
-- **Authors:** Guiyao Tie, Jiawen Shi, Pan Zhou et al.
-- **Link:** https://arxiv.org/abs/2604.09378v1
-- **Security insight:** Agent ecosystems increasingly rely on installable skills to extend functionality, and some skills bundle learned model artifacts as part of their execution logic. This creates a supply-chain risk that is not captured by prompt injection or ordinary plugin…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **DeepSeek Robustness Against Semantic-Character Dual-Space Mutated Prompt Injection**  
@@ -93,13 +93,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The applications of Generative Artificial Intelligence (GenAI) and their intersections with data-driven fields, such as healthcare, finance, transportation, and information security, have led to significant improvements in service efficiency and low latency.…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Leave My Images Alone: Preventing Multi-Modal Large Language Models from Analyzing Images via Visual Prompt Injection**  
-- **Date:** 2026-04-10
-- **Authors:** Zedian Shao, Hongbin Liu, Yuepeng Hu et al.
-- **Link:** https://arxiv.org/abs/2604.09024v1
-- **Security insight:** Multi-modal large language models (MLLMs) have emerged as powerful tools for analyzing Internet-scale image data, offering significant benefits but also raising critical safety and societal concerns. In particular, open-weight MLLMs may be misused to extract…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **RECIPER: A Dual-View Retrieval Pipeline for Procedure-Oriented Materials Question Answering**  
@@ -108,6 +101,15 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2604.11229v1
 - **Security insight:** Retrieving procedure-oriented evidence from materials science papers is difficult because key synthesis details are often scattered across long, context-heavy documents and are not well captured by paragraph-only dense retrieval. We present RECIPER, a dual-…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Model Extraction & Privacy
+
+**ATLAAS: Automatic Tensor-Level Abstraction of Accelerator Semantics**  
+- **Date:** 2026-04-15
+- **Authors:** Ruijie Gao, Haoran Jin, Jirong Yang et al.
+- **Link:** https://arxiv.org/abs/2604.13523v1
+- **Security insight:** Numerous tensor accelerator designs have been proposed, yet most lack well-documented ISAs and compiler backends, limiting evaluation to a handful of operators. Recent work has shown that given a tensor-level ISA specification, complete software stacks…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
 
