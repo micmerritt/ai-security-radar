@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-16**_
+_Last updated (UTC): **2026-04-17**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection**  
+- **Date:** 2026-04-16
+- **Authors:** Meng Chen, Kun Wang, Li Lu et al.
+- **Link:** https://arxiv.org/abs/2604.14604v1
+- **Security insight:** Modern Large audio-language models (LALMs) power intelligent voice interactions by tightly integrating audio and text. This integration, however, expands the attack surface beyond text and introduces vulnerabilities in the continuous, high-dimensional audio…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Can Agents Secure Hardware? Evaluating Agentic LLM-Driven Obfuscation for IP Protection**  
 - **Date:** 2026-04-14
@@ -61,13 +68,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Guijia Zhang, Shu Yang, Xilin Gong et al.
 - **Link:** https://arxiv.org/abs/2604.10286v1
 - **Security insight:** Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can expose capability surface before deployment, but it cannot determine whether a particular invocation is unsafe under the…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**PlanGuard: Defending Agents against Indirect Prompt Injection via Planning-based Consistency Verification**  
-- **Date:** 2026-04-11
-- **Authors:** Guangyu Gong, Zizhuang Deng
-- **Link:** https://arxiv.org/abs/2604.10134v1
-- **Security insight:** Large Language Model (LLM) agents are increasingly integrated into critical systems, leveraging external tools to interact with the real world. However, this capability exposes them to Indirect Prompt Injection (IPI), where attackers embed malicious…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
