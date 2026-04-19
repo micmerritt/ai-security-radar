@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-19 (UTC)
+
+Top items:
+
+- **Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection** (2026-04-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.14604v1
+
+- **ATLAAS: Automatic Tensor-Level Abstraction of Accelerator Semantics** (2026-04-15) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2604.13523v1
+
+- **Can Agents Secure Hardware? Evaluating Agentic LLM-Driven Obfuscation for IP Protection** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.13298v1
+
+- **DeepSeek Robustness Against Semantic-Character Dual-Space Mutated Prompt Injection** (2026-04-14) [Prompt Injection]  
+  https://arxiv.org/abs/2604.12548v1
+
+- **Reading Between the Pixels: Linking Text-Image Embedding Alignment to Typographic Attack Success on Vision-Language Models** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.12371v2
+
+- **WebAgentGuard: A Reasoning-Driven Guard Model for Detecting Prompt Injection Attacks in Web Agents** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.12284v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-18 (UTC)
 
 Top items:
