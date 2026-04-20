@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-20 (UTC)
+
+Top items:
+
+- **HarmfulSkillBench: How Do Harmful Skills Weaponize Your Agents?** (2026-04-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.15415v1
+
+- **Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection** (2026-04-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.14604v1
+
+- **ATLAAS: Automatic Tensor-Level Abstraction of Accelerator Semantics** (2026-04-15) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2604.13523v1
+
+- **LogJack: Indirect Prompt Injection Through Cloud Logs Against LLM Debugging Agents** (2026-04-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.15368v1
+
+- **Can Agents Secure Hardware? Evaluating Agentic LLM-Driven Obfuscation for IP Protection** (2026-04-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.13298v1
+
+- **DeepSeek Robustness Against Semantic-Character Dual-Space Mutated Prompt Injection** (2026-04-14) [Prompt Injection]  
+  https://arxiv.org/abs/2604.12548v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-19 (UTC)
 
 Top items:

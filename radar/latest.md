@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-19**_
+_Last updated (UTC): **2026-04-20**_
 
 ## What this is
 
@@ -14,11 +14,25 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**HarmfulSkillBench: How Do Harmful Skills Weaponize Your Agents?**  
+- **Date:** 2026-04-16
+- **Authors:** Yukun Jiang, Yage Zhang, Michael Backes et al.
+- **Link:** https://arxiv.org/abs/2604.15415v1
+- **Security insight:** Large language models (LLMs) have evolved into autonomous agents that rely on open skill ecosystems (e.g., ClawHub and Skills.Rest), hosting numerous publicly reusable skills. Existing security research on these ecosystems mainly focuses on vulnerabilities…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injection**  
 - **Date:** 2026-04-16
 - **Authors:** Meng Chen, Kun Wang, Li Lu et al.
 - **Link:** https://arxiv.org/abs/2604.14604v1
 - **Security insight:** Modern Large audio-language models (LALMs) power intelligent voice interactions by tightly integrating audio and text. This integration, however, expands the attack surface beyond text and introduces vulnerabilities in the continuous, high-dimensional audio…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**LogJack: Indirect Prompt Injection Through Cloud Logs Against LLM Debugging Agents**  
+- **Date:** 2026-04-15
+- **Authors:** Harsh Shah
+- **Link:** https://arxiv.org/abs/2604.15368v1
+- **Security insight:** LLM debugging agents that consume cloud logs and execute remediation commands are vulnerable to indirect prompt injection through log content. We present LogJack, a benchmark of 42 payloads across 5 cloud log categories, and evaluate 8 foundation models under…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Can Agents Secure Hardware? Evaluating Agentic LLM-Driven Obfuscation for IP Protection**  
@@ -54,20 +68,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Wei Zhao, Zhe Li, Peixin Zhang et al.
 - **Link:** https://arxiv.org/abs/2604.11790v1
 - **Security insight:** Tool-augmented Large Language Model (LLM) agents have demonstrated impressive capabilities in automating complex, multi-step real-world tasks, yet remain vulnerable to indirect prompt injection. Adversaries exploit this weakness by embedding malicious…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents**  
-- **Date:** 2026-04-12
-- **Authors:** Xuwei Ding, Skylar Zhai, Linxin Song et al.
-- **Link:** https://arxiv.org/abs/2604.10577v1
-- **Security insight:** Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically. Existing safety evaluations largely target explicit threats such as…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems**  
-- **Date:** 2026-04-11
-- **Authors:** Guijia Zhang, Shu Yang, Xilin Gong et al.
-- **Link:** https://arxiv.org/abs/2604.10286v1
-- **Security insight:** Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can expose capability surface before deployment, but it cannot determine whether a particular invocation is unsafe under the…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
