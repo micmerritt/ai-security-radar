@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-22**_
+_Last updated (UTC): **2026-04-23**_
 
 ## What this is
 
@@ -19,6 +19,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Robert Stanley, Avi Verma, Lillian Tsai et al.
 - **Link:** https://arxiv.org/abs/2604.19657v1
 - **Security insight:** AI agents promise to serve as general-purpose personal assistants for their users, which requires them to have access to private user data (e.g., personal and financial information). This poses a serious risk to security and privacy. Adversaries may attack…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**If you're waiting for a sign... that might not be it! Mitigating Trust Boundary Confusion from Visual Injections on Vision-Language Agentic Systems**  
+- **Date:** 2026-04-21
+- **Authors:** Jiamin Chang, Minhui Xue, Ruoxi Sun et al.
+- **Link:** https://arxiv.org/abs/2604.19844v1
+- **Security insight:** Recent advances in embodied Vision-Language Agentic Systems (VLAS), powered by large vision-language models (LVLMs), enable AI systems to perceive and reason over real-world scenes. Within this context, environmental signals such as traffic lights are…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Towards Optimal Agentic Architectures for Offensive Security Tasks**  
@@ -91,19 +98,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The evolution from static ranking models to Agentic Recommender Systems (Agentic RecSys) empowers AI agents to maintain long-term user profiles and autonomously plan service tasks. While this paradigm shift enhances personalization, it introduces a…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**enclawed: A Configurable, Sector-Neutral Hardening Framework for Single-User AI Assistant Gateways**  
-- **Date:** 2026-04-18
-- **Authors:** Alfredo Metere
-- **Link:** https://arxiv.org/abs/2604.16838v1
-- **Security insight:** We present enclawed, a hard-fork hardening framework built on top of the OpenClaw single-user personal artificial intelligence (AI) assistant gateway. enclawed targets deployments that need attestable peer trust, deny-by-default external connectivity, signed-…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+### Prompt Injection
 
-**CapSeal: Capability-Sealed Secret Mediation for Secure Agent Execution**  
-- **Date:** 2026-04-18
-- **Authors:** Shutong Jin, Ruiyi Guo, Ray C. C. Cheung
-- **Link:** https://arxiv.org/abs/2604.16762v1
-- **Security insight:** Modern AI agents routinely depend on secrets such as API keys and SSH credentials, yet the dominant deployment model still exposes those secrets directly to the agent process through environment variables, local files, or forwarding sockets. This design fails…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+**Anchor-and-Resume Concession Under Dynamic Pricing for LLM-Augmented Freight Negotiation**  
+- **Date:** 2026-04-22
+- **Authors:** Hoang Nguyen, Lu Wang, Marta Gaia Bras
+- **Link:** https://arxiv.org/abs/2604.20732v1
+- **Security insight:** Freight brokerages negotiate thousands of carrier rates daily under dynamic pricing conditions where models frequently revise targets mid-conversation. Classical time-dependent concession frameworks use a fixed shape parameter $β$ that cannot adapt to these…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### Poisoning & Backdoors
 
