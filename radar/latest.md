@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-23**_
+_Last updated (UTC): **2026-04-24**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Breaking MCP with Function Hijacking Attacks: Novel Threats for Function Calling and Agentic Models**  
+- **Date:** 2026-04-22
+- **Authors:** Yannis Belkhiter, Giulio Zizzo, Sergio Maffeis et al.
+- **Link:** https://arxiv.org/abs/2604.20994v1
+- **Security insight:** The growth of agentic AI has drawn significant attention to function calling Large Language Models (LLMs), which are designed to extend the capabilities of AI-powered system by invoking external functions. Injection and jailbreaking attacks have been…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **An AI Agent Execution Environment to Safeguard User Data**  
 - **Date:** 2026-04-21
@@ -89,13 +96,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Zeng Wang, Minghao Shao, Weimin Fu et al.
 - **Link:** https://arxiv.org/abs/2604.17093v1
 - **Security insight:** The integration of large language models (LLMs) into electronic design automation (EDA) workflows has introduced powerful capabilities for RTL generation, verification, and design optimization, but also raises critical security concerns. Malicious LLM outputs…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Visual Inception: Compromising Long-term Planning in Agentic Recommenders via Multimodal Memory Poisoning**  
-- **Date:** 2026-04-18
-- **Authors:** Jiachen Qian
-- **Link:** https://arxiv.org/abs/2604.16966v1
-- **Security insight:** The evolution from static ranking models to Agentic Recommender Systems (Agentic RecSys) empowers AI agents to maintain long-term user profiles and autonomously plan service tasks. While this paradigm shift enhances personalization, it introduces a…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
