@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-26 (UTC)
+
+Top items:
+
+- **Breaking MCP with Function Hijacking Attacks: Novel Threats for Function Calling and Agentic Models** (2026-04-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.20994v1
+
+- **Anchor-and-Resume Concession Under Dynamic Pricing for LLM-Augmented Freight Negotiation** (2026-04-22) [Prompt Injection]  
+  https://arxiv.org/abs/2604.20732v1
+
+- **An AI Agent Execution Environment to Safeguard User Data** (2026-04-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.19657v1
+
+- **If you're waiting for a sign... that might not be it! Mitigating Trust Boundary Confusion from Visual Injections on Vision-Language Agentic Systems** (2026-04-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.19844v1
+
+- **Towards Optimal Agentic Architectures for Offensive Security Tasks** (2026-04-20) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.18718v1
+
+- **TrEEStealer: Stealing Decision Trees via Enclave Side Channels** (2026-04-20) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2604.18716v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-25 (UTC)
 
 Top items:
