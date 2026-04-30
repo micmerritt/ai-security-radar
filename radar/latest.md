@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-04-27**_
+_Last updated (UTC): **2026-04-30**_
 
 ## What this is
 
@@ -14,104 +14,106 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
-**Breaking MCP with Function Hijacking Attacks: Novel Threats for Function Calling and Agentic Models**  
-- **Date:** 2026-04-22
-- **Authors:** Yannis Belkhiter, Giulio Zizzo, Sergio Maffeis et al.
-- **Link:** https://arxiv.org/abs/2604.20994v1
-- **Security insight:** The growth of agentic AI has drawn significant attention to function calling Large Language Models (LLMs), which are designed to extend the capabilities of AI-powered system by invoking external functions. Injection and jailbreaking attacks have been…
+**Enforcing Benign Trajectories: A Behavioral Firewall for Structured-Workflow AI Agents**  
+- **Date:** 2026-04-29
+- **Authors:** Hung Dang
+- **Link:** https://arxiv.org/abs/2604.26274v1
+- **Security insight:** Structured-workflow agents driven by large language models execute tool calls against sensitive external environments. We propose \codename, a telemetry-driven behavioral anomaly detection firewall. Drawing on sequence-based intrusion detection, \codename\…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**An AI Agent Execution Environment to Safeguard User Data**  
-- **Date:** 2026-04-21
-- **Authors:** Robert Stanley, Avi Verma, Lillian Tsai et al.
-- **Link:** https://arxiv.org/abs/2604.19657v1
-- **Security insight:** AI agents promise to serve as general-purpose personal assistants for their users, which requires them to have access to private user data (e.g., personal and financial information). This poses a serious risk to security and privacy. Adversaries may attack…
+**SnapGuard: Lightweight Prompt Injection Detection for Screenshot-Based Web Agents**  
+- **Date:** 2026-04-28
+- **Authors:** Mengyao Du, Han Fang, Haokai Ma et al.
+- **Link:** https://arxiv.org/abs/2604.25562v1
+- **Security insight:** Web agents have emerged as an effective paradigm for automating interactions with complex web environments, yet remain vulnerable to prompt injection attacks that embed malicious instructions into webpage content to induce unintended actions. This threat is…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**If you're waiting for a sign... that might not be it! Mitigating Trust Boundary Confusion from Visual Injections on Vision-Language Agentic Systems**  
-- **Date:** 2026-04-21
-- **Authors:** Jiamin Chang, Minhui Xue, Ruoxi Sun et al.
-- **Link:** https://arxiv.org/abs/2604.19844v1
-- **Security insight:** Recent advances in embodied Vision-Language Agentic Systems (VLAS), powered by large vision-language models (LVLMs), enable AI systems to perceive and reason over real-world scenes. Within this context, environmental signals such as traffic lights are…
+**FCMBench-Video: Benchmarking Document Video Intelligence**  
+- **Date:** 2026-04-28
+- **Authors:** Runze Cui, Fangxin Shang, Yehui Yang et al.
+- **Link:** https://arxiv.org/abs/2604.25186v1
+- **Security insight:** Document understanding is a critical capability in financial credit review, onboarding, and remote verification, where both decision accuracy and evidence traceability matter. Compared with static document images, document videos present a temporally…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Towards Optimal Agentic Architectures for Offensive Security Tasks**  
-- **Date:** 2026-04-20
-- **Authors:** Isaac David, Arthur Gervais
-- **Link:** https://arxiv.org/abs/2604.18718v1
-- **Security insight:** Agentic security systems increasingly audit live targets with tool-using LLMs, but prior systems fix a single coordination topology, leaving unclear when additional agents help and when they only add cost. We treat topology choice as an empirical systems…
+**One Perturbation, Two Failure Modes: Probing VLM Safety via Embedding-Guided Typographic Perturbations**  
+- **Date:** 2026-04-28
+- **Authors:** Ravikumar Balakrishnan, Sanket Mendapara
+- **Link:** https://arxiv.org/abs/2604.25102v1
+- **Security insight:** Typographic prompt injection exploits vision language models' (VLMs) ability to read text rendered in images, posing a growing threat as VLMs power autonomous agents. Prior work typically focus on maximizing attack success rate (ASR) but does not explain…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Different Paths to Harmful Compliance: Behavioral Side Effects and Mechanistic Divergence Across LLM Jailbreaks**  
-- **Date:** 2026-04-20
-- **Authors:** Md Rysul Kabir, Zoran Tiganj
-- **Link:** https://arxiv.org/abs/2604.18510v1
-- **Security insight:** Open-weight language models can be rendered unsafe through several distinct interventions, but the resulting models may differ substantially in capabilities, behavioral profile, and internal failure mode. We study behavioral and mechanistic properties of…
+**SUDP: Secret-Use Delegation Protocol for Agentic Systems**  
+- **Date:** 2026-04-27
+- **Authors:** Xiaohang Yu, Hejia Geng, William Knottenbelt
+- **Link:** https://arxiv.org/abs/2604.24920v1
+- **Security insight:** Agentic systems increasingly act with user secrets for APIs, messaging platforms, and cloud services. Today's bearer-secret interfaces implement authorization by exposure: enabling action often means placing a reusable secret, or a reusable artifact derived…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Beyond Pattern Matching: Seven Cross-Domain Techniques for Prompt Injection Detection**  
-- **Date:** 2026-04-20
-- **Authors:** Thamilvendhan Munirathinam
-- **Link:** https://arxiv.org/abs/2604.18248v1
-- **Security insight:** Current open-source prompt-injection detectors converge on two architectural choices: regular-expression pattern matching and fine-tuned transformer classifiers. Both share failure modes that recent work has made concrete. Regular expressions miss paraphrased…
+**A Comparative Evaluation of AI Agent Security Guardrails**  
+- **Date:** 2026-04-27
+- **Authors:** Qi Li, Jiu Li, Pingtao Wei et al.
+- **Link:** https://arxiv.org/abs/2604.24826v1
+- **Security insight:** This report presents a comparative evaluation of DKnownAI Guard in AI agent security scenarios, benchmarked against three competing products: AWS Bedrock Guardrails, Azure Content Safety, and Lakera Guard. Using human annotation as the ground truth, we assess…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**A Control Architecture for Training-Free Memory Use**  
-- **Date:** 2026-04-20
-- **Authors:** Yanzhen Lu, Muchen Jiang, Zhicheng Qian et al.
-- **Link:** https://arxiv.org/abs/2604.18206v1
-- **Security insight:** Prompt-injected memory can improve reasoning without updating model weights, but it also creates a control problem: retrieved content helps only when it is applied in the right state. We study this problem in a strict training-free setting and formulate it as…
+**AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization**  
+- **Date:** 2026-04-27
+- **Authors:** Zonghao Ying, Haozheng Wang, Jiangfan Liu et al.
+- **Link:** https://arxiv.org/abs/2604.24118v1
+- **Security insight:** Large Language Model (LLM) agents are increasingly used to automate complex workflows, but integrating untrusted external data with privileged execution exposes them to severe security risks, particularly direct and indirect prompt injection. Existing…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Owner-Harm: A Missing Threat Model for AI Agent Safety**  
-- **Date:** 2026-04-20
-- **Authors:** Dongcheng Zhang, Yiqing Jiang
-- **Link:** https://arxiv.org/abs/2604.18658v1
-- **Security insight:** Existing AI agent safety benchmarks focus on generic criminal harm (cybercrime, harassment, weapon synthesis), leaving a systematic blind spot for a distinct and commercially consequential threat category: agents harming their own deployers. Real-world…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**SafeAgent: A Runtime Protection Architecture for Agentic Systems**  
-- **Date:** 2026-04-19
-- **Authors:** Hailin Liu, Eugene Ilyushin, Jie Ni et al.
-- **Link:** https://arxiv.org/abs/2604.17562v1
-- **Security insight:** Large language model (LLM) agents are vulnerable to prompt-injection attacks that propagate through multi-step workflows, tool interactions, and persistent context, making input-output filtering alone insufficient for reliable protection. This paper presents…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The Consensus Trap: Rescuing Multi-Agent LLMs from Adversarial Majorities via Token-Level Collaboration**  
-- **Date:** 2026-04-18
-- **Authors:** Jiayuan Liu, Shiyi Du, Weihua Du et al.
-- **Link:** https://arxiv.org/abs/2604.17139v1
-- **Security insight:** Multi-agent large language model (LLM) architectures increasingly rely on response-level aggregation, such as Majority Voting (MAJ), to raise reasoning ceilings. However, in open environments, agents are highly susceptible to stealthy contextual corruption,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**CASCADE: A Cascaded Hybrid Defense Architecture for Prompt Injection Detection in MCP-Based Systems**  
-- **Date:** 2026-04-18
-- **Authors:** İpek Abasıkeleş Turgut, Edip Gümüş
-- **Link:** https://arxiv.org/abs/2604.17125v1
-- **Security insight:** Model Context Protocol (MCP) is a rapidly adopted standard for defining and invoking external tools in LLM applications. The multi-layered architecture of MCP introduces new attack surfaces such as tool poisoning, in addition to traditional prompt injection.…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**HarmChip: Evaluating Hardware Security Centric LLM Safety via Jailbreak Benchmarking**  
-- **Date:** 2026-04-18
-- **Authors:** Zeng Wang, Minghao Shao, Weimin Fu et al.
-- **Link:** https://arxiv.org/abs/2604.17093v1
-- **Security insight:** The integration of large language models (LLMs) into electronic design automation (EDA) workflows has introduced powerful capabilities for RTL generation, verification, and design optimization, but also raises critical security concerns. Malicious LLM outputs…
+**Poster: ClawdGo: Endogenous Security Awareness Training for Autonomous AI Agents**  
+- **Date:** 2026-04-27
+- **Authors:** Jiaqi Li, Yang Zhao, Bin Sun et al.
+- **Link:** https://arxiv.org/abs/2604.24020v1
+- **Security insight:** Autonomous AI agents deployed on platforms such as OpenClaw face prompt injection, memory poisoning, supply-chain attacks, and social engineering, yet existing defences address only the platform perimeter, leaving the agent's own threat judgement entirely…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
 
-**Anchor-and-Resume Concession Under Dynamic Pricing for LLM-Augmented Freight Negotiation**  
-- **Date:** 2026-04-22
-- **Authors:** Hoang Nguyen, Lu Wang, Marta Gaia Bras
-- **Link:** https://arxiv.org/abs/2604.20732v1
-- **Security insight:** Freight brokerages negotiate thousands of carrier rates daily under dynamic pricing conditions where models frequently revise targets mid-conversation. Classical time-dependent concession frameworks use a fixed shape parameter $β$ that cannot adapt to these…
+**Making AI-Assisted Grant Evaluation Auditable without Exposing the Model**  
+- **Date:** 2026-04-28
+- **Authors:** Kemal Bicakci
+- **Link:** https://arxiv.org/abs/2604.25200v1
+- **Security insight:** Public agencies are beginning to consider large language models (LLMs) as decision-support tools for grant evaluation. This creates a practical governance problem: the model and scoring rubric should not be exposed in a way that allows applicants to optimize…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-### Poisoning & Backdoors
+**Layerwise Convergence Fingerprints for Runtime Misbehavior Detection in Large Language Models**  
+- **Date:** 2026-04-27
+- **Authors:** Nay Myat Min, Long H. Pham, Jun Sun
+- **Link:** https://arxiv.org/abs/2604.24542v1
+- **Security insight:** Large language models deployed at runtime can misbehave in ways that clean-data validation cannot anticipate: training-time backdoors lie dormant until triggered, jailbreaks subvert safety alignment, and prompt injections override the deployer's instructions.…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**TrEEStealer: Stealing Decision Trees via Enclave Side Channels**  
-- **Date:** 2026-04-20
-- **Authors:** Jonas Sander, Anja Rabich, Nick Mahling et al.
-- **Link:** https://arxiv.org/abs/2604.18716v1
-- **Security insight:** Today, machine learning is widely applied in sensitive, security-related, and financially lucrative applications. Model extraction attacks undermine current business models where a model owner sells model access, e.g., via MLaaS APIs. Additionally, stolen…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
+**Evaluation of Prompt Injection Defenses in Large Language Models**  
+- **Date:** 2026-04-26
+- **Authors:** Priyal Deep, Shane Emmons, Amy Fox et al.
+- **Link:** https://arxiv.org/abs/2604.23887v1
+- **Security insight:** LLM-powered applications routinely embed secrets in system prompts, yet models can be tricked into revealing them. We built an adaptive attacker that evolves its strategies over hundreds of rounds and tested it against nine defense configurations across more…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+### RAG & Retrieval Attacks
+
+**Adaptive Prompt Embedding Optimization for LLM Jailbreaking**  
+- **Date:** 2026-04-27
+- **Authors:** Miles Q. Li, Benjamin C. M. Fung, Boyang Li et al.
+- **Link:** https://arxiv.org/abs/2604.24983v1
+- **Security insight:** Existing white-box jailbreak attacks against aligned LLMs typically append discrete adversarial suffixes to the user prompt, which visibly alters the prompt and operates in a combinatorial token space. Prior work has avoided directly optimizing the embeddings…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+**Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms**  
+- **Date:** 2026-04-26
+- **Authors:** Qi Li, Bo Yin, Weiqi Huang et al.
+- **Link:** https://arxiv.org/abs/2604.23775v1
+- **Security insight:** Vision-Language-Action (VLA) models are emerging as a unified substrate for embodied intelligence. This shift raises a new class of safety challenges, stemming from the embodied nature of VLA systems, including irreversible physical consequences, a multimodal…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Adversarial ML
+
+**High-Probability Guarantees for Random Zeroth-Order (Stochastic) Gradient Descent**  
+- **Date:** 2026-04-26
+- **Authors:** Haishan Ye
+- **Link:** https://arxiv.org/abs/2604.23613v1
+- **Security insight:** Zeroth-order optimization aims to minimize an objective function using only function evaluations, and is therefore fundamental in black-box optimization, hyperparameter tuning, bandit learning, and adversarial machine learning. While classical zeroth-order…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.

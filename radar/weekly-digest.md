@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-04-30 (UTC)
+
+Top items:
+
+- **Enforcing Benign Trajectories: A Behavioral Firewall for Structured-Workflow AI Agents** (2026-04-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.26274v1
+
+- **SnapGuard: Lightweight Prompt Injection Detection for Screenshot-Based Web Agents** (2026-04-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.25562v1
+
+- **Making AI-Assisted Grant Evaluation Auditable without Exposing the Model** (2026-04-28) [Prompt Injection]  
+  https://arxiv.org/abs/2604.25200v1
+
+- **FCMBench-Video: Benchmarking Document Video Intelligence** (2026-04-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.25186v1
+
+- **One Perturbation, Two Failure Modes: Probing VLM Safety via Embedding-Guided Typographic Perturbations** (2026-04-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.25102v1
+
+- **Adaptive Prompt Embedding Optimization for LLM Jailbreaking** (2026-04-27) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2604.24983v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-04-27 (UTC)
 
 Top items:
