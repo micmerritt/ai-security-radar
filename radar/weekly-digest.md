@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-02 (UTC)
+
+Top items:
+
+- **FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption** (2026-04-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.28157v1
+
+- **Latent Adversarial Detection: Adaptive Probing of LLM Activations for Multi-Turn Attack Detection** (2026-04-30) [Prompt Injection]  
+  https://arxiv.org/abs/2604.28129v1
+
+- **How Code Representation Shapes False-Positive Dynamics in Cross-Language LLM Vulnerability Detection** (2026-04-30) [Other (Review)]  
+  https://arxiv.org/abs/2604.27714v1
+
+- **Security Attack and Defense Strategies for Autonomous Agent Frameworks: A Layered Review with OpenClaw as a Case Study** (2026-04-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.27464v1
+
+- **Indirect Prompt Injection in the Wild: An Empirical Study of Prevalence, Techniques, and Objectives** (2026-04-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.27202v1
+
+- **Enforcing Benign Trajectories: A Behavioral Firewall for Structured-Workflow AI Agents** (2026-04-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.26274v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-01 (UTC)
 
 Top items:
