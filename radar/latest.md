@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-02**_
+_Last updated (UTC): **2026-05-04**_
 
 ## What this is
 
@@ -14,11 +14,25 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Self-Adaptive Multi-Agent LLM-Based Security Pattern Selection for IoT Systems**  
+- **Date:** 2026-05-01
+- **Authors:** Saeid Jamshidi, Foutse Khomh, Carol Fung et al.
+- **Link:** https://arxiv.org/abs/2605.00741v1
+- **Security insight:** The adoption of Internet of Things (IoT) systems at the network edge of smart architectures is increasing rapidly, intensifying the need for security mechanisms that are both adaptive and resource-efficient. In such environments, runtime defence mechanisms…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption**  
 - **Date:** 2026-04-30
 - **Authors:** Yanting Wang, Chenlong Yin, Ying Chen et al.
 - **Link:** https://arxiv.org/abs/2604.28157v1
 - **Security insight:** Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants. However, security remains a major concern…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Alignment Contracts for Agentic Security Systems**  
+- **Date:** 2026-04-30
+- **Authors:** Isaac David, Marco Guarnieri, Arthur Gervais
+- **Link:** https://arxiv.org/abs/2605.00081v1
+- **Security insight:** Agentic security systems increasingly combine LLM planners with tools that can discover, validate, and report vulnerabilities. This creates an asymmetric control problem: the system should retain strong offensive capability inside an authorized engagement,…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Security Attack and Defense Strategies for Autonomous Agent Frameworks: A Layered Review with OpenClaw as a Case Study**  
@@ -63,21 +77,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Typographic prompt injection exploits vision language models' (VLMs) ability to read text rendered in images, posing a growing threat as VLMs power autonomous agents. Prior work typically focus on maximizing attack success rate (ASR) but does not explain…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**SUDP: Secret-Use Delegation Protocol for Agentic Systems**  
-- **Date:** 2026-04-27
-- **Authors:** Xiaohang Yu, Hejia Geng, William Knottenbelt
-- **Link:** https://arxiv.org/abs/2604.24920v1
-- **Security insight:** Agentic systems increasingly act with user secrets for APIs, messaging platforms, and cloud services. Today's bearer-secret interfaces implement authorization by exposure: enabling action often means placing a reusable secret, or a reusable artifact derived…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**A Comparative Evaluation of AI Agent Security Guardrails**  
-- **Date:** 2026-04-27
-- **Authors:** Qi Li, Jiu Li, Pingtao Wei et al.
-- **Link:** https://arxiv.org/abs/2604.24826v1
-- **Security insight:** This report presents a comparative evaluation of DKnownAI Guard in AI agent security scenarios, benchmarked against three competing products: AWS Bedrock Guardrails, Azure Content Safety, and Lakera Guard. Using human annotation as the ground truth, we assess…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**CleanBase: Detecting Malicious Documents in RAG Knowledge Databases**  
+- **Date:** 2026-05-01
+- **Authors:** Weifei Jin, Xilong Wang, Wei Zou et al.
+- **Link:** https://arxiv.org/abs/2605.00460v1
+- **Security insight:** Retrieval-augmented generation (RAG) is vulnerable to prompt injection attacks, in which an adversary inserts malicious documents containing carefully crafted injected prompts into the knowledge database. When a user issues a question targeted by the attack,…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Latent Adversarial Detection: Adaptive Probing of LLM Activations for Multi-Turn Attack Detection**  
 - **Date:** 2026-04-30
@@ -100,13 +107,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Tosin Adewumi, Martin Karlsson, Lama Alkhaled et al.
 - **Link:** https://arxiv.org/abs/2604.26986v1
 - **Security insight:** We introduce a novel task of digital battery passport (DBP) conformance classification and introduce the first public benchmark for the task: BatteryPass-12K, created synthetically from real pilot samples. This is as the EU's battery regulation on DBPs comes…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-**Adaptive Prompt Embedding Optimization for LLM Jailbreaking**  
-- **Date:** 2026-04-27
-- **Authors:** Miles Q. Li, Benjamin C. M. Fung, Boyang Li et al.
-- **Link:** https://arxiv.org/abs/2604.24983v1
-- **Security insight:** Existing white-box jailbreak attacks against aligned LLMs typically append discrete adversarial suffixes to the user prompt, which visibly alters the prompt and operates in a combinatorial token space. Prior work has avoided directly optimizing the embeddings…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Other (Review)

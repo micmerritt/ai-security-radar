@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-04 (UTC)
+
+Top items:
+
+- **Self-Adaptive Multi-Agent LLM-Based Security Pattern Selection for IoT Systems** (2026-05-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.00741v1
+
+- **CleanBase: Detecting Malicious Documents in RAG Knowledge Databases** (2026-05-01) [Prompt Injection]  
+  https://arxiv.org/abs/2605.00460v1
+
+- **FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption** (2026-04-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2604.28157v1
+
+- **Latent Adversarial Detection: Adaptive Probing of LLM Activations for Multi-Turn Attack Detection** (2026-04-30) [Prompt Injection]  
+  https://arxiv.org/abs/2604.28129v1
+
+- **Alignment Contracts for Agentic Security Systems** (2026-04-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.00081v1
+
+- **How Code Representation Shapes False-Positive Dynamics in Cross-Language LLM Vulnerability Detection** (2026-04-30) [Other (Review)]  
+  https://arxiv.org/abs/2604.27714v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-02 (UTC)
 
 Top items:
