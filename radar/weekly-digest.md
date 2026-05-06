@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-06 (UTC)
+
+Top items:
+
+- **Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours** (2026-05-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.04019v1
+
+- **ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection** (2026-05-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.03378v1
+
+- **When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI** (2026-05-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.03213v1
+
+- **PIIGuard: Mitigating PII Harvesting under Adversarial Sanitization** (2026-05-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.03129v1
+
+- **Tool Use as Action: Towards Agentic Control in Mobile Core Networks** (2026-05-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.02811v1
+
+- **When Alignment Isn't Enough: Response-Path Attacks on LLM Agents** (2026-05-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.02187v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-04 (UTC)
 
 Top items:
