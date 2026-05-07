@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-07 (UTC)
+
+Top items:
+
+- **SoK: Robustness in Large Language Models against Jailbreak Attacks** (2026-05-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2605.05058v1
+
+- **DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents** (2026-05-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.04808v1
+
+- **Laundering AI Authority with Adversarial Examples** (2026-05-05) [Prompt Injection]  
+  https://arxiv.org/abs/2605.04261v1
+
+- **Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours** (2026-05-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.04019v1
+
+- **ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection** (2026-05-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.03378v1
+
+- **When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI** (2026-05-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.03213v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-06 (UTC)
 
 Top items:

@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-06**_
+_Last updated (UTC): **2026-05-07**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents**  
+- **Date:** 2026-05-06
+- **Authors:** Zhaorun Chen, Xun Liu, Haibo Tong et al.
+- **Link:** https://arxiv.org/abs/2605.04808v1
+- **Security insight:** AI agents are increasingly deployed across diverse domains to automate complex workflows through long-horizon and high-stakes action executions. Due to their high capability and flexibility, such agents raise significant security and safety concerns. A…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours**  
 - **Date:** 2026-05-05
@@ -70,14 +77,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Model (LLM)-powered agents demonstrate strong capabilities in autonomous task execution, tool use, and multi-step reasoning. However, their increasing autonomy also introduces a new attack surface: adversarial interactions can manipulate agent…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Self-Adaptive Multi-Agent LLM-Based Security Pattern Selection for IoT Systems**  
-- **Date:** 2026-05-01
-- **Authors:** Saeid Jamshidi, Foutse Khomh, Carol Fung et al.
-- **Link:** https://arxiv.org/abs/2605.00741v1
-- **Security insight:** The adoption of Internet of Things (IoT) systems at the network edge of smart architectures is increasing rapidly, intensifying the need for security mechanisms that are both adaptive and resource-efficient. In such environments, runtime defence mechanisms…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Laundering AI Authority with Adversarial Examples**  
+- **Date:** 2026-05-05
+- **Authors:** Jie Zhang, Pura Peetathawatchai, Florian Tramèr et al.
+- **Link:** https://arxiv.org/abs/2605.04261v1
+- **Security insight:** Vision-language models (VLMs) are increasingly deployed as trusted authorities -- fact-checking images on social media, comparing products, and moderating content. Users implicitly trust that these systems perceive the same visual content as they do. We show…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **LocalAlign: Enabling Generalizable Prompt Injection Defense via Generation of Near-Target Adversarial Examples for Alignment Training**  
 - **Date:** 2026-05-02
@@ -86,20 +93,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language models are increasingly embedded into systems that interact with user data, retrieved web content, and external tools, creating a new attack surface: prompt injection, where malicious commands embedded in untrusted data override the trusted…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**CleanBase: Detecting Malicious Documents in RAG Knowledge Databases**  
-- **Date:** 2026-05-01
-- **Authors:** Weifei Jin, Xilong Wang, Wei Zou et al.
-- **Link:** https://arxiv.org/abs/2605.00460v1
-- **Security insight:** Retrieval-augmented generation (RAG) is vulnerable to prompt injection attacks, in which an adversary inserts malicious documents containing carefully crafted injected prompts into the knowledge database. When a user issues a question targeted by the attack,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
-**SRTJ: Self-Evolving Rule-Driven Training-Free LLM Jailbreaking**  
-- **Date:** 2026-05-01
-- **Authors:** Jindong Li, Ying Liu, Yali Fu et al.
-- **Link:** https://arxiv.org/abs/2605.00974v1
-- **Security insight:** LLMs are increasingly equipped with safety alignment mechanisms, yet recent studies demonstrate that they remain vulnerable to jailbreaking attacks that elicit harmful behaviors without explicit policy violations. While a growing body of work has explored…
+**SoK: Robustness in Large Language Models against Jailbreak Attacks**  
+- **Date:** 2026-05-06
+- **Authors:** Feiyue Xu, Hongsheng Hu, Chaoxiang He et al.
+- **Link:** https://arxiv.org/abs/2605.05058v1
+- **Security insight:** Large Language Models (LLMs) have achieved remarkable success but remain highly susceptible to jailbreak attacks, in which adversarial prompts coerce models into generating harmful, unethical, or policy-violating outputs. Such attacks pose real-world risks,…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Adversarial ML
