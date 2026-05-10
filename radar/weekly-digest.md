@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-10 (UTC)
+
+Top items:
+
+- **Constraining Host-Level Abuse in Self-Hosted Computer-Use Agents via TEE-Backed Isolation** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.06393v1
+
+- **Heimdallr: Characterizing and Detecting LLM-Induced Security Risks in GitHub CI Workflows** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05969v1
+
+- **PersonaTeaming: Supporting Persona-Driven Red-Teaming for Generative AI** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05682v1
+
+- **WAAA! Web Adversaries Against Agentic Browsers** (2026-05-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05509v1
+
+- **Authorization Propagation in Multi-Agent AI Systems: Identity Governance as Infrastructure** (2026-05-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05440v1
+
+- **SoK: Robustness in Large Language Models against Jailbreak Attacks** (2026-05-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2605.05058v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-09 (UTC)
 
 Top items:
