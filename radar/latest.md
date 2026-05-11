@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-10**_
+_Last updated (UTC): **2026-05-11**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Towards Security-Auditable LLM Agents: A Unified Graph Representation**  
+- **Date:** 2026-05-07
+- **Authors:** Chaofan Li, Lyuye Zhang, Jintao Zhai et al.
+- **Link:** https://arxiv.org/abs/2605.06812v1
+- **Security insight:** LLM-based agentic systems are rapidly evolving to perform complex autonomous tasks through dynamic tool invocation, stateful memory management, and multi-agent collaboration. However, this semantics-driven execution paradigm creates a severe semantic gap…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Constraining Host-Level Abuse in Self-Hosted Computer-Use Agents via TEE-Backed Isolation**  
 - **Date:** 2026-05-07
@@ -33,6 +40,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Wesley Hanwen Deng, Mingxi Yan, Sunnie S. Y. Kim et al.
 - **Link:** https://arxiv.org/abs/2605.05682v1
 - **Security insight:** Recent developments in AI safety research have called for red-teaming methods that effectively surface potential risks posed by generative AI models, with growing emphasis on how red-teamers' backgrounds and perspectives shape their strategies and the risks…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Agentic AI and the Industrialization of Cyber Offense: Forecast, Consequences, and Defensive Priorities for Enterprises and the Mittelstand**  
+- **Date:** 2026-05-06
+- **Authors:** Christopher Koch
+- **Link:** https://arxiv.org/abs/2605.06713v1
+- **Security insight:** Agentic AI systems can plan, call tools, inspect code, interact with web applications, and coordinate multi-step workflows. These same capabilities change the economics of cyber offense. The central near-term risk is not that every low-skill criminal…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **WAAA! Web Adversaries Against Agentic Browsers**  
@@ -70,35 +84,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** AI systems are entering critical domains like healthcare, finance, and defense, yet remain vulnerable to adversarial attacks. While AI red teaming is a primary defense, current approaches force operators into manual, library-specific workflows. Operators…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection**  
-- **Date:** 2026-05-05
-- **Authors:** Shihao Weng, Yang Feng, Jinrui Zhang et al.
-- **Link:** https://arxiv.org/abs/2605.03378v1
-- **Security insight:** The rise of Large Language Model (LLM) agents, augmented with tool use, skills, and external knowledge, has introduced new security risks. Among them, prompt injection attacks, where adversaries embed malicious instructions into the agent workflow, have…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI**  
-- **Date:** 2026-05-04
-- **Authors:** Javad Forough, Marios Kogias, Hamed Haddadi
-- **Link:** https://arxiv.org/abs/2605.03213v2
-- **Security insight:** Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs materially from standalone model inference.…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**PIIGuard: Mitigating PII Harvesting under Adversarial Sanitization**  
-- **Date:** 2026-05-04
-- **Authors:** Mingshuo Liu, Yiwei Zha, Min Chen
-- **Link:** https://arxiv.org/abs/2605.03129v1
-- **Security insight:** Browsing-enabled LLM assistants can fetch webpages and answer contact-seeking queries, creating a practical channel for scraping contact-style personally identifiable information (PII) from public pages. Many prior defenses are deployed at the model, service,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Tool Use as Action: Towards Agentic Control in Mobile Core Networks**  
-- **Date:** 2026-05-04
-- **Authors:** Purna Sai Garigipati, Onur Ayan, Kishor Chandra Joshi et al.
-- **Link:** https://arxiv.org/abs/2605.02811v1
-- **Security insight:** Artificial Intelligence (AI) will play an essential role in 6G. It will fundamentally reshape the network architecture itself and drive major changes in the design of network entities, interfaces, and procedures. The adoption of agentic AI in next-generation…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**MIPIAD: Multilingual Indirect Prompt Injection Attack Defense with Qwen -- TF-IDF Hybrid and Meta-Ensemble Learning**  
+- **Date:** 2026-05-08
+- **Authors:** Al Muhit Muhtadi, Mostafa Rifat Tazwar
+- **Link:** https://arxiv.org/abs/2605.07269v1
+- **Security insight:** Indirect prompt injection remains a persistent weakness in retrieval-augmented and tool-using LLM systems, and the problem becomes harder to characterise in multilingual settings. We present MIPIAD, a defense framework evaluated on English and Bangla that…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Laundering AI Authority with Adversarial Examples**  
 - **Date:** 2026-05-05
@@ -115,3 +108,12 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2605.05058v1
 - **Security insight:** Large Language Models (LLMs) have achieved remarkable success but remain highly susceptible to jailbreak attacks, in which adversarial prompts coerce models into generating harmful, unethical, or policy-violating outputs. Such attacks pose real-world risks,…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Other (Review)
+
+**Dependence on Early and Late Reverberation of Single-Channel Speaker Distance Estimation**  
+- **Date:** 2026-05-08
+- **Authors:** Michael Neri, Archontis Politis, Tuomas Virtanen
+- **Link:** https://arxiv.org/abs/2605.07694v1
+- **Security insight:** Single-channel speaker distance estimation has recently achieved centimeter-level accuracy in simulated environments, yet it remains unclear which components of the room impulse response (RIR) the model exploits and how performance depends on the recording…
+- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.

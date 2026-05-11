@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-11 (UTC)
+
+Top items:
+
+- **Dependence on Early and Late Reverberation of Single-Channel Speaker Distance Estimation** (2026-05-08) [Other (Review)]  
+  https://arxiv.org/abs/2605.07694v1
+
+- **MIPIAD: Multilingual Indirect Prompt Injection Attack Defense with Qwen -- TF-IDF Hybrid and Meta-Ensemble Learning** (2026-05-08) [Prompt Injection]  
+  https://arxiv.org/abs/2605.07269v1
+
+- **Towards Security-Auditable LLM Agents: A Unified Graph Representation** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.06812v1
+
+- **Constraining Host-Level Abuse in Self-Hosted Computer-Use Agents via TEE-Backed Isolation** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.06393v1
+
+- **Heimdallr: Characterizing and Detecting LLM-Induced Security Risks in GitHub CI Workflows** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05969v1
+
+- **PersonaTeaming: Supporting Persona-Driven Red-Teaming for Generative AI** (2026-05-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.05682v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-10 (UTC)
 
 Top items:
