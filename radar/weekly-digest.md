@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-12 (UTC)
+
+Top items:
+
+- **RUBEN: Rule-Based Explanations for Retrieval-Augmented LLM Systems** (2026-05-11) [Prompt Injection]  
+  https://arxiv.org/abs/2605.10862v1
+
+- **LLMs for Secure Hardware Design and Related Problems: Opportunities and Challenges** (2026-05-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.10807v1
+
+- **Identified-Set Geometry of Distributional Model Extraction under Top-$K$ Censored API Access** (2026-05-11) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2605.10407v1
+
+- **When Prompts Become Payloads: A Framework for Mitigating SQL Injection Attacks in Large Language Model-Driven Applications** (2026-05-11) [Prompt Injection]  
+  https://arxiv.org/abs/2605.10176v1
+
+- **Oracle Poisoning: Corrupting Knowledge Graphs to Weaponise AI Agent Reasoning** (2026-05-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.09822v1
+
+- **CALYREX: Cross-Attention LaYeR EXtended Transformers for System Prompt Anchoring** (2026-05-10) [Prompt Injection]  
+  https://arxiv.org/abs/2605.09737v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-11 (UTC)
 
 Top items:
