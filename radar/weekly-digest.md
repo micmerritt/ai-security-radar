@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-13 (UTC)
+
+Top items:
+
+- **IPI-proxy: An Intercepting Proxy for Red-Teaming Web-Browsing AI Agents Against Indirect Prompt Injection** (2026-05-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.11868v1
+
+- **Agents Should Replace Narrow Predictive AI as the Orchestrator in 6G AI-RAN** (2026-05-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.11516v1
+
+- **RUBEN: Rule-Based Explanations for Retrieval-Augmented LLM Systems** (2026-05-11) [Prompt Injection]  
+  https://arxiv.org/abs/2605.10862v1
+
+- **LLMs for Secure Hardware Design and Related Problems: Opportunities and Challenges** (2026-05-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.10807v1
+
+- **Identified-Set Geometry of Distributional Model Extraction under Top-$K$ Censored API Access** (2026-05-11) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2605.10407v1
+
+- **When Prompts Become Payloads: A Framework for Mitigating SQL Injection Attacks in Large Language Model-Driven Applications** (2026-05-11) [Prompt Injection]  
+  https://arxiv.org/abs/2605.10176v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-12 (UTC)
 
 Top items:
