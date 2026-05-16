@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-16 (UTC)
+
+Top items:
+
+- **WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections** (2026-05-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.15030v1
+
+- **The Great Pretender: A Stochasticity Problem in LLM Jailbreak** (2026-05-14) [Adversarial ML]  
+  https://arxiv.org/abs/2605.14418v1
+
+- **Web Agents Should Adopt the Plan-Then-Execute Paradigm** (2026-05-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.14290v1
+
+- **ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents** (2026-05-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.14153v1
+
+- **ProjGuard: Safety Monitoring for Computer-Use Agents via Low-Dimensional Projections** (2026-05-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.13631v1
+
+- **Sleeper Channels and Provenance Gates: Persistent Prompt Injection in Always-on Autonomous AI Agents** (2026-05-13) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.13471v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-13 (UTC)
 
 Top items:
