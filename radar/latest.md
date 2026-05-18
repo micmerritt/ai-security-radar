@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-16**_
+_Last updated (UTC): **2026-05-18**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast**  
+- **Date:** 2026-05-15
+- **Authors:** Igor Bogdanov, Chung-Horng Lung, Thomas Kunz et al.
+- **Link:** https://arxiv.org/abs/2605.16233v1
+- **Security insight:** Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Hidden in Memory: Sleeper Memory Poisoning in LLM Agents**  
+- **Date:** 2026-05-14
+- **Authors:** Sidharth Pulipaka, Stanislau Hlebik, Leonidas Raghav et al.
+- **Link:** https://arxiv.org/abs/2605.15338v1
+- **Security insight:** Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity. This statefulness introduces a new security risk: adversarial content can…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections**  
 - **Date:** 2026-05-14
@@ -63,37 +77,23 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Web-browsing AI agents are increasingly deployed in enterprise settings under strict whitelists of approved domains, yet adversaries can still influence them by embedding hidden instructions in the HTML pages those domains serve. Existing red-teaming…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Agents Should Replace Narrow Predictive AI as the Orchestrator in 6G AI-RAN**  
-- **Date:** 2026-05-12
-- **Authors:** Pranshav Gajjar, Vijay K Shah
-- **Link:** https://arxiv.org/abs/2605.11516v1
-- **Security insight:** This position paper argues that to achieve Level 5 autonomous 6G networks, the next generation of Artificial Intelligence in Radio Access Networks (AI-RAN) should transition away from fragmented, narrow predictive models and instead adopt multimodal Large…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**LLMs for Secure Hardware Design and Related Problems: Opportunities and Challenges**  
-- **Date:** 2026-05-11
-- **Authors:** Johann Knechtel, Ozgur Sinanoglu, Ramesh Karri
-- **Link:** https://arxiv.org/abs/2605.10807v2
-- **Security insight:** The integration of Large Language Models (LLMs) into Electronic Design Automation (EDA) and hardware security is rapidly reshaping the semiconductor industry. While LLMs offer unprecedented capabilities in generating Register Transfer Level (RTL) code,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
-**RUBEN: Rule-Based Explanations for Retrieval-Augmented LLM Systems**  
-- **Date:** 2026-05-11
-- **Authors:** Joel Rorseth, Parke Godfrey, Lukasz Golab et al.
-- **Link:** https://arxiv.org/abs/2605.10862v1
-- **Security insight:** This paper demonstrates RUBEN, an interactive tool for discovering minimal rules to explain the outputs of retrieval-augmented large language models (LLMs) in data-driven applications. We leverage novel pruning strategies to efficiently identify a minimal set…
+**A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation**  
+- **Date:** 2026-05-15
+- **Authors:** Hao Yang, Zhuo Ma, Yang Liu et al.
+- **Link:** https://arxiv.org/abs/2605.16090v1
+- **Security insight:** Large vision-language models (LVLMs) have emerged as a powerful paradigm for multimodal intelligence, but their growing deployment also expands the attack surface of prompt injection. Despite this growing concern, existing attacks still suffer from a critical…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-### Model Extraction & Privacy
+### Poisoning & Backdoors
 
-**Identified-Set Geometry of Distributional Model Extraction under Top-$K$ Censored API Access**  
-- **Date:** 2026-05-11
-- **Authors:** Wenhua Nie, ZiCheng Zhu, Jianan Wu et al.
-- **Link:** https://arxiv.org/abs/2605.10407v1
-- **Security insight:** Modern LLM APIs often reveal only top-$K$ logit scores and censor the remaining vocabulary. We study the per-position distribution-recovery limits of this access model. For censoring threshold $τ$, the compatible teacher distributions form an identified set…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+**LymphNode: A Plug-and-Play Access Control Method for Deep Neural Networks**  
+- **Date:** 2026-05-15
+- **Authors:** Hanyu Pei, Shang Liu, Zeyan Liu
+- **Link:** https://arxiv.org/abs/2605.16227v1
+- **Security insight:** Deep Neural Networks (DNNs) are high-value intellectual property (IP), yet deploying them to edge environments exposes them to \textbf{unrestricted oracle access}, rendering them vulnerable to model extraction and inversion attacks. Existing defenses fail to…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Adversarial ML
 

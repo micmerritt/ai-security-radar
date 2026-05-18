@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-18 (UTC)
+
+Top items:
+
+- **FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast** (2026-05-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.16233v1
+
+- **LymphNode: A Plug-and-Play Access Control Method for Deep Neural Networks** (2026-05-15) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2605.16227v1
+
+- **A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation** (2026-05-15) [Prompt Injection]  
+  https://arxiv.org/abs/2605.16090v1
+
+- **Hidden in Memory: Sleeper Memory Poisoning in LLM Agents** (2026-05-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.15338v1
+
+- **WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections** (2026-05-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.15030v1
+
+- **The Great Pretender: A Stochasticity Problem in LLM Jailbreak** (2026-05-14) [Adversarial ML]  
+  https://arxiv.org/abs/2605.14418v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-16 (UTC)
 
 Top items:
