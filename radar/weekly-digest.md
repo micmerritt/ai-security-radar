@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-19 (UTC)
+
+Top items:
+
+- **Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.18583v1
+
+- **An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.18133v1
+
+- **LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injectio** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.17986v1
+
+- **Remembering More, Risking More: Longitudinal Safety Risks in Memory-Equipped LLM Agents** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.17830v1
+
+- **AI Agents May Always Fall for Prompt Injections** (2026-05-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.17634v1
+
+- **Trust No Tool: Evaluating and Defending LLM Agents under Untrusted Tool Feedback** (2026-05-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.17453v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-18 (UTC)
 
 Top items:

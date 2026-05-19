@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-18**_
+_Last updated (UTC): **2026-05-19**_
 
 ## What this is
 
@@ -14,6 +14,69 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks**  
+- **Date:** 2026-05-18
+- **Authors:** Yubin Qu, Ying Zhang, Yanjun Zhang et al.
+- **Link:** https://arxiv.org/abs/2605.18583v1
+- **Security insight:** Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments**  
+- **Date:** 2026-05-18
+- **Authors:** Hongjang Yang, Hyunsik Na, Daeseon Choi
+- **Link:** https://arxiv.org/abs/2605.18133v1
+- **Security insight:** LLM-based chatbot agents increasingly process user requests by combining natural-language reasoning with external tools such as web browsing. These capabilities improve usability, but they also create attack surfaces when untrusted external content is…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injectio**  
+- **Date:** 2026-05-18
+- **Authors:** Lei Zhao, Abhay Bhaskar, Edgar Dobriban
+- **Link:** https://arxiv.org/abs/2605.17986v1
+- **Security insight:** AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect prompt-injection (IPI) risk: an agent may execute harmful instructions embedded in untrusted inputs such as email, downloaded files,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Remembering More, Risking More: Longitudinal Safety Risks in Memory-Equipped LLM Agents**  
+- **Date:** 2026-05-18
+- **Authors:** Ahmad Al-Tawaha, Shangding Gu, Peizhi Niu et al.
+- **Link:** https://arxiv.org/abs/2605.17830v1
+- **Security insight:** Safety evaluations of memory-equipped LLM agents typically measure within-task safety: whether an agent completes a single scenario safely, often under adversarial conditions such as prompt injection or memory poisoning. In deployment, however, a single agent…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**AI Agents May Always Fall for Prompt Injections**  
+- **Date:** 2026-05-17
+- **Authors:** Sahar Abdelnabi, Eugene Bagdasarian
+- **Link:** https://arxiv.org/abs/2605.17634v1
+- **Security insight:** Prompt injection is the most critical vulnerability in deployed AI agents. Despite recent progress, we show that the prevailing defense paradigm (data-instruction separation) both fails to detect attacks that operate through contextual manipulation and…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Trust No Tool: Evaluating and Defending LLM Agents under Untrusted Tool Feedback**  
+- **Date:** 2026-05-17
+- **Authors:** Lecheng Yan, Ruizhe Li, Xicheng Han et al.
+- **Link:** https://arxiv.org/abs/2605.17453v1
+- **Security insight:** Tool-using LLM agents increasingly rely on external tools to make consequential decisions, yet most existing agent-security benchmarks and defenses implicitly assume that tool feedback is trustworthy once a tool has been selected. We study a different failure…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ADR: An Agentic Detection System for Enterprise Agentic AI Security**  
+- **Date:** 2026-05-17
+- **Authors:** Chenning Li, Pan Hu, Justin Xu et al.
+- **Link:** https://arxiv.org/abs/2605.17380v1
+- **Security insight:** We present the Agentic AI Detection and Response (ADR) system, the first large-scale, production-proven enterprise framework for securing AI agents operating through the Model Context Protocol (MCP). We identify three persistent challenges in this domain: (1)…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents**  
+- **Date:** 2026-05-17
+- **Authors:** Udari Madhushani Sehwag, Zhengyang Shan, Heming Liu et al.
+- **Link:** https://arxiv.org/abs/2605.17324v1
+- **Security insight:** Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**MADP: A Multi-Agent Pipeline for Sustainable Document Processing with Human-in-the-Loop**  
+- **Date:** 2026-05-16
+- **Authors:** Diego Gosmar, Giovanni Zenezini
+- **Link:** https://arxiv.org/abs/2605.17159v1
+- **Security insight:** Document processing automation remains a critical challenge in enterprise environments, where traditional manual approaches are labor-intensive and error-prone. We present MADP, a multi-agent architecture that addresses the challenge of automating document…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast**  
 - **Date:** 2026-05-15
 - **Authors:** Igor Bogdanov, Chung-Horng Lung, Thomas Kunz et al.
@@ -24,60 +87,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **Hidden in Memory: Sleeper Memory Poisoning in LLM Agents**  
 - **Date:** 2026-05-14
 - **Authors:** Sidharth Pulipaka, Stanislau Hlebik, Leonidas Raghav et al.
-- **Link:** https://arxiv.org/abs/2605.15338v1
+- **Link:** https://arxiv.org/abs/2605.15338v2
 - **Security insight:** Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity. This statefulness introduces a new security risk: adversarial content can…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections**  
-- **Date:** 2026-05-14
-- **Authors:** Tri Cao, Yulin Chen, Hieu Cao et al.
-- **Link:** https://arxiv.org/abs/2605.15030v1
-- **Security insight:** Web agents can autonomously complete online tasks by interacting with websites, but their exposure to open web environments makes them vulnerable to prompt injection attacks embedded in HTML content or visual interfaces. Existing guard models still suffer…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Web Agents Should Adopt the Plan-Then-Execute Paradigm**  
-- **Date:** 2026-05-14
-- **Authors:** Julien Piet, Annabella Chow, Yiwei Hou et al.
-- **Link:** https://arxiv.org/abs/2605.14290v1
-- **Security insight:** ReAct has become the default architecture across LLM agents, and many existing web agents follow this paradigm. We argue that it is the wrong default for web agents. Instead, web agents should default to plan-then-execute: commit to a task-specific program…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents**  
-- **Date:** 2026-05-13
-- **Authors:** Seunghyun Lee, David Brumley
-- **Link:** https://arxiv.org/abs/2605.14153v1
-- **Security insight:** Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code to taking full control of the target. However, existing LLM security benchmarks treat a crash as exploitation success. That…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ProjGuard: Safety Monitoring for Computer-Use Agents via Low-Dimensional Projections**  
-- **Date:** 2026-05-13
-- **Authors:** Kebin Contreras, Carlos Hinojosa, Jorge Bacca et al.
-- **Link:** https://arxiv.org/abs/2605.13631v1
-- **Security insight:** Computer-use agents are increasingly capable of operating on real operating systems, but this capability has also increased the risks posed by prompt injection, indirect instructions, and visual attacks. Existing defenses typically rely on analyzing the…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Sleeper Channels and Provenance Gates: Persistent Prompt Injection in Always-on Autonomous AI Agents**  
-- **Date:** 2026-05-13
-- **Authors:** Narek Maloyan, Dmitry Namiot
-- **Link:** https://arxiv.org/abs/2605.13471v1
-- **Security insight:** Always-on AI agents (OpenClaw, Hermes Agent) run as a single persistent process under the owner's identity, folding messaging, memory, self-authored skills, scheduling, and shell into one authority boundary. This configuration opens what we call \emph{sleeper…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**No Attack Required: Semantic Fuzzing for Specification Violations in Agent Skills**  
-- **Date:** 2026-05-13
-- **Authors:** Ying Li, Hongbo Wen, Yanju Chen et al.
-- **Link:** https://arxiv.org/abs/2605.13044v1
-- **Security insight:** LLM-powered agents can silently delete documents, leak credentials, or transfer funds on a routine user request, not because the agent was attacked, but because the skill it invoked broke its own declared safety rules. We call these specification violations:…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**IPI-proxy: An Intercepting Proxy for Red-Teaming Web-Browsing AI Agents Against Indirect Prompt Injection**  
-- **Date:** 2026-05-12
-- **Authors:** Chia-Pei, Chen, Kentaroh Toyoda et al.
-- **Link:** https://arxiv.org/abs/2605.11868v1
-- **Security insight:** Web-browsing AI agents are increasingly deployed in enterprise settings under strict whitelists of approved domains, yet adversaries can still influence them by embedding hidden instructions in the HTML pages those domains serve. Existing red-teaming…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**STRIDE-AI: A Threat Modeling Framework for Generative AI Security Assessment**  
+- **Date:** 2026-05-16
+- **Authors:** Tsafac Nkombong Regine Cyrille, Franziska Schwarz
+- **Link:** https://arxiv.org/abs/2605.17163v1
+- **Security insight:** Traditional cybersecurity methodologies target deterministic systems and fail to address the probabilistic nature of AI, leaving systems vulnerable to attack vectors such as model inversion, data poisoning, and prompt injection. Recent industry reports…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation**  
 - **Date:** 2026-05-15
@@ -94,28 +115,3 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2605.16227v1
 - **Security insight:** Deep Neural Networks (DNNs) are high-value intellectual property (IP), yet deploying them to edge environments exposes them to \textbf{unrestricted oracle access}, rendering them vulnerable to model extraction and inversion attacks. Existing defenses fail to…
 - **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
-
-### Adversarial ML
-
-**The Great Pretender: A Stochasticity Problem in LLM Jailbreak**  
-- **Date:** 2026-05-14
-- **Authors:** Jean-Philippe Monteuuis, Cong Chen, Jonathan Petit
-- **Link:** https://arxiv.org/abs/2605.14418v1
-- **Security insight:** "Oh-Oh, yes, I'm the great pretender. Pretending that I'm doing well. My need is such, I pretend too much..." summarizes the state in the area of jailbreak creation and evaluation. You find this method to generate adversarial attacks proposed by a reputable…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-**Quantifying LLM Safety Degradation Under Repeated Attacks Using Survival Analysis**  
-- **Date:** 2026-05-13
-- **Authors:** Zvi Topol
-- **Link:** https://arxiv.org/abs/2605.12869v1
-- **Security insight:** Large language models (LLMs) are increasingly deployed in a wide range of applications, yet remain vulnerable to adversarial jailbreak attacks that circumvent their safety guardrails. Existing evaluation frameworks typically report binary success/failure…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-### Other (Review)
-
-**GraphIP-Bench: How Hard Is It to Steal a Graph Neural Network, and Can We Stop It?**  
-- **Date:** 2026-05-12
-- **Authors:** Kaixiang Zhao, Bolin Shen, Yuyang Dai et al.
-- **Link:** https://arxiv.org/abs/2605.12827v1
-- **Security insight:** Graph neural networks (GNNs) deployed as cloud services can be \emph{stolen} through \emph{model-extraction attacks}, which train a surrogate from query responses to reproduce the target's behaviour, and a growing line of ownership defenses tries to prevent…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
