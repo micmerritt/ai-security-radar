@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-19**_
+_Last updated (UTC): **2026-05-20**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Agent Security is a Systems Problem**  
+- **Date:** 2026-05-18
+- **Authors:** Mihai Christodorescu, Earlence Fernandes, Ashish Hooda et al.
+- **Link:** https://arxiv.org/abs/2605.18991v1
+- **Security insight:** We take the position that agent security must be approached as a systems problem: the AI model powering the agent must be treated as an untrusted component, and security invariants must be enforced at the system level. Through this lens, efforts to increase…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks**  
 - **Date:** 2026-05-18
@@ -33,6 +40,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Lei Zhao, Abhay Bhaskar, Edgar Dobriban
 - **Link:** https://arxiv.org/abs/2605.17986v1
 - **Security insight:** AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect prompt-injection (IPI) risk: an agent may execute harmful instructions embedded in untrusted inputs such as email, downloaded files,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ESLD (External Surrogate Latent Defense): A Latent-Space Architecture for Faster, Stronger Prompt-Injection Defense**  
+- **Date:** 2026-05-18
+- **Authors:** Yash Narendra
+- **Link:** https://arxiv.org/abs/2605.18918v1
+- **Security insight:** Modern AI assistants are agentic. To answer a single user request, the underlying language model pulls in information from many sources, such as web searches, retrieved documents, tool outputs, and user follow-ups, and reasons over them across several steps.…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Remembering More, Risking More: Longitudinal Safety Risks in Memory-Equipped LLM Agents**  
@@ -84,14 +98,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Hidden in Memory: Sleeper Memory Poisoning in LLM Agents**  
-- **Date:** 2026-05-14
-- **Authors:** Sidharth Pulipaka, Stanislau Hlebik, Leonidas Raghav et al.
-- **Link:** https://arxiv.org/abs/2605.15338v2
-- **Security insight:** Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity. This statefulness introduces a new security risk: adversarial content can…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**On the Geometric Limits of Transformer Defenses against Obfuscation Attacks: Latent Embedding Collapse & Performance Robustness Gap**  
+- **Date:** 2026-05-18
+- **Authors:** Becky Mashaido, Tapadhir Das
+- **Link:** https://arxiv.org/abs/2605.19159v1
+- **Security insight:** Prompt injection attacks pose significant risks to language model safety, yet existing defenses are typically evaluated using classification performance. We show that high detection performance does not imply representational robustness. Specifically, multi-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **STRIDE-AI: A Threat Modeling Framework for Generative AI Security Assessment**  
 - **Date:** 2026-05-16
@@ -99,19 +113,3 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2605.17163v1
 - **Security insight:** Traditional cybersecurity methodologies target deterministic systems and fail to address the probabilistic nature of AI, leaving systems vulnerable to attack vectors such as model inversion, data poisoning, and prompt injection. Recent industry reports…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**A Cross-Modal Prompt Injection Attack against Large Vision-Language Models with Image-Only Perturbation**  
-- **Date:** 2026-05-15
-- **Authors:** Hao Yang, Zhuo Ma, Yang Liu et al.
-- **Link:** https://arxiv.org/abs/2605.16090v1
-- **Security insight:** Large vision-language models (LVLMs) have emerged as a powerful paradigm for multimodal intelligence, but their growing deployment also expands the attack surface of prompt injection. Despite this growing concern, existing attacks still suffer from a critical…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-### Poisoning & Backdoors
-
-**LymphNode: A Plug-and-Play Access Control Method for Deep Neural Networks**  
-- **Date:** 2026-05-15
-- **Authors:** Hanyu Pei, Shang Liu, Zeyan Liu
-- **Link:** https://arxiv.org/abs/2605.16227v1
-- **Security insight:** Deep Neural Networks (DNNs) are high-value intellectual property (IP), yet deploying them to edge environments exposes them to \textbf{unrestricted oracle access}, rendering them vulnerable to model extraction and inversion attacks. Existing defenses fail to…
-- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
