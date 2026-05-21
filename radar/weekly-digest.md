@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-21 (UTC)
+
+Top items:
+
+- **Heartbeat-Bound Hierarchical Credentials: Cryptographic Revocation for AI Agent Swarms** (2026-05-20) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.20704v1
+
+- **Adaptive Probe-based Steering for Robust LLM Jailbreaking** (2026-05-19) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2605.20286v1
+
+- **On the Geometric Limits of Transformer Defenses against Obfuscation Attacks: Latent Embedding Collapse & Performance Robustness Gap** (2026-05-18) [Prompt Injection]  
+  https://arxiv.org/abs/2605.19159v1
+
+- **Agent Security is a Systems Problem** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.18991v2
+
+- **Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.18583v1
+
+- **An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments** (2026-05-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.18133v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-20 (UTC)
 
 Top items:

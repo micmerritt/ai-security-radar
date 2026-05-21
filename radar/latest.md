@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-20**_
+_Last updated (UTC): **2026-05-21**_
 
 ## What this is
 
@@ -14,10 +14,17 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Heartbeat-Bound Hierarchical Credentials: Cryptographic Revocation for AI Agent Swarms**  
+- **Date:** 2026-05-20
+- **Authors:** Saurabh Deochake
+- **Link:** https://arxiv.org/abs/2605.20704v1
+- **Security insight:** Autonomous AI agents that spawn sub-agent swarms create a safety gap: existing credential revocation mechanisms, OAuth~2.0 introspection, OCSP, and W3C Status Lists, require network connectivity to a central authority, leaving ``zombie agents'' executing…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Agent Security is a Systems Problem**  
 - **Date:** 2026-05-18
 - **Authors:** Mihai Christodorescu, Earlence Fernandes, Ashish Hooda et al.
-- **Link:** https://arxiv.org/abs/2605.18991v1
+- **Link:** https://arxiv.org/abs/2605.18991v2
 - **Security insight:** We take the position that agent security must be approached as a systems problem: the AI model powering the agent must be treated as an untrusted component, and security invariants must be enforced at the system level. Through this lens, efforts to increase…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -84,20 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**MADP: A Multi-Agent Pipeline for Sustainable Document Processing with Human-in-the-Loop**  
-- **Date:** 2026-05-16
-- **Authors:** Diego Gosmar, Giovanni Zenezini
-- **Link:** https://arxiv.org/abs/2605.17159v1
-- **Security insight:** Document processing automation remains a critical challenge in enterprise environments, where traditional manual approaches are labor-intensive and error-prone. We present MADP, a multi-agent architecture that addresses the challenge of automating document…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast**  
-- **Date:** 2026-05-15
-- **Authors:** Igor Bogdanov, Chung-Horng Lung, Thomas Kunz et al.
-- **Link:** https://arxiv.org/abs/2605.16233v1
-- **Security insight:** Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **On the Geometric Limits of Transformer Defenses against Obfuscation Attacks: Latent Embedding Collapse & Performance Robustness Gap**  
@@ -113,3 +106,12 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2605.17163v1
 - **Security insight:** Traditional cybersecurity methodologies target deterministic systems and fail to address the probabilistic nature of AI, leaving systems vulnerable to attack vectors such as model inversion, data poisoning, and prompt injection. Recent industry reports…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+### RAG & Retrieval Attacks
+
+**Adaptive Probe-based Steering for Robust LLM Jailbreaking**  
+- **Date:** 2026-05-19
+- **Authors:** Junxi Chen, Junhao Dong, Xiaohua Xie
+- **Link:** https://arxiv.org/abs/2605.20286v1
+- **Security insight:** Recent work has demonstrated the potential of contrastive steering for jailbreaking Large Language Models (LLMs). However, existing methods rely on limited and inherently biased contrastive prompts and require laborious manual tuning of steering strength,…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
