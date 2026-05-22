@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-21**_
+_Last updated (UTC): **2026-05-22**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Detecting Offensive Cyber Agents: A Detection-in-Depth Approach**  
+- **Date:** 2026-05-21
+- **Authors:** Matt Mittelsteadt, Jam Kraprayoon, Robin Staes-Polet et al.
+- **Link:** https://arxiv.org/abs/2605.21956v1
+- **Security insight:** Artificial Intelligence (AI) agents can now orchestrate cyberattacks. This development is already increasing the speed and scale of cyber attacks, decreasing attack costs, and improving the operational autonomy of cyber capabilities. To defend against these…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Heartbeat-Bound Hierarchical Credentials: Cryptographic Revocation for AI Agent Swarms**  
 - **Date:** 2026-05-20
@@ -98,13 +105,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Becky Mashaido, Tapadhir Das
 - **Link:** https://arxiv.org/abs/2605.19159v1
 - **Security insight:** Prompt injection attacks pose significant risks to language model safety, yet existing defenses are typically evaluated using classification performance. We show that high detection performance does not imply representational robustness. Specifically, multi-…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**STRIDE-AI: A Threat Modeling Framework for Generative AI Security Assessment**  
-- **Date:** 2026-05-16
-- **Authors:** Tsafac Nkombong Regine Cyrille, Franziska Schwarz
-- **Link:** https://arxiv.org/abs/2605.17163v1
-- **Security insight:** Traditional cybersecurity methodologies target deterministic systems and fail to address the probabilistic nature of AI, leaving systems vulnerable to attack vectors such as model inversion, data poisoning, and prompt injection. Recent industry reports…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
