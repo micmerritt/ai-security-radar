@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-05-24**_
+_Last updated (UTC): **2026-05-25**_
 
 ## What this is
 
@@ -84,21 +84,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Tool-using LLM agents increasingly rely on external tools to make consequential decisions, yet most existing agent-security benchmarks and defenses implicitly assume that tool feedback is trustworthy once a tool has been selected. We study a different failure…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**ADR: An Agentic Detection System for Enterprise Agentic AI Security**  
-- **Date:** 2026-05-17
-- **Authors:** Chenning Li, Pan Hu, Justin Xu et al.
-- **Link:** https://arxiv.org/abs/2605.17380v1
-- **Security insight:** We present the Agentic AI Detection and Response (ADR) system, the first large-scale, production-proven enterprise framework for securing AI agents operating through the Model Context Protocol (MCP). We identify three persistent challenges in this domain: (1)…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents**  
-- **Date:** 2026-05-17
-- **Authors:** Udari Madhushani Sehwag, Zhengyang Shan, Heming Liu et al.
-- **Link:** https://arxiv.org/abs/2605.17324v1
-- **Security insight:** Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**MixFake: Benchmarking and Enhancing Audio Deepfake Detection in Diverse Real-world Mixed Audio**  
+- **Date:** 2026-05-22
+- **Authors:** Qingcao Li, Yipeng Lin, Weichen Lian et al.
+- **Link:** https://arxiv.org/abs/2605.23201v1
+- **Security insight:** Speech deepfake detection has achieved remarkable success in clean environments but faces significant challenges in complex, real-world scenarios where speech is often mixed with background music or noise. Current state-of-the-art methods rely on semantic…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Prompt Overflow: What the Guardrail Inspects Is Not What the Model Infers**  
+- **Date:** 2026-05-22
+- **Authors:** Yuanbo Zhou, Changjia Zhu, Junyu Wang et al.
+- **Link:** https://arxiv.org/abs/2605.23196v1
+- **Security insight:** Guardrail models (a.k.a. safety checkers) are widely deployed to screen user inputs before they reach large language models (LLMs), serving as a primary defense against prompt injection attacks. Due to strict context constraints, these models handle…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **On the Geometric Limits of Transformer Defenses against Obfuscation Attacks: Latent Embedding Collapse & Performance Robustness Gap**  
 - **Date:** 2026-05-18
