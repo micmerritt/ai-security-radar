@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-27 (UTC)
+
+Top items:
+
+- **Prompt Injection Detection is Regime-Dependent: A Deployment-Aware Evaluation with Interpretable Structural Signals** (2026-05-26) [Prompt Injection]  
+  https://arxiv.org/abs/2605.26999v1
+
+- **Cordon-MAS: Defending RAG against Knowledge Poisoning via Information-Flow Control** (2026-05-26) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.26754v1
+
+- **Cordyceps: Covert Control Attacks on LLMs via Data Poisoning** (2026-05-26) [Prompt Injection]  
+  https://arxiv.org/abs/2605.26595v1
+
+- **Aligning Provenance with Authorization: A Dual-Graph Defense for LLM Agents** (2026-05-26) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.26497v1
+
+- **AgentSecBench: Measuring Prompt Injection, Privacy Leakage, and Tool-Use Integrity in LLM Agents** (2026-05-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.26269v1
+
+- **How Agentic AI Coding Assistants Become the Attacker's Shell** (2026-05-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.25871v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-25 (UTC)
 
 Top items:
