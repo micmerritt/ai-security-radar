@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-05-29 (UTC)
+
+Top items:
+
+- **Token-Level Generalization in LoRA Adapter Backdoors: Attack Characterization and Behavioral Detection** (2026-05-28) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2605.30189v1
+
+- **Dissecting the Black Box: Circuit-Level Analysis of LLM Vulnerability Detection** (2026-05-28) [Other (Review)]  
+  https://arxiv.org/abs/2605.29901v1
+
+- **Minimal Prompt Perturbations Lead to Code Vulnerabilities: Prompt Fragility and Hidden-State Signals in Coding LLMs** (2026-05-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.29737v1
+
+- **Evolving Skill-Structured Attack Memory Enhances LLM Jailbreaking** (2026-05-28) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2605.29237v1
+
+- **Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening** (2026-05-27) [Prompt Injection]  
+  https://arxiv.org/abs/2605.28999v1
+
+- **LACUNA: Safe Agents as Recursive Program Holes** (2026-05-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.28617v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-27 (UTC)
 
 Top items:
