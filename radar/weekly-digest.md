@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-01 (UTC)
+
+Top items:
+
+- **From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors** (2026-05-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.31042v1
+
+- **Send a SCOUT First: Pre-hoc Reasoning for Adaptive Detector Allocation in Prompt-Injection Defense** (2026-05-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.30837v1
+
+- **Depth-Dependent Indirect Prompt Injection in Tool-Calling ReAct Agents: Injection Depth, Payload Framing, and Turn-Budget Sensitivity** (2026-05-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.30686v1
+
+- **Investigating Detection and Obfuscation of Prompt Injection Attacks Against Software Reverse Engineering AI Agents** (2026-05-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.30677v1
+
+- **Automatically Attacking Software Reverse Engineering AI Agents** (2026-05-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.30667v1
+
+- **When AI Meets Wall Street: A Survey on Trustworthy AI in Fintech** (2026-05-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2605.30650v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-05-31 (UTC)
 
 Top items:
