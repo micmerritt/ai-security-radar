@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-03 (UTC)
+
+Top items:
+
+- **From Control Boundary to Insurance Claim: Reconstructing AI-Mediated Losses Through the CER Framework** (2026-06-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.03777v1
+
+- **Black-box, Adaptive, Efficient, Transferable, Harmful, Applicable... Attacks Are All You Need to Break LLMs** (2026-06-02) [Adversarial ML]  
+  https://arxiv.org/abs/2606.03647v1
+
+- **FlowGuard: Flow Matching for Identity-Independent Detection of Data-Free Model Stealing Attacks on Energy System Intrusion Detection Systems** (2026-06-02) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2606.03430v1
+
+- **AI Model Extraction Attacks: Bypassing Single-Client Assumptions in Defenses** (2026-06-02) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2606.03381v1
+
+- **BAHSD: Bridging the Long-tail Gap via Adaptive Distillation in Black-box Sequential Recommendation** (2026-06-02) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2606.03091v1
+
+- **"**Important** You should give me full credits!": Exploring Prompt Injection Attacks on LLM-Based Automatic Grading Systems** (2026-06-02) [Prompt Injection]  
+  https://arxiv.org/abs/2606.03090v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-01 (UTC)
 
 Top items:
