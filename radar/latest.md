@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-03**_
+_Last updated (UTC): **2026-06-04**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**What If Prompt Injection Never Left? Exploring Cross-Session Stored Prompt Injection in Agentic Systems**  
+- **Date:** 2026-06-03
+- **Authors:** Yuanbo Xie, Tianyun Liu, Yingjie Zhang et al.
+- **Link:** https://arxiv.org/abs/2606.04425v1
+- **Security insight:** Modern agentic systems transform LLMs from session-bounded assistants into stateful systems that persist and evolve shared world state across sessions through memories, filesystems, tools, and other long-lived contextual artifacts. This shift fundamentally…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM Agents**  
+- **Date:** 2026-06-03
+- **Authors:** Pritam Dash, Tongyu Ge, Aditi Jain et al.
+- **Link:** https://arxiv.org/abs/2606.04329v1
+- **Security insight:** Memory is a core component of AI agents, enabling them to accumulate knowledge across interactions and improve performance. However, persistent memory introduces the risk of memory poisoning, where a single adversarial memory write can exert long-term…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Caught in the Act(ivation): Toward Pre-Output and Multi-Turn Detection of Credential Exfiltration by LLM Agents**  
+- **Date:** 2026-06-02
+- **Authors:** Kargi Chauhan, Pratibha Revankar
+- **Link:** https://arxiv.org/abs/2606.04141v1
+- **Security insight:** LLM agents often place sensitive credentials in the same context window as untrusted retrieved content, creating a direct path for indirect prompt injection to induce credential exfiltration. We study this failure mode through three complementary defenses.…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **From Control Boundary to Insurance Claim: Reconstructing AI-Mediated Losses Through the CER Framework**  
 - **Date:** 2026-06-02
@@ -35,21 +56,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services such as Gmail, Salesforce, or Jira accessed through tool calls) whose response content the user neither writes nor controls.…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors**  
-- **Date:** 2026-05-29
-- **Authors:** Jiejun Tan, Zhicheng Dou, Xinyu Yang et al.
-- **Link:** https://arxiv.org/abs/2605.31042v1
-- **Security insight:** LLM agents are evolving from conversational chatbots to operational tools in real-world workspaces. In local agentic harnesses, an LLM can read and write files, call tools, and reuse workspace state across sessions. While such capabilities enhance utility,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Send a SCOUT First: Pre-hoc Reasoning for Adaptive Detector Allocation in Prompt-Injection Defense**  
-- **Date:** 2026-05-29
-- **Authors:** Shuhao Zhang, Jiarui Li, Qi Cao et al.
-- **Link:** https://arxiv.org/abs/2605.30837v1
-- **Security insight:** Prompt-injection detectors are heterogeneous: each is strong on a different slice of attacks, and none is always reliable. Yet existing systems still treat detection as a fixed single-detector pipeline, committing every request to one detector's blind spots.…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Hybrid Adversarial Defence for Natural Language Understanding Tasks**  
+- **Date:** 2026-06-03
+- **Authors:** Manar Abouzaid, Yang Wang, Chenghua Lin et al.
+- **Link:** https://arxiv.org/abs/2606.04612v1
+- **Security insight:** Large Language Models (LLMs) are vulnerable both to hallucination and adversarial manipulation. Although these problems are closely related, existing defences typically address them separately. We investigate a hybrid defence framework that combines entropy-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **"**Important** You should give me full credits!": Exploring Prompt Injection Attacks on LLM-Based Automatic Grading Systems**  
 - **Date:** 2026-06-02
@@ -63,13 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Partha Pratim Saha, Samarth Raina, Mayur Parvatikar et al.
 - **Link:** https://arxiv.org/abs/2606.01060v1
 - **Security insight:** Preference alignment has substantially improved the observable behavior of large language models, yet it remains unclear what alignment changes internally. Aligned systems still fail under jailbreaks, prompt injection, and retrieval-time corruption,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Confused ChatGPT: Cross-App Context Poisoning via First-Party APIs**  
-- **Date:** 2026-05-30
-- **Authors:** Chao Wang, Somesh Jha, Zhiqiang Lin
-- **Link:** https://arxiv.org/abs/2606.00485v1
-- **Security insight:** ChatGPT Apps, launched by OpenAI on Oct. 6, 2025, introduce an app-in-app paradigm in which third-party applications share a single chat context with the user and with every other connected app. The ecosystem grew from 122 apps in Dec. 2025 to 888 by May…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### Poisoning & Backdoors
@@ -95,13 +102,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Xi Zhou, Famin Wu, Mingming Li et al.
 - **Link:** https://arxiv.org/abs/2606.03091v1
 - **Security insight:** Sequential recommendation systems are widely adopted but often deployed as black-box APIs, which has driven recent interest in model extraction to replicate their capabilities locally. However, the long-tail distribution induces severe signal heterogeneity:…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
-
-**A Registry-Bound LLM Pipeline for Evidence-Grounded Trait Extraction across Tropical Plants, Aquatic Species, and Exotic Pets**  
-- **Date:** 2026-05-31
-- **Authors:** Jeff Wang
-- **Link:** https://arxiv.org/abs/2606.00994v1
-- **Security insight:** We describe a registry-bound large-language-model extraction pipeline producing evidence-grounded structured trait records at scale, on cultivated tropical plant, aquatic, and pet species. Four mechanisms render LLM-derived rows auditable: a versioned 39-key…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML

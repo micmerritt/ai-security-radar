@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-04 (UTC)
+
+Top items:
+
+- **Hybrid Adversarial Defence for Natural Language Understanding Tasks** (2026-06-03) [Prompt Injection]  
+  https://arxiv.org/abs/2606.04612v1
+
+- **What If Prompt Injection Never Left? Exploring Cross-Session Stored Prompt Injection in Agentic Systems** (2026-06-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.04425v1
+
+- **From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM Agents** (2026-06-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.04329v1
+
+- **Caught in the Act(ivation): Toward Pre-Output and Multi-Turn Detection of Credential Exfiltration by LLM Agents** (2026-06-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.04141v1
+
+- **From Control Boundary to Insurance Claim: Reconstructing AI-Mediated Losses Through the CER Framework** (2026-06-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.03777v1
+
+- **Black-box, Adaptive, Efficient, Transferable, Harmful, Applicable... Attacks Are All You Need to Break LLMs** (2026-06-02) [Adversarial ML]  
+  https://arxiv.org/abs/2606.03647v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-03 (UTC)
 
 Top items:
