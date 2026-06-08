@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-07**_
+_Last updated (UTC): **2026-06-08**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills**  
+- **Date:** 2026-06-05
+- **Authors:** Wenbo Guo, Wei Zeng, Chengwei Liu et al.
+- **Link:** https://arxiv.org/abs/2606.07131v1
+- **Security insight:** AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages bundling natural-language instructions, executable scripts, and tool permissions. Because a skill is at once code and agent-facing…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Insurance of Agentic AI**  
 - **Date:** 2026-06-03
@@ -97,13 +104,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Maxime Schwarzer, Johannes F. Loevenich, Gustavo Sánchez et al.
 - **Link:** https://arxiv.org/abs/2606.03381v1
 - **Security insight:** Ensuring the protection of Artificial Intelligence (AI) models deployed in military Command and Control (C2) systems and critical infrastructure is essential for maintaining information superiority. Model Extraction Attacks (MEAs) pose a significant threat,…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
-
-**BAHSD: Bridging the Long-tail Gap via Adaptive Distillation in Black-box Sequential Recommendation**  
-- **Date:** 2026-06-02
-- **Authors:** Xi Zhou, Famin Wu, Mingming Li et al.
-- **Link:** https://arxiv.org/abs/2606.03091v2
-- **Security insight:** Sequential recommendation systems are widely adopted but often deployed as black-box APIs, which has driven recent interest in model extraction to replicate their capabilities locally. However, the long-tail distribution induces severe signal heterogeneity:…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML

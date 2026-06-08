@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-08 (UTC)
+
+Top items:
+
+- **MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills** (2026-06-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.07131v1
+
+- **An Embarrassingly Simple Detector for Model Extraction Attacks in Large Language Model API Traffic** (2026-06-04) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.05725v1
+
+- **Safety Paradox: How Enhanced Safety Awareness Leaves LLMs Vulnerable to Posterior Attack** (2026-06-04) [Other (Review)]  
+  https://arxiv.org/abs/2606.05614v1
+
+- **GuardNet: Ensemble Strategies of Shallow Neural Networks for Robust Prompt Injection and Jailbreak Detection** (2026-06-04) [Prompt Injection]  
+  https://arxiv.org/abs/2606.05566v1
+
+- **Insurance of Agentic AI** (2026-06-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.05449v1
+
+- **Hybrid Adversarial Defence for Natural Language Understanding Tasks** (2026-06-03) [Prompt Injection]  
+  https://arxiv.org/abs/2606.04612v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-07 (UTC)
 
 Top items:
