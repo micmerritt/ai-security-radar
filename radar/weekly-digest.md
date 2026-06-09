@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-09 (UTC)
+
+Top items:
+
+- **Learning to Attack and Defend: Adaptive Red Teaming of Language Models via GRPO** (2026-06-08) [Adversarial ML]  
+  https://arxiv.org/abs/2606.09701v1
+
+- **PRISM: Recovering Instruction Sets from Language Model Activations** (2026-06-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.09563v1
+
+- **SecureClaw: Clawing Back Control of LLM Agents** (2026-06-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.09549v1
+
+- **Brain-Prompt Injection: A Route-Safety Audit for BCI-LLM Agents** (2026-06-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.09315v1
+
+- **The Injection Paradox: Brand-Level Suppression in Safety-Trained LLM Recommendations via RAG Context Injection** (2026-06-08) [Prompt Injection]  
+  https://arxiv.org/abs/2606.09204v1
+
+- **Document-Authored Control-Signal Impersonation: A Low-Cost Indirect Prompt Attack on RAG Safety Boundaries** (2026-06-08) [Prompt Injection]  
+  https://arxiv.org/abs/2606.09005v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-08 (UTC)
 
 Top items:
