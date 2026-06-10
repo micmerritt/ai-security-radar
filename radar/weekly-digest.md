@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-10 (UTC)
+
+Top items:
+
+- **Training LLMs to Enforce Multi-Level Instruction Hierarchies via Gravity-Weighted Direct Preference Optimization** (2026-06-09) [Prompt Injection]  
+  https://arxiv.org/abs/2606.10860v1
+
+- **Toward Secure LLM Agents: Threat Surfaces, Attacks, Defenses, and Evaluation** (2026-06-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.10749v1
+
+- **Assessing Automated Prompt Injection Attacks in Agentic Environments** (2026-06-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.10525v1
+
+- **Game-Theoretic Multi-Agent Control for Robust Contextual Reasoning in LLMs** (2026-06-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.10322v1
+
+- **Learning to Attack and Defend: Adaptive Red Teaming of Language Models via GRPO** (2026-06-08) [Adversarial ML]  
+  https://arxiv.org/abs/2606.09701v1
+
+- **PRISM: Recovering Instruction Sets from Language Model Activations** (2026-06-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.09563v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-09 (UTC)
 
 Top items:
