@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-10**_
+_Last updated (UTC): **2026-06-11**_
 
 ## What this is
 
@@ -63,21 +63,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** AI-powered agents are increasingly embedded in continuous integration and continuous delivery/deployment (CI/CD) pipelines to autonomously review pull requests (PRs), triage issues, and maintain codebases. These agents ingest untrusted content while operating…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Data Agents Under Attack: Vulnerabilities in LLM-Driven Analytical Systems**  
-- **Date:** 2026-06-07
-- **Authors:** Kuncan Wang, Ziting Wang, Peizhuo Lv et al.
-- **Link:** https://arxiv.org/abs/2606.08661v1
-- **Security insight:** Data agents integrate LLM-driven reasoning with relational data access, executable analytical tools, and multi-step workflow orchestration, making them increasingly central to enterprise analytics. This integration introduces new security vulnerabilities…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**VATS: Exploiting Implicit Authority in Error-Path Injection via Systematic Mutation**  
-- **Date:** 2026-06-06
-- **Authors:** Harshil Patel, Kunal Pai
-- **Link:** https://arxiv.org/abs/2606.07992v1
-- **Security insight:** As the Model Context Protocol (MCP) standardizes tool-calling for autonomous agents, it introduces a critical, unexamined attack surface: the error-handling loop. We hypothesize that tool error messages possess implicit authority, triggering corrective…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**External Experience Serving in Production LLM Systems: A Deployment-Oriented Study of Quality-Cost Trade-offs**  
+- **Date:** 2026-06-10
+- **Authors:** Lin Sun, Heming Zhang, Xiangzheng Zhang
+- **Link:** https://arxiv.org/abs/2606.11806v1
+- **Security insight:** Production LLM systems accumulate reusable operational experience, but the practical deployment issue is not merely whether such experience can help. It is how different serving strategies trade off quality against online cost under realistic constraints.…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Training LLMs to Enforce Multi-Level Instruction Hierarchies via Gravity-Weighted Direct Preference Optimization**  
 - **Date:** 2026-06-09
@@ -100,12 +93,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Retrieval-augmented generation (RAG) systems often serialize user queries, retrieved documents, metadata, system labels, and task instructions into one natural-language prompt. We study a source-authority boundary failure in this design: attacker-authored…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Hiding in Plain Floats: Steganographic Carriers for Indirect Prompt and Content Injection**  
-- **Date:** 2026-06-07
-- **Authors:** Mudit Sinha, Sanika Chavan
-- **Link:** https://arxiv.org/abs/2606.08403v1
-- **Security insight:** Text-centered prompt-injection defenses assume that the malicious signal is visible in one of the inspected text views. We study a reproducible LLM01-style indirect prompt/content-injection failure mode where that assumption breaks: a payload caught in plain…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### RAG & Retrieval Attacks
+
+**Acoda: Adversarial Code Obfuscation for Defending against LLM-based Analysis**  
+- **Date:** 2026-06-10
+- **Authors:** Hongzhou Rao, Zikan Dong, Yanjie Zhao et al.
+- **Link:** https://arxiv.org/abs/2606.11755v1
+- **Security insight:** With the widespread adoption of Large Language Models (LLMs) in software engineering (SE) tasks such as code understanding, debugging, and vulnerability detection, their powerful semantic reasoning ability has also introduced new security and privacy risks.…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+**T2S: A Rehearsal-Based Approach for Extraction-Resistant Model Watermarking**  
+- **Date:** 2026-06-10
+- **Authors:** Jian-Ping Mei, Weibin Zhang, Ao Yao et al.
+- **Link:** https://arxiv.org/abs/2606.11698v1
+- **Security insight:** Model watermarking safeguards AI model intellectual property by embedding distinctive knowledge that induces unique behavioral signatures. The primary technical challenge lies in ensuring watermark robustness against various post-processing attacks on the…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Adversarial ML
 

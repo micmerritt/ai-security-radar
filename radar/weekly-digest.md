@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-11 (UTC)
+
+Top items:
+
+- **External Experience Serving in Production LLM Systems: A Deployment-Oriented Study of Quality-Cost Trade-offs** (2026-06-10) [Prompt Injection]  
+  https://arxiv.org/abs/2606.11806v1
+
+- **Acoda: Adversarial Code Obfuscation for Defending against LLM-based Analysis** (2026-06-10) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.11755v1
+
+- **T2S: A Rehearsal-Based Approach for Extraction-Resistant Model Watermarking** (2026-06-10) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.11698v1
+
+- **Training LLMs to Enforce Multi-Level Instruction Hierarchies via Gravity-Weighted Direct Preference Optimization** (2026-06-09) [Prompt Injection]  
+  https://arxiv.org/abs/2606.10860v1
+
+- **Toward Secure LLM Agents: Threat Surfaces, Attacks, Defenses, and Evaluation** (2026-06-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.10749v1
+
+- **Assessing Automated Prompt Injection Attacks in Agentic Environments** (2026-06-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.10525v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-10 (UTC)
 
 Top items:
