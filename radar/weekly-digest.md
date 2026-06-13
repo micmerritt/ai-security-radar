@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-13 (UTC)
+
+Top items:
+
+- **Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents** (2026-06-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.13385v1
+
+- **No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions** (2026-06-11) [Prompt Injection]  
+  https://arxiv.org/abs/2606.13044v1
+
+- **Nous: An Attempt to Extract and Inject the Cognition Behind Prediction-Market Behavior** (2026-06-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.13038v1
+
+- **SciR: A Controllable Benchmark for Scientific Reasoning in LLMs** (2026-06-11) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2606.13020v1
+
+- **PI-Hunter: Automated Red-Teaming for Exposing and Localizing Prompt Injections** (2026-06-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.12737v1
+
+- **Does AI Reviewer See the Full Picture? Attacking and Defending Multimodal Peer Review** (2026-06-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.12716v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-12 (UTC)
 
 Top items:
