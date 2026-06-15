@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-14**_
+_Last updated (UTC): **2026-06-15**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails**  
+- **Date:** 2026-06-12
+- **Authors:** Yuguang Zhou, Xunguang Wang, Pingchuan Ma et al.
+- **Link:** https://arxiv.org/abs/2606.14517v1
+- **Security insight:** LLM-based guardrails have emerged as a highly effective defense against prompt injection and jailbreak attacks in autonomous agents. However, we reveal that the very reasoning and task-following capabilities enabling this protection introduce a novel…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills**  
+- **Date:** 2026-06-12
+- **Authors:** Youngduk Kim, Minkyoo Song, Seungwon Shin
+- **Link:** https://arxiv.org/abs/2606.14154v1
+- **Security insight:** Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair natural-language specifications (SKILL.md) with executable scripts and resources. Because a skill's behavior relies on both natural-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents**  
 - **Date:** 2026-06-11
@@ -47,20 +61,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Timothy McAllister, Sina Abdidizaji, Ivan Garibay et al.
 - **Link:** https://arxiv.org/abs/2606.12709v1
 - **Security insight:** As LLM-based multi-agent systems (MAS) are deployed in the wild, the resilience of their collaboration structures against adversarial compromise becomes a critical safety concern. Attackers may leverage prompt-injection or jailbreaking to sabotage individual…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Toward Secure LLM Agents: Threat Surfaces, Attacks, Defenses, and Evaluation**  
-- **Date:** 2026-06-09
-- **Authors:** Yuchen Ling, Shengcheng Yu, Zhenyu Chen et al.
-- **Link:** https://arxiv.org/abs/2606.10749v1
-- **Security insight:** Large language model (LLM) agents are rapidly moving from conversational interfaces to software components that plan, invoke tools, maintain memory, and act on external environments. This transition changes the nature of security risk. In agentic settings,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Assessing Automated Prompt Injection Attacks in Agentic Environments**  
-- **Date:** 2026-06-09
-- **Authors:** David Hofer, Edoardo Debenedetti, Florian Tramèr
-- **Link:** https://arxiv.org/abs/2606.10525v1
-- **Security insight:** Indirect prompt injection poses a critical threat to LLM agents that interact with untrusted external data, yet automated attack methods--proven effective for jailbreaking--remain underexplored in realistic agentic settings. We present a comprehensive…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
