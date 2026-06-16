@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-16 (UTC)
+
+Top items:
+
+- **KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing** (2026-06-15) [Prompt Injection]  
+  https://arxiv.org/abs/2606.17034v1
+
+- **Transferable Self-Evolving Playbooks for Agentic Security Auditing** (2026-06-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.16420v1
+
+- **Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework** (2026-06-15) [Prompt Injection]  
+  https://arxiv.org/abs/2606.16242v1
+
+- **MASCOT-Android: A Curated Dataset and Automated Collection Pipeline for Android Malware Source Code Specimens** (2026-06-15) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.16072v1
+
+- **SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills** (2026-06-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.15899v1
+
+- **Let Them Steal: Trapping Large Language Model Extraction Attacks with Knowledge Honeypot** (2026-06-14) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.15810v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-15 (UTC)
 
 Top items:

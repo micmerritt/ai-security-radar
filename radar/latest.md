@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-15**_
+_Last updated (UTC): **2026-06-16**_
 
 ## What this is
 
@@ -14,6 +14,55 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Transferable Self-Evolving Playbooks for Agentic Security Auditing**  
+- **Date:** 2026-06-15
+- **Authors:** Ziyue Wang, Cheuk Wang Maurice Ng, Chenchen Yu et al.
+- **Link:** https://arxiv.org/abs/2606.16420v1
+- **Security insight:** An LLM agent for vulnerability discovery and validation is more than a model. It combines three components: an LLM for code analysis, an agent harness such as Codex or OpenCode for navigation, tool use, and execution, and an audit playbook, domain-specific…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills**  
+- **Date:** 2026-06-14
+- **Authors:** Ismail Hossain, Sai Puppala, Md Jahangir Alam et al.
+- **Link:** https://arxiv.org/abs/2606.15899v1
+- **Security insight:** Open-source LLM agent ecosystems are growing rapidly, yet the security of community-contributed skills - modular tool definitions that extend agent capabilities - remains largely unvetted. The gap we fill: existing scanners operate at the code layer and are…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Snyk VulnBench JS 1.0: Can LLMs Find the Same Bugs Twice?**  
+- **Date:** 2026-06-14
+- **Authors:** Liran Tal, Johannes Kloos, Arsenii Rudich et al.
+- **Link:** https://arxiv.org/abs/2606.15762v1
+- **Security insight:** We ran 300 repeated vulnerability-finding scans to measure how repeatable agentic large language model (LLM) security review is on the same JavaScript code, prompt, and benchmark harness. The headline result is that LLM security findings were unevenly…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion**  
+- **Date:** 2026-06-14
+- **Authors:** Zixin Rao, Wentian Zhu, Chan Aristella Lu et al.
+- **Link:** https://arxiv.org/abs/2606.15609v1
+- **Security insight:** Large language model (LLM) agents increasingly rely on long-term memory to support complex task execution, user personalization, and domain adaptation. Meanwhile, emerging access-control mechanisms for LLM agents are being explored to block policy-violating…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Defending against Adaptive Prompt Injection Attacks via Reasoning-enabled Task Alignment**  
+- **Date:** 2026-06-13
+- **Authors:** Lipeng He, Yihan Wang, Jiawen Zhang et al.
+- **Link:** https://arxiv.org/abs/2606.15441v1
+- **Security insight:** Indirect prompt injection attacks hijack LLM-based agents by embedding malicious instructions in third-party data that the agent retrieves during task execution. Existing defenses report near-zero attack success rate on static benchmarks, yet recent adaptive…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**AutoDojo: Adaptive Attacks Expose Superficial Defenses and User-Underspecification Limits in LLM Agents**  
+- **Date:** 2026-06-13
+- **Authors:** Xinhang Ma, Taoran Li, Chaowei Xiao et al.
+- **Link:** https://arxiv.org/abs/2606.15057v1
+- **Security insight:** Indirect prompt injection (IPI) is a major security threat to LLM-powered agents. Thus, a growing body of work have proposed a variety of defensive approaches against IPI. These can be grouped into three broad categories: 1) prompt-based (using prompting as a…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Security Engineering of OpenClaw: Analyzing Attack Surface Expansion and Trust-Boundary Violations**  
+- **Date:** 2026-06-12
+- **Authors:** Saeid Jamshidi, Arghavan Moradi Dakhel, Kawser Wazed Nafi et al.
+- **Link:** https://arxiv.org/abs/2606.15008v1
+- **Security insight:** Agentic large language model (LLM) systems can now execute actions, not only produce text. When model outputs trigger privileged operations such as shell commands, browser automation, or external tool calls, the security problem shifts from alignment alone to…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails**  
 - **Date:** 2026-06-12
 - **Authors:** Yuguang Zhou, Xunguang Wang, Pingchuan Ma et al.
@@ -21,99 +70,50 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** LLM-based guardrails have emerged as a highly effective defense against prompt injection and jailbreak attacks in autonomous agents. However, we reveal that the very reasoning and task-following capabilities enabling this protection introduce a novel…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills**  
-- **Date:** 2026-06-12
-- **Authors:** Youngduk Kim, Minkyoo Song, Seungwon Shin
-- **Link:** https://arxiv.org/abs/2606.14154v1
-- **Security insight:** Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair natural-language specifications (SKILL.md) with executable scripts and resources. Because a skill's behavior relies on both natural-…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents**  
-- **Date:** 2026-06-11
-- **Authors:** Zihao Wang, Yiming Li, Yutong Wu et al.
-- **Link:** https://arxiv.org/abs/2606.13385v1
-- **Security insight:** Web agents driven by large language models (LLMs) are increasingly deployed in real-world environments, where they operate over untrusted web content and execute actions with direct consequences. This makes them vulnerable to prompt-injection attacks, in…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Nous: An Attempt to Extract and Inject the Cognition Behind Prediction-Market Behavior**  
-- **Date:** 2026-06-11
-- **Authors:** Haowei Qian
-- **Link:** https://arxiv.org/abs/2606.13038v1
-- **Security insight:** As LLM agents proliferate in prediction markets and collective decision-making, they risk a cognitive monoculture: agents built on shared foundation models produce correlated forecasts, and recent measurement finds frontier-model errors correlated at r ~…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**PI-Hunter: Automated Red-Teaming for Exposing and Localizing Prompt Injections**  
-- **Date:** 2026-06-10
-- **Authors:** Pengfei He, Lesly Miculicich, Vishesh Sharma et al.
-- **Link:** https://arxiv.org/abs/2606.12737v1
-- **Security insight:** Large Language Models (LLMs) are rapidly evolving into agentic systems that interact with external tools and environments, introducing new security risks such as indirect prompt injection attacks through untrusted external sources. Existing defenses mainly…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Does AI Reviewer See the Full Picture? Attacking and Defending Multimodal Peer Review**  
-- **Date:** 2026-06-10
-- **Authors:** Xinyu Zhao, Rana Muhammad Shahroz Khan, Zhen Xu et al.
-- **Link:** https://arxiv.org/abs/2606.12716v1
-- **Security insight:** The integration of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) into scientific peer-review workflows introduces novel and significant risks for adversarial manipulation, especially given the multimodal nature of scientific papers where figures,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Smarter Saboteurs, Better Fixers: Scaling & Security in Linear Multi-Agent Workflows**  
-- **Date:** 2026-06-10
-- **Authors:** Timothy McAllister, Sina Abdidizaji, Ivan Garibay et al.
-- **Link:** https://arxiv.org/abs/2606.12709v1
-- **Security insight:** As LLM-based multi-agent systems (MAS) are deployed in the wild, the resilience of their collaboration structures against adversarial compromise becomes a critical safety concern. Attackers may leverage prompt-injection or jailbreaking to sabotage individual…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
-**No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions**  
-- **Date:** 2026-06-11
-- **Authors:** Xu Yang, Zhizhou Sha, Junbo Li et al.
-- **Link:** https://arxiv.org/abs/2606.13044v1
-- **Security insight:** As AI-generated reviews move from experimental tools into peer-review infrastructure, most robustness concerns have focused on explicit attacks such as hidden instructions and prompt injection. We study a harder and more policy-relevant failure mode: no…
+**KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing**  
+- **Date:** 2026-06-15
+- **Authors:** Mufei Li, Shikun Liu, Dongqi Fu et al.
+- **Link:** https://arxiv.org/abs/2606.17034v1
+- **Security insight:** Post-hoc context erasing over the KV cache is challenging because a local edit has a global consequence: once a span has been processed, its influence propagates into the cached states of all subsequent tokens. This issue arises naturally in long-context LLM…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**External Experience Serving in Production LLM Systems: A Deployment-Oriented Study of Quality-Cost Trade-offs**  
-- **Date:** 2026-06-10
-- **Authors:** Lin Sun, Heming Zhang, Xiangzheng Zhang
-- **Link:** https://arxiv.org/abs/2606.11806v1
-- **Security insight:** Production LLM systems accumulate reusable operational experience, but the practical deployment issue is not merely whether such experience can help. It is how different serving strategies trade off quality against online cost under realistic constraints.…
+**Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework**  
+- **Date:** 2026-06-15
+- **Authors:** David Huang, Jaewon Chang, Avidan Shah et al.
+- **Link:** https://arxiv.org/abs/2606.16242v1
+- **Security insight:** The Rapid Response (RR) framework, deployed in production systems, including Anthropic's ASL-3 safeguards, continuously improves jailbreak-detection classifiers. When new jailbreaks emerge that bypass these classifiers, Rapid Response generates synthetic…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Training LLMs to Enforce Multi-Level Instruction Hierarchies via Gravity-Weighted Direct Preference Optimization**  
-- **Date:** 2026-06-09
-- **Authors:** Lena S. Bolliger, Lena A. Jäger
-- **Link:** https://arxiv.org/abs/2606.10860v1
-- **Security insight:** Production LLMs receive instructions from sources with very different levels of trust, yet attend to every token with uniform architectural privilege. This is the structural vulnerability that enables malicious prompt injections and, more broadly, leaves…
+**GAS-Leak-LLM: Genetic Algorithm-Based Suffix Optimization for Black-Box LLM Jailbreaking**  
+- **Date:** 2026-06-14
+- **Authors:** Aman Anifer, Vignesh Kumar Kembu, Vishnu M et al.
+- **Link:** https://arxiv.org/abs/2606.15788v1
+- **Security insight:** Large Language Models (LLMs) constitute pivotal components within the AI-dominated information technology ecosystem. To mitigate risks associated with harmful or policy-violating outputs, commercial systems employ advanced alignment strategies and multi-…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
 
-**Acoda: Adversarial Code Obfuscation for Defending against LLM-based Analysis**  
-- **Date:** 2026-06-10
-- **Authors:** Hongzhou Rao, Zikan Dong, Yanjie Zhao et al.
-- **Link:** https://arxiv.org/abs/2606.11755v1
-- **Security insight:** With the widespread adoption of Large Language Models (LLMs) in software engineering (SE) tasks such as code understanding, debugging, and vulnerability detection, their powerful semantic reasoning ability has also introduced new security and privacy risks.…
+**MASCOT-Android: A Curated Dataset and Automated Collection Pipeline for Android Malware Source Code Specimens**  
+- **Date:** 2026-06-15
+- **Authors:** Bojing Li, Duo Zhong, Prajna Bhandary et al.
+- **Link:** https://arxiv.org/abs/2606.16072v1
+- **Security insight:** Compared with binaries and decompiled code, malware source code more directly reflects the attackers' original intent. However, the scarcity of source code and the high cost of manual review make such datasets difficult to build and maintain. We propose…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-**T2S: A Rehearsal-Based Approach for Extraction-Resistant Model Watermarking**  
-- **Date:** 2026-06-10
-- **Authors:** Jian-Ping Mei, Weibin Zhang, Ao Yao et al.
-- **Link:** https://arxiv.org/abs/2606.11698v1
-- **Security insight:** Model watermarking safeguards AI model intellectual property by embedding distinctive knowledge that induces unique behavioral signatures. The primary technical challenge lies in ensuring watermark robustness against various post-processing attacks on the…
+**Let Them Steal: Trapping Large Language Model Extraction Attacks with Knowledge Honeypot**  
+- **Date:** 2026-06-14
+- **Authors:** Yuyang Dai, Yushun Dong
+- **Link:** https://arxiv.org/abs/2606.15810v1
+- **Security insight:** Large language models deployed as commercial APIs are vulnerable to model extraction attacks, while existing defenses either act too late or degrade utility for legitimate users. We propose \textbf{Knowledge Trap}, a defense that redirects extraction attacks…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-**Influence Factors on RAG Poisoning**  
-- **Date:** 2026-06-09
-- **Authors:** Pedro Pereira, Eva Maia, Isabel Praça et al.
-- **Link:** https://arxiv.org/abs/2606.12469v1
-- **Security insight:** Retrieval-Augmented Generation (RAG) systems enhance large language models by grounding responses in retrieved documents from external knowledge sources at inference time. However, this reliance on retrieved content introduces vulnerabilities to poisoning…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+### Adversarial ML
 
-### Model Extraction & Privacy
-
-**SciR: A Controllable Benchmark for Scientific Reasoning in LLMs**  
-- **Date:** 2026-06-11
-- **Authors:** Pierre Beckmann, Marco Valentino, Andre Freitas
-- **Link:** https://arxiv.org/abs/2606.13020v1
-- **Security insight:** Three paradigmatic forms of inference recur across scientific reasoning: deduction, induction, and causal abduction. Reliably evaluating LLMs on these in scientific settings is currently out of reach: scientific benchmarks built on human annotations are…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+**Forced Deferral: Manipulating Routing Decisions in Multimodal LLM Cascades**  
+- **Date:** 2026-06-13
+- **Authors:** Zhongye Liu, Yaopei Zeng, Yurui Chang et al.
+- **Link:** https://arxiv.org/abs/2606.15308v1
+- **Security insight:** While multimodal large language models (MLLMs) have shown strong visual reasoning abilities, serving a large model for every query is computationally expensive. MLLM cascades mitigate this cost by first querying a weak but cheaper model and deferring to a…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
