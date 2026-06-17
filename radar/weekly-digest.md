@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-17 (UTC)
+
+Top items:
+
+- **PARSE: Provenance-Aware Retrieval Sanitization for Professional Domain LLM Agents** (2026-06-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.17467v1
+
+- **KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing** (2026-06-15) [Prompt Injection]  
+  https://arxiv.org/abs/2606.17034v1
+
+- **An Evaluation of Data Leakage Risks in Tool-Using LLM Agents in Realistic Scenarios** (2026-06-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.17114v1
+
+- **Transferable Self-Evolving Playbooks for Agentic Security Auditing** (2026-06-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.16420v1
+
+- **Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework** (2026-06-15) [Prompt Injection]  
+  https://arxiv.org/abs/2606.16242v1
+
+- **MASCOT-Android: A Curated Dataset and Automated Collection Pipeline for Android Malware Source Code Specimens** (2026-06-15) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.16072v2
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-16 (UTC)
 
 Top items:

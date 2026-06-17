@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-16**_
+_Last updated (UTC): **2026-06-17**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**PARSE: Provenance-Aware Retrieval Sanitization for Professional Domain LLM Agents**  
+- **Date:** 2026-06-16
+- **Authors:** Aaditya Pai
+- **Link:** https://arxiv.org/abs/2606.17467v1
+- **Security insight:** Prompt injection defenses evaluated on synthetic benchmarks do not generalize to real enterprise documents, which are longer, denser, and interleave legitimate authority language with factual content. We demonstrate this gap with a real-document benchmark of…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**An Evaluation of Data Leakage Risks in Tool-Using LLM Agents in Realistic Scenarios**  
+- **Date:** 2026-06-15
+- **Authors:** Hankyul Baek, Jaewon Noh, Sang Seo et al.
+- **Link:** https://arxiv.org/abs/2606.17114v1
+- **Security insight:** AI agents are increasingly being adopted in enterprise and personal settings with access to emails, databases, documents, and other tools where they can read, update, and disseminate sensitive information. Much of prior research on data leakage risks in…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Transferable Self-Evolving Playbooks for Agentic Security Auditing**  
 - **Date:** 2026-06-15
@@ -56,20 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Indirect prompt injection (IPI) is a major security threat to LLM-powered agents. Thus, a growing body of work have proposed a variety of defensive approaches against IPI. These can be grouped into three broad categories: 1) prompt-based (using prompting as a…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Security Engineering of OpenClaw: Analyzing Attack Surface Expansion and Trust-Boundary Violations**  
-- **Date:** 2026-06-12
-- **Authors:** Saeid Jamshidi, Arghavan Moradi Dakhel, Kawser Wazed Nafi et al.
-- **Link:** https://arxiv.org/abs/2606.15008v1
-- **Security insight:** Agentic large language model (LLM) systems can now execute actions, not only produce text. When model outputs trigger privileged operations such as shell commands, browser automation, or external tool calls, the security problem shifts from alignment alone to…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails**  
-- **Date:** 2026-06-12
-- **Authors:** Yuguang Zhou, Xunguang Wang, Pingchuan Ma et al.
-- **Link:** https://arxiv.org/abs/2606.14517v1
-- **Security insight:** LLM-based guardrails have emerged as a highly effective defense against prompt injection and jailbreak attacks in autonomous agents. However, we reveal that the very reasoning and task-following capabilities enabling this protection introduce a novel…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing**  
@@ -98,7 +98,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **MASCOT-Android: A Curated Dataset and Automated Collection Pipeline for Android Malware Source Code Specimens**  
 - **Date:** 2026-06-15
 - **Authors:** Bojing Li, Duo Zhong, Prajna Bhandary et al.
-- **Link:** https://arxiv.org/abs/2606.16072v1
+- **Link:** https://arxiv.org/abs/2606.16072v2
 - **Security insight:** Compared with binaries and decompiled code, malware source code more directly reflects the attackers' original intent. However, the scarcity of source code and the high cost of manual review make such datasets difficult to build and maintain. We propose…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
