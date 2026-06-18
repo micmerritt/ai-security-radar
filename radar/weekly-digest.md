@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-18 (UTC)
+
+Top items:
+
+- **CodeSentinel: A Three-Layer Defense Against Indirect Prompt Injection in Code Contexts** (2026-06-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.19235v1
+
+- **The Gate Is Only as Honest as Its Contracts: ContractGuard for the Contract Layer of Risk-Aware Causal Gating** (2026-06-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.18550v1
+
+- **SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents** (2026-06-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.18356v1
+
+- **PARSE: Provenance-Aware Retrieval Sanitization for Professional Domain LLM Agents** (2026-06-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.17467v1
+
+- **KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing** (2026-06-15) [Prompt Injection]  
+  https://arxiv.org/abs/2606.17034v1
+
+- **An Evaluation of Data Leakage Risks in Tool-Using LLM Agents in Realistic Scenarios** (2026-06-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.17114v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-17 (UTC)
 
 Top items:

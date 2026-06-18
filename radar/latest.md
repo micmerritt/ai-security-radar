@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-17**_
+_Last updated (UTC): **2026-06-18**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**CodeSentinel: A Three-Layer Defense Against Indirect Prompt Injection in Code Contexts**  
+- **Date:** 2026-06-17
+- **Authors:** Po-Han Cheng, Chia-Mu Yu, Ying-Dar Lin et al.
+- **Link:** https://arxiv.org/abs/2606.19235v1
+- **Security insight:** Code large language models increasingly retrieve external code context from repositories, documentation, issue threads, and coding-agent environments, creating an indirect prompt-injection surface where attackers hide instructions in comments, strings,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**The Gate Is Only as Honest as Its Contracts: ContractGuard for the Contract Layer of Risk-Aware Causal Gating**  
+- **Date:** 2026-06-17
+- **Authors:** Laxmipriya Ganesh Iyer, Rahul Suresh Babu
+- **Link:** https://arxiv.org/abs/2606.18550v1
+- **Security insight:** Risk-Aware Causal Gating (RACG) defends tool-augmented LLM agents against indirect prompt injection by removing dangerous tools from the agent's visible action space, so that even a fully injection-compliant agent cannot call a tool it cannot see. We make…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents**  
+- **Date:** 2026-06-16
+- **Authors:** Yuchuan Tian, Mengyu Zheng, Haocheng Mei et al.
+- **Link:** https://arxiv.org/abs/2606.18356v1
+- **Security insight:** Tool-using language-model agents introduce security failures that go beyond unsafe text: they can disclose protected objects, write persistent memory, send messages, modify databases, or trigger harmful code and tool effects. Existing evaluations often…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **PARSE: Provenance-Aware Retrieval Sanitization for Professional Domain LLM Agents**  
 - **Date:** 2026-06-16
@@ -56,20 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language model (LLM) agents increasingly rely on long-term memory to support complex task execution, user personalization, and domain adaptation. Meanwhile, emerging access-control mechanisms for LLM agents are being explored to block policy-violating…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Defending against Adaptive Prompt Injection Attacks via Reasoning-enabled Task Alignment**  
-- **Date:** 2026-06-13
-- **Authors:** Lipeng He, Yihan Wang, Jiawen Zhang et al.
-- **Link:** https://arxiv.org/abs/2606.15441v1
-- **Security insight:** Indirect prompt injection attacks hijack LLM-based agents by embedding malicious instructions in third-party data that the agent retrieves during task execution. Existing defenses report near-zero attack success rate on static benchmarks, yet recent adaptive…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**AutoDojo: Adaptive Attacks Expose Superficial Defenses and User-Underspecification Limits in LLM Agents**  
-- **Date:** 2026-06-13
-- **Authors:** Xinhang Ma, Taoran Li, Chaowei Xiao et al.
-- **Link:** https://arxiv.org/abs/2606.15057v1
-- **Security insight:** Indirect prompt injection (IPI) is a major security threat to LLM-powered agents. Thus, a growing body of work have proposed a variety of defensive approaches against IPI. These can be grouped into three broad categories: 1) prompt-based (using prompting as a…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing**  
@@ -108,12 +115,3 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2606.15810v1
 - **Security insight:** Large language models deployed as commercial APIs are vulnerable to model extraction attacks, while existing defenses either act too late or degrade utility for legitimate users. We propose \textbf{Knowledge Trap}, a defense that redirects extraction attacks…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Adversarial ML
-
-**Forced Deferral: Manipulating Routing Decisions in Multimodal LLM Cascades**  
-- **Date:** 2026-06-13
-- **Authors:** Zhongye Liu, Yaopei Zeng, Yurui Chang et al.
-- **Link:** https://arxiv.org/abs/2606.15308v1
-- **Security insight:** While multimodal large language models (MLLMs) have shown strong visual reasoning abilities, serving a large model for every query is computationally expensive. MLLM cascades mitigate this cost by first querying a weak but cheaper model and deferring to a…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
