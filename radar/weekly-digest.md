@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-20 (UTC)
+
+Top items:
+
+- **What Do Safety-Aligned LLMs Learn From Mixed Compliance Demonstrations?** (2026-06-18) [Other (Review)]  
+  https://arxiv.org/abs/2606.20508v1
+
+- **Calibration Without Comprehension: Diagnosing the Limits of Fine-Tuning LLMs for Vulnerability Detection in Systems Software** (2026-06-18) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2606.20502v1
+
+- **Analyzing Defensive Misdirection Against Model-Guided Automated Attacks on Agentic AI Systems** (2026-06-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.20470v1
+
+- **A Layered Security Framework Against Prompt Injection in RAG-Based Chatbots** (2026-06-17) [Prompt Injection]  
+  https://arxiv.org/abs/2606.19660v1
+
+- **Analyzing the Narration Gap in LLM-Solver Loops** (2026-06-17) [Prompt Injection]  
+  https://arxiv.org/abs/2606.19588v1
+
+- **CodeSentinel: A Three-Layer Defense Against Indirect Prompt Injection in Code Contexts** (2026-06-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.19235v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-19 (UTC)
 
 Top items:
