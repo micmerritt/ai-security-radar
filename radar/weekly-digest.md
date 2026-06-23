@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-23 (UTC)
+
+Top items:
+
+- **TROPT: An Open Framework for Unifying and Advancing Discrete Text Optimization** (2026-06-22) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.23496v1
+
+- **Detecting Malicious Agent Skills in the Wild using Attention** (2026-06-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.23416v1
+
+- **GIF: Locally Sound Geometric Information Flow Control for LLMs** (2026-06-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.23277v1
+
+- **When AUC 0.998 Is Not Enough: A Candidate Evaluation Protocol for Hidden-State Probes of Indirect Prompt Injection in Multimodal Computer-Use Agents** (2026-06-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.22864v1
+
+- **DE-FIVE: Detecting Malicious Image Prompts via Fourier Features and Image Vector Embeddings** (2026-06-22) [Prompt Injection]  
+  https://arxiv.org/abs/2606.22779v1
+
+- **Confidently Wrong: Severity-Aware Calibration of Prompt-Injection Detectors under Attack Shift** (2026-06-21) [Other (Review)]  
+  https://arxiv.org/abs/2606.22659v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-22 (UTC)
 
 Top items:
