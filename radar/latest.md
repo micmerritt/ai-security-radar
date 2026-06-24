@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-23**_
+_Last updated (UTC): **2026-06-24**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Poisoned Playbooks: Demystifying Knowledge Poisoning Effects on AI Security Agents**  
+- **Date:** 2026-06-23
+- **Authors:** Juho Park, Hyunmin Choi, Kevin Nam
+- **Link:** https://arxiv.org/abs/2606.24402v1
+- **Security insight:** AI security agents increasingly rely on Retrieval-Augmented Generation (RAG) to use external security knowledge for vulnerability analysis and exploit reasoning. This creates a new risk: poisoned write-ups can be operationalized into incorrect exploit…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems**  
+- **Date:** 2026-06-22
+- **Authors:** Yarin Yerushalmi Levi, Roy Betser, Amit Giloni et al.
+- **Link:** https://arxiv.org/abs/2606.23927v1
+- **Security insight:** Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Detecting Malicious Agent Skills in the Wild using Attention**  
 - **Date:** 2026-06-22
@@ -63,13 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The integration of external tools has substantially expanded the capabilities of large language model (LLM) agents, but it also introduces new attack surfaces beyond prompt injection. In particular, cross-tool description poisoning can manipulate planner-…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Analyzing Defensive Misdirection Against Model-Guided Automated Attacks on Agentic AI Systems**  
-- **Date:** 2026-06-18
-- **Authors:** Reza Soosahabi, Vivek Namsani
-- **Link:** https://arxiv.org/abs/2606.20470v1
-- **Security insight:** Agentic AI systems increasingly rely on language-model components to interpret instructions, process external data, invoke tools, and coordinate with other agents. These capabilities make prompt-injection and jailbreak attacks more consequential, especially…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **DE-FIVE: Detecting Malicious Image Prompts via Fourier Features and Image Vector Embeddings**  
@@ -77,13 +84,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Xingwei Zhong, Varun Sharma, Kar Wai Fok et al.
 - **Link:** https://arxiv.org/abs/2606.22779v1
 - **Security insight:** Vision language models (VLMs) employ both visual and textual modalities to enable advanced vision-language inference. However, incorporating visual modalities expands the attack surface of VLMs, making them more susceptible to security threats such as…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**A Layered Security Framework Against Prompt Injection in RAG-Based Chatbots**  
-- **Date:** 2026-06-17
-- **Authors:** Gulshan Saleem, Nisar Ahmed, Muhammad Imran Zaman et al.
-- **Link:** https://arxiv.org/abs/2606.19660v1
-- **Security insight:** Prompt injection is ranked as the most critical vulnerability in large language model (LLM) deployments by the OWASP Top 10 for LLM Applications, yet existing defenses operate at isolated pipeline stages and remain incomplete. Input filters cannot inspect…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
