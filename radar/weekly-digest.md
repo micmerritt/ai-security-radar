@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-25 (UTC)
+
+Top items:
+
+- **AI Snitches Get Glitches: Towards Evading Agentic Surveillance** (2026-06-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.25836v1
+
+- **How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring** (2026-06-24) [Prompt Injection]  
+  https://arxiv.org/abs/2606.25487v1
+
+- **A Red Teaming Framework for Large Language Models: A Case Study on Faithfulness Evaluation** (2026-06-24) [Adversarial ML]  
+  https://arxiv.org/abs/2606.25476v1
+
+- **Representation Matters: An Empirical Study of Program Representations for LLM Vulnerability Reasoning** (2026-06-24) [Other (Review)]  
+  https://arxiv.org/abs/2606.25356v1
+
+- **LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges** (2026-06-23) [Prompt Injection]  
+  https://arxiv.org/abs/2606.25057v1
+
+- **Poisoned Playbooks: Demystifying Knowledge Poisoning Effects on AI Security Agents** (2026-06-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.24402v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-24 (UTC)
 
 Top items:
