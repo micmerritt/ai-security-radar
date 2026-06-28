@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-28 (UTC)
+
+Top items:
+
+- **Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings** (2026-06-25) [Prompt Injection]  
+  https://arxiv.org/abs/2606.27287v1
+
+- **MIRROR: Novelty-Constrained Memory-Guided MCTS Red-Teaming for Agentic RAG** (2026-06-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.26793v1
+
+- **Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents** (2026-06-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.26627v1
+
+- **Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents** (2026-06-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.26479v1
+
+- **Beyond Feedforward Networks: Reentry Neural Systems as the Fundamental Basis of Subjecthood and Intrinsic Safety of Next-Generation AGI** (2026-06-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.26406v1
+
+- **Verifying Intent and Harm: A Unified Defense Against LLM-Generated Threats** (2026-06-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.26377v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-27 (UTC)
 
 Top items:
