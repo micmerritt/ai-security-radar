@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-28**_
+_Last updated (UTC): **2026-06-29**_
 
 ## What this is
 
@@ -59,7 +59,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **AI Snitches Get Glitches: Towards Evading Agentic Surveillance**  
 - **Date:** 2026-06-24
 - **Authors:** Hyejun Jeong, Dzung Pham, Amir Houmansadr et al.
-- **Link:** https://arxiv.org/abs/2606.25836v1
+- **Link:** https://arxiv.org/abs/2606.25836v2
 - **Security insight:** To better assist users with completing challenging tasks, AI agents mediate communications, access data, and interact with different APIs. Many employers (and even nation-states) already provide their users with this technology. However, widespread adoption…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -70,14 +70,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** AI security agents increasingly rely on Retrieval-Augmented Generation (RAG) to use external security knowledge for vulnerability analysis and exploit reasoning. This creates a new risk: poisoned write-ups can be operationalized into incorrect exploit…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems**  
-- **Date:** 2026-06-22
-- **Authors:** Yarin Yerushalmi Levi, Roy Betser, Amit Giloni et al.
-- **Link:** https://arxiv.org/abs/2606.23927v1
-- **Security insight:** Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**On the Inseparability of Instructions and Data in Shared-Embedding Sequence Models**  
+- **Date:** 2026-06-25
+- **Authors:** Dewank Pant, Shruti Lohani, Avijit Kumar
+- **Link:** https://arxiv.org/abs/2606.27567v1
+- **Security insight:** Prompt injection is the top security risk for LLM-integrated applications, yet every defense proposed so far has been broken. We prove this is not a coincidence: in shared-embedding architectures that lack enforced control-data separation, perfect prompt-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings**  
 - **Date:** 2026-06-25
