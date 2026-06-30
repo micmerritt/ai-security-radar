@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-06-30 (UTC)
+
+Top items:
+
+- **Forensic Trajectory Signatures for Agent Memory Poisoning Detection** (2026-06-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.30566v1
+
+- **IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies** (2026-06-29) [Prompt Injection]  
+  https://arxiv.org/abs/2606.29960v1
+
+- **SCARCE: Scalable Cascade Analysis for Rare-event Characterisation via Embeddings** (2026-06-28) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2606.29623v1
+
+- **An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios** (2026-06-28) [Prompt Injection]  
+  https://arxiv.org/abs/2606.29602v1
+
+- **Agent Security Meets Regulatory Reality -- A Practitioner Systematization of Autonomous-Agent Threats and Controls in Regulated Financial Systems** (2026-06-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.29142v1
+
+- **From Determinism to Delegation: AI-Native Software Engineering and the Evolution of the Agentic Engineer** (2026-06-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.28791v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-29 (UTC)
 
 Top items:
