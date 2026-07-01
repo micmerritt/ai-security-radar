@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-01 (UTC)
+
+Top items:
+
+- **Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming** (2026-06-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.31227v1
+
+- **Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks** (2026-06-30) [Prompt Injection]  
+  https://arxiv.org/abs/2606.31016v1
+
+- **Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense** (2026-06-29) [Prompt Injection]  
+  https://arxiv.org/abs/2606.30783v1
+
+- **Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens** (2026-06-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.30755v1
+
+- **Forensic Trajectory Signatures for Agent Memory Poisoning Detection** (2026-06-29) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.30566v1
+
+- **IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies** (2026-06-29) [Prompt Injection]  
+  https://arxiv.org/abs/2606.29960v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-06-30 (UTC)
 
 Top items:

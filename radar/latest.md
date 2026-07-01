@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-06-30**_
+_Last updated (UTC): **2026-07-01**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming**  
+- **Date:** 2026-06-30
+- **Authors:** Yong Yang, Xing Zheng, Huiyu Wu et al.
+- **Link:** https://arxiv.org/abs/2606.31227v1
+- **Security insight:** The fast growth of open-source AI infrastructure, from model serving engines and agent platforms to the Model Context Protocol (MCP) ecosystem and the language models themselves, has outpaced the security tooling available to defend it. We present AI-Infra-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens**  
+- **Date:** 2026-06-29
+- **Authors:** Peizhi Niu, Wenjie Qu, Shangding Gu et al.
+- **Link:** https://arxiv.org/abs/2606.30755v1
+- **Security insight:** Claw-like AI agents (e.g., OpenClaw) are always-on processes with persistent access to credentials, files, tools, and external services. They take on system-level responsibilities -- installing packages, maintaining state, scheduling subtasks, and mediating…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Forensic Trajectory Signatures for Agent Memory Poisoning Detection**  
 - **Date:** 2026-06-29
@@ -49,28 +63,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language model (LLM) agents are rapidly being integrated into real-world systems. Their autonomy and tool-use capabilities generate substantial value while simultaneously expanding the security attack surface. This survey provides a comprehensive…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**MIRROR: Novelty-Constrained Memory-Guided MCTS Red-Teaming for Agentic RAG**  
-- **Date:** 2026-06-25
-- **Authors:** Inderjeet Singh, Andrés Murillo, Motoyoshi Sekiya et al.
-- **Link:** https://arxiv.org/abs/2606.26793v1
-- **Security insight:** Multimodal agentic retrieval-augmented generation (RAG) systems expand the attack surface beyond prompt injection to include text poisoning, image injection, direct-query attacks, and orchestrator-level tool manipulation. Existing red-teaming approaches are…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents**  
-- **Date:** 2026-06-25
-- **Authors:** Nada Lahjouji, Ashwin Gerard Colaco
-- **Link:** https://arxiv.org/abs/2606.26627v1
-- **Security insight:** Large language model agents increasingly query databases, search document collections, call external APIs, remember past interactions, and act on a user's behalf. As they move from answering questions to operating over sensitive data, privacy becomes harder…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents**  
-- **Date:** 2026-06-25
-- **Authors:** Praneeth Narisetty, Shiva Nagendra Babu Kore, Uday Kumar Reddy Kattamanchi et al.
-- **Link:** https://arxiv.org/abs/2606.26479v1
-- **Security insight:** Recent work (2024 to 2026) has converged on a strategy for defending tool-using LLM agents against indirect prompt injection: rather than training the model to refuse malicious instructions, enforce security outside the model with a deterministic policy that…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks**  
+- **Date:** 2026-06-30
+- **Authors:** Yuanai Xie, Jiaxin Chen, Zhaozhi Liu
+- **Link:** https://arxiv.org/abs/2606.31016v1
+- **Security insight:** Large language model (LLM)-enabled edge networks (LLMENs) offer mobile users high-quality and low-latency AI-generated content services in the 6G era. However, unlike typical edge networks, LLMENs present unique security challenges due to the inherent…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense**  
+- **Date:** 2026-06-29
+- **Authors:** Mitchell Hermon, Rahul Gupta, Weitong Ruan et al.
+- **Link:** https://arxiv.org/abs/2606.30783v1
+- **Security insight:** We identify a security-fidelity tradeoff in defending LLMs against indirect prompt injection: defenses resist injected instructions largely by suppressing untrusted text, which corrupts tasks that must preserve it, such as translation and document editing.…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies**  
 - **Date:** 2026-06-29
@@ -98,13 +105,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Dewank Pant, Shruti Lohani, Avijit Kumar
 - **Link:** https://arxiv.org/abs/2606.27567v1
 - **Security insight:** Prompt injection is the top security risk for LLM-integrated applications, yet every defense proposed so far has been broken. We prove this is not a coincidence: in shared-embedding architectures that lack enforced control-data separation, perfect prompt-…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings**  
-- **Date:** 2026-06-25
-- **Authors:** Preet Baxi, Jiannan Xu, Jane Yi Jiang et al.
-- **Link:** https://arxiv.org/abs/2606.27287v1
-- **Security insight:** Large language models (LLMs) are increasingly used to screen and rank job applicants, creating incentives for candidates to strategically manipulate algorithmic hiring systems. We study prompt injection in automated résumé screening, defined as subtle self-…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
