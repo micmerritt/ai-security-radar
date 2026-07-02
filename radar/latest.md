@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-01**_
+_Last updated (UTC): **2026-07-02**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity**  
+- **Date:** 2026-07-01
+- **Authors:** Brett Reynolds
+- **Link:** https://arxiv.org/abs/2607.01153v1
+- **Security insight:** Safety evaluations for language models increasingly depend on judgments about ambiguous natural-language behaviour: whether a model has followed an instruction, refused appropriately, complied with a policy, resisted an embedded command, or misreported…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming**  
 - **Date:** 2026-06-30
@@ -98,13 +105,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Nima Dorzhiev
 - **Link:** https://arxiv.org/abs/2606.28649v1
 - **Security insight:** We present RIPA, the first systematic multi-channel empirical study of prompt injection attacks delivered through the sensory pipeline of a ROS 2-based LLM-controlled robotic system. Across 100 independent runs per injection variant on five LLMs spanning four…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**On the Inseparability of Instructions and Data in Shared-Embedding Sequence Models**  
-- **Date:** 2026-06-25
-- **Authors:** Dewank Pant, Shruti Lohani, Avijit Kumar
-- **Link:** https://arxiv.org/abs/2606.27567v1
-- **Security insight:** Prompt injection is the top security risk for LLM-integrated applications, yet every defense proposed so far has been broken. We prove this is not a coincidence: in shared-embedding architectures that lack enforced control-data separation, perfect prompt-…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
