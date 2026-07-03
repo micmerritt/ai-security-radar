@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-02**_
+_Last updated (UTC): **2026-07-03**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Distributed Attacks in Persistent-State AI Control**  
+- **Date:** 2026-07-02
+- **Authors:** Josh Hills, Ida Caspary, Asa Cooper Stickland
+- **Link:** https://arxiv.org/abs/2607.02514v1
+- **Security insight:** As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity**  
 - **Date:** 2026-07-01
@@ -63,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Agent-based AI has enabled the automation of tasks by exposing application tools and resources to large language models (LLMs). However, to improve scope and accuracy, agents are often given access rights that exceed those of ordinary users, introducing…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**LLM agents security duality: a comprehensive survey of self-security and empowered cybersecurity**  
-- **Date:** 2026-06-26
-- **Authors:** Yiwei Xu, Yong Zhuang, Xuanming Liu et al.
-- **Link:** https://arxiv.org/abs/2606.28450v1
-- **Security insight:** Large language model (LLM) agents are rapidly being integrated into real-world systems. Their autonomy and tool-use capabilities generate substantial value while simultaneously expanding the security attack surface. This survey provides a comprehensive…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks**  
@@ -100,13 +100,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Models (LLMs) have rapidly evolved, transforming industries by automating complex tasks and generating human-like content. However, as their adoption accelerates, prompt injection vulnerabilities have become increasingly apparent. Malicious…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**RIPA: Sensory-Vector Prompt Injection Attacks on LLM-Controlled ROS 2 Robots**  
-- **Date:** 2026-06-26
-- **Authors:** Nima Dorzhiev
-- **Link:** https://arxiv.org/abs/2606.28649v1
-- **Security insight:** We present RIPA, the first systematic multi-channel empirical study of prompt injection attacks delivered through the sensory pipeline of a ROS 2-based LLM-controlled robotic system. Across 100 independent runs per injection variant on five LLMs spanning four…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **SCARCE: Scalable Cascade Analysis for Rare-event Characterisation via Embeddings**  
@@ -115,3 +108,12 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2606.29623v1
 - **Security insight:** Rare events govern the safety profile of modern AI systems, yet their probabilities are extremely difficult to estimate: direct Monte Carlo requires prohibitive sample budgets. Subset Simulation (SS) addresses this by decomposing a rare-event probability into…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Adversarial ML
+
+**Generative AI and Federated Learning for Intrusion Detection Systems: A Survey**  
+- **Date:** 2026-07-01
+- **Authors:** Jiefei Liu, Abu Saleh Md Tayeen, Pratyay Kumar et al.
+- **Link:** https://arxiv.org/abs/2607.01305v1
+- **Security insight:** Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
