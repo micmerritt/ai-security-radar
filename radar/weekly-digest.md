@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-06 (UTC)
+
+Top items:
+
+- **Distributed Attacks in Persistent-State AI Control** (2026-07-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.02514v1
+
+- **Generative AI and Federated Learning for Intrusion Detection Systems: A Survey** (2026-07-01) [Adversarial ML]  
+  https://arxiv.org/abs/2607.01305v1
+
+- **Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity** (2026-07-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.01153v1
+
+- **Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming** (2026-06-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2606.31227v1
+
+- **Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks** (2026-06-30) [Prompt Injection]  
+  https://arxiv.org/abs/2606.31016v1
+
+- **Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense** (2026-06-29) [Prompt Injection]  
+  https://arxiv.org/abs/2606.30783v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-05 (UTC)
 
 Top items:
