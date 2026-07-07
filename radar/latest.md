@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-06**_
+_Last updated (UTC): **2026-07-07**_
 
 ## What this is
 
@@ -13,6 +13,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Untrusted Content Masking for Web Agents with Security Guarantees**  
+- **Date:** 2026-07-06
+- **Authors:** Kristina Nikolić, Egor Zverev, Javier Rando et al.
+- **Link:** https://arxiv.org/abs/2607.05277v1
+- **Security insight:** Defenses that provide security guarantees against prompt injection attacks rely on strict isolation between trusted instructions and untrusted data. In text-based environments such as tool-use APIs, this separation arises naturally: agents can reason from…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Agent Data Injection Attacks are Realistic Threats to AI Agents**  
+- **Date:** 2026-07-06
+- **Authors:** Woohyuk Choi, Juhee Kim, Taehyun Kang et al.
+- **Link:** https://arxiv.org/abs/2607.05120v1
+- **Security insight:** AI agents act on behalf of user prompts, consuming external data and taking actions based on the agent context. Prior research on AI agent security has primarily focused on indirect prompt injection (IPI). Its most well-studied category is instruction…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Biological Motifs for Agentic Control**  
+- **Date:** 2026-07-05
+- **Authors:** Bogdan Banu
+- **Link:** https://arxiv.org/abs/2607.04240v1
+- **Security insight:** The transition of Large Language Models (LLMs) from passive generators to autonomous agents has introduced significant challenges in reliability, security, and state management. Current agentic architectures are often constructed ad-hoc, prone to…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**DualView: Preventing Indirect Prompt Injection in Personal AI Agents**  
+- **Date:** 2026-07-04
+- **Authors:** Juhee Kim, Woohyuk Choi, Taehyun Kang et al.
+- **Link:** https://arxiv.org/abs/2607.03821v1
+- **Security insight:** Personal AI agents that run on the user's local machine, such as OpenClaw, automate daily tasks including web search, email, and file management. Their access to computer resources, including the network, file system, and shell, exposes them to indirect…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Distributed Attacks in Persistent-State AI Control**  
 - **Date:** 2026-07-02
@@ -49,27 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** We discover a behavioral invariant in LLM agents under persistent memory poisoning: in architectures where routing information is retrieved through observable memory-tool invocations, successful attacks require calling memory_recall_fact before…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Agent Security Meets Regulatory Reality -- A Practitioner Systematization of Autonomous-Agent Threats and Controls in Regulated Financial Systems**  
-- **Date:** 2026-06-28
-- **Authors:** Krishna Mohan, Guda Nagavenkata Srinivasa
-- **Link:** https://arxiv.org/abs/2606.29142v1
-- **Security insight:** Large language model agents are entering regulated financial systems, yet the security literature characterizing their attack surface is almost entirely laboratory-based, and the practitioner guidance on regulated deployment is neither peer-reviewed nor…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**From Determinism to Delegation: AI-Native Software Engineering and the Evolution of the Agentic Engineer**  
-- **Date:** 2026-06-27
-- **Authors:** Mamdouh Alenezi
-- **Link:** https://arxiv.org/abs/2606.28791v1
-- **Security insight:** Software engineering is experiencing its most significant transformation since the emergence of high-level programming languages. As large language models (LLMs) increasingly enable sustained, multi-step, tool-mediated execution, engineering value is shifting…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare**  
-- **Date:** 2026-06-27
-- **Authors:** Liam Kearns
-- **Link:** https://arxiv.org/abs/2606.28666v1
-- **Security insight:** Agent-based AI has enabled the automation of tasks by exposing application tools and resources to large language models (LLMs). However, to improve scope and accuracy, agents are often given access rights that exceed those of ordinary users, introducing…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks**  
@@ -93,21 +100,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Models (LLMs) often fail to maintain instruction hierarchies (IH) when processing multi-source inputs with varying role-level priorities, paradoxically adhering to lower-priority directives during conflicts. While existing defenses mitigate…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios**  
-- **Date:** 2026-06-28
-- **Authors:** Caglar Uysal, Baturay Birinci, Süha Orhun Mutluergil et al.
-- **Link:** https://arxiv.org/abs/2606.29602v1
-- **Security insight:** Large Language Models (LLMs) have rapidly evolved, transforming industries by automating complex tasks and generating human-like content. However, as their adoption accelerates, prompt injection vulnerabilities have become increasingly apparent. Malicious…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### Poisoning & Backdoors
 
-### RAG & Retrieval Attacks
-
-**SCARCE: Scalable Cascade Analysis for Rare-event Characterisation via Embeddings**  
-- **Date:** 2026-06-28
-- **Authors:** Yingjie Wang, Yi Dong, Edmund Lau et al.
-- **Link:** https://arxiv.org/abs/2606.29623v1
-- **Security insight:** Rare events govern the safety profile of modern AI systems, yet their probabilities are extremely difficult to estimate: direct Monte Carlo requires prohibitive sample budgets. Subset Simulation (SS) addresses this by decomposing a rare-event probability into…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+**Builder, Defender, Breaker: The Case Against Removing the Human from the AI-Driven Security Lifecycle**  
+- **Date:** 2026-07-03
+- **Authors:** Mohamed Chahine Ghanem
+- **Link:** https://arxiv.org/abs/2607.03215v1
+- **Security insight:** Artificial intelligence has spread across the whole of the security lifecycle. The same family of models now writes application code, hardens it, and probes it for weaknesses, so that a single generative substrate increasingly performs all three roles at…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Adversarial ML
 
