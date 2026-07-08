@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-08 (UTC)
+
+Top items:
+
+- **Untrusted Content Masking for Web Agents with Security Guarantees** (2026-07-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.05277v1
+
+- **Agent Data Injection Attacks are Realistic Threats to AI Agents** (2026-07-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.05120v1
+
+- **Biological Motifs for Agentic Control** (2026-07-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.04240v1
+
+- **DualView: Preventing Indirect Prompt Injection in Personal AI Agents** (2026-07-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.03821v1
+
+- **Builder, Defender, Breaker: The Case Against Removing the Human from the AI-Driven Security Lifecycle** (2026-07-03) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2607.03215v1
+
+- **Distributed Attacks in Persistent-State AI Control** (2026-07-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.02514v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-07 (UTC)
 
 Top items:
