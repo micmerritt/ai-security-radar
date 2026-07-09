@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-09 (UTC)
+
+Top items:
+
+- **FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation** (2026-07-08) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2607.07529v1
+
+- **Beware of Agentic Botnets: Scalable Untargeted Promptware Attacks via Universal and Transferable Adversarial HalluSquatting** (2026-07-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.07433v1
+
+- **Simulating the LOcal Web (SLOW): VII. Intergalactic magnetic field models for multi-messenger applications** (2026-07-07) [Adversarial ML]  
+  https://arxiv.org/abs/2607.06665v1
+
+- **Untrusted Content Masking for Web Agents with Security Guarantees** (2026-07-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.05277v1
+
+- **Agent Data Injection Attacks are Realistic Threats to AI Agents** (2026-07-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.05120v1
+
+- **Biological Motifs for Agentic Control** (2026-07-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.04240v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-08 (UTC)
 
 Top items:

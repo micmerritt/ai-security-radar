@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-08**_
+_Last updated (UTC): **2026-07-09**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Beware of Agentic Botnets: Scalable Untargeted Promptware Attacks via Universal and Transferable Adversarial HalluSquatting**  
+- **Date:** 2026-07-08
+- **Authors:** Aya Spira, Stav Cohen, Elad Feldman et al.
+- **Link:** https://arxiv.org/abs/2607.07433v1
+- **Security insight:** The growing adoption of agentic LLM applications has introduced a new threat previously named as promptware. While prior work has established that adversaries can exploit direct channels to LLM applications to apply promptware under weak threat models, many…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Untrusted Content Masking for Web Agents with Security Guarantees**  
 - **Date:** 2026-07-06
@@ -63,20 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The fast growth of open-source AI infrastructure, from model serving engines and agent platforms to the Model Context Protocol (MCP) ecosystem and the language models themselves, has outpaced the security tooling available to defend it. We present AI-Infra-…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens**  
-- **Date:** 2026-06-29
-- **Authors:** Peizhi Niu, Wenjie Qu, Shangding Gu et al.
-- **Link:** https://arxiv.org/abs/2606.30755v1
-- **Security insight:** Claw-like AI agents (e.g., OpenClaw) are always-on processes with persistent access to credentials, files, tools, and external services. They take on system-level responsibilities -- installing packages, maintaining state, scheduling subtasks, and mediating…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Forensic Trajectory Signatures for Agent Memory Poisoning Detection**  
-- **Date:** 2026-06-29
-- **Authors:** Jun Wen Leong
-- **Link:** https://arxiv.org/abs/2606.30566v1
-- **Security insight:** We discover a behavioral invariant in LLM agents under persistent memory poisoning: in architectures where routing information is retrieved through observable memory-tool invocations, successful attacks require calling memory_recall_fact before…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Beyond Wireless Security: Covert Communications in Large Language Model-enabled Edge Networks**  
@@ -93,12 +86,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** We identify a security-fidelity tradeoff in defending LLMs against indirect prompt injection: defenses resist injected instructions largely by suppressing untrusted text, which corrupts tasks that must preserve it, such as translation and document editing.…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies**  
-- **Date:** 2026-06-29
-- **Authors:** Nicole Geumheon Liu, Haeun Jang, Yonghyun Jun et al.
-- **Link:** https://arxiv.org/abs/2606.29960v1
-- **Security insight:** Large Language Models (LLMs) often fail to maintain instruction hierarchies (IH) when processing multi-source inputs with varying role-level priorities, paradoxically adhering to lower-priority directives during conflicts. While existing defenses mitigate…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### RAG & Retrieval Attacks
+
+**FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation**  
+- **Date:** 2026-07-08
+- **Authors:** Phat T. Tran-Truong, Xuan-Bach Le, Minh Nhat Nguyen
+- **Link:** https://arxiv.org/abs/2607.07529v1
+- **Security insight:** Federated foundation-model adaptation increasingly relies on heterogeneous private artifacts (retrieval corpora, prompts and demonstrations, LoRA adapters, preference and safety data, and update sketches), yet existing federated-learning incentive mechanisms…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Poisoning & Backdoors
 
@@ -110,6 +105,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Adversarial ML
+
+**Simulating the LOcal Web (SLOW): VII. Intergalactic magnetic field models for multi-messenger applications**  
+- **Date:** 2026-07-07
+- **Authors:** Johannes Stoiber, Klaus Dolag, Francesca Capel et al.
+- **Link:** https://arxiv.org/abs/2607.06665v1
+- **Security insight:** Context. The propagation of ultra-high-energy cosmic rays (UHECRs) and ultra-high-energy gamma-rays remains an open question in astroparticle physics, with the intergalactic magnetic field (IGMF) playing a crucial role in deflecting charged particles and…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 **Generative AI and Federated Learning for Intrusion Detection Systems: A Survey**  
 - **Date:** 2026-07-01
