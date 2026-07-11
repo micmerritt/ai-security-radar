@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-11 (UTC)
+
+Top items:
+
+- **Multi-Agent Firewall Architecture for Privacy Protection of Sensitive Data in Interactions with Language Models** (2026-07-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.08282v1
+
+- **Prismata: Confining Cross-Site Prompt Injection in Web Agents** (2026-07-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.08147v1
+
+- **Mechanistic Interpretability of LLM Jailbreaks via Internal Attribution Graphs** (2026-07-08) [Adversarial ML]  
+  https://arxiv.org/abs/2607.07903v1
+
+- **FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation** (2026-07-08) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2607.07529v1
+
+- **Beware of Agentic Botnets: Scalable Untargeted Promptware Attacks via Universal and Transferable Adversarial HalluSquatting** (2026-07-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.07433v1
+
+- **Simulating the LOcal Web (SLOW): VII. Intergalactic magnetic field models for multi-messenger applications** (2026-07-07) [Adversarial ML]  
+  https://arxiv.org/abs/2607.06665v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-10 (UTC)
 
 Top items:
