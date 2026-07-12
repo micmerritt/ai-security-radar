@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-11**_
+_Last updated (UTC): **2026-07-12**_
 
 ## What this is
 
@@ -70,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity**  
-- **Date:** 2026-07-01
-- **Authors:** Brett Reynolds
-- **Link:** https://arxiv.org/abs/2607.01153v1
-- **Security insight:** Safety evaluations for language models increasingly depend on judgments about ambiguous natural-language behaviour: whether a model has followed an instruction, refused appropriately, complied with a policy, resisted an embedded command, or misreported…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### RAG & Retrieval Attacks
 
 **FedMark-FM: Auditable, Risk-Adjusted Data Markets for Federated Foundation-Model Adaptation**  
@@ -109,11 +102,4 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Johannes Stoiber, Klaus Dolag, Francesca Capel et al.
 - **Link:** https://arxiv.org/abs/2607.06665v1
 - **Security insight:** Context. The propagation of ultra-high-energy cosmic rays (UHECRs) and ultra-high-energy gamma-rays remains an open question in astroparticle physics, with the intergalactic magnetic field (IGMF) playing a crucial role in deflecting charged particles and…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-**Generative AI and Federated Learning for Intrusion Detection Systems: A Survey**  
-- **Date:** 2026-07-01
-- **Authors:** Jiefei Liu, Abu Saleh Md Tayeen, Pratyay Kumar et al.
-- **Link:** https://arxiv.org/abs/2607.01305v1
-- **Security insight:** Intrusion Detection Systems (IDSs) are essential for monitoring network traffic and identifying malicious activities in modern cyber-physical, Internet of Things (IoT), enterprise, and distributed network environments. However, developing reliable IDS models…
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
