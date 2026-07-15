@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-14**_
+_Last updated (UTC): **2026-07-15**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**PVDetector: Detecting Prompt Injection Attacks on Purpose-Specific LLM Agents through Policy-Violation Concept Analysis**  
+- **Date:** 2026-07-14
+- **Authors:** Junhui Wang, Hangtao Zhang, Zhirun Zheng et al.
+- **Link:** https://arxiv.org/abs/2607.12624v1
+- **Security insight:** Large language models (LLMs) are increasingly deployed as purpose-specific agents to handle domain-specific tasks such as customer service and code generation. These agents are expected to comply with not only generic safety guardrails but also purpose-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions**  
+- **Date:** 2026-07-14
+- **Authors:** Huihao Jing, Wenbin Hu, Shaojin Chen et al.
+- **Link:** https://arxiv.org/abs/2607.12406v1
+- **Security insight:** The capability of LLM agents to function as the ``brain'' of a system fundamentally expands the scope of analysis beyond a standalone model. Consequently, safety is no longer only about input--output content alignment. It also concerns system behavior and…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Distributed Denial of Science: How Indirect Data Poisoning of AI Systems Can Industrialize Scientific Fraud**  
 - **Date:** 2026-07-12
@@ -47,13 +61,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Aya Spira, Stav Cohen, Elad Feldman et al.
 - **Link:** https://arxiv.org/abs/2607.07433v1
 - **Security insight:** The growing adoption of agentic LLM applications has introduced a new threat previously named as promptware. While prior work has established that adversaries can exploit direct channels to LLM applications to apply promptware under weak threat models, many…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Untrusted Content Masking for Web Agents with Security Guarantees**  
-- **Date:** 2026-07-06
-- **Authors:** Kristina Nikolić, Egor Zverev, Javier Rando et al.
-- **Link:** https://arxiv.org/abs/2607.05277v1
-- **Security insight:** Defenses that provide security guarantees against prompt injection attacks rely on strict isolation between trusted instructions and untrusted data. In text-based environments such as tool-use APIs, this separation arises naturally: agents can reason from…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
@@ -102,13 +109,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Anupam Wagle, Ifrat Ikhtear Uddin, Chaowei Zhang et al.
 - **Link:** https://arxiv.org/abs/2607.07903v1
 - **Security insight:** Large language models (LLMs) exhibit remarkable capabilities but remain highly vulnerable to adversarial prompts and jailbreak attacks. Existing approaches primarily analyze these failures through input-output behaviors or attribution methods, offering…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-**Simulating the LOcal Web (SLOW): VII. Intergalactic magnetic field models for multi-messenger applications**  
-- **Date:** 2026-07-07
-- **Authors:** Johannes Stoiber, Klaus Dolag, Francesca Capel et al.
-- **Link:** https://arxiv.org/abs/2607.06665v1
-- **Security insight:** Context. The propagation of ultra-high-energy cosmic rays (UHECRs) and ultra-high-energy gamma-rays remains an open question in astroparticle physics, with the intergalactic magnetic field (IGMF) playing a crucial role in deflecting charged particles and…
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 ### Other (Review)

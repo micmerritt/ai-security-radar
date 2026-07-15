@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-15 (UTC)
+
+Top items:
+
+- **PVDetector: Detecting Prompt Injection Attacks on Purpose-Specific LLM Agents through Policy-Violation Concept Analysis** (2026-07-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.12624v1
+
+- **Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions** (2026-07-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.12406v1
+
+- **MJ: Multi-turn LLM Jailbreaking via Decomposed Credit Assignment** (2026-07-13) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2607.11070v1
+
+- **Distributed Denial of Science: How Indirect Data Poisoning of AI Systems Can Industrialize Scientific Fraud** (2026-07-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.10712v1
+
+- **NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations** (2026-07-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.10490v1
+
+- **Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices** (2026-07-11) [Prompt Injection]  
+  https://arxiv.org/abs/2607.10269v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-14 (UTC)
 
 Top items:
