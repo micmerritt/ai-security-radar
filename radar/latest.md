@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-16**_
+_Last updated (UTC): **2026-07-17**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems**  
+- **Date:** 2026-07-16
+- **Authors:** Soham Gadgil, David Alexander, Sai Sunku et al.
+- **Link:** https://arxiv.org/abs/2607.14611v1
+- **Security insight:** A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases. While this makes agents more useful and self-improving, it also creates a new attack surface for prompt injections…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation**  
 - **Date:** 2026-07-15
@@ -70,14 +77,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Tool-using large language model (LLM) agents are attractive for network operations, but tickets, alerts, logs, runbooks, and ChatOps messages can carry indirect prompt injections. We present NetInjectBench, a 130-scenario benchmark that separates untrusted…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Multi-Agent Firewall Architecture for Privacy Protection of Sensitive Data in Interactions with Language Models**  
-- **Date:** 2026-07-09
-- **Authors:** Hugo García Cuesta, Pablo Mateo Torrejón, Alfonso Sánchez-Macián
-- **Link:** https://arxiv.org/abs/2607.08282v1
-- **Security insight:** While Large Language Models (LLMs) have become essential productivity tools, their integration into workflows without adequate safeguards creates significant risks. This paper proposes an open-source, privacy-focused, user-facing firewall designed to secure…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation**  
+- **Date:** 2026-07-16
+- **Authors:** Rabimba Karanjai, Yang Lu, Hemanth Hegadehalli Madhavarao et al.
+- **Link:** https://arxiv.org/abs/2607.14493v1
+- **Security insight:** Large Language Models are increasingly deployed in Security Operations Centers for log analysis tasks including summarization, alert triage, and threat investigation. These systems ingest logs from external-facing services and process network logs as natural…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices**  
 - **Date:** 2026-07-11
@@ -91,13 +98,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Nguyen Khoi Vo, Duy Duong Tuong, Oleg Zendel et al.
 - **Link:** https://arxiv.org/abs/2607.10080v1
 - **Security insight:** Large language models (LLMs) are increasingly being used as automated judges for relevance evaluation in information retrieval, yet their robustness to adversarial manipulation remains insufficiently understood, particularly in multilingual settings. In this…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**"Code Is Cheap. Show Me the Talk.": Lessons from Teaching and Managing AI Coding Tool Usage in a Visualization Course**  
-- **Date:** 2026-07-10
-- **Authors:** Zhongzheng Xu, Taehyun Yang, Fumeng Yang
-- **Link:** https://arxiv.org/abs/2607.09938v1
-- **Security insight:** Generative Artificial Intelligence (GenAI) coding tools are transforming visualization education. They can assist with implementation and design, but they can also let students bypass intended learning trajectories. In this paper, we share our retrospective…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
