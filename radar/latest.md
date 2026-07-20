@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-19**_
+_Last updated (UTC): **2026-07-20**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Refusal is Not Safety! Benchmarking Latent Safety Risks of LLM-Driven Content Humorization**  
+- **Date:** 2026-07-17
+- **Authors:** Yu Cui, Ruiqing Yue, Tingyu Li et al.
+- **Link:** https://arxiv.org/abs/2607.15977v1
+- **Security insight:** Safety defenses for large language models (LLMs) have been extensively studied, with existing approaches focusing on attack detection and refusal mechanisms. Such fixed-form direct refusal strategies may introduce the risk of prefix injection attacks. Recent…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**From Neural Intent to Cryptographic Authorization: Governing Agentic Workflows**  
+- **Date:** 2026-07-17
+- **Authors:** Jiasi Weng, Jian Weng, Minrong Chen et al.
+- **Link:** https://arxiv.org/abs/2607.15596v1
+- **Security insight:** The rapid adoption of artificial intelligence (AI)-driven and agentic workflows is transforming traditional government and enterprise systems into language-based, tool-using and increasingly autonomous infrastructures. Conventional key management services…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems**  
 - **Date:** 2026-07-16
@@ -86,20 +100,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Models are increasingly deployed in Security Operations Centers for log analysis tasks including summarization, alert triage, and threat investigation. These systems ingest logs from external-facing services and process network logs as natural…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices**  
-- **Date:** 2026-07-11
-- **Authors:** Yaxin Li, Hao Wang, Yanda Shao et al.
-- **Link:** https://arxiv.org/abs/2607.10269v1
-- **Security insight:** Vision-Language Models (VLMs) are rapidly deployed on human-facing wearable devices such as smart glasses to enable multimodal perception and AI-assisted decision-making. While prior research has demonstrated the risks of visual prompt injection into digital…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**The Effect of Multi-Lingual and Keyword Adversarial Injection on LLM Relevance Judgment**  
-- **Date:** 2026-07-11
-- **Authors:** Nguyen Khoi Vo, Duy Duong Tuong, Oleg Zendel et al.
-- **Link:** https://arxiv.org/abs/2607.10080v1
-- **Security insight:** Large language models (LLMs) are increasingly being used as automated judges for relevance evaluation in information retrieval, yet their robustness to adversarial manipulation remains insufficiently understood, particularly in multilingual settings. In this…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **MJ: Multi-turn LLM Jailbreaking via Decomposed Credit Assignment**  
@@ -109,11 +109,11 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Modern large language models (LLMs) operate in interactive multi-turn settings, making multi-turn jailbreaking a realistic threat model and an important setting for automated red teaming. A core challenge in learning multi-turn jailbreak attackers is credit…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-### Other (Review)
+### Model Extraction & Privacy
 
-**Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge**  
-- **Date:** 2026-07-11
-- **Authors:** Lam D. Dao, Vang T. Nguyen, Anh M. T. Bui et al.
-- **Link:** https://arxiv.org/abs/2607.10221v1
-- **Security insight:** Background. Large language models (LLMs) have become increasingly capable of understanding and generating source code, leading to their widespread adoption in software engineering tasks such as code completion, repair, and vulnerability detection. However,…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
+**DECODEM: Data Extraction from Corporate Organizational Documents via Enhanced Methods**  
+- **Date:** 2026-07-17
+- **Authors:** Jens Frankenreiter
+- **Link:** https://arxiv.org/abs/2607.15879v1
+- **Security insight:** Much empirical legal research depends on translating unstructured text into structured variables. In corporate governance research as elsewhere, this translation has traditionally relied on human coding of documents such as charters and bylaws, a process that…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?

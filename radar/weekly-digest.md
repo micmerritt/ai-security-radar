@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-20 (UTC)
+
+Top items:
+
+- **Refusal is Not Safety! Benchmarking Latent Safety Risks of LLM-Driven Content Humorization** (2026-07-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.15977v1
+
+- **DECODEM: Data Extraction from Corporate Organizational Documents via Enhanced Methods** (2026-07-17) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2607.15879v1
+
+- **From Neural Intent to Cryptographic Authorization: Governing Agentic Workflows** (2026-07-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.15596v1
+
+- **Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems** (2026-07-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.14611v1
+
+- **Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation** (2026-07-16) [Prompt Injection]  
+  https://arxiv.org/abs/2607.14493v1
+
+- **Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation** (2026-07-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.14006v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-19 (UTC)
 
 Top items:
