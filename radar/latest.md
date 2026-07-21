@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-20**_
+_Last updated (UTC): **2026-07-21**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security**  
+- **Date:** 2026-07-20
+- **Authors:** Devina Jain, David Hartmann, Chuan Li
+- **Link:** https://arxiv.org/abs/2607.18063v1
+- **Security insight:** LLM-based agents process external content, exposing them to prompt injection and multi-turn manipulation. Most safety benchmarks evaluate defenders against fixed attack pools collected before evaluation, single-turn or multi-turn. We present a 21-scenario…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Stress Testing Concept Erasure with Large Language Model Agents**  
+- **Date:** 2026-07-20
+- **Authors:** Yuyang Xue, Feng Chen, Zhihua Liu et al.
+- **Link:** https://arxiv.org/abs/2607.17890v1
+- **Security insight:** Concept erasure aims to remove semantic concepts from a trained generative model and is increasingly important for responsible AI deployment. However, verifying whether a model has robustly removed targeted concepts remains a critical challenge. Existing…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Salience Induction against Multi-Hop RAG Agents: Threat and Defense**  
+- **Date:** 2026-07-20
+- **Authors:** Xingfu Zhou, Pengfei Wang, Yuan Zhou et al.
+- **Link:** https://arxiv.org/abs/2607.17535v1
+- **Security insight:** Agentic retrieval-augmented generation (RAG) systems increasingly retrieve external evidence and orchestrate tools for knowledge-intensive applications. In Multi-Hop question answering, agents chain facts across documents. Existing defenses focus on content…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Refusal is Not Safety! Benchmarking Latent Safety Risks of LLM-Driven Content Humorization**  
 - **Date:** 2026-07-17
@@ -52,8 +73,8 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement**  
 - **Date:** 2026-07-15
 - **Authors:** Alexandra E. Michael, Franziska Roesner
-- **Link:** https://arxiv.org/abs/2607.13718v1
-- **Security insight:** As AI agents gain prevalance, users are increasingly exposed to the risks such systems entail. Prompt injection attacks, as well as hallucination, can cause agents to leak private information to third parties. As autonomous systems, agents also present the…
+- **Link:** https://arxiv.org/abs/2607.13718v2
+- **Security insight:** As AI agents gain prevalence, users are increasingly exposed to the risks such systems entail. Prompt injection attacks, as well as hallucination, can cause agents to leak private information to third parties. As autonomous systems, agents also present the…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **PVDetector: Detecting Prompt Injection Attacks on Purpose-Specific LLM Agents through Policy-Violation Concept Analysis**  
@@ -70,27 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The capability of LLM agents to function as the ``brain'' of a system fundamentally expands the scope of analysis beyond a standalone model. Consequently, safety is no longer only about input--output content alignment. It also concerns system behavior and…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification**  
-- **Date:** 2026-07-13
-- **Authors:** SingGuard Team
-- **Link:** https://arxiv.org/abs/2607.13081v1
-- **Security insight:** We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and resource exhaustion. We first introduce…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Distributed Denial of Science: How Indirect Data Poisoning of AI Systems Can Industrialize Scientific Fraud**  
-- **Date:** 2026-07-12
-- **Authors:** Bálint Gyevnár, Atoosa Kasirzadeh, Nihar B. Shah
-- **Link:** https://arxiv.org/abs/2607.10712v1
-- **Security insight:** Scientific fraud is the instrument of doubt that malicious entities can use to establish controversy in science. Historically, it required the resources of a company: deep pockets, ghostwritten articles, and corrupt academics. Today, Artificial Intelligence…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations**  
-- **Date:** 2026-07-11
-- **Authors:** Ruksat Khan Shayoni, Muhammad Faraz Shoaib, S M Asif Hossain et al.
-- **Link:** https://arxiv.org/abs/2607.10490v1
-- **Security insight:** Tool-using large language model (LLM) agents are attractive for network operations, but tickets, alerts, logs, runbooks, and ChatOps messages can carry indirect prompt injections. We present NetInjectBench, a 130-scenario benchmark that separates untrusted…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation**  
@@ -102,11 +102,11 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### RAG & Retrieval Attacks
 
-**MJ: Multi-turn LLM Jailbreaking via Decomposed Credit Assignment**  
-- **Date:** 2026-07-13
-- **Authors:** Junyoung Park, Namgyu Park, Sechan Lee et al.
-- **Link:** https://arxiv.org/abs/2607.11070v1
-- **Security insight:** Modern large language models (LLMs) operate in interactive multi-turn settings, making multi-turn jailbreaking a realistic threat model and an important setting for automated red teaming. A core challenge in learning multi-turn jailbreak attackers is credit…
+**A Multi-Model Hybrid Defense Approach Against White-box Adversarial Attacks in Computer Network Traffic**  
+- **Date:** 2026-07-19
+- **Authors:** Khushnaseeb Roshan
+- **Link:** https://arxiv.org/abs/2607.17105v1
+- **Security insight:** It is crucial to safeguard computer networks from evolving network security threats and unknown cyberattacks. An essential tool for protecting computer networks against unknown cyber threats is Network Intrusion Detection System (NIDS). However, NIDS faces a…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Model Extraction & Privacy
@@ -114,6 +114,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **DECODEM: Data Extraction from Corporate Organizational Documents via Enhanced Methods**  
 - **Date:** 2026-07-17
 - **Authors:** Jens Frankenreiter
-- **Link:** https://arxiv.org/abs/2607.15879v1
+- **Link:** https://arxiv.org/abs/2607.15879v2
 - **Security insight:** Much empirical legal research depends on translating unstructured text into structured variables. In corporate governance research as elsewhere, this translation has traditionally relied on human coding of documents such as charters and bylaws, a process that…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?

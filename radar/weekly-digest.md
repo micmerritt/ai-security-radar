@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-21 (UTC)
+
+Top items:
+
+- **Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security** (2026-07-20) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.18063v1
+
+- **Stress Testing Concept Erasure with Large Language Model Agents** (2026-07-20) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.17890v1
+
+- **Salience Induction against Multi-Hop RAG Agents: Threat and Defense** (2026-07-20) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.17535v1
+
+- **A Multi-Model Hybrid Defense Approach Against White-box Adversarial Attacks in Computer Network Traffic** (2026-07-19) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2607.17105v1
+
+- **Refusal is Not Safety! Benchmarking Latent Safety Risks of LLM-Driven Content Humorization** (2026-07-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.15977v1
+
+- **DECODEM: Data Extraction from Corporate Organizational Documents via Enhanced Methods** (2026-07-17) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2607.15879v2
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-20 (UTC)
 
 Top items:
