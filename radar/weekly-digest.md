@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-26 (UTC)
+
+Top items:
+
+- **V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure** (2026-07-23) [Prompt Injection]  
+  https://arxiv.org/abs/2607.21151v1
+
+- **The Ethics of Autonomous AI Agents for Offensive Security** (2026-07-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.20255v1
+
+- **Know Your Agent: Reconnaissance-Driven Pentesting of AI Agents** (2026-07-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.19837v1
+
+- **Twin Agent: Context Residual Compression for Privilege Separated Agents** (2026-07-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.19595v1
+
+- **The safety failures we are not instrumenting: a perspective on hidden safety-critical challenges in modern AI systems** (2026-07-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.19292v1
+
+- **Data Leakage Prevention in Agentic Applications via Preemptive Hardening** (2026-07-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.18847v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-25 (UTC)
 
 Top items:
