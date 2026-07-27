@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-26**_
+_Last updated (UTC): **2026-07-27**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Agent Security Needs Redefinition through a Holistic Framework**  
+- **Date:** 2026-07-24
+- **Authors:** Vincent Siu, Jingxuan He, Kyle Montgomery et al.
+- **Link:** https://arxiv.org/abs/2607.22024v1
+- **Security insight:** Agent security is widely treated as a question about action content. Defenses ask whether an instruction looks malicious. Benchmarks ask whether an agent performs a harmful sounding action. \textbf{We argue that agent security is fundamentally a contextual…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense**  
+- **Date:** 2026-07-23
+- **Authors:** Yedidel Louck
+- **Link:** https://arxiv.org/abs/2607.21824v1
+- **Security insight:** Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money. Their security has so far been studied almost entirely at the level of the AI model,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA**  
+- **Date:** 2026-07-23
+- **Authors:** Takato Yasuno
+- **Link:** https://arxiv.org/abs/2607.21680v1
+- **Security insight:** Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **The Ethics of Autonomous AI Agents for Offensive Security**  
 - **Date:** 2026-07-22
@@ -70,27 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Multi-agent LLM applications chain a planner, worker agents, a verifier, and a synthesizer, and every hop between agents is an unmonitored channel through which an adversary can smuggle instructions. Existing defenses guard only the input boundary…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security**  
-- **Date:** 2026-07-20
-- **Authors:** Devina Jain, David Hartmann, Chuan Li
-- **Link:** https://arxiv.org/abs/2607.18063v1
-- **Security insight:** LLM-based agents process external content, exposing them to prompt injection and multi-turn manipulation. Most safety benchmarks evaluate defenders against fixed attack pools collected before evaluation, single-turn or multi-turn. We present a 21-scenario…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Stress Testing Concept Erasure with Large Language Model Agents**  
-- **Date:** 2026-07-20
-- **Authors:** Yuyang Xue, Feng Chen, Zhihua Liu et al.
-- **Link:** https://arxiv.org/abs/2607.17890v2
-- **Security insight:** Concept erasure aims to remove semantic concepts from a trained generative model and is increasingly important for responsible AI deployment. However, verifying whether a model has robustly removed targeted concepts remains a critical challenge. Existing…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Salience Induction against Multi-Hop RAG Agents: Threat and Defense**  
-- **Date:** 2026-07-20
-- **Authors:** Xingfu Zhou, Pengfei Wang, Yuan Zhou et al.
-- **Link:** https://arxiv.org/abs/2607.17535v1
-- **Security insight:** Agentic retrieval-augmented generation (RAG) systems increasingly retrieve external evidence and orchestrate tools for knowledge-intensive applications. In Multi-Hop question answering, agents chain facts across documents. Existing defenses focus on content…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure**  
@@ -107,11 +107,11 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Textual Collaborative Prompt Optimization (TCPO) extends Textgrad (Yuksekgonul et al., 2025) to a decentralized setting by allowing multiple clients to jointly improve prompts for large language models (LLMs) while keeping their data locally. Its reliance on…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-### RAG & Retrieval Attacks
+### Other (Review)
 
-**A Multi-Model Hybrid Defense Approach Against White-box Adversarial Attacks in Computer Network Traffic**  
-- **Date:** 2026-07-19
-- **Authors:** Khushnaseeb Roshan
-- **Link:** https://arxiv.org/abs/2607.17105v1
-- **Security insight:** It is crucial to safeguard computer networks from evolving network security threats and unknown cyberattacks. An essential tool for protecting computer networks against unknown cyber threats is Network Intrusion Detection System (NIDS). However, NIDS faces a…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+**What AI Red-Team Evaluations Can and Cannot Prove**  
+- **Date:** 2026-07-23
+- **Authors:** Bandana Kaur
+- **Link:** https://arxiv.org/abs/2607.21735v1
+- **Security insight:** Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move…
+- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.

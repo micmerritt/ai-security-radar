@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-27 (UTC)
+
+Top items:
+
+- **Agent Security Needs Redefinition through a Holistic Framework** (2026-07-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.22024v1
+
+- **Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense** (2026-07-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.21824v1
+
+- **What AI Red-Team Evaluations Can and Cannot Prove** (2026-07-23) [Other (Review)]  
+  https://arxiv.org/abs/2607.21735v1
+
+- **Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA** (2026-07-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.21680v1
+
+- **V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure** (2026-07-23) [Prompt Injection]  
+  https://arxiv.org/abs/2607.21151v1
+
+- **The Ethics of Autonomous AI Agents for Offensive Security** (2026-07-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.20255v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-26 (UTC)
 
 Top items:
