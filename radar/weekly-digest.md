@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-28 (UTC)
+
+Top items:
+
+- **Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.24625v1
+
+- **Just Testing, Move Along: Evasion of LLM-based System Log Interpretation by Prompt Injection** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.24174v1
+
+- **Agentic Cloud Decoys: A Deception-Driven Framework for Autonomous Intrusion Investigation** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.24006v1
+
+- **ContainmentBench: Trace-Based Evaluation of Post-Injection Containment in Tool-Using LLM Agents** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.23999v1
+
+- **Are You Still the Agent I Authorized? Earned Authority under a Fixed Ceiling for Evolving Agents** (2026-07-26) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.23586v1
+
+- **Mission-Level Runtime Assurance for LLM-Assisted ISR Swarms over a Verification-Aware Fabric** (2026-07-26) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.23532v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-27 (UTC)
 
 Top items:

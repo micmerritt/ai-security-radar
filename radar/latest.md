@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-27**_
+_Last updated (UTC): **2026-07-28**_
 
 ## What this is
 
@@ -13,6 +13,55 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents**  
+- **Date:** 2026-07-27
+- **Authors:** Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.
+- **Link:** https://arxiv.org/abs/2607.24625v1
+- **Security insight:** Autonomous LLM agents processing mixed-confidentiality data face severe security risks from prompt injection attacks and reasoning errors. While dynamic Information Flow Control (IFC) provides structural security guarantees, traditional taint tracking…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Just Testing, Move Along: Evasion of LLM-based System Log Interpretation by Prompt Injection**  
+- **Date:** 2026-07-27
+- **Authors:** Max Landauer, Florian Skopik, Markus Wurzenberger et al.
+- **Link:** https://arxiv.org/abs/2607.24174v1
+- **Security insight:** Large Language Models (LLMs) are increasingly integrated into Security Operations Center (SOC) workflows, where they support analysts in tasks such as the interpretation of system logs. However, the ability of LLMs to directly process untrusted textual input…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Agentic Cloud Decoys: A Deception-Driven Framework for Autonomous Intrusion Investigation**  
+- **Date:** 2026-07-27
+- **Authors:** Mohan Manivannan, Dalal Alharthi
+- **Link:** https://arxiv.org/abs/2607.24006v1
+- **Security insight:** Cloud telemetry arrives at a scale that, paradoxically, makes intrusion understanding harder rather than easier. Attackers operate through legitimate identity, federated session tokens, and cloud native APIs indistinguishable from routine administration, and…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ContainmentBench: Trace-Based Evaluation of Post-Injection Containment in Tool-Using LLM Agents**  
+- **Date:** 2026-07-27
+- **Authors:** Wenhao Lan, Shan Li, Xinhua Lai et al.
+- **Link:** https://arxiv.org/abs/2607.23999v1
+- **Security insight:** Tool-using LLM agents process untrusted content, maintain memory, delegate across agents, and invoke side-effecting tools. Existing prompt-injection evaluations typically summarize security with terminal attack or policy outcomes, but equal endpoints can…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Are You Still the Agent I Authorized? Earned Authority under a Fixed Ceiling for Evolving Agents**  
+- **Date:** 2026-07-26
+- **Authors:** Zhaoxi Zhang, Xiaomei Zhang
+- **Link:** https://arxiv.org/abs/2607.23586v1
+- **Security insight:** Long-lived AI agents increasingly evolve after deployment by retaining experience, acquiring skills and tools, revising workflows, delegating work, and moving across task phases. This improves adaptation but creates a distinct authorization problem. Tool-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Mission-Level Runtime Assurance for LLM-Assisted ISR Swarms over a Verification-Aware Fabric**  
+- **Date:** 2026-07-26
+- **Authors:** Nikolaos Kekatos, Stylianos Basagiannis, Panagiotis Katsaros et al.
+- **Link:** https://arxiv.org/abs/2607.23532v1
+- **Security insight:** Swarms of LLM-assisted autonomous robots are increasingly proposed for cooperative intelligence, surveillance, and reconnaissance (ISR) in contested environments. A growing class of their assurance failures arises not within any single platform but across the…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Poster: Rethinking Security in LLM Code Generation through Real-World Risk Scenarios**  
+- **Date:** 2026-07-25
+- **Authors:** Lixun Ma, Ruolong Ma, Bei Wang et al.
+- **Link:** https://arxiv.org/abs/2607.23088v1
+- **Security insight:** Large Language Models (LLMs) are widely used for code generation, yet their security behavior in realistic development workflows remains underexplored. Existing benchmarks often rely on explicitly specified security requirements, failing to capture real-world…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Agent Security Needs Redefinition through a Holistic Framework**  
 - **Date:** 2026-07-24
@@ -49,62 +98,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Traditional pentesting uses reconnaissance at each step to uncover unseen weaknesses, build stronger attacks, and advance the objective; we argue that AI agents require the same treatment. We formalize agent reconnaissance by modeling the process and…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Twin Agent: Context Residual Compression for Privilege Separated Agents**  
-- **Date:** 2026-07-21
-- **Authors:** Zhanhao Hu, Dennis Jacob, Xiao Huang et al.
-- **Link:** https://arxiv.org/abs/2607.19595v1
-- **Security insight:** Large language model (LLM) agents are vulnerable to security risks, such as prompt injection attacks from untrusted context that manipulate downstream reasoning and tool use. Existing secure-by-design approaches mitigate this risk by separating untrusted…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The safety failures we are not instrumenting: a perspective on hidden safety-critical challenges in modern AI systems**  
-- **Date:** 2026-07-21
-- **Authors:** Gjergji Kasneci, Enkelejda Kasneci
-- **Link:** https://arxiv.org/abs/2607.19292v1
-- **Security insight:** Current AI safety discourse still focuses disproportionately on visible failures, including obvious harms, dramatic misuse, and hypothetical catastrophic scenarios. That focus is incomplete. In deployed systems, many of the most consequential failures are…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Data Leakage Prevention in Agentic Applications via Preemptive Hardening**  
-- **Date:** 2026-07-21
-- **Authors:** Akansha Shukla, Emily Bellov, Parth Atulbhai Gandhi et al.
-- **Link:** https://arxiv.org/abs/2607.18847v1
-- **Security insight:** Agentic systems integrate LLM driven planning with interfaces to external tools, making data leakage and tool misuse feasible via instruction/data boundary failures and prompt injection attacks. Enforcing required controls consistently is particularly…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ChainWatch: A Kill Chain-Aligned Sequential Detection Framework for Multi-Step Attacks in MCP-Based AI Agent Systems**  
-- **Date:** 2026-07-20
-- **Authors:** Om Narayan, Rashmi Jyoti, Ramkinker Singh
-- **Link:** https://arxiv.org/abs/2607.19432v1
-- **Security insight:** The Model Context Protocol (MCP) is an open-source standard that allows AI agents to connect to external tools, databases, and services. While this connectivity enables powerful agent capabilities, it also introduces multi-step attacks that existing per-call…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing**  
-- **Date:** 2026-07-20
-- **Authors:** Jie Li
-- **Link:** https://arxiv.org/abs/2607.18485v1
-- **Security insight:** Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems**  
-- **Date:** 2026-07-20
-- **Authors:** Elias Hossain, Md Mehedi Hasan Nipu, Fatema Tuj Johora Faria et al.
-- **Link:** https://arxiv.org/abs/2607.19430v1
-- **Security insight:** Multi-agent LLM applications chain a planner, worker agents, a verifier, and a synthesizer, and every hop between agents is an unmonitored channel through which an adversary can smuggle instructions. Existing defenses guard only the input boundary…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure**  
 - **Date:** 2026-07-23
 - **Authors:** Zhetong Zhang, Honghao Fu, Miao Xu et al.
-- **Link:** https://arxiv.org/abs/2607.21151v1
+- **Link:** https://arxiv.org/abs/2607.21151v2
 - **Security insight:** As Video Large Language Models are increasingly deployed in real-world applications, ensuring their safety alignment has become critical. Counterintuitively, we find that harmful videos paired with benign queries achieve higher attack success rates than the…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**CPInj: Uncovering Prompt Injection Risks in Textual Collaborative Prompt Optimization**  
-- **Date:** 2026-07-21
-- **Authors:** Xinting Liao, Behnoosh Zamanlooy, Masoumeh Shafieinejad et al.
-- **Link:** https://arxiv.org/abs/2607.18622v1
-- **Security insight:** Textual Collaborative Prompt Optimization (TCPO) extends Textgrad (Yuksekgonul et al., 2025) to a decentralized setting by allowing multiple clients to jointly improve prompts for large language models (LLMs) while keeping their data locally. Its reliance on…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### Other (Review)
