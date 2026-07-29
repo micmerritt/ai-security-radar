@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-28**_
+_Last updated (UTC): **2026-07-29**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems**  
+- **Date:** 2026-07-28
+- **Authors:** Haowen Dai, Zonghao Ying, Wenfeng Li et al.
+- **Link:** https://arxiv.org/abs/2607.25255v1
+- **Security insight:** Multi-agent systems improve capability through task decomposition and role specialization, but these same mechanisms introduce an important safety blind spot: a harmful objective can be fragmented into locally plausible subtasks, allowing malicious intent to…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents**  
 - **Date:** 2026-07-27
@@ -38,7 +45,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **ContainmentBench: Trace-Based Evaluation of Post-Injection Containment in Tool-Using LLM Agents**  
 - **Date:** 2026-07-27
 - **Authors:** Wenhao Lan, Shan Li, Xinhua Lai et al.
-- **Link:** https://arxiv.org/abs/2607.23999v1
+- **Link:** https://arxiv.org/abs/2607.23999v2
 - **Security insight:** Tool-using LLM agents process untrusted content, maintain memory, delegate across agents, and invoke side-effecting tools. Existing prompt-injection evaluations typically summarize security with terminal attack or policy outcomes, but equal endpoints can…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -89,13 +96,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Andreas Happe, Jürgen Cito, Jasmin Wachter
 - **Link:** https://arxiv.org/abs/2607.20255v1
 - **Security insight:** LLM-driven autonomous agents are reshaping offensive security. Unlike traditional penetration-testing tooling -- deterministic, narrowly scoped, and operated by trained practitioners -- agentic security tools exhibit \textit{indeterminacy} along three…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Know Your Agent: Reconnaissance-Driven Pentesting of AI Agents**  
-- **Date:** 2026-07-22
-- **Authors:** Or Zion Eliav, Eyal Lenga, Shir Bernstien et al.
-- **Link:** https://arxiv.org/abs/2607.19837v1
-- **Security insight:** Traditional pentesting uses reconnaissance at each step to uncover unseen weaknesses, build stronger attacks, and advance the objective; we argue that AI agents require the same treatment. We formalize agent reconnaissance by modeling the process and…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
