@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-29**_
+_Last updated (UTC): **2026-07-30**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**GPT-Red: Automated Red Teaming via Self-Play at Scale**  
+- **Date:** 2026-07-28
+- **Authors:** Eric Wallace, Christopher A. Choquette-Choo, Nikhil Kandpal et al.
+- **Link:** https://arxiv.org/abs/2607.26115v1
+- **Security insight:** We introduce \textbf{GPT-Red}, an automated red-teaming agent that is trained to discover novel prompt injection attacks against frontier LLMs. The goal of this model is to evaluate and improve the robustness of our production systems. To this end, we use it…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems**  
 - **Date:** 2026-07-28
@@ -89,13 +96,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Takato Yasuno
 - **Link:** https://arxiv.org/abs/2607.21680v1
 - **Security insight:** Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**The Ethics of Autonomous AI Agents for Offensive Security**  
-- **Date:** 2026-07-22
-- **Authors:** Andreas Happe, Jürgen Cito, Jasmin Wachter
-- **Link:** https://arxiv.org/abs/2607.20255v1
-- **Security insight:** LLM-driven autonomous agents are reshaping offensive security. Unlike traditional penetration-testing tooling -- deterministic, narrowly scoped, and operated by trained practitioners -- agentic security tools exhibit \textit{indeterminacy} along three…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
