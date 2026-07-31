@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-07-30**_
+_Last updated (UTC): **2026-07-31**_
 
 ## What this is
 
@@ -14,6 +14,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Piggybacking on Perception: Stealthy Concurrent Audio Prompt Injections against Multimodal LLM Agents**  
+- **Date:** 2026-07-30
+- **Authors:** Mingxiao Liu, Yitong Li, Haoren Zhao et al.
+- **Link:** https://arxiv.org/abs/2607.28165v1
+- **Security insight:** Large Language Model (LLM)-driven multimodal agents are increasingly deployed to execute autonomous tasks via continuous audio interaction. While this paradigm enhances interaction naturalness, it introduces a critical yet under-explored attack surface, as…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **GPT-Red: Automated Red Teaming via Self-Play at Scale**  
 - **Date:** 2026-07-28
 - **Authors:** Eric Wallace, Christopher A. Choquette-Choo, Nikhil Kandpal et al.
@@ -24,7 +31,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems**  
 - **Date:** 2026-07-28
 - **Authors:** Haowen Dai, Zonghao Ying, Wenfeng Li et al.
-- **Link:** https://arxiv.org/abs/2607.25255v1
+- **Link:** https://arxiv.org/abs/2607.25255v2
 - **Security insight:** Multi-agent systems improve capability through task decomposition and role specialization, but these same mechanisms introduce an important safety blind spot: a harmful objective can be fragmented into locally plausible subtasks, allowing malicious intent to…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -91,20 +98,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money. Their security has so far been studied almost entirely at the level of the AI model,…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA**  
-- **Date:** 2026-07-23
-- **Authors:** Takato Yasuno
-- **Link:** https://arxiv.org/abs/2607.21680v1
-- **Security insight:** Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
-**V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure**  
-- **Date:** 2026-07-23
-- **Authors:** Zhetong Zhang, Honghao Fu, Miao Xu et al.
-- **Link:** https://arxiv.org/abs/2607.21151v2
-- **Security insight:** As Video Large Language Models are increasingly deployed in real-world applications, ensuring their safety alignment has become critical. Counterintuitively, we find that harmful videos paired with benign queries achieve higher attack success rates than the…
+**Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation**  
+- **Date:** 2026-07-30
+- **Authors:** Fazhong Liu, Zhuoyan Chen, Haozhen Tan et al.
+- **Link:** https://arxiv.org/abs/2607.28226v1
+- **Security insight:** World models give embodied AI a predictive core: they compress observations into states, simulate action-conditioned futures, and enable planning beyond reactive control. This predictive layer, however, opens a new security boundary-compromise can propagate…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### Other (Review)
@@ -112,6 +112,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **What AI Red-Team Evaluations Can and Cannot Prove**  
 - **Date:** 2026-07-23
 - **Authors:** Bandana Kaur
-- **Link:** https://arxiv.org/abs/2607.21735v1
+- **Link:** https://arxiv.org/abs/2607.21735v2
 - **Security insight:** Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move…
 - **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.

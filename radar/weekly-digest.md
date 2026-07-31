@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-07-31 (UTC)
+
+Top items:
+
+- **Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation** (2026-07-30) [Prompt Injection]  
+  https://arxiv.org/abs/2607.28226v1
+
+- **Piggybacking on Perception: Stealthy Concurrent Audio Prompt Injections against Multimodal LLM Agents** (2026-07-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.28165v1
+
+- **GPT-Red: Automated Red Teaming via Self-Play at Scale** (2026-07-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.26115v1
+
+- **SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems** (2026-07-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.25255v2
+
+- **Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.24625v1
+
+- **Just Testing, Move Along: Evasion of LLM-based System Log Interpretation by Prompt Injection** (2026-07-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2607.24174v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-07-30 (UTC)
 
 Top items:
