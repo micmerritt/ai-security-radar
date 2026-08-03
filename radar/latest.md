@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-02**_
+_Last updated (UTC): **2026-08-03**_
 
 ## What this is
 
@@ -14,10 +14,17 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents**  
+- **Date:** 2026-07-31
+- **Authors:** Minghui Pan, Jiayuxuan Yang, Yuanyuan Yuan et al.
+- **Link:** https://arxiv.org/abs/2607.29254v1
+- **Security insight:** AI agents extend large language models (LLMs) with external tools, enabling them to perform complex tasks and translate model outputs into consequential real-world actions. Yet LLMs often become substantially less safe when deployed as agents, and the source…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Piggybacking on Perception: Stealthy Concurrent Audio Prompt Injections against Multimodal LLM Agents**  
 - **Date:** 2026-07-30
 - **Authors:** Mingxiao Liu, Yitong Li, Haoren Zhao et al.
-- **Link:** https://arxiv.org/abs/2607.28165v1
+- **Link:** https://arxiv.org/abs/2607.28165v2
 - **Security insight:** Large Language Model (LLM)-driven multimodal agents are increasingly deployed to execute autonomous tasks via continuous audio interaction. While this paradigm enhances interaction naturalness, it introduces a critical yet under-explored attack surface, as…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -72,8 +79,8 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 **Mission-Level Runtime Assurance for LLM-Assisted ISR Swarms over a Verification-Aware Fabric**  
 - **Date:** 2026-07-26
-- **Authors:** Nikolaos Kekatos, Stylianos Basagiannis, Panagiotis Katsaros et al.
-- **Link:** https://arxiv.org/abs/2607.23532v1
+- **Authors:** Nikolaos Kekatos, Panagiotis Katsaros, Alexios Lekidis et al.
+- **Link:** https://arxiv.org/abs/2607.23532v2
 - **Security insight:** Swarms of LLM-assisted autonomous robots are increasingly proposed for cooperative intelligence, surveillance, and reconnaissance (ISR) in contested environments. A growing class of their assurance failures arises not within any single platform but across the…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -84,20 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large Language Models (LLMs) are widely used for code generation, yet their security behavior in realistic development workflows remains underexplored. Existing benchmarks often rely on explicitly specified security requirements, failing to capture real-world…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Agent Security Needs Redefinition through a Holistic Framework**  
-- **Date:** 2026-07-24
-- **Authors:** Vincent Siu, Jingxuan He, Kyle Montgomery et al.
-- **Link:** https://arxiv.org/abs/2607.22024v1
-- **Security insight:** Agent security is widely treated as a question about action content. Defenses ask whether an instruction looks malicious. Benchmarks ask whether an agent performs a harmful sounding action. \textbf{We argue that agent security is fundamentally a contextual…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense**  
-- **Date:** 2026-07-23
-- **Authors:** Yedidel Louck
-- **Link:** https://arxiv.org/abs/2607.21824v1
-- **Security insight:** Agentic commerce platforms let AI agents autonomously discover services, move payments, and wield user credentials on their users' behalf, and they already handle real money. Their security has so far been studied almost entirely at the level of the AI model,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation**  
@@ -106,12 +99,3 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2607.28226v1
 - **Security insight:** World models give embodied AI a predictive core: they compress observations into states, simulate action-conditioned futures, and enable planning beyond reactive control. This predictive layer, however, opens a new security boundary-compromise can propagate…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-### Other (Review)
-
-**What AI Red-Team Evaluations Can and Cannot Prove**  
-- **Date:** 2026-07-23
-- **Authors:** Bandana Kaur
-- **Link:** https://arxiv.org/abs/2607.21735v2
-- **Security insight:** Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
