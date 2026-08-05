@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-05 (UTC)
+
+Top items:
+
+- **Gecko: Fast Private Inference via Secure Public Encoder Offloading** (2026-08-03) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.02378v1
+
+- **Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents** (2026-08-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.02018v1
+
+- **Mitigating Visual Degradation in MLLMs via Spatial-Spectral Visual Anchor Learning** (2026-08-03) [Prompt Injection]  
+  https://arxiv.org/abs/2608.01635v1
+
+- **DenialRAG: Single-Document RAG Poisoning via Embedded Parametric Denial** (2026-08-02) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.02678v1
+
+- **SoK: Intent-Oriented Systematization of Multi-Turn LLM Jailbreaks** (2026-08-02) [Adversarial ML]  
+  https://arxiv.org/abs/2608.01117v1
+
+- **Fighting Fire with Fire: On the Feasibility of Protecting Exercises Against AI Cheating** (2026-08-02) [Adversarial ML]  
+  https://arxiv.org/abs/2608.01112v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-04 (UTC)
 
 Top items:
