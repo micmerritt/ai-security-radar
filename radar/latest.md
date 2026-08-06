@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-05**_
+_Last updated (UTC): **2026-08-06**_
 
 ## What this is
 
@@ -13,6 +13,41 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming**  
+- **Date:** 2026-08-05
+- **Authors:** Yanting Wang, Chenlong Yin, Runpeng Geng et al.
+- **Link:** https://arxiv.org/abs/2608.05108v1
+- **Security insight:** Prompt injection poses significant security risks to LLM agents. Efficient and effective red-teaming is therefore critical, both for evaluating these risks and for collecting training data to improve defenses. Existing state-of-the-art prompt injection red-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**LoginTrap: Uncovering Task-Agnostic Phishing-Style Indirect Prompt Injection Attacks against LLM-based Web Agents**  
+- **Date:** 2026-08-05
+- **Authors:** Longtao Guo, Zelin Zhang, Kaifeng Huang et al.
+- **Link:** https://arxiv.org/abs/2608.04741v1
+- **Security insight:** LLM-based web agents automate user tasks by observing webpages and executing browser actions on behalf of users. As these agents operate on real web services, login becomes a sensitive authentication boundary because it involves credentials and sensitive…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Breadcrumbing Search Agents**  
+- **Date:** 2026-08-05
+- **Authors:** Xuebin Li, Hanqing Zhao, Siyuan Liang et al.
+- **Link:** https://arxiv.org/abs/2608.04565v1
+- **Security insight:** LLM-based search agents are widely used for information-seeking tasks, but their reliance on external tool returns introduces a critical security risk: web content retrieved during execution is untrusted, exposing agents to prompt injection and goal…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Behavioral Skill Reconstruction: Reconstructing Hidden Functionality from LLM Agent Skills**  
+- **Date:** 2026-08-04
+- **Authors:** Peichun Hua, Haoxuan Xu, Mengyuan Li
+- **Link:** https://arxiv.org/abs/2608.04192v1
+- **Security insight:** Closed source agent skills may encode proprietary instructions, scripts, constants, and data. Providers may offer their capabilities as services while keeping the underlying packages hidden. Prior work focuses on prompt injection attacks that directly…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection**  
+- **Date:** 2026-08-04
+- **Authors:** Shihao Weng, Yang Feng, Xiaofei Xie et al.
+- **Link:** https://arxiv.org/abs/2608.04053v1
+- **Security insight:** Prompt injection remains a critical threat to LLM agents, yet existing defenses treat each task as a self-contained problem, independent of previous encounters. In practice, user requests are often underspecified: they describe the desired outcome without…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents**  
 - **Date:** 2026-08-03
@@ -35,27 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language models are increasingly integrated into autonomous robotic systems for task planning and control, but this integration exposes them to prompt injection attacks that can lead to unsafe decisions and physical harm. Multi-agent settings increase…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Your Agentic LLMs Secretly Encode Latent Signals of Indirect Prompt-Injection Exposure**  
-- **Date:** 2026-08-01
-- **Authors:** Jianshuo Dong, Yiming Liu, Maosen Zhang et al.
-- **Link:** https://arxiv.org/abs/2608.02657v1
-- **Security insight:** Agentic LLMs are vulnerable to indirect prompt injection (IPI) attacks, e.g., malicious side-tasks hidden in external tool results. While many efforts have sought to address the threats, little is known about the internals of agentic LLMs when they are…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**From Monoliths to Swarms: A Study of Attack Surface Evolution in the Transition to Multi-Agent Web Systems**  
-- **Date:** 2026-07-31
-- **Authors:** Yashaswi Malla, Sandra Siby
-- **Link:** https://arxiv.org/abs/2608.00202v1
-- **Security insight:** Large Language Model (LLM)-based web agents are increasingly evolving from single-agent systems (SAS) to multi-agent systems (MAS). While MAS can lead to improved task performance by decomposing complex tasks across specialized sub-agents, such role…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents**  
-- **Date:** 2026-07-31
-- **Authors:** Minghui Pan, Jiayuxuan Yang, Yuanyuan Yuan et al.
-- **Link:** https://arxiv.org/abs/2607.29254v1
-- **Security insight:** AI agents extend large language models (LLMs) with external tools, enabling them to perform complex tasks and translate model outputs into consequential real-world actions. Yet LLMs often become substantially less safe when deployed as agents, and the source…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Mitigating Visual Degradation in MLLMs via Spatial-Spectral Visual Anchor Learning**  
@@ -63,13 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Qianlong Yang, Bowen Ye, Xianda Guo et al.
 - **Link:** https://arxiv.org/abs/2608.01635v1
 - **Security insight:** Despite the progress of multimodal large language models (MLLMs), they continue to exhibit deficiencies in visual perception. Following visual instruction tuning, internal MLLM representations rapidly deviate from their original semantic states during…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation**  
-- **Date:** 2026-07-30
-- **Authors:** Fazhong Liu, Zhuoyan Chen, Haozhen Tan et al.
-- **Link:** https://arxiv.org/abs/2607.28226v1
-- **Security insight:** World models give embodied AI a predictive core: they compress observations into states, simulate action-conditioned futures, and enable planning beyond reactive control. This predictive layer, however, opens a new security boundary-compromise can propagate…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
@@ -93,13 +100,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Chi Wang, Hanwen Wang, Yu Xia et al.
 - **Link:** https://arxiv.org/abs/2608.01023v1
 - **Security insight:** We present Caliber, an output-perturbation defense against model extraction that formulates noise selection as a calibration problem: how much the defense degrades the supervision signal used to train a surrogate, and the provable per-input query cost of…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-**RadPRISM: Schema-stratified radiology-report supervision for concept-disentangled image representations and visual grounding**  
-- **Date:** 2026-07-31
-- **Authors:** Fabian Drexel, Marlene Fritzsche, Era Stambollxhiu et al.
-- **Link:** https://arxiv.org/abs/2608.00147v1
-- **Security insight:** Vision-language pretraining learns rich medical image representations from radiology reports, but previous model variants commonly operate within a single shared embedding space, so concept-level structure and interpretability must be recovered post hoc,…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Adversarial ML

@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-06 (UTC)
+
+Top items:
+
+- **Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.05108v1
+
+- **LoginTrap: Uncovering Task-Agnostic Phishing-Style Indirect Prompt Injection Attacks against LLM-based Web Agents** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.04741v1
+
+- **Breadcrumbing Search Agents** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.04565v1
+
+- **Behavioral Skill Reconstruction: Reconstructing Hidden Functionality from LLM Agent Skills** (2026-08-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.04192v1
+
+- **AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection** (2026-08-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.04053v1
+
+- **Gecko: Fast Private Inference via Secure Public Encoder Offloading** (2026-08-03) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.02378v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-05 (UTC)
 
 Top items:
