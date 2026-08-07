@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-07 (UTC)
+
+Top items:
+
+- **Algebraic Cryptanalytic Extraction on Hard-Label Neural Networks** (2026-08-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.05736v1
+
+- **Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots** (2026-08-06) [Prompt Injection]  
+  https://arxiv.org/abs/2608.05715v1
+
+- **PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents** (2026-08-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.05495v1
+
+- **Robust Context-Aware Detection of Malicious Instructions in Text** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.05430v1
+
+- **Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.05108v1
+
+- **LoginTrap: Uncovering Task-Agnostic Phishing-Style Indirect Prompt Injection Attacks against LLM-based Web Agents** (2026-08-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.04741v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-06 (UTC)
 
 Top items:
