@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-10 (UTC)
+
+Top items:
+
+- **NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs** (2026-08-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.07167v1
+
+- **When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse** (2026-08-07) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.06947v1
+
+- **StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection** (2026-08-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.06477v1
+
+- **Algebraic Cryptanalytic Extraction on Hard-Label Neural Networks** (2026-08-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.05736v1
+
+- **Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots** (2026-08-06) [Prompt Injection]  
+  https://arxiv.org/abs/2608.05715v1
+
+- **PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents** (2026-08-06) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.05495v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-09 (UTC)
 
 Top items:
