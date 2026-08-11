@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-11 (UTC)
+
+Top items:
+
+- **Stealing Reasoning Traces from Proprietary LLM APIs** (2026-08-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.09867v1
+
+- **Same Question, Different Answer? Measuring and Mitigating Prompt Privilege for Equitable AI Access** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08942v1
+
+- **Not an A11y: How Android Accessibility Exposes Mobile AI Agents to Indirect Prompt Injection** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08939v1
+
+- **Toward Metacognitive One-Shot Indirect Prompt Injection: Strategy Abstraction Via Outcome-Conditioned Reflection** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08795v1
+
+- **SkillsMetric: Mapping the Detection Boundary of Static Analysis for Malicious Agent Skills** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08468v1
+
+- **Defending Retrieval-Augmented Intrusion Detection Against Knowledge Poisoning and Prompt Injection** (2026-08-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08100v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-10 (UTC)
 
 Top items:
