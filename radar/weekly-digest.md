@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-12 (UTC)
+
+Top items:
+
+- **On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models** (2026-08-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.10530v1
+
+- **From Prompt Injection to Web Exploitation: Revisiting Classic Vulnerabilities in LLM-Integrated Applications** (2026-08-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.10281v1
+
+- **Generating Attacks for LLMs with GFlowNets** (2026-08-10) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.10171v1
+
+- **Stealing Reasoning Traces from Proprietary LLM APIs** (2026-08-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.09867v1
+
+- **Same Question, Different Answer? Measuring and Mitigating Prompt Privilege for Equitable AI Access** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08942v1
+
+- **Not an A11y: How Android Accessibility Exposes Mobile AI Agents to Indirect Prompt Injection** (2026-08-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.08939v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-11 (UTC)
 
 Top items:

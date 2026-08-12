@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-11**_
+_Last updated (UTC): **2026-08-12**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models**  
+- **Date:** 2026-08-11
+- **Authors:** Md Jafrin Hossain, Mohammad Arif Hossain, Nirwan Ansari
+- **Link:** https://arxiv.org/abs/2608.10530v1
+- **Security insight:** Large Language Models (LLMs) have undergone a shift from stateless conversational interfaces to autonomous agents capable of multi-step planning, tool invocation, code execution, and maintaining persistent memory. When these agents operate with real-world…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**From Prompt Injection to Web Exploitation: Revisiting Classic Vulnerabilities in LLM-Integrated Applications**  
+- **Date:** 2026-08-10
+- **Authors:** Spiros Tsigkopoulos, Christoforos Ntantogian
+- **Link:** https://arxiv.org/abs/2608.10281v1
+- **Security insight:** Large Language Models are increasingly integrated into web applications through chatbots, tool-calling pipelines, and agentic workflows. In these systems, user input may influence not only generated text, but also backend actions such as database queries,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Stealing Reasoning Traces from Proprietary LLM APIs**  
 - **Date:** 2026-08-10
@@ -77,13 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the environment such as web pages. In this paper, we introduce multi-step indirect prompt injection, a new attack class against CUAs…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**PromptShield Home: Ambient Multimodal Prompt Injection Defense for Smart-Home Agents**  
-- **Date:** 2026-08-06
-- **Authors:** He Zhang, Feilong Li, Dingning Long et al.
-- **Link:** https://arxiv.org/abs/2608.05495v1
-- **Security insight:** Smart-home assistants increasingly use multimodal large language models (MLLMs) that perceive video and audio directly. This raises a safety question specific to the home: can the agent tell a genuine user command from ambient or externally-sourced content,…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **BASIS: Breach-Aware Selective Prompt Injection Shielding with Prefill Attention Probes**  
@@ -93,25 +100,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Prompt injection is a critical security threat in large language model (LLM) applications, where attackers hijack model behavior by embedding malicious instructions in user or external data. Existing detection methods only detect the presence of injection and…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots**  
-- **Date:** 2026-08-06
-- **Authors:** S. M . Bhagya P. Samarakoon, M. A. Viraj J. Muthugala, W. K. R. Sachinthana et al.
-- **Link:** https://arxiv.org/abs/2608.05715v1
-- **Security insight:** Vision-Language Models (VLMs) are increasingly deployed as planners in robotic systems, where they translate natural-language commands into executable actions grounded in visual scene understanding. This tight coupling between perception and instruction-…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
+
+**Generating Attacks for LLMs with GFlowNets**  
+- **Date:** 2026-08-10
+- **Authors:** Berkay Ozcam, Irem Onen, Mehmet Fatih Amasyali et al.
+- **Link:** https://arxiv.org/abs/2608.10171v1
+- **Security insight:** The rapid advancement of Large Language Models (LLMs) has facilitated their ubiquitous integration into various domains, leading to widespread adoption. However, this escalating trend has introduced significant security vulnerabilities, necessitating the…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 **When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse**  
 - **Date:** 2026-08-07
 - **Authors:** Yingtao Ren, Ziyi Zhao, Yiwei Fu et al.
 - **Link:** https://arxiv.org/abs/2608.06947v1
 - **Security insight:** Retrieval-augmented generation (RAG) is indispensable for enhancing large language models. However, RAGs are increasingly susceptible to poisoning attacks, in which adversarial documents are injected to manipulate generator outputs. Previous methods rely on…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-**Algebraic Cryptanalytic Extraction on Hard-Label Neural Networks**  
-- **Date:** 2026-08-06
-- **Authors:** Zirui Chen, Shi Tang, Zhengchao Gao et al.
-- **Link:** https://arxiv.org/abs/2608.05736v1
-- **Security insight:** Although the state-of-the-art neural network model extraction attack in the hard-label setting by Carlini et al. at EUROCRYPT 2025 has polynomial-time complexity in theory, its dual-point clustering relies on singular value decomposition (SVD) with a time…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
