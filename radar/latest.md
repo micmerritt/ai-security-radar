@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-12**_
+_Last updated (UTC): **2026-08-13**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Rethinking Agent Security as a Networking Problem**  
+- **Date:** 2026-08-12
+- **Authors:** Van Tran, Taveesh Sharma, Tajveer Singh Dhesi et al.
+- **Link:** https://arxiv.org/abs/2608.12172v1
+- **Security insight:** AI agents are rapidly becoming more capable and widely deployed, promising substantial gains in productivity and enabling new classes of applications. However, their growing autonomy also introduces significant privacy and security risks. Existing defenses…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents**  
+- **Date:** 2026-08-12
+- **Authors:** Yutao Mou, Pengfei Yang, Zhe Yin et al.
+- **Link:** https://arxiv.org/abs/2608.11878v1
+- **Security insight:** Large language model (LLM) agents integrated with external tools are vulnerable to indirect prompt injections embedded in environmental states. However, existing studies largely rely on manually implemented or reused environments, stochastic LLM-based tool…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models**  
 - **Date:** 2026-08-11
@@ -70,27 +84,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Retrieval-Augmented Generation (RAG) enables large language models to classify network flows and generate human-readable incident reports by retrieving semantically similar historical traffic from a vector knowledge base. However, the retrieval layer…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**The Anatomy of a Prompt Injection: A Component Model for Structured Analysis**  
-- **Date:** 2026-08-07
-- **Authors:** Jeremy McHugh
-- **Link:** https://arxiv.org/abs/2608.07808v1
-- **Security insight:** Four years after prompt injection was first identified in 2022, attacks are still predominantly documented as verbatim strings rather than structured exploits, despite advancing agent capabilities and threat actors embedding injections to subvert AI-assisted…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs**  
-- **Date:** 2026-08-07
-- **Authors:** Aditya Katkar, Om Karkele, Kartik Mandhane et al.
-- **Link:** https://arxiv.org/abs/2608.07167v1
-- **Security insight:** Giving an AI agent the ability to send emails, query databases, or execute commands is useful--until the agent is tricked into doing something it shouldn't. Prompt injection, hallucinated reasoning, and unsafe tool calls form the primary attack surface for…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection**  
-- **Date:** 2026-08-06
-- **Authors:** Zhuoxin Zhan, Akbar Rafiey, Avery Ma et al.
-- **Link:** https://arxiv.org/abs/2608.06477v1
-- **Security insight:** Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the environment such as web pages. In this paper, we introduce multi-step indirect prompt injection, a new attack class against CUAs…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **BASIS: Breach-Aware Selective Prompt Injection Shielding with Prefill Attention Probes**  
@@ -109,9 +102,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The rapid advancement of Large Language Models (LLMs) has facilitated their ubiquitous integration into various domains, leading to widespread adoption. However, this escalating trend has introduced significant security vulnerabilities, necessitating the…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-**When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse**  
-- **Date:** 2026-08-07
-- **Authors:** Yingtao Ren, Ziyi Zhao, Yiwei Fu et al.
-- **Link:** https://arxiv.org/abs/2608.06947v1
-- **Security insight:** Retrieval-augmented generation (RAG) is indispensable for enhancing large language models. However, RAGs are increasingly susceptible to poisoning attacks, in which adversarial documents are injected to manipulate generator outputs. Previous methods rely on…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+### Model Extraction & Privacy
+
+**Towards Automated Domain Model Extraction from Source Code using Heuristics and Open-Source LLMs**  
+- **Date:** 2026-08-12
+- **Authors:** Alessandra Mancas, Mounir Ammam, Hyacinth Ali et al.
+- **Link:** https://arxiv.org/abs/2608.12228v1
+- **Security insight:** Large language models (LLMs) have recently shown strong capabilities for code understanding, making them promising for reverse engineering domain models from source code. However, state-ofthe- art proprietary LLMs cannot be used in many industrial contexts…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+
+**Defending against Model Extraction for GNNs with Model Reprogramming**  
+- **Date:** 2026-08-11
+- **Authors:** Yan Wen, Zhenyi Wang, Heng Huang
+- **Link:** https://arxiv.org/abs/2608.11495v1
+- **Security insight:** Graph Neural Networks (GNNs) serve as the backbone for high-stakes applications in Machine-Learning-as-a-Service (MLaaS). Still, their black-box deployment exposes them to Model Extraction (ME) attacks, in which adversaries steal intellectual property by…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?

@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-13 (UTC)
+
+Top items:
+
+- **Towards Automated Domain Model Extraction from Source Code using Heuristics and Open-Source LLMs** (2026-08-12) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2608.12228v1
+
+- **Rethinking Agent Security as a Networking Problem** (2026-08-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.12172v1
+
+- **ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents** (2026-08-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.11878v1
+
+- **Defending against Model Extraction for GNNs with Model Reprogramming** (2026-08-11) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2608.11495v1
+
+- **On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models** (2026-08-11) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.10530v1
+
+- **From Prompt Injection to Web Exploitation: Revisiting Classic Vulnerabilities in LLM-Integrated Applications** (2026-08-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.10281v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-12 (UTC)
 
 Top items:
