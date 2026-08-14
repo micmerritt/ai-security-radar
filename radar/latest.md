@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-13**_
+_Last updated (UTC): **2026-08-14**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Labels Are Not Endpoints: Treatment Leakage and Construct Validity in MCP Agent Security Evaluation**  
+- **Date:** 2026-08-13
+- **Authors:** Rana Muhammad Ahmed, Sabahat Abbas
+- **Link:** https://arxiv.org/abs/2608.12880v1
+- **Security insight:** Security evaluations of tool-using agents often equate stored labels with behavioral facts. We audit a preserved campaign by tracing 10,200 execution rows to 180 model-bound requests, 45 semantic requests, and 15 observable stimuli. Two schema treatments were…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Rethinking Agent Security as a Networking Problem**  
 - **Date:** 2026-08-12
@@ -83,15 +90,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2608.08100v1
 - **Security insight:** Retrieval-Augmented Generation (RAG) enables large language models to classify network flows and generate human-readable incident reports by retrieving semantically similar historical traffic from a vector knowledge base. However, the retrieval layer…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-### Prompt Injection
-
-**BASIS: Breach-Aware Selective Prompt Injection Shielding with Prefill Attention Probes**  
-- **Date:** 2026-08-08
-- **Authors:** Laiqiao Qin, Tianqing Zhu, Longxiang Gao et al.
-- **Link:** https://arxiv.org/abs/2608.08027v1
-- **Security insight:** Prompt injection is a critical security threat in large language model (LLM) applications, where attackers hijack model behavior by embedding malicious instructions in user or external data. Existing detection methods only detect the presence of injection and…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks
 
