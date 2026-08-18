@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-18 (UTC)
+
+Top items:
+
+- **Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation** (2026-08-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.16843v1
+
+- **Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection** (2026-08-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.16393v1
+
+- **Agent-Native Telemetry: Verifiable State-Delta Evidence for Autonomous Operations** (2026-08-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.16178v1
+
+- **Bounded Agents: Delegation Security for Multi-Agent AI Systems** (2026-08-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.15888v1
+
+- **Visible Reasoning and Indirect Prompt-Injection Monitorability Across English, Tamil, and Tanglish** (2026-08-15) [Prompt Injection]  
+  https://arxiv.org/abs/2608.15392v1
+
+- **TwinGridShield: Consequence-Aware Runtime Authorization for LLM Grid-Agent Actions** (2026-08-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.15391v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-17 (UTC)
 
 Top items:
