@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-18**_
+_Last updated (UTC): **2026-08-19**_
 
 ## What this is
 
@@ -14,6 +14,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps**  
+- **Date:** 2026-08-18
+- **Authors:** Sujin Chen, Lijun Li, Tianyi Du et al.
+- **Link:** https://arxiv.org/abs/2608.17659v1
+- **Security insight:** LLM-powered GUI agents that autonomously operate smartphones are rapidly transitioning from research prototypes to early real-world deployment. However, because these agents routinely process untrusted environmental content, they are highly vulnerable to…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**When Agents Act on Web3: An Attack-Surface Survey of MCP, Skills, and Tool Calling**  
+- **Date:** 2026-08-18
+- **Authors:** Rabimba Karanjai, Yang Lu, Nour Diallo et al.
+- **Link:** https://arxiv.org/abs/2608.17275v1
+- **Security insight:** AI agents increasingly act rather than merely read: across the Model Context Protocol (MCP) ecosystem, the share of deployed tools that modify external state has risen from 27% to 65% of tool use. When agents exercise this authority on public blockchains…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance**  
+- **Date:** 2026-08-18
+- **Authors:** Rabimba Karanjai, Yang Lu, Richard Williamson et al.
+- **Link:** https://arxiv.org/abs/2608.17220v1
+- **Security insight:** Autonomous AI agents are emerging as interfaces for decentralized finance (DeFi) actions such as swaps, lending operations, and yield management. Because these agents rely on large language models (LLMs) to plan transactions, they inherit the LLM's…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation**  
 - **Date:** 2026-08-17
 - **Authors:** Jiawei Liu, Jiacheng Guo, Tian Zhang et al.
@@ -24,7 +45,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection**  
 - **Date:** 2026-08-17
 - **Authors:** Zonghao Ying, Xiangfan Wu, Huiyu Wu et al.
-- **Link:** https://arxiv.org/abs/2608.16393v1
+- **Link:** https://arxiv.org/abs/2608.16393v2
 - **Security insight:** We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study covers 14,560 controlled executions over 16 indirect-content…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
@@ -77,20 +98,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Security evaluations of tool-using agents often equate stored labels with behavioral facts. We audit a preserved campaign by tracing 10,200 execution rows to 180 model-bound requests, 45 semantic requests, and 15 observable stimuli. Two schema treatments were…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Rethinking Agent Security as a Networking Problem**  
-- **Date:** 2026-08-12
-- **Authors:** Van Tran, Taveesh Sharma, Tajveer Singh Dhesi et al.
-- **Link:** https://arxiv.org/abs/2608.12172v1
-- **Security insight:** AI agents are rapidly becoming more capable and widely deployed, promising substantial gains in productivity and enabling new classes of applications. However, their growing autonomy also introduces significant privacy and security risks. Existing defenses…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents**  
-- **Date:** 2026-08-12
-- **Authors:** Yutao Mou, Pengfei Yang, Zhe Yin et al.
-- **Link:** https://arxiv.org/abs/2608.11878v1
-- **Security insight:** Large language model (LLM) agents integrated with external tools are vulnerable to indirect prompt injections embedded in environmental states. However, existing studies largely rely on manually implemented or reused environments, stochastic LLM-based tool…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Visible Reasoning and Indirect Prompt-Injection Monitorability Across English, Tamil, and Tanglish**  
@@ -107,11 +114,4 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Alessandra Mancas, Mounir Ammam, Hyacinth Ali et al.
 - **Link:** https://arxiv.org/abs/2608.12228v1
 - **Security insight:** Large language models (LLMs) have recently shown strong capabilities for code understanding, making them promising for reverse engineering domain models from source code. However, state-ofthe- art proprietary LLMs cannot be used in many industrial contexts…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
-
-**Defending against Model Extraction for GNNs with Model Reprogramming**  
-- **Date:** 2026-08-11
-- **Authors:** Yan Wen, Zhenyi Wang, Heng Huang
-- **Link:** https://arxiv.org/abs/2608.11495v1
-- **Security insight:** Graph Neural Networks (GNNs) serve as the backbone for high-stakes applications in Machine-Learning-as-a-Service (MLaaS). Still, their black-box deployment exposes them to Model Extraction (ME) attacks, in which adversaries steal intellectual property by…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
