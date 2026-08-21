@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-20**_
+_Last updated (UTC): **2026-08-21**_
 
 ## What this is
 
@@ -100,18 +100,16 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Prompt Injection
 
+**COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense**  
+- **Date:** 2026-08-20
+- **Authors:** Roshan Sood, Onat Gungor, Tajana Rosing
+- **Link:** https://arxiv.org/abs/2608.19982v1
+- **Security insight:** LLMs remain vulnerable to prompt injection attacks, where adversarial instructions embedded in user inputs or external content manipulate model behavior and bypass safeguards. Existing defenses are predominantly static, relying on fixed alignment objectives…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
 **Visible Reasoning and Indirect Prompt-Injection Monitorability Across English, Tamil, and Tanglish**  
 - **Date:** 2026-08-15
 - **Authors:** Madhusudhanan G
 - **Link:** https://arxiv.org/abs/2608.15392v1
 - **Security insight:** Chain-of-thought monitoring is a potentially useful safety signal, but its reliability across languages and behavioral settings remains uncertain. In a small case study of eight manually verified synthetic scenarios, one model, one annotator, and one…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-### Model Extraction & Privacy
-
-**Towards Automated Domain Model Extraction from Source Code using Heuristics and Open-Source LLMs**  
-- **Date:** 2026-08-12
-- **Authors:** Alessandra Mancas, Mounir Ammam, Hyacinth Ali et al.
-- **Link:** https://arxiv.org/abs/2608.12228v1
-- **Security insight:** Large language models (LLMs) have recently shown strong capabilities for code understanding, making them promising for reverse engineering domain models from source code. However, state-ofthe- art proprietary LLMs cannot be used in many industrial contexts…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?

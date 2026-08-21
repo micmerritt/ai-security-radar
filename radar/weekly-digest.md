@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-21 (UTC)
+
+Top items:
+
+- **COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense** (2026-08-20) [Prompt Injection]  
+  https://arxiv.org/abs/2608.19982v1
+
+- **MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17659v1
+
+- **When Agents Act on Web3: An Attack-Surface Survey of MCP, Skills, and Tool Calling** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17275v1
+
+- **PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17220v1
+
+- **Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation** (2026-08-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.16843v1
+
+- **Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection** (2026-08-17) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.16393v2
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-20 (UTC)
 
 Top items:
