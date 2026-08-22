@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-21**_
+_Last updated (UTC): **2026-08-22**_
 
 ## What this is
 
