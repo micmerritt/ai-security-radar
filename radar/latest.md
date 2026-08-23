@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-22**_
+_Last updated (UTC): **2026-08-23**_
 
 ## What this is
 
@@ -89,13 +89,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Alexandre G. R. Day, Pradeep Yadlapalli, Sriram Venkatapathy et al.
 - **Link:** https://arxiv.org/abs/2608.14876v1
 - **Security insight:** Agentic coding assistants are finding widespread use, not just in new code development but in quickly ingesting and leveraging third-party code. This opens up a risk of malicious code being ingested as these coding tools operate with broad filesystem access…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Labels Are Not Endpoints: Treatment Leakage and Construct Validity in MCP Agent Security Evaluation**  
-- **Date:** 2026-08-13
-- **Authors:** Rana Muhammad Ahmed, Sabahat Abbas
-- **Link:** https://arxiv.org/abs/2608.12880v1
-- **Security insight:** Security evaluations of tool-using agents often equate stored labels with behavioral facts. We audit a preserved campaign by tracing 10,200 execution rows to 180 model-bound requests, 45 semantic requests, and 15 observable stimuli. Two schema treatments were…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
