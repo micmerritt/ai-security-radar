@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-24 (UTC)
+
+Top items:
+
+- **Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking** (2026-08-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.21230v1
+
+- **TraceGrant: A Contract-Governed Security Framework for the Task-Effect Lifecycle of Networked LLM Agents** (2026-08-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.21126v1
+
+- **COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense** (2026-08-20) [Prompt Injection]  
+  https://arxiv.org/abs/2608.19982v1
+
+- **MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17659v1
+
+- **When Agents Act on Web3: An Attack-Surface Survey of MCP, Skills, and Tool Calling** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17275v1
+
+- **PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance** (2026-08-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.17220v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-23 (UTC)
 
 Top items:

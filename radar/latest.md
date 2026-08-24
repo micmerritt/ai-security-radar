@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-23**_
+_Last updated (UTC): **2026-08-24**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking**  
+- **Date:** 2026-08-21
+- **Authors:** Arulnidhi Karunanidhi
+- **Link:** https://arxiv.org/abs/2608.21230v1
+- **Security insight:** Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it. We measure the cost of this failure mode using plainly worded false assertions generated in a single pass, with no…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**TraceGrant: A Contract-Governed Security Framework for the Task-Effect Lifecycle of Networked LLM Agents**  
+- **Date:** 2026-08-21
+- **Authors:** Bohao Liao, Jingchao Wang, Qipeng Song et al.
+- **Link:** https://arxiv.org/abs/2608.21126v1
+- **Security insight:** Networked large language model (LLM) agents retrieve information from email, cloud storage, calendars, transaction platforms, and Web services to complete multistep tasks that produce persistent external effects. The same content needed for legitimate…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps**  
 - **Date:** 2026-08-18
@@ -70,25 +84,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language model (LLM)-assisted energy-management tools can translate natural-language context into structured grid commands, but syntactic validity does not imply physical admissibility. This paper presents TwinGridShield, a model-independent runtime…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
+**BioFirewall: A genome-writing-native governance layer for design-stage biosecurity screening of agentic AI**  
+- **Date:** 2026-08-15
+- **Authors:** Anees Ahmed Mahaboob Ali, Radhakrishnan Delhibabu, Everette Jacob Remington Nelson
+- **Link:** https://arxiv.org/abs/2608.20413v1
+- **Security insight:** Background. Artificial-intelligence design tools now plan genome-scale edits, and agentic systems execute those plans with progressively less human oversight. Biosecurity controls are limited to two points: refusal guardrails at the foundation model and…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Beyond Direct Access: Resource Hijacking in LLM Agents**  
 - **Date:** 2026-08-15
 - **Authors:** Puyu Zeng, Qibing Ren
 - **Link:** https://arxiv.org/abs/2608.15108v1
 - **Security insight:** Large language model agents are increasingly connected to high-value resources such as computing infrastructure, credentials, usage budgets, identities, private knowledge, communication channels, and organizational workflows. Existing agent security research…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Command-Space Counterfactual Explanations for Pareto-Conditioned Reinforcement Learning**  
-- **Date:** 2026-08-15
-- **Authors:** Joanikij Chulev, Hendrik Baier
-- **Link:** https://arxiv.org/abs/2608.14963v1
-- **Security insight:** Pareto Conditioned Networks learn multiple multi-objective reinforcement learning behaviours by conditioning a single policy on a desired return command. However, the local mapping from command and state to action remains opaque. We propose command-space…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Workspace Topology as an Attack Vector in Agentic Coding Assistants**  
-- **Date:** 2026-08-14
-- **Authors:** Alexandre G. R. Day, Pradeep Yadlapalli, Sriram Venkatapathy et al.
-- **Link:** https://arxiv.org/abs/2608.14876v1
-- **Security insight:** Agentic coding assistants are finding widespread use, not just in new code development but in quickly ingesting and leveraging third-party code. This opens up a risk of malicious code being ingested as these coding tools operate with broad filesystem access…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
