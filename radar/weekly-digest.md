@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-25 (UTC)
+
+Top items:
+
+- **Breakout/Interchange Reconnection as a driver of Jets, Fast CME, and Solar Energetic Particles** (2026-08-24) [Prompt Injection]  
+  https://arxiv.org/abs/2608.23362v1
+
+- **AI-Assisted Extraction of Follow-up Observations from GCN Circulars in Astro-COLIBRI** (2026-08-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.23270v1
+
+- **AgentFlow: A Flow-Centric Policy Language and Framework for Securing LLM Agent Systems** (2026-08-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.22868v1
+
+- **Beyond Over-Refusal: Defending Indirect Prompt Injection via Latent Instruction Manifolds** (2026-08-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.22248v1
+
+- **Mitigating Database Leakage in RAG Systems with Keyword-Grounded Fact Substitution** (2026-08-21) [Prompt Injection]  
+  https://arxiv.org/abs/2608.21656v1
+
+- **SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation** (2026-08-21) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.21500v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-24 (UTC)
 
 Top items:

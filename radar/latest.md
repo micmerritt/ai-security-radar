@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-24**_
+_Last updated (UTC): **2026-08-25**_
 
 ## What this is
 
@@ -13,6 +13,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**AI-Assisted Extraction of Follow-up Observations from GCN Circulars in Astro-COLIBRI**  
+- **Date:** 2026-08-24
+- **Authors:** Fabian Schüssler, S. Bisero, M. Cellier et al.
+- **Link:** https://arxiv.org/abs/2608.23270v1
+- **Security insight:** We present a new Astro-COLIBRI component that converts free-text GCN Circulars into structured, event-linked follow-up records and combines them with structured reports submitted directly by the community. A continuously running Circular listener associates…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**AgentFlow: A Flow-Centric Policy Language and Framework for Securing LLM Agent Systems**  
+- **Date:** 2026-08-24
+- **Authors:** Basavesh Ammanaghatta Shivakumar, Swarn Priya, Peng Gao
+- **Link:** https://arxiv.org/abs/2608.22868v1
+- **Security insight:** LLM agents increasingly read untrusted content, invoke external tools, access private data, and delegate work to other agents. Harm often arises not from a single unsafe action but from the flow of sensitive data across a sequence of otherwise plausible…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Beyond Over-Refusal: Defending Indirect Prompt Injection via Latent Instruction Manifolds**  
+- **Date:** 2026-08-23
+- **Authors:** Jiahao Chen, Rui Yin, Xinfeng Li et al.
+- **Link:** https://arxiv.org/abs/2608.22248v1
+- **Security insight:** Large Language Models (LLMs) have been integrated into complex ecosystems (e.g., Code Agents), while Indirect Prompt Injection (IPI) attacks have emerged as critical barriers to their safe deployment. Attackers exploit LLMs' indistinguishability between…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation**  
+- **Date:** 2026-08-21
+- **Authors:** Yibo Peng, Long Lian, David Wagner et al.
+- **Link:** https://arxiv.org/abs/2608.21500v1
+- **Security insight:** Prompt injection is listed as the \#1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, "Ignore all prior instructions and perform <an attacker's task>." To…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking**  
 - **Date:** 2026-08-21
@@ -63,53 +91,25 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study covers 14,560 controlled executions over 16 indirect-content…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Agent-Native Telemetry: Verifiable State-Delta Evidence for Autonomous Operations**  
-- **Date:** 2026-08-17
-- **Authors:** Jun He, Deying Yu
-- **Link:** https://arxiv.org/abs/2608.16178v1
-- **Security insight:** Operational telemetry is predominantly engineered for human reading: systems repeatedly serialize verbose prose, static keys, and redundant context across billions of log lines. As autonomous AI agents become primary operational consumers, feeding them…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Bounded Agents: Delegation Security for Multi-Agent AI Systems**  
-- **Date:** 2026-08-16
-- **Authors:** Xabier Muruaga
-- **Link:** https://arxiv.org/abs/2608.15888v1
-- **Security insight:** LLM-based agents can act on behalf of a user to access cloud services, call tools, or invoke agents. At session start, the agent's permissions are set but remain static, and each request is evaluated independently, without considering prior actions. Within…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**TwinGridShield: Consequence-Aware Runtime Authorization for LLM Grid-Agent Actions**  
-- **Date:** 2026-08-15
-- **Authors:** Md Fazley Rafy
-- **Link:** https://arxiv.org/abs/2608.15391v1
-- **Security insight:** Large language model (LLM)-assisted energy-management tools can translate natural-language context into structured grid commands, but syntactic validity does not imply physical admissibility. This paper presents TwinGridShield, a model-independent runtime…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**BioFirewall: A genome-writing-native governance layer for design-stage biosecurity screening of agentic AI**  
-- **Date:** 2026-08-15
-- **Authors:** Anees Ahmed Mahaboob Ali, Radhakrishnan Delhibabu, Everette Jacob Remington Nelson
-- **Link:** https://arxiv.org/abs/2608.20413v1
-- **Security insight:** Background. Artificial-intelligence design tools now plan genome-scale edits, and agentic systems execute those plans with progressively less human oversight. Biosecurity controls are limited to two points: refusal guardrails at the foundation model and…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Beyond Direct Access: Resource Hijacking in LLM Agents**  
-- **Date:** 2026-08-15
-- **Authors:** Puyu Zeng, Qibing Ren
-- **Link:** https://arxiv.org/abs/2608.15108v1
-- **Security insight:** Large language model agents are increasingly connected to high-value resources such as computing infrastructure, credentials, usage budgets, identities, private knowledge, communication channels, and organizational workflows. Existing agent security research…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Breakout/Interchange Reconnection as a driver of Jets, Fast CME, and Solar Energetic Particles**  
+- **Date:** 2026-08-24
+- **Authors:** Pankaj Kumar, Judith T. Karpen, David Lario et al.
+- **Link:** https://arxiv.org/abs/2608.23362v1
+- **Security insight:** Understanding how energetic particles are accelerated and released from the low corona into the interplanetary medium during solar eruptions is crucial for space weather research. Here, we present multiwavelength observations of a solar eruption that are…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Mitigating Database Leakage in RAG Systems with Keyword-Grounded Fact Substitution**  
+- **Date:** 2026-08-21
+- **Authors:** Ziliang Zhang, Yubo Zhu, Wei Tong et al.
+- **Link:** https://arxiv.org/abs/2608.21656v1
+- **Security insight:** Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models (LLMs) with external knowledge sources. However, RAG systems remain vulnerable to prompt injection attacks, which may mislead the retriever or…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense**  
 - **Date:** 2026-08-20
 - **Authors:** Roshan Sood, Onat Gungor, Tajana Rosing
 - **Link:** https://arxiv.org/abs/2608.19982v1
 - **Security insight:** LLMs remain vulnerable to prompt injection attacks, where adversarial instructions embedded in user inputs or external content manipulate model behavior and bypass safeguards. Existing defenses are predominantly static, relying on fixed alignment objectives…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Visible Reasoning and Indirect Prompt-Injection Monitorability Across English, Tamil, and Tanglish**  
-- **Date:** 2026-08-15
-- **Authors:** Madhusudhanan G
-- **Link:** https://arxiv.org/abs/2608.15392v1
-- **Security insight:** Chain-of-thought monitoring is a potentially useful safety signal, but its reliability across languages and behavioral settings remains uncertain. In a small case study of eight manually verified synthetic scenarios, one model, one annotator, and one…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
