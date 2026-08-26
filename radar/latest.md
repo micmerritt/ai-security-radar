@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-25**_
+_Last updated (UTC): **2026-08-26**_
 
 ## What this is
 
@@ -13,6 +13,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**What Guides the Agent? Adjudicating Unauthorized Behavior via Localizing Behavior-Guiding Instructions**  
+- **Date:** 2026-08-25
+- **Authors:** Yichao Gao, Yumo Zhang, Yunhao Yao et al.
+- **Link:** https://arxiv.org/abs/2608.24022v1
+- **Security insight:** LLM agents integrated with external resources gain complex task capabilities, yet the unified natural-language context channel makes them vulnerable to injection attacks: untrusted external data may be dynamically parsed as behavior-guiding instructions…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**WebMCP-Phalanx: Enforcing and Characterizing Trust Boundaries for Browser-Integrated LLM Agents**  
+- **Date:** 2026-08-25
+- **Authors:** Lin-Fa Lee, YI-YU Chang, Kuo-Hui Yeh
+- **Link:** https://arxiv.org/abs/2608.24017v1
+- **Security insight:** The emerging W3C WebMCP proposal enables LLM agents to invoke tools exposed by web pages. In multi-party web environments, however, integrating agent execution into a browser security model centered on the Same-Origin Policy (SOP) leaves insufficient…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Beyond the Mandate: A Systematic Security Analysis of the Agent Payments Protocol (AP2)**  
+- **Date:** 2026-08-24
+- **Authors:** Avital Aviv, Parth A. Gandh, Ron Bitton et al.
+- **Link:** https://arxiv.org/abs/2608.23858v1
+- **Security insight:** The Agent Payments Protocol (AP2), introduced by Google, enables large language model (LLM)-driven shopping agents to authorize and execute payments on behalf of users. Its signed Checkout and Payment Mandates protect the integrity of transaction data after…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**TrustShiftProbe: Characterizing, Benchmarking, and Defending Staged Trust Attacks on MCP Servers**  
+- **Date:** 2026-08-24
+- **Authors:** Mehrdad Rostamzadeh, Sidhant Narula, Mohammad Ghasemigol et al.
+- **Link:** https://arxiv.org/abs/2608.23763v1
+- **Security insight:** The Model Context Protocol (MCP) has emerged as the standard layer connecting Large Language Model agents to external tool backends. This openness introduces a severe server-side threat we term TrustShift: a compromised MCP server behaves benignly during an…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **AI-Assisted Extraction of Follow-up Observations from GCN Circulars in Astro-COLIBRI**  
 - **Date:** 2026-08-24
@@ -56,42 +84,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Networked large language model (LLM) agents retrieve information from email, cloud storage, calendars, transaction platforms, and Web services to complete multistep tasks that produce persistent external effects. The same content needed for legitimate…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps**  
-- **Date:** 2026-08-18
-- **Authors:** Sujin Chen, Lijun Li, Tianyi Du et al.
-- **Link:** https://arxiv.org/abs/2608.17659v1
-- **Security insight:** LLM-powered GUI agents that autonomously operate smartphones are rapidly transitioning from research prototypes to early real-world deployment. However, because these agents routinely process untrusted environmental content, they are highly vulnerable to…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**When Agents Act on Web3: An Attack-Surface Survey of MCP, Skills, and Tool Calling**  
-- **Date:** 2026-08-18
-- **Authors:** Rabimba Karanjai, Yang Lu, Nour Diallo et al.
-- **Link:** https://arxiv.org/abs/2608.17275v1
-- **Security insight:** AI agents increasingly act rather than merely read: across the Model Context Protocol (MCP) ecosystem, the share of deployed tools that modify external state has risen from 27% to 65% of tool use. When agents exercise this authority on public blockchains…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance**  
-- **Date:** 2026-08-18
-- **Authors:** Rabimba Karanjai, Yang Lu, Richard Williamson et al.
-- **Link:** https://arxiv.org/abs/2608.17220v1
-- **Security insight:** Autonomous AI agents are emerging as interfaces for decentralized finance (DeFi) actions such as swaps, lending operations, and yield management. Because these agents rely on large language models (LLMs) to plan transactions, they inherit the LLM's…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation**  
-- **Date:** 2026-08-17
-- **Authors:** Jiawei Liu, Jiacheng Guo, Tian Zhang et al.
-- **Link:** https://arxiv.org/abs/2608.16843v1
-- **Security insight:** Foundation models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior. Existing surveys often organize threats by mechanisms…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection**  
-- **Date:** 2026-08-17
-- **Authors:** Zonghao Ying, Xiangfan Wu, Huiyu Wu et al.
-- **Link:** https://arxiv.org/abs/2608.16393v2
-- **Security insight:** We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study covers 14,560 controlled executions over 16 indirect-content…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors**  
+- **Date:** 2026-08-24
+- **Authors:** Joshua Penman
+- **Link:** https://arxiv.org/abs/2608.23873v1
+- **Security insight:** Everything a language model sees is tokens. The serving stack knows what each span is -- user input, tool output, instructions -- but the model must keep track of that itself, and it can lose track or be confused: text can be written to read like anything.…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**GAP-Prompt: Gated Adaptive Prompting for Efficient Continual Learning**  
+- **Date:** 2026-08-24
+- **Authors:** Trung-Anh Dang, Duy-Cuong Bui, Ngoc-Son Vu et al.
+- **Link:** https://arxiv.org/abs/2608.23782v1
+- **Security insight:** Continual learning faces the persistent challenge of catastrophic forgetting, where sequential task updates degrade previously acquired knowledge. While prompt-based methods integrated with pre-trained models offer a compelling solution by freezing the…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Breakout/Interchange Reconnection as a driver of Jets, Fast CME, and Solar Energetic Particles**  
 - **Date:** 2026-08-24
@@ -105,11 +112,4 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Ziliang Zhang, Yubo Zhu, Wei Tong et al.
 - **Link:** https://arxiv.org/abs/2608.21656v1
 - **Security insight:** Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models (LLMs) with external knowledge sources. However, RAG systems remain vulnerable to prompt injection attacks, which may mislead the retriever or…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**COPA: Continual Preference Optimization for Adaptive Prompt Injection Defense**  
-- **Date:** 2026-08-20
-- **Authors:** Roshan Sood, Onat Gungor, Tajana Rosing
-- **Link:** https://arxiv.org/abs/2608.19982v1
-- **Security insight:** LLMs remain vulnerable to prompt injection attacks, where adversarial instructions embedded in user inputs or external content manipulate model behavior and bypass safeguards. Existing defenses are predominantly static, relying on fixed alignment objectives…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.

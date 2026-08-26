@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-26 (UTC)
+
+Top items:
+
+- **What Guides the Agent? Adjudicating Unauthorized Behavior via Localizing Behavior-Guiding Instructions** (2026-08-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.24022v1
+
+- **WebMCP-Phalanx: Enforcing and Characterizing Trust Boundaries for Browser-Integrated LLM Agents** (2026-08-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.24017v1
+
+- **Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors** (2026-08-24) [Prompt Injection]  
+  https://arxiv.org/abs/2608.23873v1
+
+- **Beyond the Mandate: A Systematic Security Analysis of the Agent Payments Protocol (AP2)** (2026-08-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.23858v1
+
+- **GAP-Prompt: Gated Adaptive Prompting for Efficient Continual Learning** (2026-08-24) [Prompt Injection]  
+  https://arxiv.org/abs/2608.23782v1
+
+- **TrustShiftProbe: Characterizing, Benchmarking, and Defending Staged Trust Attacks on MCP Servers** (2026-08-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.23763v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-25 (UTC)
 
 Top items:
