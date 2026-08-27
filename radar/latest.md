@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-26**_
+_Last updated (UTC): **2026-08-27**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks**  
+- **Date:** 2026-08-26
+- **Authors:** Tongyan Hu, Bryan Hooi
+- **Link:** https://arxiv.org/abs/2608.26008v1
+- **Security insight:** Large language models (LLMs) remain vulnerable to jailbreak attacks that exploit techniques such as role-playing, obfuscation, code transformation, and multi-step indirection to elicit harmful outputs. As jailbreak strategies keep emerging, defenses have…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **What Guides the Agent? Adjudicating Unauthorized Behavior via Localizing Behavior-Guiding Instructions**  
 - **Date:** 2026-08-25
@@ -70,20 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Prompt injection is listed as the \#1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, "Ignore all prior instructions and perform <an attacker's task>." To…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking**  
-- **Date:** 2026-08-21
-- **Authors:** Arulnidhi Karunanidhi
-- **Link:** https://arxiv.org/abs/2608.21230v1
-- **Security insight:** Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it. We measure the cost of this failure mode using plainly worded false assertions generated in a single pass, with no…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**TraceGrant: A Contract-Governed Security Framework for the Task-Effect Lifecycle of Networked LLM Agents**  
-- **Date:** 2026-08-21
-- **Authors:** Bohao Liao, Jingchao Wang, Qipeng Song et al.
-- **Link:** https://arxiv.org/abs/2608.21126v1
-- **Security insight:** Networked large language model (LLM) agents retrieve information from email, cloud storage, calendars, transaction platforms, and Web services to complete multistep tasks that produce persistent external effects. The same content needed for legitimate…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors**  
@@ -113,3 +106,12 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2608.21656v1
 - **Security insight:** Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models (LLMs) with external knowledge sources. However, RAG systems remain vulnerable to prompt injection attacks, which may mislead the retriever or…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+### Other (Review)
+
+**LMSM: LLM Security Framework Inspired by Linux Security Modules**  
+- **Date:** 2026-08-26
+- **Authors:** XiuYu Zhang, Bonan Ruan, Junfeng Fang et al.
+- **Link:** https://arxiv.org/abs/2608.25697v1
+- **Security insight:** Large language models (LLMs) are increasingly deployed with layered defenses, yet malicious prompts can still bypass them. Interpretability methods can expose model-internal signals along the generation path that could inform enforcement, but these signals…
+- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
