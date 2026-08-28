@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-27**_
+_Last updated (UTC): **2026-08-28**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**The Framing Gap: Indirect Prompt-Injection Exfiltration Defeats Surface-Level Defenses in Tool-Using Agents**  
+- **Date:** 2026-08-27
+- **Authors:** Md Habibur Rahman, Jaeho Kim
+- **Link:** https://arxiv.org/abs/2608.27092v1
+- **Security insight:** A tool-using LLM agent that reads attacker-controlled web content while holding a secret faces indirect prompt injection: the content may make it exfiltrate the secret. In a safe synthetic lab (canary secret, mock tools, matched clean-vs-poisoned metric) we…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks**  
 - **Date:** 2026-08-26
@@ -63,21 +70,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** LLM agents increasingly read untrusted content, invoke external tools, access private data, and delegate work to other agents. Harm often arises not from a single unsafe action but from the flow of sensitive data across a sequence of otherwise plausible…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Beyond Over-Refusal: Defending Indirect Prompt Injection via Latent Instruction Manifolds**  
-- **Date:** 2026-08-23
-- **Authors:** Jiahao Chen, Rui Yin, Xinfeng Li et al.
-- **Link:** https://arxiv.org/abs/2608.22248v1
-- **Security insight:** Large Language Models (LLMs) have been integrated into complex ecosystems (e.g., Code Agents), while Indirect Prompt Injection (IPI) attacks have emerged as critical barriers to their safe deployment. Attackers exploit LLMs' indistinguishability between…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation**  
-- **Date:** 2026-08-21
-- **Authors:** Yibo Peng, Long Lian, David Wagner et al.
-- **Link:** https://arxiv.org/abs/2608.21500v1
-- **Security insight:** Prompt injection is listed as the \#1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, "Ignore all prior instructions and perform <an attacker's task>." To…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**The Latent Diagnostic Taxonomy: A Framework for Constructing Classifiers and Diagnosing Their Decisions, Applied to Prompt Injection Detection**  
+- **Date:** 2026-08-26
+- **Authors:** Jaturong Kongmanee, Smile Thanapattheerakul
+- **Link:** https://arxiv.org/abs/2608.26423v1
+- **Security insight:** This paper proposes a framework for constructing a classifier as a safeguard layer, and for developing a complementary diagnostic that identifies which of the classifier's confident decisions can be trusted. This framework, the Latent Diagnostic Taxonomy,…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors**  
 - **Date:** 2026-08-24
@@ -100,12 +100,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Understanding how energetic particles are accelerated and released from the low corona into the interplanetary medium during solar eruptions is crucial for space weather research. Here, we present multiwavelength observations of a solar eruption that are…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Mitigating Database Leakage in RAG Systems with Keyword-Grounded Fact Substitution**  
-- **Date:** 2026-08-21
-- **Authors:** Ziliang Zhang, Yubo Zhu, Wei Tong et al.
-- **Link:** https://arxiv.org/abs/2608.21656v1
-- **Security insight:** Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for combining large language models (LLMs) with external knowledge sources. However, RAG systems remain vulnerable to prompt injection attacks, which may mislead the retriever or…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### Model Extraction & Privacy
+
+**JudgeStealer: Extracting LLM Judging Capabilities across Evaluation Protocols**  
+- **Date:** 2026-08-27
+- **Authors:** Chen Chen, Yaolin Chen, Xuehan Sun et al.
+- **Link:** https://arxiv.org/abs/2608.26982v1
+- **Security insight:** Large language model (LLM) judges are increasingly used across various evaluation scenarios, making their judgment capabilities valuable intellectual property. However, black-box access exposes these capabilities to model extraction attacks. Existing…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Other (Review)
 

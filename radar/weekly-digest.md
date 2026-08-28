@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-28 (UTC)
+
+Top items:
+
+- **The Framing Gap: Indirect Prompt-Injection Exfiltration Defeats Surface-Level Defenses in Tool-Using Agents** (2026-08-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.27092v1
+
+- **JudgeStealer: Extracting LLM Judging Capabilities across Evaluation Protocols** (2026-08-27) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2608.26982v1
+
+- **The Latent Diagnostic Taxonomy: A Framework for Constructing Classifiers and Diagnosing Their Decisions, Applied to Prompt Injection Detection** (2026-08-26) [Prompt Injection]  
+  https://arxiv.org/abs/2608.26423v1
+
+- **A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks** (2026-08-26) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.26008v1
+
+- **LMSM: LLM Security Framework Inspired by Linux Security Modules** (2026-08-26) [Other (Review)]  
+  https://arxiv.org/abs/2608.25697v1
+
+- **What Guides the Agent? Adjudicating Unauthorized Behavior via Localizing Behavior-Guiding Instructions** (2026-08-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.24022v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-27 (UTC)
 
 Top items:
