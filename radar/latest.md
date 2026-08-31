@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-08-30**_
+_Last updated (UTC): **2026-08-31**_
 
 ## What this is
 
@@ -14,11 +14,25 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**CAITLYN: Can LLM Agents Autonomously Synthesize Defenses against Emerging Injection Attacks?**  
+- **Date:** 2026-08-28
+- **Authors:** Zi Liang, Xiaoyu Xu, Yanyun Wang et al.
+- **Link:** https://arxiv.org/abs/2608.27990v1
+- **Security insight:** Prompt injection attacks on Large Language Model (LLM) agents seek to introduce malicious instructions or content into external text sources retrieved by agents, forcing the underlying LLMs to execute harmful actions outside their benign scope. While current…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **The Framing Gap: Indirect Prompt-Injection Exfiltration Defeats Surface-Level Defenses in Tool-Using Agents**  
 - **Date:** 2026-08-27
 - **Authors:** Md Habibur Rahman, Jaeho Kim
 - **Link:** https://arxiv.org/abs/2608.27092v1
 - **Security insight:** A tool-using LLM agent that reads attacker-controlled web content while holding a secret faces indirect prompt injection: the content may make it exfiltrate the secret. In a safe synthetic lab (canary secret, mock tools, matched clean-vs-poisoned metric) we…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**ROPE: Routed Origin Policy Enforcement against Indirect Prompt Injection**  
+- **Date:** 2026-08-27
+- **Authors:** Xinhang Ma, Chaowei Xiao, William Yeoh et al.
+- **Link:** https://arxiv.org/abs/2608.27496v1
+- **Security insight:** Indirect prompt injection (IPI) plants instructions in the content a tool-using LLM agent reads, steering the agent into harmful tool calls. The strongest defenses are system-level, leveraging techniques such as task-conditional tool screening to prevent…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks**  
@@ -42,35 +56,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The emerging W3C WebMCP proposal enables LLM agents to invoke tools exposed by web pages. In multi-party web environments, however, integrating agent execution into a browser security model centered on the Same-Origin Policy (SOP) leaves insufficient…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Beyond the Mandate: A Systematic Security Analysis of the Agent Payments Protocol (AP2)**  
-- **Date:** 2026-08-24
-- **Authors:** Avital Aviv, Parth A. Gandh, Ron Bitton et al.
-- **Link:** https://arxiv.org/abs/2608.23858v1
-- **Security insight:** The Agent Payments Protocol (AP2), introduced by Google, enables large language model (LLM)-driven shopping agents to authorize and execute payments on behalf of users. Its signed Checkout and Payment Mandates protect the integrity of transaction data after…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**TrustShiftProbe: Characterizing, Benchmarking, and Defending Staged Trust Attacks on MCP Servers**  
-- **Date:** 2026-08-24
-- **Authors:** Mehrdad Rostamzadeh, Sidhant Narula, Mohammad Ghasemigol et al.
-- **Link:** https://arxiv.org/abs/2608.23763v1
-- **Security insight:** The Model Context Protocol (MCP) has emerged as the standard layer connecting Large Language Model agents to external tool backends. This openness introduces a severe server-side threat we term TrustShift: a compromised MCP server behaves benignly during an…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**AI-Assisted Extraction of Follow-up Observations from GCN Circulars in Astro-COLIBRI**  
-- **Date:** 2026-08-24
-- **Authors:** Fabian Schüssler, S. Bisero, M. Cellier et al.
-- **Link:** https://arxiv.org/abs/2608.23270v1
-- **Security insight:** We present a new Astro-COLIBRI component that converts free-text GCN Circulars into structured, event-linked follow-up records and combines them with structured reports submitted directly by the community. A continuously running Circular listener associates…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**AgentFlow: A Flow-Centric Policy Language and Framework for Securing LLM Agent Systems**  
-- **Date:** 2026-08-24
-- **Authors:** Basavesh Ammanaghatta Shivakumar, Swarn Priya, Peng Gao
-- **Link:** https://arxiv.org/abs/2608.22868v1
-- **Security insight:** LLM agents increasingly read untrusted content, invoke external tools, access private data, and delegate work to other agents. Harm often arises not from a single unsafe action but from the flow of sensitive data across a sequence of otherwise plausible…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**LongPIBench: A Long-Context Benchmark for Prompt Injection**  
+- **Date:** 2026-08-28
+- **Authors:** Yupei Liu, Yuqi Jia, Neil Zhenqiang Gong et al.
+- **Link:** https://arxiv.org/abs/2608.28411v1
+- **Security insight:** Prompt injection attacks pose a serious security risk to large language models in real-world applications. However, existing prompt injection benchmarks primarily focus on short-context inputs, leaving the attacks and defenses in long-context settings largely…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **The Latent Diagnostic Taxonomy: A Framework for Constructing Classifiers and Diagnosing Their Decisions, Applied to Prompt Injection Detection**  
 - **Date:** 2026-08-26
@@ -82,23 +75,32 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors**  
 - **Date:** 2026-08-24
 - **Authors:** Joshua Penman
-- **Link:** https://arxiv.org/abs/2608.23873v1
-- **Security insight:** Everything a language model sees is tokens. The serving stack knows what each span is -- user input, tool output, instructions -- but the model must keep track of that itself, and it can lose track or be confused: text can be written to read like anything.…
+- **Link:** https://arxiv.org/abs/2608.23873v2
+- **Security insight:** Everything a language model sees is tokens. The serving stack knows what each span is -- user input, tool output, instructions -- but the model must keep track of that itself, and can lose track or be confused: text can be written to read like anything.…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**GAP-Prompt: Gated Adaptive Prompting for Efficient Continual Learning**  
-- **Date:** 2026-08-24
-- **Authors:** Trung-Anh Dang, Duy-Cuong Bui, Ngoc-Son Vu et al.
-- **Link:** https://arxiv.org/abs/2608.23782v1
-- **Security insight:** Continual learning faces the persistent challenge of catastrophic forgetting, where sequential task updates degrade previously acquired knowledge. While prompt-based methods integrated with pre-trained models offer a compelling solution by freezing the…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### RAG & Retrieval Attacks
 
-**Breakout/Interchange Reconnection as a driver of Jets, Fast CME, and Solar Energetic Particles**  
-- **Date:** 2026-08-24
-- **Authors:** Pankaj Kumar, Judith T. Karpen, David Lario et al.
-- **Link:** https://arxiv.org/abs/2608.23362v1
-- **Security insight:** Understanding how energetic particles are accelerated and released from the low corona into the interplanetary medium during solar eruptions is crucial for space weather research. Here, we present multiwavelength observations of a solar eruption that are…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+**Layered LLM Defenses as an Ensemble: Access Tiers, Inference Cost, and the Measured Failure Correlation Between Defense Layers**  
+- **Date:** 2026-08-28
+- **Authors:** Abrar Alotaibi, Muhammad Shahid Jabbar, Sadam Al-Azani et al.
+- **Link:** https://arxiv.org/abs/2608.28327v1
+- **Security insight:** Practitioners defend large language models (LLMs) by stacking defenses, assuming the layers compound. A stack is an ensemble, and ensembles compound only under a condition the LLM security literature recommends but never measures: the members must fail on…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+**eBPF-Based Cybersecurity Mechanisms: A Systematic Literature Review**  
+- **Date:** 2026-08-27
+- **Authors:** Stamatios Kostopoulos, Panagiotis Tsakonas, Evangelos K. Markakis
+- **Link:** https://arxiv.org/abs/2608.27511v1
+- **Security insight:** Extended Berkeley Packet Filter (eBPF) has emerged as a kernel-level framework enabling dynamic security enforcement in modern operating systems. While eBPF's cybersecurity potential has attracted significant attention, existing work remains fragmented across…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+**Circuit Discovery Helps Detect LLM Jailbreaking: A Mechanistic Interpretability Study**  
+- **Date:** 2026-08-27
+- **Authors:** Paria Mehrbod, Boris Knyazev, Guy Wolf et al.
+- **Link:** https://arxiv.org/abs/2608.27504v1
+- **Security insight:** Despite extensive safety alignment, large language models (LLMs) remain vulnerable to jailbreak attacks that bypass safeguards to elicit harmful content. While prior work attributes this vulnerability to safety training limitations, the internal mechanisms by…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Model Extraction & Privacy
 

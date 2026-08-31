@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-08-31 (UTC)
+
+Top items:
+
+- **LongPIBench: A Long-Context Benchmark for Prompt Injection** (2026-08-28) [Prompt Injection]  
+  https://arxiv.org/abs/2608.28411v1
+
+- **Layered LLM Defenses as an Ensemble: Access Tiers, Inference Cost, and the Measured Failure Correlation Between Defense Layers** (2026-08-28) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.28327v1
+
+- **CAITLYN: Can LLM Agents Autonomously Synthesize Defenses against Emerging Injection Attacks?** (2026-08-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.27990v1
+
+- **The Framing Gap: Indirect Prompt-Injection Exfiltration Defeats Surface-Level Defenses in Tool-Using Agents** (2026-08-27) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.27092v1
+
+- **JudgeStealer: Extracting LLM Judging Capabilities across Evaluation Protocols** (2026-08-27) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2608.26982v1
+
+- **eBPF-Based Cybersecurity Mechanisms: A Systematic Literature Review** (2026-08-27) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2608.27511v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-30 (UTC)
 
 Top items:
