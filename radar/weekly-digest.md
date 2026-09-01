@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-01 (UTC)
+
+Top items:
+
+- **ECLIPSE: Self-Evolving Stealthy Prompt Injection Attack against Long-Horizon Agentic Systems** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30441v1
+
+- **Attesting Outputs and Delegation Ancestry in Multi-Agent AI Systems** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30387v1
+
+- **Will the User Ever Know? Covert Indirect Prompt Injection on Tool-Using LLM Agents** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30362v1
+
+- **SIR: Self-improving Red-teaming for Compute Use Agents** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30207v1
+
+- **Zero-Knowledge Predicate Proofs Between AI Agents: A Measured, Cross-Protocol Gateway and the Source-Integrity Gap** (2026-08-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30083v1
+
+- **Reachability-Based Capability Confinement for LLM Agents under Indirect Prompt Injection** (2026-08-30) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30041v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-08-31 (UTC)
 
 Top items:
