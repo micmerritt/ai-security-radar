@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-02 (UTC)
+
+Top items:
+
+- **HiveTraceGuard-Pro: A Compact Generative Guardrail for Prompt Injection, Jailbreaks, and Adversarial Obfuscation** (2026-09-01) [Prompt Injection]  
+  https://arxiv.org/abs/2609.01046v1
+
+- **SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems** (2026-09-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.00595v1
+
+- **EvoFlint: An Evolutionary Atlas of Multi-Turn LLM Vulnerabilities** (2026-08-31) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2609.00487v1
+
+- **Delegation Without Trust: An Empirical Gap Analysis of Identity, Authorization, and Runtime Governance in Multi-Agent LLM Systems** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.00267v1
+
+- **ECLIPSE: Self-Evolving Stealthy Prompt Injection Attack against Long-Horizon Agentic Systems** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30441v1
+
+- **Attesting Outputs and Delegation Ancestry in Multi-Agent AI Systems** (2026-08-31) [Agent & Tool Security]  
+  https://arxiv.org/abs/2608.30387v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-01 (UTC)
 
 Top items:
