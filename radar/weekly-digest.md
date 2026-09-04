@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-04 (UTC)
+
+Top items:
+
+- **Shifting from Injection to Interaction: Rethinking Web Security in the Age of LLMs and Beyond** (2026-09-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.03999v1
+
+- **Trust Me, I'm Your Developer: Self-Issued Authentication in Large Language Models** (2026-09-03) [Other (Review)]  
+  https://arxiv.org/abs/2609.03247v1
+
+- **The Implications of Linguistic Illegibility for LLM Security** (2026-09-02) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2609.02852v1
+
+- **Stored Is Not Supported: Typed Provenance and Assertion Guardrails for Persistent AI Agents** (2026-09-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.02127v1
+
+- **Implicit Manipulation for Skill Selection in LLM Agents with Semantic Matching** (2026-09-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.02035v1
+
+- **Agent Flight Recorder: Tamper-Evident Audit Trails with On-Chain Anchoring for Long-Horizon Tool-Using Agents** (2026-09-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.01931v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-03 (UTC)
 
 Top items:

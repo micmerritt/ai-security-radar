@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-09-03**_
+_Last updated (UTC): **2026-09-04**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Shifting from Injection to Interaction: Rethinking Web Security in the Age of LLMs and Beyond**  
+- **Date:** 2026-09-03
+- **Authors:** Nivedita Singh, Alsharif Abuadbba, Yansong Gao et al.
+- **Link:** https://arxiv.org/abs/2609.03999v1
+- **Security insight:** Large language models (LLMs) are becoming integral to web applications and browser agents, transforming online interactions while introducing new attack vectors and reshaping longstanding web vulnerabilities. Classical threats such as cross-site scripting…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Stored Is Not Supported: Typed Provenance and Assertion Guardrails for Persistent AI Agents**  
 - **Date:** 2026-09-02
@@ -77,20 +84,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** As LLM agents take real-world actions through tools, indirect prompt injection (IPI) has emerged as a serious threat. The standard metric, Attack Success Rate (ASR), counts whether an injection succeeds but ignores what the user notices in the agent's final…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**SIR: Self-improving Red-teaming for Compute Use Agents**  
-- **Date:** 2026-08-31
-- **Authors:** Chen Xiong, Zhiyuan He, Pin-Yu Chen et al.
-- **Link:** https://arxiv.org/abs/2608.30207v1
-- **Security insight:** Computer use agents (CUAs) are vision-language models that perceive a screen and act on a real operating system through mouse, keyboard, and terminal, and they are increasingly deployed to automate everyday digital tasks. Because they can be exposed to…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Zero-Knowledge Predicate Proofs Between AI Agents: A Measured, Cross-Protocol Gateway and the Source-Integrity Gap**  
-- **Date:** 2026-08-30
-- **Authors:** Ashok Subbabhatta Gopalakrishna
-- **Link:** https://arxiv.org/abs/2608.30083v1
-- **Security insight:** Multi-agent AI platforms move quickly from staging to production, but the way agents establish trust remains rudimentary: an agent either transmits raw data to a peer or accepts that peer's natural-language self-report that a value complies with policy. The…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
 
 **HiveTraceGuard-Pro: A Compact Generative Guardrail for Prompt Injection, Jailbreaks, and Adversarial Obfuscation**  
@@ -115,3 +108,12 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2609.00487v1
 - **Security insight:** Frontier language models that refuse harmful single-turn prompts often comply when the same intent is reached gradually over many turns, making multi-turn attacks one of the least understood failure modes of large language models. Most automated red-teaming…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
+
+### Other (Review)
+
+**Trust Me, I'm Your Developer: Self-Issued Authentication in Large Language Models**  
+- **Date:** 2026-09-03
+- **Authors:** Syed Ghazanfar Abbas, Dongyan Xu
+- **Link:** https://arxiv.org/abs/2609.03247v1
+- **Security insight:** Large language model (LLM) security has largely focused on role-playing jailbreaks, with less attention to what happens when a user asks an LLM to verify an identity claim through a test designed by the model itself. We study this behavior through a staged…
+- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
