@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-07 (UTC)
+
+Top items:
+
+- **CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls** (2026-09-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.05269v1
+
+- **Influence Score and Transformers interpretability: Measure of the Effective Impact of Attention Heads at inference time** (2026-09-04) [Prompt Injection]  
+  https://arxiv.org/abs/2609.05074v1
+
+- **Repeat-After-Me: Black-Box Adaptive Visual Prompt Injection** (2026-09-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.04533v1
+
+- **Rethinking Indirect Prompt Injection as a Test-Time Search Problem** (2026-09-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.04495v1
+
+- **Shifting from Injection to Interaction: Rethinking Web Security in the Age of LLMs and Beyond** (2026-09-03) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.03999v1
+
+- **Trust Me, I'm Your Developer: Self-Issued Authentication in Large Language Models** (2026-09-03) [Other (Review)]  
+  https://arxiv.org/abs/2609.03247v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-06 (UTC)
 
 Top items:

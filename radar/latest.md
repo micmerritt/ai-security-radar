@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-09-06**_
+_Last updated (UTC): **2026-09-07**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls**  
+- **Date:** 2026-09-04
+- **Authors:** Chris Zheng, Geng Yang
+- **Link:** https://arxiv.org/abs/2609.05269v1
+- **Security insight:** LLM agent systems increasingly combine provenance tracking, authorization, policy enforcement, protocol adapters, and execution controls. However, individually correct security mechanisms do not necessarily compose into an end-to-end secure system: security-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Repeat-After-Me: Black-Box Adaptive Visual Prompt Injection**  
+- **Date:** 2026-09-03
+- **Authors:** Sizhe Chen, Yu-Lin Tsai, Ivan Evtimov et al.
+- **Link:** https://arxiv.org/abs/2609.04533v1
+- **Security insight:** Prompt injection is widely recognized as a major security threat to AI agents that interact with untrusted external data, such as websites, documents, and emails. Prior work has shown that, in the text domain, black-box prompt injection can achieve near-…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**Rethinking Indirect Prompt Injection as a Test-Time Search Problem**  
+- **Date:** 2026-09-03
+- **Authors:** Duong M. Nguyen, Joon Sik Kim, Blazej Manczak et al.
+- **Link:** https://arxiv.org/abs/2609.04495v1
+- **Security insight:** We formulate indirect prompt injection as a test-time search over a task-dependent attack surface induced by the environment, user task, and injection task. To operationalize this formulation, we introduce an agentic attacker with a dedicated search harness…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Shifting from Injection to Interaction: Rethinking Web Security in the Age of LLMs and Beyond**  
 - **Date:** 2026-09-03
@@ -56,35 +77,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Safe agents can fail together. Multi-agent LLM systems (MAS) move information, state, decisions, and authority across principal boundaries, creating failures that local checks may miss. Without an execution-level view, a multi-agent setting can easily be…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**Delegation Without Trust: An Empirical Gap Analysis of Identity, Authorization, and Runtime Governance in Multi-Agent LLM Systems**  
-- **Date:** 2026-08-31
-- **Authors:** Panduranga Sai Varma Dantuluri, Jyotirmoy Sundi
-- **Link:** https://arxiv.org/abs/2609.00267v1
-- **Security insight:** Autonomous LLM agents increasingly act on a user's behalf: they hold credentials, call tools and services, and spawn sub-agents that act further on their behalf. This turns a long-standing distributed-systems question -- who is authorized to do what, on whose…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**ECLIPSE: Self-Evolving Stealthy Prompt Injection Attack against Long-Horizon Agentic Systems**  
-- **Date:** 2026-08-31
-- **Authors:** Shiqian Zhao, Yangfan Zhou, Xinfeng Li et al.
-- **Link:** https://arxiv.org/abs/2608.30441v1
-- **Security insight:** Recently, large language model (LLM) agents, such as Codex, Claude Code, and OpenClaw, have become capable of planning and executing long-horizon tasks through repeated tool calls. This capability also creates new opportunities for prompt injection. Existing…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Attesting Outputs and Delegation Ancestry in Multi-Agent AI Systems**  
-- **Date:** 2026-08-31
-- **Authors:** Lifei Liu, Haoran Yu
-- **Link:** https://arxiv.org/abs/2608.30387v1
-- **Security insight:** Multi-agent applications delegate work across independently operated deployers. After an incident, a verifier must answer two questions: which deployer released the reported bytes, and whether each cross-deployer edge was authorized. Credentials establish who…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Will the User Ever Know? Covert Indirect Prompt Injection Attacks on Tool-Using LLM Agents**  
-- **Date:** 2026-08-31
-- **Authors:** Yunseok Lee, Yunji Kim, Woojin Lee
-- **Link:** https://arxiv.org/abs/2608.30362v2
-- **Security insight:** As LLM agents take real-world actions through tools, indirect prompt injection (IPI) has emerged as a serious threat. The standard metric, Attack Success Rate (ASR), counts whether an injection succeeds but ignores what the user notices in the agent's final…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
 ### Prompt Injection
+
+**Influence Score and Transformers interpretability: Measure of the Effective Impact of Attention Heads at inference time**  
+- **Date:** 2026-09-04
+- **Authors:** Lisa Bouger, Yannick Teglia, Philippe Loubet Moundi
+- **Link:** https://arxiv.org/abs/2609.05074v1
+- **Security insight:** We propose an influence score to quantify the contribution of attention heads to classification decisions in Transformer-based models designed for prompt injection detection. The score combines directional influence on the logits with structural contribution…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **HiveTraceGuard-Pro: A Compact Generative Guardrail for Prompt Injection, Jailbreaks, and Adversarial Obfuscation**  
 - **Date:** 2026-09-01
