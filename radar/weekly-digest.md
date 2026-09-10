@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-10 (UTC)
+
+Top items:
+
+- **Kernel-Managed Shared Memory for System-Wide Personalization** (2026-09-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.10144v1
+
+- **An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks** (2026-09-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.09404v1
+
+- **Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents** (2026-09-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.08371v1
+
+- **CoRL: Co-Evolutionary Reinforcement Learning for Adaptive Indirect Prompt-Injection Attacks and Defenses** (2026-09-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.07529v1
+
+- **Towards a Resilience-Theoretic Foundation for Adversarial Robustness in Industrial Control System Anomaly Detection** (2026-09-07) [Prompt Injection]  
+  https://arxiv.org/abs/2609.07244v1
+
+- **AgentDrift: A Step-Labeled Benchmark of Injection-Hijacked LLM Agent Trajectories** (2026-09-07) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.06972v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-09 (UTC)
 
 Top items:

@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-09-09**_
+_Last updated (UTC): **2026-09-10**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Agent & Tool Security
+
+**Kernel-Managed Shared Memory for System-Wide Personalization**  
+- **Date:** 2026-09-09
+- **Authors:** Ryan Lum, Yongfeng Zhang
+- **Link:** https://arxiv.org/abs/2609.10144v1
+- **Security insight:** AI systems become more useful when they can adapt to the people using them, but in multi-agent systems, useful context learned by one agent often remains unavailable to others. We present kernel-managed shared memory, a system-level abstraction in which…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
+**An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks**  
+- **Date:** 2026-09-08
+- **Authors:** Viet K. Nguyen, Mohammad I. Husain
+- **Link:** https://arxiv.org/abs/2609.09404v1
+- **Security insight:** Agentic AI frameworks let a language model plan, keep memory, and call tools that reach real files, mail, and services. Most of these agents also read images, which gives an attacker a way to put text into the agent's context without going through the user.…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents**  
 - **Date:** 2026-09-08
@@ -75,20 +89,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Sizhe Chen, Yu-Lin Tsai, Ivan Evtimov et al.
 - **Link:** https://arxiv.org/abs/2609.04533v1
 - **Security insight:** Prompt injection is widely recognized as a major security threat to AI agents that interact with untrusted external data, such as websites, documents, and emails. Prior work has shown that, in the text domain, black-box prompt injection can achieve near-…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Rethinking Indirect Prompt Injection as a Test-Time Search Problem**  
-- **Date:** 2026-09-03
-- **Authors:** Duong M. Nguyen, Joon Sik Kim, Blazej Manczak et al.
-- **Link:** https://arxiv.org/abs/2609.04495v1
-- **Security insight:** We formulate indirect prompt injection as a test-time search over a task-dependent attack surface induced by the environment, user task, and injection task. To operationalize this formulation, we introduce an agentic attacker with a dedicated search harness…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Shifting from Injection to Interaction: Rethinking Web Security in the Age of LLMs and Beyond**  
-- **Date:** 2026-09-03
-- **Authors:** Nivedita Singh, Alsharif Abuadbba, Yansong Gao et al.
-- **Link:** https://arxiv.org/abs/2609.03999v1
-- **Security insight:** Large language models (LLMs) are becoming integral to web applications and browser agents, transforming online interactions while introducing new attack vectors and reshaping longstanding web vulnerabilities. Classical threats such as cross-site scripting…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Prompt Injection
