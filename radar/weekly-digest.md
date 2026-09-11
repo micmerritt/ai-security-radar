@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-11 (UTC)
+
+Top items:
+
+- **The Agent Incident Registry: Toward Preventing Repeated AI Agent Failures** (2026-09-10) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.11030v1
+
+- **DriftNet: A Dual-Head Trajectory Transformer for Detecting and Localizing Prompt Injection in LLM Agents** (2026-09-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.10892v1
+
+- **No-Box Vulnerability Analysis: Description-only Detection of Indirect Prompt Injection Vulnerabilities in MCP Servers** (2026-09-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.10854v1
+
+- **Architecting the Secure AI-SOC: A Neurosymbolic Framework for Pipeline Integrity and Threat Mitigation** (2026-09-09) [Prompt Injection]  
+  https://arxiv.org/abs/2609.10707v1
+
+- **Kernel-Managed Shared Memory for System-Wide Personalization** (2026-09-09) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.10144v1
+
+- **SoK: Privacy Attacks on Machine Learning via Explainable AI** (2026-09-09) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2609.10627v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-10 (UTC)
 
 Top items:
