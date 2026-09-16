@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-16 (UTC)
+
+Top items:
+
+- **Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems** (2026-09-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.17320v1
+
+- **Toward Secure AI-Powered Penetration Testing Agents: Security Threats, Guardrails, and Architectural Perspectives** (2026-09-15) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.16694v1
+
+- **Illusion of Depth: Revealing Hidden Stereo Vision Vulnerabilities in Depth Estimation** (2026-09-14) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2609.16336v1
+
+- **Vulnerability Localization Benchmark: Measuring Agentic Security Analysis at Repository Scale** (2026-09-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.15939v1
+
+- **Authorization Architectures for Tool-Using AI Agents** (2026-09-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.15906v1
+
+- **Universal Defenses for Tool-Integrated LLM Agents Against Adversarial Attacks** (2026-09-14) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.16098v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-12 (UTC)
 
 Top items:
