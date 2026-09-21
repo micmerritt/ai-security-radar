@@ -20,6 +20,7 @@ import os
 import re
 import sys
 import textwrap
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -50,6 +51,7 @@ OPEN_ISSUES_FOR_TOP_N = 3
 ISSUE_LABELS = ["radar", "paper"]
 
 ARXIV_ATOM_ENDPOINT = "https://export.arxiv.org/api/query"
+ARXIV_RETRY_DELAYS_SECONDS = (5, 15)
 
 # If a paper doesn't hit at least one of these "security-ish" terms
 # in title+abstract, we drop it to reduce noise (video gen, medical ML, etc.).
@@ -172,19 +174,44 @@ def _fetch_arxiv_atom(search_query: str, max_results: int) -> str:
     url = ARXIV_ATOM_ENDPOINT + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(
         url,
-        headers={"User-Agent": "ai-security-radar/1.1 (GitHub Actions; contact: noreply)"},
+        headers={
+            "User-Agent": (
+                "ai-security-radar/1.1 "
+                "(https://github.com/micmerritt/ai-security-radar)"
+            )
+        },
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
 
-def _fetch_with_retries(search_query: str, max_results: int, tries: int = 3) -> str:
+def _fetch_with_retries(
+    search_query: str,
+    max_results: int,
+    tries: int = 3,
+    retry_delays: tuple[int, ...] = ARXIV_RETRY_DELAYS_SECONDS,
+) -> str:
+    if tries < 1:
+        raise ValueError("tries must be at least 1")
+
     last: Exception | None = None
-    for _ in range(tries):
+    for attempt in range(tries):
         try:
             return _fetch_arxiv_atom(search_query, max_results=max_results)
         except Exception as ex:
             last = ex
+            if attempt < tries - 1:
+                delay = (
+                    retry_delays[min(attempt, len(retry_delays) - 1)]
+                    if retry_delays
+                    else 0
+                )
+                print(
+                    f"arXiv request failed (attempt {attempt + 1}/{tries}): {ex}; "
+                    f"retrying in {delay}s",
+                    file=sys.stderr,
+                )
+                time.sleep(delay)
     assert last is not None
     raise last
 
