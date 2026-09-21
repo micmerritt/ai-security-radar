@@ -40,5 +40,37 @@ class FetchWithRetriesTests(unittest.TestCase):
             collect._fetch_with_retries("query", max_results=5, tries=0)
 
 
+class ClassificationTests(unittest.TestCase):
+    def test_short_terms_do_not_match_inside_unrelated_words(self):
+        entry = {
+            "title": "A paragraph about chemical reagents",
+            "summary": "A study of language modeling.",
+        }
+
+        self.assertFalse(collect._is_security_related(entry))
+        self.assertEqual(collect._categorize(entry), "Other (Review)")
+
+    def test_plural_terms_match(self):
+        self.assertTrue(collect._contains_term("autonomous agents", "agent"))
+        self.assertTrue(collect._contains_term("new vulnerabilities", "vulnerability"))
+
+    def test_weak_terms_still_match_as_words(self):
+        entry = {
+            "title": "Securing an agent workflow",
+            "summary": "A study of tool call abuse and operational controls.",
+        }
+
+        self.assertTrue(collect._is_security_related(entry))
+        self.assertEqual(collect._categorize(entry), "Agent & Tool Security")
+
+    def test_specific_attack_category_takes_priority_over_agent(self):
+        entry = {
+            "title": "Prompt injection against an agent",
+            "summary": "An indirect prompt can control tool calls.",
+        }
+
+        self.assertEqual(collect._categorize(entry), "Prompt Injection")
+
+
 if __name__ == "__main__":
     unittest.main()

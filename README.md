@@ -23,3 +23,12 @@ See the latest findings here:
 
 - [Latest Radar](radar/latest.md) – Most recent research signals discovered by the radar.
 - [Weekly Digest](radar/weekly-digest.md) – Running log of radar runs and emerging patterns.
+
+## Development
+
+The collector uses only the Python standard library. Run the test suite before
+changing its collection, filtering, or categorization logic:
+
+```bash
+python -m unittest discover -s tests -v
+```

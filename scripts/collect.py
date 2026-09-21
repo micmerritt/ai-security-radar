@@ -91,12 +91,14 @@ WEAK_SECURITY_TERMS = [
 
 # Category rules are simple keyword matches over title+abstract.
 CATEGORY_RULES: Dict[str, List[str]] = {
-    "Agent & Tool Security": ["agent", "tool call", "tool-calling", "function calling", "workflow", "side effect", "mcp", "model context protocol"],
+    # Put the more specific attack classes before broad system concepts such as
+    # "agent" so an agent prompt-injection paper lands in Prompt Injection.
     "Prompt Injection": ["prompt injection", "indirect prompt", "instruction injection", "unicode", "invisible"],
     "RAG & Retrieval Attacks": ["rag", "retrieval", "vector", "embedding", "knowledge base", "document poisoning", "context injection"],
     "Poisoning & Backdoors": ["poison", "data poisoning", "training data", "backdoor", "trojan"],
     "Model Extraction & Privacy": ["model extraction", "membership inference", "privacy leakage", "data leakage", "exfiltration"],
     "Adversarial ML": ["adversarial example", "adversarial", "evasion", "robust", "robustness"],
+    "Agent & Tool Security": ["agent", "tool call", "tool-calling", "function calling", "workflow", "side effect", "mcp", "model context protocol"],
 }
 
 
@@ -281,20 +283,35 @@ def _filter_recent(entries: List[Dict[str, Any]], days: int) -> List[Dict[str, A
     return out
 
 
+def _contains_term(text: str, term: str) -> bool:
+    """Match a term as words rather than as an arbitrary substring.
+
+    This prevents short keywords such as ``rag`` and ``agent`` from matching
+    unrelated words such as ``paragraph`` and ``reagent``. Hyphenated and
+    spaced variants remain distinct because both can be listed in the rules.
+    """
+    escaped = re.escape(term)
+    if term.isalpha() and term.endswith("y"):
+        escaped = rf"{re.escape(term[:-1])}(?:y|ies)"
+    elif term.isalpha() and not term.endswith("s"):
+        escaped = rf"{escaped}(?:s|es)?"
+    return re.search(rf"(?<!\w){escaped}(?!\w)", text) is not None
+
+
 def _is_security_related(entry: Dict[str, Any]) -> bool:
     text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
 
-    if any(term in text for term in STRONG_SECURITY_TERMS):
+    if any(_contains_term(text, term) for term in STRONG_SECURITY_TERMS):
         return True
 
-    weak_hits = sum(1 for term in WEAK_SECURITY_TERMS if term in text)
+    weak_hits = sum(1 for term in WEAK_SECURITY_TERMS if _contains_term(text, term))
     return weak_hits >= 2
 
 
 def _categorize(entry: Dict[str, Any]) -> str:
     text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
     for cat, terms in CATEGORY_RULES.items():
-        if any(t in text for t in terms):
+        if any(_contains_term(text, term) for term in terms):
             return cat
     return "Other (Review)"
 
