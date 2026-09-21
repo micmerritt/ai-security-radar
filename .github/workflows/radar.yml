@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
       - name: Run collector
         env:
           # Make the built-in Actions token visible to your Python script
