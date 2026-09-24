@@ -39,6 +39,25 @@ class FetchWithRetriesTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "at least 1"):
             collect._fetch_with_retries("query", max_results=5, tries=0)
 
+    @mock.patch("scripts.collect._fetch_with_retries")
+    def test_source_outage_warns_and_keeps_last_good_snapshot(self, fetch):
+        fetch.side_effect = OSError("source unavailable")
+
+        stdout = io.StringIO()
+        with mock.patch("sys.stdout", stdout):
+            result = collect._collect_arxiv_or_warn("query", max_results=5)
+
+        self.assertIsNone(result)
+        self.assertIn("::warning title=arXiv collection unavailable::", stdout.getvalue())
+        self.assertIn("Keeping the last successful report", stdout.getvalue())
+
+    @mock.patch("scripts.collect._fetch_with_retries", return_value="atom")
+    def test_successful_source_fetch_is_returned(self, fetch):
+        self.assertEqual(
+            collect._collect_arxiv_or_warn("query", max_results=5), "atom"
+        )
+        fetch.assert_called_once_with("query", max_results=5, tries=3)
+
 
 class ClassificationTests(unittest.TestCase):
     def test_short_terms_do_not_match_inside_unrelated_words(self):

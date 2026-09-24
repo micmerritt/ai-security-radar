@@ -218,6 +218,25 @@ def _fetch_with_retries(
     raise last
 
 
+def _collect_arxiv_or_warn(search_query: str, max_results: int) -> str | None:
+    """Fetch arXiv without turning a temporary source outage into a failed run.
+
+    The generated radar files are a last-known-good snapshot.  If arXiv remains
+    unavailable after the normal retries, leave that snapshot untouched and let
+    the next scheduled run try again.  This avoids a daily GitHub failure email
+    for an upstream outage while still emitting a conspicuous workflow warning.
+    """
+    try:
+        return _fetch_with_retries(search_query, max_results=max_results, tries=3)
+    except Exception as ex:
+        print(
+            "::warning title=arXiv collection unavailable::"
+            f"Could not refresh the radar after 3 attempts ({ex}). "
+            "Keeping the last successful report; the next scheduled run will retry."
+        )
+        return None
+
+
 def _parse_arxiv_entries(atom_xml: str) -> List[Dict[str, Any]]:
     ns = {
         "atom": "http://www.w3.org/2005/Atom",
@@ -554,7 +573,9 @@ def main() -> int:
 
         query = _build_arxiv_search_query(keywords)
 
-        atom = _fetch_with_retries(query, max_results=MAX_PULL, tries=3)
+        atom = _collect_arxiv_or_warn(query, max_results=MAX_PULL)
+        if atom is None:
+            return 0
         entries = _parse_arxiv_entries(atom)
         entries = _filter_recent(entries, days=RECENT_DAYS)
 
