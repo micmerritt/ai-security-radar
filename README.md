@@ -37,3 +37,10 @@ The scheduled collector retries temporary arXiv failures three times. If the
 source is still unavailable, the workflow records a warning and preserves the
 last successful radar snapshot instead of replacing it or sending a failure
 notification. The next daily run automatically tries again.
+
+### Testing weekly email delivery
+
+Run the **AI Security Radar Weekly Email** workflow manually and leave
+`test_email` enabled. The workflow sends a subject prefixed with `[TEST]` using
+the configured SMTP secrets, without querying issues or generating a report.
+Disable `test_email` on a manual run to send the normal weekly report.

@@ -19,6 +19,8 @@ Email/SMTP env vars (store these as GitHub Actions secrets):
 - SMTP_USER
 - SMTP_PASS
 - SMTP_TLS ("true" or "false")  # usually true for 587
+
+Set TEST_EMAIL=true to send a diagnostic email without querying GitHub issues.
 """
 
 from __future__ import annotations
@@ -48,6 +50,13 @@ CATEGORY_ORDER = [
     "adversarial-ml",
     "other",
 ]
+
+
+def _env_flag(name: str, default: bool = False) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _utc_now() -> dt.datetime:
@@ -205,6 +214,19 @@ def _send_email(subject: str, body_md: str) -> None:
 
 
 def main() -> int:
+    if _env_flag("TEST_EMAIL"):
+        now = _utc_now()
+        sent_at = now.strftime("%Y-%m-%d %H:%M:%S UTC")
+        subject = f"[TEST] AI Security Radar email ({sent_at})"
+        body = (
+            "# AI Security Radar test email\n\n"
+            f"The weekly email configuration completed an SMTP send at **{sent_at}**.\n\n"
+            "No GitHub issues were queried and no weekly report was generated.\n"
+        )
+        _send_email(subject, body)
+        print("Test email sent successfully.")
+        return 0
+
     token = os.getenv("GITHUB_TOKEN")
     repo = os.getenv("GITHUB_REPOSITORY")
     if not token or not repo:
