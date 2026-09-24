@@ -32,3 +32,8 @@ changing its collection, filtering, or categorization logic:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+The scheduled collector retries temporary arXiv failures three times. If the
+source is still unavailable, the workflow records a warning and preserves the
+last successful radar snapshot instead of replacing it or sending a failure
+notification. The next daily run automatically tries again.
