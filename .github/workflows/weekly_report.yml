@@ -5,6 +5,12 @@ on:
     # Mondays at 07:30 MDT-ish (13:30 UTC)
     - cron: "0 13 * * 4"
   workflow_dispatch:
+    inputs:
+      test_email:
+        description: Send a test email without querying GitHub issues
+        required: true
+        type: boolean
+        default: true
 
 permissions:
   issues: read
@@ -33,5 +39,6 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           SMTP_TLS: ${{ secrets.SMTP_TLS }}
+          TEST_EMAIL: ${{ inputs.test_email || 'false' }}
         run: |
           python scripts/weekly_report_email.py
