@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-28 (UTC)
+
+Top items:
+
+- **User Model Extraction via Belief Self-Distillation** (2026-09-25) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2609.31603v1
+
+- **AgentXploit: Autonomous Repository-to-Runtime Red-Teaming for AI Agents** (2026-09-25) [Adversarial ML]  
+  https://arxiv.org/abs/2609.31318v1
+
+- **MetaPermit: Scalable and Auditable Access Control for AI Agents via LLM-Inferred Meta-Attributes** (2026-09-25) [Prompt Injection]  
+  https://arxiv.org/abs/2609.31039v1
+
+- **Crypto-bound identity-verified capability tokens for coordinating distributed AI agents: A proposal** (2026-09-25) [Prompt Injection]  
+  https://arxiv.org/abs/2609.30824v1
+
+- **Prompt Injection Detection for Email Agents Through Attack Chain Modeling** (2026-09-25) [Prompt Injection]  
+  https://arxiv.org/abs/2609.30657v1
+
+- **Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure** (2026-09-24) [Prompt Injection]  
+  https://arxiv.org/abs/2609.30217v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-16 (UTC)
 
 Top items:
