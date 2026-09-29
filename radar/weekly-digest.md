@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-09-29 (UTC)
+
+Top items:
+
+- **Tracekit: Tamper-Evident Intent-Reasoning-Action Auditing for Autonomous Coding Agents** (2026-09-28) [Prompt Injection]  
+  https://arxiv.org/abs/2609.35659v1
+
+- **CoSec: Benchmarking Agent Security in Communities** (2026-09-28) [Agent & Tool Security]  
+  https://arxiv.org/abs/2609.34790v1
+
+- **Nudgeability: Reasoning Models Follow Confidence Signals Without Tracking Their Own Competence** (2026-09-28) [Prompt Injection]  
+  https://arxiv.org/abs/2609.34572v1
+
+- **CoDeL: Co-Evolutionary Defense against Indirect Prompt Injection in LLM-based Agents** (2026-09-28) [Prompt Injection]  
+  https://arxiv.org/abs/2609.34463v1
+
+- **Certified Multi-Source Integrity for Structured Agent Actions** (2026-09-28) [Prompt Injection]  
+  https://arxiv.org/abs/2609.34245v1
+
+- **Unknown is not normal: separating language-model extraction from rule-based decision logic for clinical risk scores** (2026-09-28) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2609.34112v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-28 (UTC)
 
 Top items:
