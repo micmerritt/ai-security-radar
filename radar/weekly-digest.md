@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-01 (UTC)
+
+Top items:
+
+- **Aletheia: Permission-Minimality Testing for Coding-Agent Rules** (2026-09-30) [Prompt Injection]  
+  https://arxiv.org/abs/2609.39678v1
+
+- **Where Do LLMs Decide to Break the Rules? Mechanistic Localization of Prompt Injection Compliance** (2026-09-29) [Prompt Injection]  
+  https://arxiv.org/abs/2609.37737v1
+
+- **ToolFence: Fine-Grained Authorization for Secure Tool-Using LLM Agents** (2026-09-29) [Prompt Injection]  
+  https://arxiv.org/abs/2609.37196v1
+
+- **Selecting The Most Informative Tokens in Natural Language Autoencoders** (2026-09-29) [Prompt Injection]  
+  https://arxiv.org/abs/2609.37040v1
+
+- **ContractWarden: Kernel-Enforced Damage Boundaries for AI Agents via Human-Authorized Contracts** (2026-09-29) [Prompt Injection]  
+  https://arxiv.org/abs/2609.38248v1
+
+- **pikit: A Composable Toolkit for Indirect Prompt Injection Research and Evaluation** (2026-09-29) [Prompt Injection]  
+  https://arxiv.org/abs/2609.36817v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-09-29 (UTC)
 
 Top items:
