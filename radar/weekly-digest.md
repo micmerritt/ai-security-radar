@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-02 (UTC)
+
+Top items:
+
+- **The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching** (2026-10-01) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.01768v1
+
+- **PACE: Provenance-Aware Capability Enforcement for Tool-Using LLM Agents** (2026-10-01) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.01349v1
+
+- **Do Defenses Against LLM Extraction Work Across Attacks? A Lifecycle Benchmark of Black-Box Model Extraction** (2026-09-30) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2610.00839v1
+
+- **Memetic Trojans: Social Contagions as Carriers of Adversarial Payloads in Agent Networks** (2026-09-30) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.00430v1
+
+- **Aletheia: Permission-Minimality Testing for Coding-Agent Rules** (2026-09-30) [Prompt Injection]  
+  https://arxiv.org/abs/2609.39678v1
+
+- **From A2A Attacks to Envelope-Layer Defense: Red-Teaming Evaluation of LLM Agents and a Three-Layer Isomorphic Attack-Defense Model** (2026-09-30) [Prompt Injection]  
+  https://arxiv.org/abs/2610.00392v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-01 (UTC)
 
 Top items:
