@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-06 (UTC)
+
+Top items:
+
+- **RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents** (2026-10-05) [Prompt Injection]  
+  https://arxiv.org/abs/2610.06401v1
+
+- **Correct Verdicts, Flawed Reasoning: Structured Auditing of LLM-based Vulnerability Reasoning** (2026-10-05) [Other (Review)]  
+  https://arxiv.org/abs/2610.06366v1
+
+- **Agentic schema-guided extraction of materials process knowledge from scientific literature** (2026-10-05) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2610.06322v1
+
+- **TrustMI: Causally controlling how assistants trust their users** (2026-10-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.06064v1
+
+- **Compromise Is Not Consequence: Evaluating Task-Scoped Authorization in LLM Agents with Paired Replay** (2026-10-05) [Prompt Injection]  
+  https://arxiv.org/abs/2610.05840v1
+
+- **Can CaMeLs Talk? Securing Multi-Agent Systems Against Indirect Prompt Injection Attacks** (2026-10-05) [Prompt Injection]  
+  https://arxiv.org/abs/2610.05640v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-04 (UTC)
 
 Top items:
