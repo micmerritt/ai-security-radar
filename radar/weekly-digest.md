@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-07 (UTC)
+
+Top items:
+
+- **AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model** (2026-10-06) [Prompt Injection]  
+  https://arxiv.org/abs/2610.08773v1
+
+- **Secure Speculative Decoding for Large Language Models** (2026-10-06) [Prompt Injection]  
+  https://arxiv.org/abs/2610.08678v1
+
+- **RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems** (2026-10-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.08571v1
+
+- **MARCO: The Radioactive Watermark for Protein Generative Models** (2026-10-06) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2610.08316v1
+
+- **Surviving the Router: Optimizing Skill Injections for Retrieval and Execution** (2026-10-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.08098v1
+
+- **Dynamic Budget Allocation for LLM Evaluation under Hard Resource Constraints** (2026-10-05) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.07362v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-06 (UTC)
 
 Top items:
