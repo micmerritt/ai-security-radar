@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-07**_
+_Last updated (UTC): **2026-10-08**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**AgentTracer: Tracing Indirect Prompt Injection Attack through Fine-Grained Intention-Execution Alignment**  
+- **Date:** 2026-10-07
+- **Authors:** Zitong Yao, Jiangrong Wu, Yixi Lin et al.
+- **Link:** https://arxiv.org/abs/2610.09935v1
+- **Security insight:** Large language model (LLM) agents interact with external resources to complete complex user tasks, exposing them to indirect prompt injection (IPI), where malicious instructions redirect agents toward attacker-intended tasks. Since IPI is difficult to defend…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files**  
+- **Date:** 2026-10-07
+- **Authors:** Yupu Wang, Zhengyuan Jiang, Reachal Wang et al.
+- **Link:** https://arxiv.org/abs/2610.09264v1
+- **Security insight:** Modern agentic coding frameworks increasingly rely on community-shared rule files (e.g., AGENTS.md or .cursorrules) to guide autonomous code generation, yet the security risks of this pipeline remain underexplored. To bridge this gap, we introduce the package…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**ASPIRE: Agentic Safety & Prompt Injection Red-teaming Engine**  
+- **Date:** 2026-10-06
+- **Authors:** Pengfei He, Deep Mitra, Vishesh Sharma et al.
+- **Link:** https://arxiv.org/abs/2610.08951v1
+- **Security insight:** LLM agents retrieve untrusted content and act through tools, creating indirect prompt-injection risks that can cause unauthorized actions or persistent state changes. Existing automated red-teaming largely optimizes payloads for pre-specified scenarios,…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model**  
 - **Date:** 2026-10-06
@@ -31,7 +52,7 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 **RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents**  
 - **Date:** 2026-10-05
 - **Authors:** Mohamed Dhouib, Clement Elliker, Alexi Canesse et al.
-- **Link:** https://arxiv.org/abs/2610.06401v1
+- **Link:** https://arxiv.org/abs/2610.06401v2
 - **Security insight:** Tool-using language-model agents are vulnerable to indirect prompt injection because they must act on untrusted external content. Existing training-time defenses can reduce attack success rates, but often at the cost of general capabilities. We show that…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
@@ -40,27 +61,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Aniruddh Pramod, James Oldfield, Adel Bibi
 - **Link:** https://arxiv.org/abs/2610.07089v1
 - **Security insight:** LLM agents increasingly act in multi-actor environments, exposing them to misuse from multiple sources: decomposition attacks, where a harmful request is split into innocuous sub-requests, and prompt injection attacks, where a compromised tool delivers a…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Compromise Is Not Consequence: Evaluating Task-Scoped Authorization in LLM Agents with Paired Replay**  
-- **Date:** 2026-10-05
-- **Authors:** Tural Hagverdiyev
-- **Link:** https://arxiv.org/abs/2610.05840v1
-- **Security insight:** A tool-using model can follow a malicious instruction even when its credentials are valid. We study whether task-scoped authorization contains the resulting tool execution. Our paired-replay testbed samples a model request once and submits the same action,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Can CaMeLs Talk? Securing Multi-Agent Systems Against Indirect Prompt Injection Attacks**  
-- **Date:** 2026-10-05
-- **Authors:** James Peters-Gill, Avi Semler, Henning Bartsch et al.
-- **Link:** https://arxiv.org/abs/2610.05640v1
-- **Security insight:** Indirect prompt injection attacks - malicious instructions embedded in content processed by large language models - remain a major obstacle to safely deploying tool-using agents. CaMeL [Debenedetti et al., 2025] mitigates this threat for an individual agent…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Readable Before Actionable: Causal Tracing of Indirect Prompt Injection**  
-- **Date:** 2026-10-04
-- **Authors:** Zhe Yu, Wenpeng Xing, Xingxing Yang et al.
-- **Link:** https://arxiv.org/abs/2610.05295v1
-- **Security insight:** Indirect prompt injection causes LLM agents to follow commands embedded in external data. A probe may distinguish instructions from data without identifying a state edit that changes the next action. We study this gap through counterfactual role probes,…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 ### RAG & Retrieval Attacks

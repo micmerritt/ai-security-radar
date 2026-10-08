@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-08 (UTC)
+
+Top items:
+
+- **AgentTracer: Tracing Indirect Prompt Injection Attack through Fine-Grained Intention-Execution Alignment** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.09935v1
+
+- **Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.09264v1
+
+- **ASPIRE: Agentic Safety & Prompt Injection Red-teaming Engine** (2026-10-06) [Prompt Injection]  
+  https://arxiv.org/abs/2610.08951v1
+
+- **AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model** (2026-10-06) [Prompt Injection]  
+  https://arxiv.org/abs/2610.08773v1
+
+- **Secure Speculative Decoding for Large Language Models** (2026-10-06) [Prompt Injection]  
+  https://arxiv.org/abs/2610.08678v1
+
+- **RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems** (2026-10-06) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.08571v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-07 (UTC)
 
 Top items:
