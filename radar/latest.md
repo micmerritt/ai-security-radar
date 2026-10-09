@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-08**_
+_Last updated (UTC): **2026-10-09**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**LTBD: Learnable Trust-Boundary Delimiters for Prompt Injection Defense**  
+- **Date:** 2026-10-08
+- **Authors:** Luman Zhao, Minghui Xu, Yue Zhang et al.
+- **Link:** https://arxiv.org/abs/2610.11634v1
+- **Security insight:** Large language models (LLMs) perform remarkably well on complex tasks, yet remain highly vulnerable to prompt injection attacks, where malicious instructions embedded in external data can override user intent. Existing defenses remain limited by model fine-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**BRANCH: Bypassing Multi-Scanner AI Guardrails**  
+- **Date:** 2026-10-07
+- **Authors:** William Hackett, Peter Garraghan
+- **Link:** https://arxiv.org/abs/2610.10742v1
+- **Security insight:** AI systems increasingly rely on Large Language Models (LLMs) as core reasoning engines, making them targets for prompt injection and jailbreaks. Guardrails monitor and validate model inputs and outputs, yet their isolated, task-focused detection leaves gaps…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **AgentTracer: Tracing Indirect Prompt Injection Attack through Fine-Grained Intention-Execution Alignment**  
 - **Date:** 2026-10-07
@@ -56,13 +70,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Tool-using language-model agents are vulnerable to indirect prompt injection because they must act on untrusted external content. Existing training-time defenses can reduce attack success rates, but often at the cost of general capabilities. We show that…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Towards a Unified Misuse Monitoring Benchmark**  
-- **Date:** 2026-10-05
-- **Authors:** Aniruddh Pramod, James Oldfield, Adel Bibi
-- **Link:** https://arxiv.org/abs/2610.07089v1
-- **Security insight:** LLM agents increasingly act in multi-actor environments, exposing them to misuse from multiple sources: decomposition attacks, where a harmful request is split into innocuous sub-requests, and prompt injection attacks, where a compromised tool delivers a…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems**  
@@ -95,27 +102,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Protein Generative Models (PGMs) have revolutionized structural biology by enabling the design of complex 3D protein structures from sequence data. However, this breakthrough introduces a dual-use challenge, exposing high-value PGMs to economic risks like…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
-**Agentic schema-guided extraction of materials process knowledge from scientific literature**  
-- **Date:** 2026-10-05
-- **Authors:** Sameer Sadruddin, Jennifer D'Souza
-- **Link:** https://arxiv.org/abs/2610.06322v1
-- **Security insight:** Materials literature contains detailed experimental knowledge, but procedures, chemical entities and measurements remain difficult to aggregate because they are reported in heterogeneous forms and depend on process-specific context. We present SciKGExtract, a…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
-
 ### Agent & Tool Security
 
-**TrustMI: Causally controlling how assistants trust their users**  
-- **Date:** 2026-10-05
-- **Authors:** Théo Lasnier, Romain Froger, Maxence Lasbordes et al.
-- **Link:** https://arxiv.org/abs/2610.06064v1
-- **Security insight:** Large Language Model (LLM) assistants routinely decide whether they can trust users and third parties whose competence, intentions, and integrity they cannot verify. This uncertainty matters for safety, as trusting the wrong party can lead an agent to comply…
+**From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents**  
+- **Date:** 2026-10-08
+- **Authors:** Abbas Raftari
+- **Link:** https://arxiv.org/abs/2610.12463v1
+- **Security insight:** In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-### Other (Review)
-
-**Correct Verdicts, Flawed Reasoning: Structured Auditing of LLM-based Vulnerability Reasoning**  
-- **Date:** 2026-10-05
-- **Authors:** Boyue Caroline Hu, Kaivalya Ahir, Ronghao Ni et al.
-- **Link:** https://arxiv.org/abs/2610.06366v1
-- **Security insight:** Large Language Models (LLMs) are increasingly deployed for automated software vulnerability analysis. Binary classification alone is insufficient; practitioners need explanations to triage bugs and engineer patches. Standard practice relies on Chain-of-…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
+**One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails**  
+- **Date:** 2026-10-08
+- **Authors:** Seyedarmin Azizi, Erfan Baghaei Potraghloo, Massoud Pedram
+- **Link:** https://arxiv.org/abs/2610.12292v1
+- **Security insight:** A typed decision model reads a piece of text and returns a probability over caller-defined options, each with a short written definition, generating no text. Recent work places these models in agent systems as guardrails: the component that reads a proposed…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.

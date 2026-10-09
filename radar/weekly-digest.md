@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-09 (UTC)
+
+Top items:
+
+- **From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents** (2026-10-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.12463v1
+
+- **One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails** (2026-10-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.12292v1
+
+- **LTBD: Learnable Trust-Boundary Delimiters for Prompt Injection Defense** (2026-10-08) [Prompt Injection]  
+  https://arxiv.org/abs/2610.11634v1
+
+- **BRANCH: Bypassing Multi-Scanner AI Guardrails** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.10742v1
+
+- **AgentTracer: Tracing Indirect Prompt Injection Attack through Fine-Grained Intention-Execution Alignment** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.09935v1
+
+- **Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.09264v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-08 (UTC)
 
 Top items:
