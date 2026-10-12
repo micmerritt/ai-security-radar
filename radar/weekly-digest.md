@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-12 (UTC)
+
+Top items:
+
+- **The Limits of Query Monitoring against Distributed Model Extraction** (2026-10-09) [Prompt Injection]  
+  https://arxiv.org/abs/2610.13083v1
+
+- **From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents** (2026-10-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.12463v1
+
+- **One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails** (2026-10-08) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.12292v1
+
+- **LTBD: Learnable Trust-Boundary Delimiters for Prompt Injection Defense** (2026-10-08) [Prompt Injection]  
+  https://arxiv.org/abs/2610.11634v1
+
+- **An Exploration of Attacks on AI Agent Systems** (2026-10-08) [Prompt Injection]  
+  https://arxiv.org/abs/2610.12524v1
+
+- **BRANCH: Bypassing Multi-Scanner AI Guardrails** (2026-10-07) [Prompt Injection]  
+  https://arxiv.org/abs/2610.10742v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-11 (UTC)
 
 Top items:

@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-11**_
+_Last updated (UTC): **2026-10-12**_
 
 ## What this is
 
@@ -14,11 +14,25 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Prompt Injection
 
+**The Limits of Query Monitoring against Distributed Model Extraction**  
+- **Date:** 2026-10-09
+- **Authors:** Snigdha Chandan Khilar
+- **Link:** https://arxiv.org/abs/2610.13083v1
+- **Security insight:** Model providers now face distillation campaigns run through thousands of accounts, each of which looks like an ordinary user. When network and payment metadata cannot link those accounts, the only evidence left is what they ask. We study what a provider can…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
 **LTBD: Learnable Trust-Boundary Delimiters for Prompt Injection Defense**  
 - **Date:** 2026-10-08
 - **Authors:** Luman Zhao, Minghui Xu, Yue Zhang et al.
 - **Link:** https://arxiv.org/abs/2610.11634v1
 - **Security insight:** Large language models (LLMs) perform remarkably well on complex tasks, yet remain highly vulnerable to prompt injection attacks, where malicious instructions embedded in external data can override user intent. Existing defenses remain limited by model fine-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**An Exploration of Attacks on AI Agent Systems**  
+- **Date:** 2026-10-08
+- **Authors:** Cathleen Qiao, Layah Vigneaud, Chloe Brandon et al.
+- **Link:** https://arxiv.org/abs/2610.12524v1
+- **Security insight:** As autonomous AI agents become more integrated into sensitive domains, it is crucial that single and multi-agent AI systems are secured. This paper investigates how prompt injection attacks can exploit both direct user inputs and inter?agent communication to…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **BRANCH: Bypassing Multi-Scanner AI Guardrails**  
@@ -63,13 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Speculative decoding accelerates inference for a large language model (LLM), referred to as the \emph{target model}, by first using a smaller model, referred to as the \emph{draft model}, to generate candidate tokens and then verifying them with the target…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents**  
-- **Date:** 2026-10-05
-- **Authors:** Mohamed Dhouib, Clement Elliker, Alexi Canesse et al.
-- **Link:** https://arxiv.org/abs/2610.06401v2
-- **Security insight:** Tool-using language-model agents are vulnerable to indirect prompt injection because they must act on untrusted external content. Existing training-time defenses can reduce attack success rates, but often at the cost of general capabilities. We show that…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems**  
@@ -84,13 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Haneen Najjar, Luca Scionis, Haritz Puerto et al.
 - **Link:** https://arxiv.org/abs/2610.08098v1
 - **Security insight:** AI agents increasingly rely on modular third-party "skills" that are dynamically selected by skill routers to execute complex tasks. While recent studies highlight the threat of prompt injections embedded in these skills, existing evaluations often assume…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-**Dynamic Budget Allocation for LLM Evaluation under Hard Resource Constraints**  
-- **Date:** 2026-10-05
-- **Authors:** Shai Feldman, Yaniv Romano
-- **Link:** https://arxiv.org/abs/2610.07362v1
-- **Security insight:** We evaluate large language models (LLMs) in multi-turn interactions through their time-to-event: the number of interaction steps required to produce an event of interest, such as a successful jailbreak or agentic task completion. Under limited compute,…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Model Extraction & Privacy
