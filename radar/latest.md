@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-13**_
+_Last updated (UTC): **2026-10-14**_
 
 ## What this is
 
@@ -14,6 +14,62 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Prompt Injection
 
+**Towards Safe Autonomy for Computer Use**  
+- **Date:** 2026-10-13
+- **Authors:** Dominik Seip, Bartol Markovinović, Matthias Hein
+- **Link:** https://arxiv.org/abs/2610.18508v1
+- **Security insight:** The safety of LLM-based agents currently rests on alignment training and safety classifiers, neither of which can rule out that a sophisticated indirect prompt injection (IPI) goes through and causes significant harm. Recent work therefore builds agents with…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Kairos: Transactional Security Enforcement at the System Boundary for LLM Agents**  
+- **Date:** 2026-10-13
+- **Authors:** Kristoffer Hempel, Nils Loose, Lorenzo Cavallaro et al.
+- **Link:** https://arxiv.org/abs/2610.18457v1
+- **Security insight:** Large language model (LLM) agents are becoming an integral part of the software development lifecycle, and the capabilities granted to them allow an agent to act with the user's authority on any resource it can access. The reach that gives an agent its…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Prompt-Injection Probes Learn the Conversation, Not Just the Injection**  
+- **Date:** 2026-10-13
+- **Authors:** Kaan Kale, Sriram Vishwanath
+- **Link:** https://arxiv.org/abs/2610.18408v1
+- **Security insight:** Linear probes on a model's hidden states are used as cheap monitors for indirect prompt injection: they screen the tool outputs an agent reads and send suspicious ones to a slower second check, so every false alarm has a cost. But a probe learns whatever…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**BrowseSafe++: Benchmarking Prompt Injection Detection Across Web Contexts, Languages, and Browser Views**  
+- **Date:** 2026-10-12
+- **Authors:** Yuetian Chen, Kaiyuan Zhang, Yuntao Du et al.
+- **Link:** https://arxiv.org/abs/2610.17457v1
+- **Security insight:** Browser agents need to make decisions and execute actions on behalf of users while consuming untrusted webpages, creating opportunities for malicious instructions embedded in webpages to redirect legitimate tasks. We introduce BrowseSafe++, which extends…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**StableJudge: A Lightweight Adversarial Defense Framework for LLM-as-a-Judge**  
+- **Date:** 2026-10-12
+- **Authors:** Anning Hu, Yangyu Li, Yuqi Huang et al.
+- **Link:** https://arxiv.org/abs/2610.16814v1
+- **Security insight:** Large language models (LLMs) are increasingly used as judges to assign scalar scores that drive downstream decision-making, including tasks such as paper review and recommendation. However, LLM-as-a-Judge pipelines are vulnerable to score-hijacking prompt…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Computational Reflective Equilibrium for Agentic AI: A Rawlsian Alignment Scaffold for Governance**  
+- **Date:** 2026-10-12
+- **Authors:** Quanyan Zhu
+- **Link:** https://arxiv.org/abs/2610.16015v1
+- **Security insight:** The rapid deployment of agentic AI has introduced complex challenges for the ethics and governance of AI systems. Agents built on large language models act through tools on behalf of people, and each deployment case brings its own instructions, policies,…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Only What You've Signed up For: Secure Workflows with Constrained Diffusion Agents**  
+- **Date:** 2026-10-10
+- **Authors:** Michael Cardei, Anjun Hu, Chenrui Ma et al.
+- **Link:** https://arxiv.org/abs/2610.15177v1
+- **Security insight:** As agentic AI systems take on increasingly complex and consequential tasks, securing them against prompt injection becomes critical. Existing defenses often rely on detecting or reasoning about injected malicious instructions and can therefore remain…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Can agents whose sole duty is to keep humans alive be hijacked to kill? Delayed multi-turn derived-action trap attacks in simulated high-stakes environments**  
+- **Date:** 2026-10-10
+- **Authors:** Josef A. Habdank
+- **Link:** https://arxiv.org/abs/2610.15153v1
+- **Security insight:** We ask whether a tool-using agent whose sole duty is to keep humans alive can be induced, by delayed prompt injection, to kill. The keep-alive duty is in force from the first watch, with the attack arriving later, appended to otherwise truthful telemetry the…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
 **The Limits of Query Monitoring against Distributed Model Extraction**  
 - **Date:** 2026-10-09
 - **Authors:** Snigdha Chandan Khilar
@@ -21,99 +77,43 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Model providers now face distillation campaigns run through thousands of accounts, each of which looks like an ordinary user. When network and payment metadata cannot link those accounts, the only evidence left is what they ask. We study what a provider can…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**LTBD: Learnable Trust-Boundary Delimiters for Prompt Injection Defense**  
-- **Date:** 2026-10-08
-- **Authors:** Luman Zhao, Minghui Xu, Yue Zhang et al.
-- **Link:** https://arxiv.org/abs/2610.11634v1
-- **Security insight:** Large language models (LLMs) perform remarkably well on complex tasks, yet remain highly vulnerable to prompt injection attacks, where malicious instructions embedded in external data can override user intent. Existing defenses remain limited by model fine-…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**An Exploration of Attacks on AI Agent Systems**  
-- **Date:** 2026-10-08
-- **Authors:** Cathleen Qiao, Layah Vigneaud, Chloe Brandon et al.
-- **Link:** https://arxiv.org/abs/2610.12524v1
-- **Security insight:** As autonomous AI agents become more integrated into sensitive domains, it is crucial that single and multi-agent AI systems are secured. This paper investigates how prompt injection attacks can exploit both direct user inputs and inter?agent communication to…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**BRANCH: Bypassing Multi-Scanner AI Guardrails**  
-- **Date:** 2026-10-07
-- **Authors:** William Hackett, Peter Garraghan
-- **Link:** https://arxiv.org/abs/2610.10742v1
-- **Security insight:** AI systems increasingly rely on Large Language Models (LLMs) as core reasoning engines, making them targets for prompt injection and jailbreaks. Guardrails monitor and validate model inputs and outputs, yet their isolated, task-focused detection leaves gaps…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**AgentTracer: Tracing Indirect Prompt Injection Attack through Fine-Grained Intention-Execution Alignment**  
-- **Date:** 2026-10-07
-- **Authors:** Zitong Yao, Jiangrong Wu, Yixi Lin et al.
-- **Link:** https://arxiv.org/abs/2610.09935v1
-- **Security insight:** Large language model (LLM) agents interact with external resources to complete complex user tasks, exposing them to indirect prompt injection (IPI), where malicious instructions redirect agents toward attacker-intended tasks. Since IPI is difficult to defend…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Package Hallucination Attacks on Coding Agents through Prompt Injection in Rule Files**  
-- **Date:** 2026-10-07
-- **Authors:** Yupu Wang, Zhengyuan Jiang, Reachal Wang et al.
-- **Link:** https://arxiv.org/abs/2610.09264v1
-- **Security insight:** Modern agentic coding frameworks increasingly rely on community-shared rule files (e.g., AGENTS.md or .cursorrules) to guide autonomous code generation, yet the security risks of this pipeline remain underexplored. To bridge this gap, we introduce the package…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**ASPIRE: Agentic Safety & Prompt Injection Red-teaming Engine**  
-- **Date:** 2026-10-06
-- **Authors:** Pengfei He, Deep Mitra, Vishesh Sharma et al.
-- **Link:** https://arxiv.org/abs/2610.08951v1
-- **Security insight:** LLM agents retrieve untrusted content and act through tools, creating indirect prompt-injection risks that can cause unauthorized actions or persistent state changes. Existing automated red-teaming largely optimizes payloads for pre-specified scenarios,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model**  
-- **Date:** 2026-10-06
-- **Authors:** Sarim Hashmi, Mukul Ranjan, Kshitij Mishra et al.
-- **Link:** https://arxiv.org/abs/2610.08773v1
-- **Security insight:** Web agents complete user requests by reading and acting on pages that third parties write, so an instruction planted on a page can redirect the agent away from the user's goal. The agent cannot simply ignore the page, because the page also holds the values…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Secure Speculative Decoding for Large Language Models**  
-- **Date:** 2026-10-06
-- **Authors:** Yichi Zhang, Zhiqi Wang, Neil Gong et al.
-- **Link:** https://arxiv.org/abs/2610.08678v1
-- **Security insight:** Speculative decoding accelerates inference for a large language model (LLM), referred to as the \emph{target model}, by first using a smaller model, referred to as the \emph{draft model}, to generate candidate tokens and then verifying them with the target…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
-**RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems**  
-- **Date:** 2026-10-06
-- **Authors:** Niveen O. Jaffal, Ahmet Yuksel, David Mohaisen
-- **Link:** https://arxiv.org/abs/2610.08571v1
-- **Security insight:** Retrieval-Augmented Generation (RAG) systems are vulnerable to prompt-injection attacks embedded in retrieved content. We introduce RAG-PIBench, a benchmark for RAG-style prompt-injection detection containing 4,876 contextual examples across frozen train,…
+**TRAP: Tree-Guided Reinforcement-Augmented Probing for Automated LLM Jailbreaking**  
+- **Date:** 2026-10-12
+- **Authors:** Mohammad Reza Mirbagheri, Amir Mahdi Sadeghzadeh
+- **Link:** https://arxiv.org/abs/2610.17313v1
+- **Security insight:** Aligned large language models (LLMs) remain vulnerable to jailbreak prompts that circumvent their safety guardrails, making the identification of these vulnerabilities important for understanding and mitigating model weaknesses. Existing automated jailbreak…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-**Surviving the Router: Optimizing Skill Injections for Retrieval and Execution**  
-- **Date:** 2026-10-06
-- **Authors:** Haneen Najjar, Luca Scionis, Haritz Puerto et al.
-- **Link:** https://arxiv.org/abs/2610.08098v1
-- **Security insight:** AI agents increasingly rely on modular third-party "skills" that are dynamically selected by skill routers to execute complex tasks. While recent studies highlight the threat of prompt injections embedded in these skills, existing evaluations often assume…
+**Names Are Not Objects: Object-Bound Confinement for Compromised AI Coding Agents**  
+- **Date:** 2026-10-10
+- **Authors:** Daniel Commey
+- **Link:** https://arxiv.org/abs/2610.14488v1
+- **Security insight:** Coding agents read repositories and web pages that anyone can write, and then act with their user's authority. Prompt-injection defenses make it less likely that the model is steered but do not prevent it, so the system around the model must contain an agent…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
-### Model Extraction & Privacy
+### Adversarial ML
 
-**MARCO: The Radioactive Watermark for Protein Generative Models**  
-- **Date:** 2026-10-06
-- **Authors:** Huajie Chen, Xin Guo, Yuchen Shi et al.
-- **Link:** https://arxiv.org/abs/2610.08316v1
-- **Security insight:** Protein Generative Models (PGMs) have revolutionized structural biology by enabling the design of complex 3D protein structures from sequence data. However, this breakthrough introduces a dual-use challenge, exposing high-value PGMs to economic risks like…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+**An Empirical Case Study of Prompt Engineering Strategies for Bypassing Multi-Layer Agent Security Defenses**  
+- **Date:** 2026-10-09
+- **Authors:** Chengwei Chu
+- **Link:** https://arxiv.org/abs/2610.14116v1
+- **Security insight:** The OpenClaw Security Attack and Defense Challenge evaluates AI agent robustness through a three-stage defense pipeline: skill file scanning (Stage 1), instruction safety evaluation (Stage 2), and attack trajectory scoring (Stage 3). This paper presents an…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 ### Agent & Tool Security
 
-**From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents**  
-- **Date:** 2026-10-08
-- **Authors:** Abbas Raftari
-- **Link:** https://arxiv.org/abs/2610.12463v1
-- **Security insight:** In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised…
+**The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow**  
+- **Date:** 2026-10-12
+- **Authors:** Arya Fayyazi, Mehdi Kamal, Massoud Pedram
+- **Link:** https://arxiv.org/abs/2610.17301v1
+- **Security insight:** Language-model agents sometimes act beyond their authorization and then misreport what they did. On CAPE-Bench, matched agent tasks in which one fact decides whether an action is authorized, frontier open-weight agents do both, and one behavior marks the lie:…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
-**One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails**  
-- **Date:** 2026-10-08
-- **Authors:** Seyedarmin Azizi, Erfan Baghaei Potraghloo, Massoud Pedram
-- **Link:** https://arxiv.org/abs/2610.12292v1
-- **Security insight:** A typed decision model reads a piece of text and returns a probability over caller-defined options, each with a short written definition, generating no text. Recent work places these models in agent systems as guardrails: the component that reads a proposed…
+**CWE-bench: Refocusing Agentic Security from Exploitation to Defense**  
+- **Date:** 2026-10-12
+- **Authors:** Gonzalo Gonzalez-Pumariega, Ajay Jagannath, Adit Jain et al.
+- **Link:** https://arxiv.org/abs/2610.17020v1
+- **Security insight:** Cybersecurity evaluations of AI agents have focused largely on offense, yet a working exploit does not show that an agent can make software safe. An attacker needs to exploit only one vulnerability; a defender must find and fix all of them. We introduce CWE-…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.

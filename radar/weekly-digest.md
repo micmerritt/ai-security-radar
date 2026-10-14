@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-14 (UTC)
+
+Top items:
+
+- **Towards Safe Autonomy for Computer Use** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.18508v1
+
+- **Kairos: Transactional Security Enforcement at the System Boundary for LLM Agents** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.18457v1
+
+- **Prompt-Injection Probes Learn the Conversation, Not Just the Injection** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.18408v1
+
+- **BrowseSafe++: Benchmarking Prompt Injection Detection Across Web Contexts, Languages, and Browser Views** (2026-10-12) [Prompt Injection]  
+  https://arxiv.org/abs/2610.17457v1
+
+- **TRAP: Tree-Guided Reinforcement-Augmented Probing for Automated LLM Jailbreaking** (2026-10-12) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.17313v1
+
+- **The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow** (2026-10-12) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.17301v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-13 (UTC)
 
 Top items:
