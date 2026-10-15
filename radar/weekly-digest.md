@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-15 (UTC)
+
+Top items:
+
+- **Are You Reading the Right Thing? Rethinking Internal Signals for Prompt-Injection Detection** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19452v1
+
+- **AgentSafeEvo: Adversarial Co-Evolution for LLM Agent Safety** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19422v1
+
+- **Policy-Verified Self-Training: Learning Agent Compliance from Verifiable Policy Rewards** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19372v1
+
+- **TRACER: Trace-Regularized Training Against Indirect Prompt Injection** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19133v1
+
+- **DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19118v1
+
+- **Towards Safe Autonomy for Computer Use** (2026-10-13) [Prompt Injection]  
+  https://arxiv.org/abs/2610.18508v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-14 (UTC)
 
 Top items:
