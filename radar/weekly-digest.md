@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-16 (UTC)
+
+Top items:
+
+- **Can Autonomous Vehicles Keep Their Cool? A Survey of Thermal Side-Channel and Perception Attacks** (2026-10-15) [Adversarial ML]  
+  https://arxiv.org/abs/2610.21034v1
+
+- **From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.20907v1
+
+- **INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.20776v1
+
+- **Are You Reading the Right Thing? Rethinking Internal Signals for Prompt-Injection Detection** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19452v1
+
+- **AgentSafeEvo: Adversarial Co-Evolution for LLM Agent Safety** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19422v1
+
+- **Policy-Verified Self-Training: Learning Agent Compliance from Verifiable Policy Rewards** (2026-10-14) [Prompt Injection]  
+  https://arxiv.org/abs/2610.19372v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-15 (UTC)
 
 Top items:

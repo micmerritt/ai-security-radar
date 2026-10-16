@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-15**_
+_Last updated (UTC): **2026-10-16**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection**  
+- **Date:** 2026-10-14
+- **Authors:** Qianlong Lan, Anuj Kaul, Vinothini Pandurangan et al.
+- **Link:** https://arxiv.org/abs/2610.20907v1
+- **Security insight:** Prompt-injection defenses are commonly evaluated as binary detectors, although deployed LLM applications must make operational decisions about whether to allow, block, or escalate potentially malicious inputs. Recent probabilistic decision models aim to…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems**  
+- **Date:** 2026-10-14
+- **Authors:** Thuy Dung Nguyen, Jingyi Guo, Rana Seda Dubauskas et al.
+- **Link:** https://arxiv.org/abs/2610.20776v1
+- **Security insight:** LLM-based agents increasingly execute long-horizon, end-to-end workflows involving shell commands, code modification, dependency installation, and interaction with remote services. This growing autonomy expands their exposure to indirect prompt injection…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Are You Reading the Right Thing? Rethinking Internal Signals for Prompt-Injection Detection**  
 - **Date:** 2026-10-14
@@ -77,20 +91,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Browser agents need to make decisions and execute actions on behalf of users while consuming untrusted webpages, creating opportunities for malicious instructions embedded in webpages to redirect legitimate tasks. We introduce BrowseSafe++, which extends…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**StableJudge: A Lightweight Adversarial Defense Framework for LLM-as-a-Judge**  
-- **Date:** 2026-10-12
-- **Authors:** Anning Hu, Yangyu Li, Yuqi Huang et al.
-- **Link:** https://arxiv.org/abs/2610.16814v1
-- **Security insight:** Large language models (LLMs) are increasingly used as judges to assign scalar scores that drive downstream decision-making, including tasks such as paper review and recommendation. However, LLM-as-a-Judge pipelines are vulnerable to score-hijacking prompt…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Computational Reflective Equilibrium for Agentic AI: A Rawlsian Alignment Scaffold for Governance**  
-- **Date:** 2026-10-12
-- **Authors:** Quanyan Zhu
-- **Link:** https://arxiv.org/abs/2610.16015v1
-- **Security insight:** The rapid deployment of agentic AI has introduced complex challenges for the ethics and governance of AI systems. Agents built on large language models act through tools on behalf of people, and each deployment case brings its own instructions, policies,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **TRAP: Tree-Guided Reinforcement-Augmented Probing for Automated LLM Jailbreaking**  
@@ -100,6 +100,15 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Aligned large language models (LLMs) remain vulnerable to jailbreak prompts that circumvent their safety guardrails, making the identification of these vulnerabilities important for understanding and mitigating model weaknesses. Existing automated jailbreak…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
+### Adversarial ML
+
+**Can Autonomous Vehicles Keep Their Cool? A Survey of Thermal Side-Channel and Perception Attacks**  
+- **Date:** 2026-10-15
+- **Authors:** Harsh Aaryan, Ce Zhou
+- **Link:** https://arxiv.org/abs/2610.21034v1
+- **Security insight:** Autonomous vehicles (AVs) couple safety-critical perception to thermally constrained compute. Interfaces built for night perception and package thermal reliability were never engineered as confidentiality boundaries, and closing one such path leaves the other…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
+
 ### Agent & Tool Security
 
 **The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow**  
@@ -107,11 +116,4 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Authors:** Arya Fayyazi, Mehdi Kamal, Massoud Pedram
 - **Link:** https://arxiv.org/abs/2610.17301v1
 - **Security insight:** Language-model agents sometimes act beyond their authorization and then misreport what they did. On CAPE-Bench, matched agent tasks in which one fact decides whether an action is authorized, frontier open-weight agents do both, and one behavior marks the lie:…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**CWE-bench: Refocusing Agentic Security from Exploitation to Defense**  
-- **Date:** 2026-10-12
-- **Authors:** Gonzalo Gonzalez-Pumariega, Ajay Jagannath, Adit Jain et al.
-- **Link:** https://arxiv.org/abs/2610.17020v1
-- **Security insight:** Cybersecurity evaluations of AI agents have focused largely on offense, yet a working exploit does not show that an agent can make software safe. An attacker needs to exploit only one vulnerability; a defender must find and fix all of them. We introduce CWE-…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
