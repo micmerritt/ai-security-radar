@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-19 (UTC)
+
+Top items:
+
+- **MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection** (2026-10-16) [Prompt Injection]  
+  https://arxiv.org/abs/2610.23307v1
+
+- **Ignored, Not Refused: What Low Prompt-Injection Success Rates Hide in Small Tool-Using Agents** (2026-10-16) [Prompt Injection]  
+  https://arxiv.org/abs/2610.23254v1
+
+- **When Approval Becomes Execution: Authorization-Grounded Workflow Attacks on Tool-Using Agents** (2026-10-16) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.23077v1
+
+- **From Approval to Abuse: Privilege Escalation Attacks on Harness-Protected Coding Agents** (2026-10-16) [Prompt Injection]  
+  https://arxiv.org/abs/2610.22987v1
+
+- **Identify, Classify, Act: Per-Instruction Controlled Compliance for LLMs over External Data** (2026-10-16) [Adversarial ML]  
+  https://arxiv.org/abs/2610.22874v1
+
+- **Stealthy Poisoning Attacks via Reused KV Cache of Reasoning** (2026-10-16) [Prompt Injection]  
+  https://arxiv.org/abs/2610.22873v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-18 (UTC)
 
 Top items:
