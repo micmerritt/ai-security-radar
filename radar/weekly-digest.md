@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-20 (UTC)
+
+Top items:
+
+- **Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks** (2026-10-19) [Other (Review)]  
+  https://arxiv.org/abs/2610.26589v1
+
+- **Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents** (2026-10-19) [Prompt Injection]  
+  https://arxiv.org/abs/2610.26438v1
+
+- **SpanGuard: Decoupling Instruction Localization from Authorization for Lightweight IPI Defense** (2026-10-19) [Prompt Injection]  
+  https://arxiv.org/abs/2610.26013v1
+
+- **RAGLeak: Supply-Chain Privacy Backdoors in Retrieval-Augmented Generation** (2026-10-19) [Prompt Injection]  
+  https://arxiv.org/abs/2610.25937v1
+
+- **SoK: PIAtlas: Decomposing the Unbounded Prompt Injection Attack Space** (2026-10-18) [Prompt Injection]  
+  https://arxiv.org/abs/2610.24999v1
+
+- **CAT-RAG: Improving Secure Code Generation with Category-Aware Agentic Retrieval** (2026-10-17) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.24907v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-19 (UTC)
 
 Top items:
