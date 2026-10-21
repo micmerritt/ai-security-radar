@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-21 (UTC)
+
+Top items:
+
+- **After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.28425v1
+
+- **Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.28364v1
+
+- **KNOX: Hardware-assisted Regulatory Sandbox for Generative Models** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.27543v1
+
+- **AgenticVulHunter: Bringing Local Agentic Vulnerability Hunting to Your Terminal** (2026-10-19) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.27383v1
+
+- **Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks** (2026-10-19) [Other (Review)]  
+  https://arxiv.org/abs/2610.26589v1
+
+- **Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents** (2026-10-19) [Prompt Injection]  
+  https://arxiv.org/abs/2610.26438v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-20 (UTC)
 
 Top items:
