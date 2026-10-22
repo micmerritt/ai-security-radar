@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-22 (UTC)
+
+Top items:
+
+- **Preventing Model Extraction in Contextual Linear Optimization** (2026-10-21) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.29918v1
+
+- **Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forensic Attacks on LLM-Assisted Digital Investigations** (2026-10-21) [Prompt Injection]  
+  https://arxiv.org/abs/2610.29747v1
+
+- **Where AI Vulnerability Discovery Harnesses Go Quiet: Structural False Negatives and Hidden Vulnerabilities** (2026-10-21) [Prompt Injection]  
+  https://arxiv.org/abs/2610.29379v1
+
+- **Attention-based Classification for Indirect Prompt Injection** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.28988v1
+
+- **Combining Long-Term Memory and LLMs Comes at a High Cost: From Prompt Injection to Persistent Compromise** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.28810v1
+
+- **After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents** (2026-10-20) [Prompt Injection]  
+  https://arxiv.org/abs/2610.28425v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-21 (UTC)
 
 Top items:
