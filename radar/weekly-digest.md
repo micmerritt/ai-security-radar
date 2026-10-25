@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-25 (UTC)
+
+Top items:
+
+- **Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action** (2026-10-22) [Prompt Injection]  
+  https://arxiv.org/abs/2610.31376v1
+
+- **Not Where You Think: Protecting Location Privacy Against Reasoning-Based Geolocation** (2026-10-21) [Other (Review)]  
+  https://arxiv.org/abs/2610.30439v1
+
+- **Data-Void Exploits in Web-Searching LLMs** (2026-10-21) [Adversarial ML]  
+  https://arxiv.org/abs/2610.30365v1
+
+- **Preventing Model Extraction in Contextual Linear Optimization** (2026-10-21) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.29918v1
+
+- **Prompt Injection Through Forensic Evidence: A Taxonomy and Proof of Concept of Anti-Forensic Attacks on LLM-Assisted Digital Investigations** (2026-10-21) [Prompt Injection]  
+  https://arxiv.org/abs/2610.29747v1
+
+- **MPIDetector: Detecting Multi-modal Prompt Injection via LLM-based Reasoning** (2026-10-21) [Prompt Injection]  
+  https://arxiv.org/abs/2610.30202v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-24 (UTC)
 
 Top items:
