@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-10-25**_
+_Last updated (UTC): **2026-10-26**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection**  
+- **Date:** 2026-10-23
+- **Authors:** Yuyang Gong, Zihao Wang, Jiawei Liu et al.
+- **Link:** https://arxiv.org/abs/2610.32531v1
+- **Security insight:** Prompt injection benchmarks assess whether large language models (LLMs) and agents resist malicious instructions embedded in external content. However, a system could perform well by rejecting attacks that obviously abandon the user's request, while still…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Agentic AI Defense: Decode-Time Provenance Binding for MCP**  
+- **Date:** 2026-10-22
+- **Authors:** Eric Yocam, Varghese Vaidyan, Paris Kalathas et al.
+- **Link:** https://arxiv.org/abs/2610.31974v1
+- **Security insight:** Agentic AI systems using the Model Context Protocol (MCP) are vulnerable to indirect prompt injection through untrusted tool outputs. We demonstrate cross-modal trust laundering, in which instructions concealed in an email-signature image using least-…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action**  
 - **Date:** 2026-10-22
@@ -63,27 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks. By embedding malicious instructions, these exploits manipulate language models to bypass intended behavior and…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents**  
-- **Date:** 2026-10-20
-- **Authors:** Zhiyue Xu, Xukai Wang, Zhiyuan Huang et al.
-- **Link:** https://arxiv.org/abs/2610.28425v1
-- **Security insight:** Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG**  
-- **Date:** 2026-10-20
-- **Authors:** Abhishek Rai
-- **Link:** https://arxiv.org/abs/2610.28364v1
-- **Security insight:** Local Retrieval-Augmented Generation (RAG) systems are vulnerable to indirect prompt injection and retrieval poisoning, where malicious instructions in retrieved content are mistaken for trusted input. We present nokast-secureRAG, a roughly 0.5B-parameter…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**KNOX: Hardware-assisted Regulatory Sandbox for Generative Models**  
-- **Date:** 2026-10-20
-- **Authors:** Vasisht Duddu, Adam Caulfield, Xi He
-- **Link:** https://arxiv.org/abs/2610.27543v1
-- **Security insight:** Regulations require companies to run AI models in a regulatory sandbox, an isolated environment that enables monitoring model behavior by regulators, prior to deployment. But, they do not spell out the technical mechanisms to design such a sandbox. Ideally, a…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **Preventing Model Extraction in Contextual Linear Optimization**  
@@ -104,14 +97,21 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
-**AgenticVulHunter: Bringing Local Agentic Vulnerability Hunting to Your Terminal**  
-- **Date:** 2026-10-19
-- **Authors:** Nishant Abhishek, Ping Charoenwet, Kla Tantithamthavorn
-- **Link:** https://arxiv.org/abs/2610.27383v1
-- **Security insight:** Finding vulnerabilities early, before they can affect the production system, is important for reducing the risk of any software attacks. However, detecting vulnerabilities during secure code review is still difficult because the vulnerable code logic may…
+**Ulysses: A Security Harness For Synthesizing Verifiable Web Exploits**  
+- **Date:** 2026-10-22
+- **Authors:** Aditya Oke, André Vicente Duarte, Rui Melo et al.
+- **Link:** https://arxiv.org/abs/2610.31831v1
+- **Security insight:** How can an AI agent automatically discover security vulnerabilities in any software repository? Existing approaches use LLMs to generate software vulnerability exploits. However, it is challenging for an LLM to reliably verify its own generated exploits. In…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Other (Review)
+
+**Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence**  
+- **Date:** 2026-10-23
+- **Authors:** ZhiHong Liu, Shuyao Gao
+- **Link:** https://arxiv.org/abs/2610.32876v1
+- **Security insight:** Pipelines that combine large language models (LLMs) with static analysis let the model consume the analyser's output as evidence, but whether the model distinguishes true from false evidence, and whether its scrutiny depends on what the evidence claims, has…
+- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
 
 **Not Where You Think: Protecting Location Privacy Against Reasoning-Based Geolocation**  
 - **Date:** 2026-10-21

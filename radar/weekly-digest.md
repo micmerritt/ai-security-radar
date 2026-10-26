@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-26 (UTC)
+
+Top items:
+
+- **Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence** (2026-10-23) [Other (Review)]  
+  https://arxiv.org/abs/2610.32876v1
+
+- **On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection** (2026-10-23) [Prompt Injection]  
+  https://arxiv.org/abs/2610.32531v1
+
+- **Agentic AI Defense: Decode-Time Provenance Binding for MCP** (2026-10-22) [Prompt Injection]  
+  https://arxiv.org/abs/2610.31974v1
+
+- **Ulysses: A Security Harness For Synthesizing Verifiable Web Exploits** (2026-10-22) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.31831v1
+
+- **Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action** (2026-10-22) [Prompt Injection]  
+  https://arxiv.org/abs/2610.31376v1
+
+- **Not Where You Think: Protecting Location Privacy Against Reasoning-Based Geolocation** (2026-10-21) [Other (Review)]  
+  https://arxiv.org/abs/2610.30439v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-25 (UTC)
 
 Top items:
