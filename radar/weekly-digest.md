@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-27 (UTC)
+
+Top items:
+
+- **Then there is prompt injection, a malicious email, ...: The Wild Wide West of OpenClaw Agentic System Security** (2026-10-26) [Prompt Injection]  
+  https://arxiv.org/abs/2610.35451v1
+
+- **Can Open Be Too Open? On the Security and Trustworthiness of Fully Transparent LLMs** (2026-10-26) [Adversarial ML]  
+  https://arxiv.org/abs/2610.35199v1
+
+- **Scope-Gap Injection: Exploiting Evaluator Channel Blind Spots in the OpenClaw Agent Security Competition** (2026-10-26) [Prompt Injection]  
+  https://arxiv.org/abs/2610.34777v1
+
+- **SentryBench: A Cost-Sensitive Benchmark for Adversarial Robustness of Tool-Using LLM Agents in Public-Safety Deployments** (2026-10-25) [Adversarial ML]  
+  https://arxiv.org/abs/2610.34535v1
+
+- **Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses** (2026-10-24) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2610.33849v1
+
+- **Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?** (2026-10-24) [Agent & Tool Security]  
+  https://arxiv.org/abs/2610.33509v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-26 (UTC)
 
 Top items:
