@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-28 (UTC)
+
+Top items:
+
+- **Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness** (2026-10-27) [Prompt Injection]  
+  https://arxiv.org/abs/2610.37657v1
+
+- **Uncovering Why LLMs Fail: From Internal Mechanisms to Adversarial Reasoning Trajectories** (2026-10-27) [Adversarial ML]  
+  https://arxiv.org/abs/2610.37369v1
+
+- **PrivacyEvalClaw: A Tool-Augmented Deliberative Agent for Auditing Privacy Leakage in LLM Jailbreak Responses** (2026-10-27) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2610.36711v1
+
+- **What Victims Take Away: Attack Reuse and Defense Revision after Prompt-Injection Attacks** (2026-10-27) [Other (Review)]  
+  https://arxiv.org/abs/2610.36422v1
+
+- **SpecGuard: Detecting Multi-Turn LLM Jailbreaks via Specification-Based Runtime Monitoring** (2026-10-26) [Other (Review)]  
+  https://arxiv.org/abs/2610.36258v1
+
+- **Log-To-Leak: Prompt Injection Attacks on Tool-Using LLM Agents via the Model Context Protocol** (2026-10-26) [Prompt Injection]  
+  https://arxiv.org/abs/2610.36108v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-27 (UTC)
 
 Top items:
