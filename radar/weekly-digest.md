@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-10-30 (UTC)
+
+Top items:
+
+- **Understanding and Mitigating Role Spoofing in LLMs** (2026-10-29) [Adversarial ML]  
+  https://arxiv.org/abs/2610.40396v1
+
+- **SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection** (2026-10-29) [Prompt Injection]  
+  https://arxiv.org/abs/2610.39758v1
+
+- **REALM: Identifying Minimal Task Assets for LLM Agents** (2026-10-29) [Prompt Injection]  
+  https://arxiv.org/abs/2610.39155v1
+
+- **Appreciation Teaches Unauthorized Execution: Self-Evolution Degrades the Robustness of Personal Agents to Indirect Prompt Injection** (2026-10-29) [Prompt Injection]  
+  https://arxiv.org/abs/2610.39122v1
+
+- **FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models** (2026-10-28) [Adversarial ML]  
+  https://arxiv.org/abs/2610.38895v1
+
+- **Where You Inject Matters: The Trust Region Effect in LLM Agents** (2026-10-28) [Prompt Injection]  
+  https://arxiv.org/abs/2610.38867v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-10-29 (UTC)
 
 Top items:
