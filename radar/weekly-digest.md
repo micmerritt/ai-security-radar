@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-02 (UTC)
+
+Top items:
+
+- **SecPO: Principled Adversarial Training for Prompt Injection Security** (2026-10-30) [Prompt Injection]  
+  https://arxiv.org/abs/2610.41998v1
+
+- **Erase the Injected Region: Multimodal Prompt-Injection Defense with On-Policy Self-Distillation** (2026-10-30) [Prompt Injection]  
+  https://arxiv.org/abs/2610.41307v1
+
+- **From 1D Benchmarks to Complex 3D Geometries: Can Agents Reliably Specify Problems for Automated PDE Simulation?** (2026-10-30) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2610.41267v1
+
+- **AgentShield: Fortifying Web Applications Against AI Agents and Agentic Browsers** (2026-10-30) [Prompt Injection]  
+  https://arxiv.org/abs/2610.41181v1
+
+- **LanG 2.0: Energy-Efficient Agentic AI for Semi-Automated Security Operations at Scale** (2026-10-29) [Prompt Injection]  
+  https://arxiv.org/abs/2610.41072v1
+
+- **Understanding and Mitigating Role Spoofing in LLMs** (2026-10-29) [Adversarial ML]  
+  https://arxiv.org/abs/2610.40396v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-01 (UTC)
 
 Top items:

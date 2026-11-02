@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-01**_
+_Last updated (UTC): **2026-11-02**_
 
 ## What this is
 
@@ -13,6 +13,41 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**SecPO: Principled Adversarial Training for Prompt Injection Security**  
+- **Date:** 2026-10-30
+- **Authors:** Sizhe Chen, Yibo Peng, Jaewon Chang et al.
+- **Link:** https://arxiv.org/abs/2610.41998v1
+- **Security insight:** Recognized as a top threat to AI agents, prompt injection allows instructions from untrusted data (email, documents, websites) to manipulate the agent's operation. The existing best-defended LLM, Meta-SecAlign, is trained with the DPO loss but still suffers…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Erase the Injected Region: Multimodal Prompt-Injection Defense with On-Policy Self-Distillation**  
+- **Date:** 2026-10-30
+- **Authors:** Shuo Hong, Jiaxin Ma, Xidi Cai et al.
+- **Link:** https://arxiv.org/abs/2610.41307v1
+- **Security insight:** Multimodal indirect prompt injection embeds malicious instructions in external media that also contains information needed for the user's task. Existing defenses can block the attack yet impair the model's use of that information, leaving a gap between attack…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**AgentShield: Fortifying Web Applications Against AI Agents and Agentic Browsers**  
+- **Date:** 2026-10-30
+- **Authors:** Moiz Ali, Nafis Karim, Rownak Islam et al.
+- **Link:** https://arxiv.org/abs/2610.41181v1
+- **Security insight:** LLM-powered browser agents are transforming web automation by autonomously interacting with websites and executing complex workflows. However, the effectiveness of existing anti-bot defenses against these systems remains unclear. We present a systematic…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**LanG 2.0: Energy-Efficient Agentic AI for Semi-Automated Security Operations at Scale**  
+- **Date:** 2026-10-29
+- **Authors:** Anes Abdennebi, Nadjia Kara, Laaziz Lahlou et al.
+- **Link:** https://arxiv.org/abs/2610.41072v1
+- **Security insight:** Security operations centers (SOCs) need to turn terabytes of alerts, logs and flows into trusted, affordable decisions to unveil hidden threats. We present LanG 2.0, an agentic system that detects threats, correlates evidence and writes rules, investigating…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN**  
+- **Date:** 2026-10-29
+- **Authors:** Sunder Ali Khowaja, Kapal Dev, Joongheon Kim et al.
+- **Link:** https://arxiv.org/abs/2610.40744v1
+- **Security insight:** With the progressive capabilities of large language models (LLMs), researchers are finding ways to integrate them into the control loops of Open Radio Access Network (O-RAN) to enable slicing and resource management through user intents. However, integration…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection**  
 - **Date:** 2026-10-29
@@ -42,19 +77,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** LLM agents are increasingly adopted in long-horizon tasks and interact with diverse external environments. Despite their growing capabilities, these agents remain vulnerable to real-world attacks such as indirect prompt injections, which manipulate agents…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Post-Training Large Language Models with LLMON**  
-- **Date:** 2026-10-28
-- **Authors:** Basel Shbita, Michael Hind, Chad DeLuca et al.
-- **Link:** https://arxiv.org/abs/2610.38120v1
-- **Security insight:** Large Language Models (LLMs) treat all context tokens uniformly, lacking explicit separation between executable instructions and passive data. This leads to prompt injection vulnerabilities, ambiguous instruction binding, and unreliable execution control. We…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+### RAG & Retrieval Attacks
 
-**Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness**  
-- **Date:** 2026-10-27
-- **Authors:** Igor Shilov, Xiaoxue Yang, Alexander Panfilov et al.
-- **Link:** https://arxiv.org/abs/2610.37657v1
-- **Security insight:** We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens,…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+**Prevented is Not Protected: What Attack Success Rate Hides about RAG**  
+- **Date:** 2026-10-29
+- **Authors:** Chahana Dahal, Zuobin Xiong
+- **Link:** https://arxiv.org/abs/2610.40742v1
+- **Security insight:** Retrieval-Augmented Generation (RAG) is vulnerable to knowledge poisoning, where adversaries manipulate retrieved evidence to influence model outputs. Existing defenses are primarily evaluated using attack success rate (ASR), which obscures defense-induced…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Poisoning & Backdoors
 
@@ -67,11 +97,11 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Model Extraction & Privacy
 
-**PrivacyEvalClaw: A Tool-Augmented Deliberative Agent for Auditing Privacy Leakage in LLM Jailbreak Responses**  
-- **Date:** 2026-10-27
-- **Authors:** Krishna Kanth Nakka, Yujun Wang, Shijie Zhou et al.
-- **Link:** https://arxiv.org/abs/2610.36711v1
-- **Security insight:** Reliable evaluation is a critical bottleneck in privacy red-teaming of large language models (LLMs): determining whether a jailbreak response actually reveals personal information can be difficult when disclosures are indirect, contextual, partial, or…
+**From 1D Benchmarks to Complex 3D Geometries: Can Agents Reliably Specify Problems for Automated PDE Simulation?**  
+- **Date:** 2026-10-30
+- **Authors:** Akshat Jani, Sakhinana Sagar Srinivas, Venkataramana Runkana
+- **Link:** https://arxiv.org/abs/2610.41267v1
+- **Security insight:** Turning an engineering request into a simulation requires consistent geometry, physics, boundary conditions, and numerical settings. Recent agent-assisted systems automate simulation setup, but successful execution alone does not establish whether the…
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
@@ -89,33 +119,3 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2610.38895v1
 - **Security insight:** Typed decision models are an emerging class of language models that make decisions instead of generating free-text responses. They answer in a single fast and cheap query and are increasingly used, including in security-sensitive tasks. However, red teaming…
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-**Rethinking LLM Jailbreak Evaluation: Continuous Risk Landscapes Beyond Binary Outcomes**  
-- **Date:** 2026-10-28
-- **Authors:** Yukai Zhou, Wenjie Wang
-- **Link:** https://arxiv.org/abs/2610.38595v1
-- **Security insight:** A binary success indicator is a natural representation for discriminative tasks such as image classification under adversarial perturbations, where each input is mapped to a single prediction. However, generative tasks are fundamentally different: an LLM…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-**Uncovering Why LLMs Fail: From Internal Mechanisms to Adversarial Reasoning Trajectories**  
-- **Date:** 2026-10-27
-- **Authors:** Zirui Ding, Xinxin Fan, Hao Yuan et al.
-- **Link:** https://arxiv.org/abs/2610.37369v2
-- **Security insight:** Large language models (LLMs) are usually evaluated by final-output correctness or safety, yet an endpoint label does not reveal how a failure develops throughout the reasoning process. We therefore ask whether ordinary reasoning failures and adversarially…
-- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-### Other (Review)
-
-**What Victims Take Away: Attack Reuse and Defense Revision after Prompt-Injection Attacks**  
-- **Date:** 2026-10-27
-- **Authors:** Zihan Chen, Lei Nico Zheng, Di Zhu
-- **Link:** https://arxiv.org/abs/2610.36422v1
-- **Security insight:** Attack logs and red-team reports show targets the attacks used against them, to help them repair their defenses. Prompt injections against large language models (LLMs) are plain text, so such records also hand targets a working copy. Drawing on social…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
-
-**SpecGuard: Detecting Multi-Turn LLM Jailbreaks via Specification-Based Runtime Monitoring**  
-- **Date:** 2026-10-26
-- **Authors:** Junle Li, Siqi Chen, Jiakai Li et al.
-- **Link:** https://arxiv.org/abs/2610.36258v1
-- **Security insight:** Multi-turn jailbreaks turn dialogue safety into a trace property: a violation may become identifiable only when user intent and assistant behavior are considered across multiple turns. Existing guard models largely classify individual messages or exchanges…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
