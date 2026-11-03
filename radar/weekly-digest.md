@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-03 (UTC)
+
+Top items:
+
+- **IAMRAGBENCH: Benchmarking Authorization Expansions in LLM-Generated AWS IAM Policies under RAG Poisoning** (2026-11-02) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.03431v1
+
+- **ATrust: Adaptive Trust Boundary Expansion for Securing LLM Agents** (2026-11-02) [Prompt Injection]  
+  https://arxiv.org/abs/2611.02741v1
+
+- **SearchInject: Retrieval Exposure Control for Indirect Prompt Injection in Language-Model Search** (2026-11-02) [Prompt Injection]  
+  https://arxiv.org/abs/2611.02643v1
+
+- **Where Does MCP Security End? A Three-Tier Mitigation Mapping Framework for the OWASP MCP Top 10** (2026-11-02) [Prompt Injection]  
+  https://arxiv.org/abs/2611.02611v1
+
+- **StateFence: Task-State Protection Against Evidence-Chain Contamination in Blue-Team LLM Agents** (2026-11-02) [Prompt Injection]  
+  https://arxiv.org/abs/2611.02605v1
+
+- **Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety** (2026-11-02) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.02516v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-02 (UTC)
 
 Top items:
