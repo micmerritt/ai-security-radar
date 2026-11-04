@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-04 (UTC)
+
+Top items:
+
+- **ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud** (2026-11-03) [Adversarial ML]  
+  https://arxiv.org/abs/2611.04879v1
+
+- **Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning** (2026-11-03) [Prompt Injection]  
+  https://arxiv.org/abs/2611.04673v1
+
+- **The Devil is in the Context: Nine Dimensions of Prompt Injection Attacks** (2026-11-03) [Prompt Injection]  
+  https://arxiv.org/abs/2611.04672v1
+
+- **From Guidelines to Practice: Defining Requirements for AI Red-Teaming Tools** (2026-11-03) [Prompt Injection]  
+  https://arxiv.org/abs/2611.04271v1
+
+- **IAMRAGBENCH: Benchmarking Authorization Expansions in LLM-Generated AWS IAM Policies under RAG Poisoning** (2026-11-02) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.03431v1
+
+- **ATrust: Adaptive Trust Boundary Expansion for Securing LLM Agents** (2026-11-02) [Prompt Injection]  
+  https://arxiv.org/abs/2611.02741v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-03 (UTC)
 
 Top items:
