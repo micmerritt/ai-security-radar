@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-05 (UTC)
+
+Top items:
+
+- **SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents** (2026-11-04) [Prompt Injection]  
+  https://arxiv.org/abs/2611.06682v1
+
+- **Fingerprinting the Dispatchers behind Distributed Model Extraction** (2026-11-04) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2611.06661v1
+
+- **Securing Web Agents with the Compile-Then-Execute Paradigm** (2026-11-04) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.06039v1
+
+- **ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud** (2026-11-03) [Adversarial ML]  
+  https://arxiv.org/abs/2611.04879v2
+
+- **Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning** (2026-11-03) [Prompt Injection]  
+  https://arxiv.org/abs/2611.04673v1
+
+- **The Devil is in the Context: Nine Dimensions of Prompt Injection Attacks** (2026-11-03) [Prompt Injection]  
+  https://arxiv.org/abs/2611.04672v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-04 (UTC)
 
 Top items:

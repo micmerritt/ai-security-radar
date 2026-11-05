@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-04**_
+_Last updated (UTC): **2026-11-05**_
 
 ## What this is
 
@@ -13,6 +13,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents**  
+- **Date:** 2026-11-04
+- **Authors:** Guoqin Xiong, Shengtao Wen, Xiang Chen et al.
+- **Link:** https://arxiv.org/abs/2611.06682v1
+- **Security insight:** Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning**  
 - **Date:** 2026-11-03
@@ -70,20 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** LLM agents are increasingly built into data-analysis software, yet little evidence shows how reliably they preprocess clinical data or whether the tools they invoke give correct, reproducible output. We report a benchmark of THReD, a web-based system that…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Beyond Prompt Injection: The Tool Update Gap in LLM Agent Security**  
-- **Date:** 2026-11-01
-- **Authors:** Shiyu Kan, Yue Qi, Yufei Han et al.
-- **Link:** https://arxiv.org/abs/2611.01976v1
-- **Security insight:** Large language model based agents increasingly rely on external tools to invoke services and interact with web resources. These tools can evolve through software updates, yet agentic frameworks may continue trusting them without re-verifying their safety…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents**  
-- **Date:** 2026-11-01
-- **Authors:** Zhihua Wang, Yunhao Feng, Yifeng Gao et al.
-- **Link:** https://arxiv.org/abs/2611.01700v1
-- **Security insight:** AI agents often rely on persistent memory to retain user preferences and operational rules across sessions. However, this capability introduces a new safety risk: malicious instructions from messages, documents, or Web content can be retained in memory and…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **IAMRAGBENCH: Benchmarking Authorization Expansions in LLM-Generated AWS IAM Policies under RAG Poisoning**  
@@ -93,27 +86,36 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language models (LLMs) using retrieval-augmented generation (RAG) can synthesize Amazon Web Services (AWS) Identity and Access Management (IAM) policies from tasks and operational documents. Attacker-controlled context may induce provider-valid policies…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
+### Model Extraction & Privacy
+
+**Fingerprinting the Dispatchers behind Distributed Model Extraction**  
+- **Date:** 2026-11-04
+- **Authors:** Snigdha Chandan Khilar
+- **Link:** https://arxiv.org/abs/2611.06661v1
+- **Security insight:** API distillation campaigns try to hide model-stealing traffic by splitting requests across thousands of load-balanced accounts, which standard content classifiers often miss. However, request timestamps, specifically arrival time and stream completion time,…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
+
 ### Adversarial ML
 
 **ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud**  
 - **Date:** 2026-11-03
 - **Authors:** Yutao Wu, Xiao Liu, Ming Wen et al.
-- **Link:** https://arxiv.org/abs/2611.04879v1
+- **Link:** https://arxiv.org/abs/2611.04879v2
 - **Security insight:** Web agents increasingly browse, shop, and manage accounts on behalf of their users. Prior work has shown that they can be misled by adversarial content, including prompt injections and deceptive interfaces. Beyond such attacks, agents operating on the open…
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 ### Agent & Tool Security
+
+**Securing Web Agents with the Compile-Then-Execute Paradigm**  
+- **Date:** 2026-11-04
+- **Authors:** Annabella Chow, Jinhao Zhu, Sylvie Venuto et al.
+- **Link:** https://arxiv.org/abs/2611.06039v1
+- **Security insight:** Web agents commonly follow the ReAct paradigm, selecting each action from runtime observations that inherently mix trusted and untrusted content. This design makes their control flow vulnerable to prompt injections embedded in webpages. We introduce Baya, a…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety**  
 - **Date:** 2026-11-02
 - **Authors:** Xiao Yang, Aishan Liu, Siyuan Liang et al.
 - **Link:** https://arxiv.org/abs/2611.02516v1
 - **Security insight:** Large language model (LLM) agents increasingly operate in open-world environments where safety risks cannot be fully predefined. However, most existing guardrail mechanisms remain static, relying on fixed rules, prompts, or classifiers that generalize poorly…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**LEANGUARD: Lean-Verified Guardrails for Tool-Using Agents**  
-- **Date:** 2026-11-02
-- **Authors:** Sreehari Sankar, Debargha Ganguly, Vikash Singh et al.
-- **Link:** https://arxiv.org/abs/2611.02332v1
-- **Security insight:** Tool-using language-model agents often execute actions that their domain policies forbid. We present LeanGuard, a runtime that checks every proposed tool call against a policy written in Lean4 before the call reaches the environment. Policies combine state…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
