@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-05**_
+_Last updated (UTC): **2026-11-06**_
 
 ## What this is
 
@@ -13,6 +13,27 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI**  
+- **Date:** 2026-11-05
+- **Authors:** Julian Kunkel, Ali Doosthosseini
+- **Link:** https://arxiv.org/abs/2611.08428v1
+- **Security insight:** Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks**  
+- **Date:** 2026-11-05
+- **Authors:** Rongting Zhang, Martin Bertran, Sandeep Avula et al.
+- **Link:** https://arxiv.org/abs/2611.07640v1
+- **Security insight:** Indirect prompt-injection (IPI) benchmarks predominantly test planted instructions that redirect a tool-using agent toward an attacker-chosen task. Yet attacker-controlled content can instead tamper with the outcome of the task already in progress. A buyer's…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection**  
+- **Date:** 2026-11-04
+- **Authors:** Woosang Lim, Yeseul Chang, Jaewoo Lee
+- **Link:** https://arxiv.org/abs/2611.07222v1
+- **Security insight:** Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents**  
 - **Date:** 2026-11-04
@@ -42,41 +63,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Artificial Intelligence (AI) has seen significant developments and increased usage in recent years. AI benefits various tasks, automates decision-making, and enhances efficiency. However, AI also introduces additional attack surfaces for threat actors to…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**ATrust: Adaptive Trust Boundary Expansion for Securing LLM Agents**  
-- **Date:** 2026-11-02
-- **Authors:** Xu Zhang, Zhichao Lu
-- **Link:** https://arxiv.org/abs/2611.02741v1
-- **Security insight:** As large language model (LLM) agents take on more complex tasks with greater autonomy, security has become a major obstacle to their broader deployment. Unlike in attacks that require complex exploitation of operating system vulnerabilities, attackers can…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**SearchInject: Retrieval Exposure Control for Indirect Prompt Injection in Language-Model Search**  
-- **Date:** 2026-11-02
-- **Authors:** Kainan Zhou, Gangzhen Qian, Janet Sung et al.
-- **Link:** https://arxiv.org/abs/2611.02643v1
-- **Security insight:** An indirect prompt injection can affect a search-augmented large language model only after its carrier page reaches model context. SearchInject controls this admission decision with a joint score combining retrieval relevance, search-abuse cues, instruction…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Where Does MCP Security End? A Three-Tier Mitigation Mapping Framework for the OWASP MCP Top 10**  
-- **Date:** 2026-11-02
-- **Authors:** Christopher Krakauer, Andreas Schaad
-- **Link:** https://arxiv.org/abs/2611.02611v1
-- **Security insight:** The Model Context Protocol (MCP) has become a leading standard for connecting Large Language Models (LLMs) to external tools, software, and data sources. MCP architecture favors ease of integration over security, blending the data and control planes into a…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**StateFence: Task-State Protection Against Evidence-Chain Contamination in Blue-Team LLM Agents**  
-- **Date:** 2026-11-02
-- **Authors:** Haowen Dai, Alejandro Guerra-Manzanares
-- **Link:** https://arxiv.org/abs/2611.02605v1
-- **Security insight:** Indirect prompt injection creates a distinctive risk for blue-team Large Language Model (LLM) agents in Security Operations Centers (SOCs). Malicious instructions can be embedded in telemetry, tickets, retrieval results, or memory and then propagate through…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Benchmark of THReD: Evaluating an LLM Agent and Its Preprocessing Tools for Turning Electronic Health Records into AI-Ready Datasets**  
-- **Date:** 2026-11-02
-- **Authors:** Javad Mohammad Alizadeh, Huanmei Wu
-- **Link:** https://arxiv.org/abs/2611.02484v1
-- **Security insight:** LLM agents are increasingly built into data-analysis software, yet little evidence shows how reliably they preprocess clinical data or whether the tools they invoke give correct, reproducible output. We report a benchmark of THReD, a web-based system that…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **IAMRAGBENCH: Benchmarking Authorization Expansions in LLM-Generated AWS IAM Policies under RAG Poisoning**  
@@ -86,7 +72,23 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Large language models (LLMs) using retrieval-augmented generation (RAG) can synthesize Amazon Web Services (AWS) Identity and Access Management (IAM) policies from tasks and operational documents. Attacker-controlled context may induce provider-valid policies…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
+### Poisoning & Backdoors
+
+**Interactive Backdoor Attacks in LLM-Based Proactive Dialogue Systems**  
+- **Date:** 2026-11-04
+- **Authors:** Zhiyang Xia, Yuming Shang, Xi Zhang
+- **Link:** https://arxiv.org/abs/2611.06969v1
+- **Security insight:** LLM-based proactive dialogue systems provide goal-directed support through sustained interaction. Fine-tuning their underlying models on externally supplied dialogue data introduces backdoor risks. Existing LLM backdoor studies primarily focus on eliciting an…
+- **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
+
 ### Model Extraction & Privacy
+
+**Breaking $\mathsf{TraintoDefend}$ via Adaptive Neuron Clustering in Cryptanalytic Model Extraction**  
+- **Date:** 2026-11-05
+- **Authors:** Haojie Wu, Haolin Liu, Tianshuo Cong et al.
+- **Link:** https://arxiv.org/abs/2611.07370v1
+- **Security insight:** Cryptanalytic model extraction poses a fundamental threat to deep learning model confidentiality by enabling precise parameter recovery with theoretical guarantees of functional equivalence. To counter this growing threat, $\mathsf{TraintoDefend}$ (NeurIPS…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 **Fingerprinting the Dispatchers behind Distributed Model Extraction**  
 - **Date:** 2026-11-04
@@ -106,16 +108,16 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks**  
+- **Date:** 2026-11-05
+- **Authors:** Zhitao He, Chi Him Zhang, Chengru Han et al.
+- **Link:** https://arxiv.org/abs/2611.08281v1
+- **Security insight:** Personal AI agents face social engineering attacks supported by forged multimodal content, but existing evaluations mainly focus on text-based dialogue, leaving their intrinsic security under such attacks insufficiently studied. We introduce Multimodal-SEA,…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Securing Web Agents with the Compile-Then-Execute Paradigm**  
 - **Date:** 2026-11-04
 - **Authors:** Annabella Chow, Jinhao Zhu, Sylvie Venuto et al.
 - **Link:** https://arxiv.org/abs/2611.06039v1
 - **Security insight:** Web agents commonly follow the ReAct paradigm, selecting each action from runtime observations that inherently mix trusted and untrusted content. This design makes their control flow vulnerable to prompt injections embedded in webpages. We introduce Baya, a…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety**  
-- **Date:** 2026-11-02
-- **Authors:** Xiao Yang, Aishan Liu, Siyuan Liang et al.
-- **Link:** https://arxiv.org/abs/2611.02516v1
-- **Security insight:** Large language model (LLM) agents increasingly operate in open-world environments where safety risks cannot be fully predefined. However, most existing guardrail mechanisms remain static, relying on fixed rules, prompts, or classifiers that generalize poorly…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
