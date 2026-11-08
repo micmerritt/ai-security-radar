@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-08 (UTC)
+
+Top items:
+
+- **The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI** (2026-11-05) [Prompt Injection]  
+  https://arxiv.org/abs/2611.08428v1
+
+- **Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks** (2026-11-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.08281v1
+
+- **Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks** (2026-11-05) [Prompt Injection]  
+  https://arxiv.org/abs/2611.07640v1
+
+- **Breaking $\mathsf{TraintoDefend}$ via Adaptive Neuron Clustering in Cryptanalytic Model Extraction** (2026-11-05) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2611.07370v1
+
+- **SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection** (2026-11-04) [Prompt Injection]  
+  https://arxiv.org/abs/2611.07222v1
+
+- **SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents** (2026-11-04) [Prompt Injection]  
+  https://arxiv.org/abs/2611.06682v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-07 (UTC)
 
 Top items:
