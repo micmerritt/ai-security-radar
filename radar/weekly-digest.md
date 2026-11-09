@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-09 (UTC)
+
+Top items:
+
+- **Cutpurse: Decomposing Explanation-Guided Model Extraction on Tabular Data** (2026-11-06) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2611.09375v1
+
+- **GreyZone: Production-quality Agentic Application Threats** (2026-11-06) [Adversarial ML]  
+  https://arxiv.org/abs/2611.09161v1
+
+- **Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks** (2026-11-06) [Prompt Injection]  
+  https://arxiv.org/abs/2611.08834v1
+
+- **I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents** (2026-11-06) [Prompt Injection]  
+  https://arxiv.org/abs/2611.08811v1
+
+- **The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI** (2026-11-05) [Prompt Injection]  
+  https://arxiv.org/abs/2611.08428v1
+
+- **Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks** (2026-11-05) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.08281v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-08 (UTC)
 
 Top items:

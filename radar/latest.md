@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-08**_
+_Last updated (UTC): **2026-11-09**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks**  
+- **Date:** 2026-11-06
+- **Authors:** Mark Heimann, Katherine Taylor, Bruno Jacob
+- **Link:** https://arxiv.org/abs/2611.08834v1
+- **Security insight:** Specialized prompt injection guards are deployed in front of document analysis systems, but no false positive rate has been published for any of them on legal contracts. We measure eleven open-weights guards on two corpora of legal contracts and find that…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents**  
+- **Date:** 2026-11-06
+- **Authors:** Parth Illendula, Garik Livingston, Zain Shamsi et al.
+- **Link:** https://arxiv.org/abs/2611.08811v1
+- **Security insight:** Large Reasoning Models (LRMs) are one of the key components of current agentic systems. LRMs augment their output with an explicit chain-of-thought reasoning stage, introducing a new attack surface for thought injection, in which untrusted text resembling the…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI**  
 - **Date:** 2026-11-05
@@ -42,36 +56,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning**  
-- **Date:** 2026-11-03
-- **Authors:** Yao Wang, Zehua Ma, Weiming Zhang et al.
-- **Link:** https://arxiv.org/abs/2611.04673v1
-- **Security insight:** Indirect Prompt Injection (IPI) poses a critical threat to LLM agents. Existing defenses largely focus on whether an injection induces a new tool invocation or unintended action. In this paper, we study a different attack surface, parameter poisoning, where…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**The Devil is in the Context: Nine Dimensions of Prompt Injection Attacks**  
-- **Date:** 2026-11-03
-- **Authors:** Jiamin Chang, Kristina Nikolić, Rishi Sharma et al.
-- **Link:** https://arxiv.org/abs/2611.04672v1
-- **Security insight:** Prompt injection is usually discussed and evaluated as a single, homogeneous type of attack. However, vulnerabilities reported in real-world systems show that prompt injections vary widely. Moreover, the same instruction can be a prompt injection in one…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**From Guidelines to Practice: Defining Requirements for AI Red-Teaming Tools**  
-- **Date:** 2026-11-03
-- **Authors:** Gia Phong Tran, Thai Duong Huynh, Randolph Loh et al.
-- **Link:** https://arxiv.org/abs/2611.04271v1
-- **Security insight:** Artificial Intelligence (AI) has seen significant developments and increased usage in recent years. AI benefits various tasks, automates decision-making, and enhances efficiency. However, AI also introduces additional attack surfaces for threat actors to…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-### RAG & Retrieval Attacks
-
-**IAMRAGBENCH: Benchmarking Authorization Expansions in LLM-Generated AWS IAM Policies under RAG Poisoning**  
-- **Date:** 2026-11-02
-- **Authors:** Hasan Kaplan, Indika Kumara, Willem-Jan van den Heuvel et al.
-- **Link:** https://arxiv.org/abs/2611.03431v1
-- **Security insight:** Large language models (LLMs) using retrieval-augmented generation (RAG) can synthesize Amazon Web Services (AWS) Identity and Access Management (IAM) policies from tasks and operational documents. Attacker-controlled context may induce provider-valid policies…
-- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
 ### Poisoning & Backdoors
 
 **Interactive Backdoor Attacks in LLM-Based Proactive Dialogue Systems**  
@@ -82,6 +66,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Build idea:** Build a minimal poisoning simulator plus simple detectors (trigger search, label flip tests, anomaly baselines).
 
 ### Model Extraction & Privacy
+
+**Cutpurse: Decomposing Explanation-Guided Model Extraction on Tabular Data**  
+- **Date:** 2026-11-06
+- **Authors:** Seyma Selcan Magara, Hanru Zhang, Fatme El Zahraa Hamad et al.
+- **Link:** https://arxiv.org/abs/2611.09375v1
+- **Security insight:** Explanation APIs are often treated as increasing model-extraction risk, but an end-to-end attack comparison cannot show whether an explanation reveals model-specific information or merely supplies a convenient next-query coordinate. We study this distinction…
+- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 **Breaking $\mathsf{TraintoDefend}$ via Adaptive Neuron Clustering in Cryptanalytic Model Extraction**  
 - **Date:** 2026-11-05
@@ -98,6 +89,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
+
+**GreyZone: Production-quality Agentic Application Threats**  
+- **Date:** 2026-11-06
+- **Authors:** Ruoyu Zhou, Shuyao Jiang, Haifeng Ruan et al.
+- **Link:** https://arxiv.org/abs/2611.09161v1
+- **Security insight:** Agents are increasingly deployed across domains such as coding, banking, and commerce. Their ability to invoke tools and change application state makes security testing important for reliable deployment. Although agent security has been studied through…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 **ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud**  
 - **Date:** 2026-11-03
