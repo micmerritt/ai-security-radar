@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-12 (UTC)
+
+Top items:
+
+- **Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models** (2026-11-09) [Prompt Injection]  
+  https://arxiv.org/abs/2611.12521v1
+
+- **Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks** (2026-11-09) [Prompt Injection]  
+  https://arxiv.org/abs/2611.12386v1
+
+- **Harness Matters: Measuring and Dissecting Security Resilience in Web Agents** (2026-11-09) [Prompt Injection]  
+  https://arxiv.org/abs/2611.11971v1
+
+- **Scaling Adaptive Prompt Injection Attacks with Agent Swarms** (2026-11-09) [Prompt Injection]  
+  https://arxiv.org/abs/2611.11861v1
+
+- **Treating the Model as an Untrusted Component: Deterministic Policy Enforcement, Human Approval and Taint Tracking Against Prompt Injection in Tool-Using Agents, with Validation on Open-Weights Models** (2026-11-08) [Prompt Injection]  
+  https://arxiv.org/abs/2611.11571v1
+
+- **On the Relative Security of Prompt Injection: Mechanised Definitions, Defences and Verdicts for LLM Agents** (2026-11-08) [Prompt Injection]  
+  https://arxiv.org/abs/2611.11506v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-11 (UTC)
 
 Top items:
