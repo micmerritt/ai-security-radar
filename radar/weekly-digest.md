@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-13 (UTC)
+
+Top items:
+
+- **CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts** (2026-11-12) [Prompt Injection]  
+  https://arxiv.org/abs/2611.17115v1
+
+- **Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents** (2026-11-12) [Prompt Injection]  
+  https://arxiv.org/abs/2611.16744v1
+
+- **Intent-Aware Protection for AI Agents** (2026-11-12) [Prompt Injection]  
+  https://arxiv.org/abs/2611.16122v1
+
+- **Smart Model Routing for Order-of-Magnitude LLM Cost Reduction** (2026-11-11) [Prompt Injection]  
+  https://arxiv.org/abs/2611.15911v1
+
+- **Your Secrets Are Showing: Deep Image Hiding Models Are Surprisingly Easy to Attack** (2026-11-11) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.15583v1
+
+- **Adversarial Risk in the Generative AI Era Necessitates Dropping the Small Epsilon Ball** (2026-11-10) [Adversarial ML]  
+  https://arxiv.org/abs/2611.14594v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-12 (UTC)
 
 Top items:

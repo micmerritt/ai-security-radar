@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-12**_
+_Last updated (UTC): **2026-11-13**_
 
 ## What this is
 
@@ -13,6 +13,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts**  
+- **Date:** 2026-11-12
+- **Authors:** Zimo Xu, Wenzhuo Liu, Hideki Nakayama
+- **Link:** https://arxiv.org/abs/2611.17115v1
+- **Security insight:** Enforcement defenses against prompt injection, such as CaMeL, Progent, IPIGuard and DRIFT, ask the agent's own model to write a security artifact (a program, a privilege policy, a dependency graph or a constraint list) that code then enforces. We ask whether…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents**  
+- **Date:** 2026-11-12
+- **Authors:** Yiheng Zhao, Runze Ji, Chenyu Yi et al.
+- **Link:** https://arxiv.org/abs/2611.16744v1
+- **Security insight:** Visual content in multimedia systems may be resized, compressed, or re-rendered before it is interpreted by a vision-language model. We study a security failure mode in which these transformations change the machine-readable semantics of an image: a textual…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Intent-Aware Protection for AI Agents**  
+- **Date:** 2026-11-12
+- **Authors:** Fady Copty, Neta Haiby, Max Braitmaiere et al.
+- **Link:** https://arxiv.org/abs/2611.16122v1
+- **Security insight:** AI agents increasingly access enterprise data, invoke powerful tools, and act with limited human oversight. Existing security defenses primarily detect prompt injection, harmful outputs, or suspicious behavior, but do not determine whether an agent remains…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Smart Model Routing for Order-of-Magnitude LLM Cost Reduction**  
+- **Date:** 2026-11-11
+- **Authors:** Hesham Elbakoury, Deep Shah, Ankur Sharma
+- **Link:** https://arxiv.org/abs/2611.15911v1
+- **Security insight:** Frontier large language models (LLMs) deliver the strongest response quality but carry per-token prices often more than an order of magnitude above those of smaller, task-adequate models. Smart model routing addresses this mismatch by assigning each query to…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models**  
 - **Date:** 2026-11-09
@@ -70,52 +98,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** LLM agents that call tools are exposed to indirect prompt injection: instructions hidden in tool outputs can steer an agent into calls the user never asked for. We present a runtime audit that derives an executable intent graph from the user's objective and…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**ErosionBench: Probing Alignment Decay in Enterprise Multi-Agent Systems**  
-- **Date:** 2026-11-08
-- **Authors:** Riya Bharathwaj, Akshara Prabhakar, Roshan Ram et al.
-- **Link:** https://arxiv.org/abs/2611.11266v1
-- **Security insight:** As enterprises delegate consequential work to multi-agent LLM systems, benign-looking requests can escalate into unsafe actions as they propagate across sessions through poisoned shared state, long-context documents, and trusted peer messages: no single…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**CompositionEvidence: Controlling Geometric Evidence for Cinematic Composition Reasoning with Frozen Vision-Language Models**  
-- **Date:** 2026-11-07
-- **Authors:** Yichen He, Xin Huang, Yuxi Liu
-- **Link:** https://arxiv.org/abs/2611.10559v1
-- **Security insight:** Cinematic composition questions depend on in-frame geometry that vision-language models (VLMs) use inconsistently. External perception tools can expose this geometry, but naive prompt injection can overwrite useful visual predictions. On ShotBench…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
-**Agents of Chaos: A Systematization of Knowledge (SoK) on Malicious Attacks on Agentic AI Systems**  
-- **Date:** 2026-11-07
-- **Authors:** Thanh M. Truong-Le, Amber Bennoui, Hoang-Ly Nguyen et al.
-- **Link:** https://arxiv.org/abs/2611.10843v1
-- **Security insight:** Agentic AI systems extend large language models with tools, memory, retrieval, browser or computer-use interfaces, code execution, external services, and multi-agent coordination. Although these capabilities enable agents to act beyond text generation and…
+**Your Secrets Are Showing: Deep Image Hiding Models Are Surprisingly Easy to Attack**  
+- **Date:** 2026-11-11
+- **Authors:** Hao Liu, Jing Yu, Weizhi Liu et al.
+- **Link:** https://arxiv.org/abs/2611.15583v1
+- **Security insight:** In this work, we ask whether an attacker can go beyond detecting a hidden image and tell what it depicts, even without knowing which model hid it. We show that, for deep image hiding, this is surprisingly easy. To test this, we build an evaluation dataset of…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Model Extraction & Privacy
-
-**Cutpurse: Decomposing Explanation-Guided Model Extraction on Tabular Data**  
-- **Date:** 2026-11-06
-- **Authors:** Seyma Selcan Magara, Hanru Zhang, Fatme El Zahraa Hamad et al.
-- **Link:** https://arxiv.org/abs/2611.09375v1
-- **Security insight:** Explanation APIs are often treated as increasing model-extraction risk, but an end-to-end attack comparison cannot show whether an explanation reveals model-specific information or merely supplies a convenient next-query coordinate. We study this distinction…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
 
-**Do Benign-Trained Hidden-State Probes Detect Tool Errors Under Adversarial Conditions?**  
-- **Date:** 2026-11-08
-- **Authors:** Bibek Bhandari, Kshitij Lingthep
-- **Link:** https://arxiv.org/abs/2611.11172v1
-- **Security insight:** Although hidden-state probes efficiently monitor model operation, it remains unclear whether probes trained on benign tool use remain useful for detecting incorrect actions under adversarial conditions. In this research, we assess this problem from the…
+**Adversarial Risk in the Generative AI Era Necessitates Dropping the Small Epsilon Ball**  
+- **Date:** 2026-11-10
+- **Authors:** Andrew C. Cullen, Neil G. Marchant, Paul Montague et al.
+- **Link:** https://arxiv.org/abs/2611.14594v1
+- **Security insight:** Adversarial Machine Learning research is currently centered on the search for the epsilon-ball: minimal perturbations designed to fool models while remaining imperceptible to humans. We argue that this fixation on $\ell_p$ norms is a metrological trap that…
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
-
-### Other (Review)
-
-**Enmo Safety: External, Non-invasive, Model-agnostic Oversight for Off-the-Shelf Language Models**  
-- **Date:** 2026-11-06
-- **Authors:** Mohammed Nayeem Khan, Sarun Kumar K. S., Allan Kevin T. et al.
-- **Link:** https://arxiv.org/abs/2611.10099v1
-- **Security insight:** We study a safety harness that improves itself without touching model weights. Enmo Safety wraps a chat model with a deterministic input assessment, trigger-matched safety guidance, spotlighting of untrusted content, and an output guard. A reflector model…
-- **Build idea:** Turn this into a repeatable check: a small reproducer, dataset slice, or CI test for the described risk.
