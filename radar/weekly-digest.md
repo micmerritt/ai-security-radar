@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-17 (UTC)
+
+Top items:
+
+- **Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K** (2026-11-16) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2611.21594v1
+
+- **Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment** (2026-11-16) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.21563v1
+
+- **Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks** (2026-11-16) [Prompt Injection]  
+  https://arxiv.org/abs/2611.21259v1
+
+- **Risk-certified prompt optimization for LLM-as-a-judge guardrails** (2026-11-15) [Prompt Injection]  
+  https://arxiv.org/abs/2611.20156v1
+
+- **Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning** (2026-11-15) [Prompt Injection]  
+  https://arxiv.org/abs/2611.20045v1
+
+- **Steering Bayesian Inference and Decisions through Data Poisoning** (2026-11-14) [Poisoning & Backdoors]  
+  https://arxiv.org/abs/2611.19557v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-16 (UTC)
 
 Top items:
