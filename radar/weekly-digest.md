@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-18 (UTC)
+
+Top items:
+
+- **Network-Exposed Configuration Attacks on LLM-Controlled Social Robots** (2026-11-17) [Adversarial ML]  
+  https://arxiv.org/abs/2611.22761v1
+
+- **GapLeak: When Privacy-Preserving LLM-based Web Agents Become a Privacy Risk** (2026-11-17) [Prompt Injection]  
+  https://arxiv.org/abs/2611.22223v1
+
+- **Threat Landscape of Vibe Coding and the Road to Secure Autonomy** (2026-11-16) [Prompt Injection]  
+  https://arxiv.org/abs/2611.21822v1
+
+- **Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K** (2026-11-16) [Model Extraction & Privacy]  
+  https://arxiv.org/abs/2611.21594v1
+
+- **Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment** (2026-11-16) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.21563v1
+
+- **Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks** (2026-11-16) [Prompt Injection]  
+  https://arxiv.org/abs/2611.21259v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-17 (UTC)
 
 Top items:

@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-17**_
+_Last updated (UTC): **2026-11-18**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**GapLeak: When Privacy-Preserving LLM-based Web Agents Become a Privacy Risk**  
+- **Date:** 2026-11-17
+- **Authors:** Chaklam Cheong, Tiancong Cao, Qi Li et al.
+- **Link:** https://arxiv.org/abs/2611.22223v1
+- **Security insight:** Large Language Model (LLM)-based web agents rely on data minimization and least privilege to protect user privacy. We show that these principles are necessary but insufficient: they constrain authorized sources, but not higher-sensitivity sources that remain…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Threat Landscape of Vibe Coding and the Road to Secure Autonomy**  
+- **Date:** 2026-11-16
+- **Authors:** Devki Nandan Jha, Shubh Anand, Karthick Keeranagere Krishnaiah et al.
+- **Link:** https://arxiv.org/abs/2611.21822v1
+- **Security insight:** Vibe coding is reshaping software development, enabling faster implementation and allowing individuals with limited programming experience to describe requirements in natural language while AI agents write, test, and deploy the code. As these agents evolve…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks**  
 - **Date:** 2026-11-16
@@ -63,27 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Enforcement defenses against prompt injection, such as CaMeL, Progent, IPIGuard and DRIFT, ask the agent's own model to write a security artifact (a program, a privilege policy, a dependency graph or a constraint list) that code then enforces. We ask whether…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents**  
-- **Date:** 2026-11-12
-- **Authors:** Yiheng Zhao, Runze Ji, Chenyu Yi et al.
-- **Link:** https://arxiv.org/abs/2611.16744v1
-- **Security insight:** Visual content in multimedia systems may be resized, compressed, or re-rendered before it is interpreted by a vision-language model. We study a security failure mode in which these transformations change the machine-readable semantics of an image: a textual…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Intent-Aware Protection for AI Agents**  
-- **Date:** 2026-11-12
-- **Authors:** Fady Copty, Neta Haiby, Max Braitmaiere et al.
-- **Link:** https://arxiv.org/abs/2611.16122v1
-- **Security insight:** AI agents increasingly access enterprise data, invoke powerful tools, and act with limited human oversight. Existing security defenses primarily detect prompt injection, harmful outputs, or suspicious behavior, but do not determine whether an agent remains…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Smart Model Routing for Order-of-Magnitude LLM Cost Reduction**  
-- **Date:** 2026-11-11
-- **Authors:** Hesham Elbakoury, Deep Shah, Ankur Sharma
-- **Link:** https://arxiv.org/abs/2611.15911v1
-- **Security insight:** Frontier large language models (LLMs) deliver the strongest response quality but carry per-token prices often more than an order of magnitude above those of smaller, task-adequate models. Smart model routing addresses this mismatch by assigning each query to…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment**  
@@ -112,6 +105,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
+
+**Network-Exposed Configuration Attacks on LLM-Controlled Social Robots**  
+- **Date:** 2026-11-17
+- **Authors:** Stanley Akingbola, Ugbede Ibrahim, Yan Lin Aung et al.
+- **Link:** https://arxiv.org/abs/2611.22761v1
+- **Security insight:** Large language models (LLMs) in embodied robots create security dependencies beyond inference. We investigate a network-exposed configuration attack on the Pollen Robotics Reachy Mini Lite, allowing an unauthenticated attacker to replace personality settings…
+- **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 **VAST: Compiling Grounded Vulnerability Scenarios into Verifiable, Multi-Step Environments for Evaluating LLM Red-Team Agents**  
 - **Date:** 2026-11-14
