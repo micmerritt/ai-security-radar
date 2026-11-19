@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-19 (UTC)
+
+Top items:
+
+- **Gradient-Based Defensive Poisoning Against System Identification Attacks on Cyber-Physical Systems** (2026-11-18) [Adversarial ML]  
+  https://arxiv.org/abs/2611.24662v1
+
+- **PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents** (2026-11-18) [Prompt Injection]  
+  https://arxiv.org/abs/2611.24362v1
+
+- **AutoPI: Taxonomy-Guided Adaptive Red Teaming for Prompt Injection in LLM Agents** (2026-11-18) [Prompt Injection]  
+  https://arxiv.org/abs/2611.24313v1
+
+- **What Survives the Shift from Text to Pixels? Conditional Protection against Prompt Injection in Image-Rendered Documents** (2026-11-18) [Prompt Injection]  
+  https://arxiv.org/abs/2611.24231v1
+
+- **Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills** (2026-11-18) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.24185v1
+
+- **Network-Exposed Configuration Attacks on LLM-Controlled Social Robots** (2026-11-17) [Adversarial ML]  
+  https://arxiv.org/abs/2611.22761v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-18 (UTC)
 
 Top items:
