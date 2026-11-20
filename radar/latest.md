@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-19**_
+_Last updated (UTC): **2026-11-20**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)**  
+- **Date:** 2026-11-19
+- **Authors:** Mengxiao Wang, Mahbub Alam, Kalyan Nakka et al.
+- **Link:** https://arxiv.org/abs/2611.26553v1
+- **Security insight:** Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**SEOYUN: Refusal-Inducing Exam Documents for AI-Glasses Pipelines**  
+- **Date:** 2026-11-19
+- **Authors:** Dohyeon Kwon
+- **Link:** https://arxiv.org/abs/2611.26033v1
+- **Security insight:** Camera-equipped glasses can convert an examination page into a query to a vision-language model (VLM). Device detection addresses possession; a complementary question is whether an examination document can reduce the usefulness of an unauthorized capture. We…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents**  
 - **Date:** 2026-11-18
@@ -56,34 +70,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Vibe coding is reshaping software development, enabling faster implementation and allowing individuals with limited programming experience to describe requirements in natural language while AI agents write, test, and deploy the code. As these agents evolve…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks**  
-- **Date:** 2026-11-16
-- **Authors:** Sahaya Jestus Lazer, Kshitiz Aryal, Maanak Gupta et al.
-- **Link:** https://arxiv.org/abs/2611.21259v1
-- **Security insight:** Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Risk-certified prompt optimization for LLM-as-a-judge guardrails**  
-- **Date:** 2026-11-15
-- **Authors:** Hussein Jawad, Alexandre Landeau, Guy Fleury Iradukunda et al.
-- **Link:** https://arxiv.org/abs/2611.20156v1
-- **Security insight:** LLM-as-a-judge guardrails are often controlled primarily through system prompts, yet standard prompt optimization methods target average performance rather than explicit safety constraints. This paper studies system-prompt selection as a constrained…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning**  
-- **Date:** 2026-11-15
-- **Authors:** Yang Luo, Guangpu Chen, Yichen Liu et al.
-- **Link:** https://arxiv.org/abs/2611.20045v1
-- **Security insight:** Deep research and agentic search agents autonomously retrieve content from the open web and generate reports with citations, and their outputs are often taken directly as research conclusions. This paper systematizes security research in this area along four…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
-**Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment**  
-- **Date:** 2026-11-16
-- **Authors:** Yu-Hsuan Ho, Yiming Xiao, Hao-En Lai et al.
-- **Link:** https://arxiv.org/abs/2611.21563v1
-- **Security insight:** Structure-level wildfire vulnerability assessment is critical for reducing losses in wildland-urban interface communities, yet existing methods often fail to combine parcel-scale ignition pathways with community-scale geographic coverage. This study…
+**On the Impact of Feature Reduction Techniques on Adversarial Attacks**  
+- **Date:** 2026-11-18
+- **Authors:** Mohammad Meymani, Roozbeh Razavi-Far
+- **Link:** https://arxiv.org/abs/2611.25004v1
+- **Security insight:** Adversarial attacks have posed significant threats to machine learning models by exploiting their inherent vulnerabilities. Researchers have established an interdisciplinary field called adversarial machine learning to explore these vulnerabilities and…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 ### Model Extraction & Privacy
@@ -112,6 +105,13 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Build idea:** Build a robustness benchmark harness with standard perturbations and report concrete failure modes.
 
 ### Agent & Tool Security
+
+**SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research**  
+- **Date:** 2026-11-19
+- **Authors:** Amine Lbath, Manan Suri, Aurelien Delaitre et al.
+- **Link:** https://arxiv.org/abs/2611.26601v1
+- **Security insight:** LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 **Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills**  
 - **Date:** 2026-11-18
