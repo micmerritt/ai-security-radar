@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-21 (UTC)
+
+Top items:
+
+- **SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research** (2026-11-19) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.26601v1
+
+- **Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)** (2026-11-19) [Prompt Injection]  
+  https://arxiv.org/abs/2611.26553v1
+
+- **SEOYUN: Refusal-Inducing Exam Documents for AI-Glasses Pipelines** (2026-11-19) [Prompt Injection]  
+  https://arxiv.org/abs/2611.26033v1
+
+- **On the Impact of Feature Reduction Techniques on Adversarial Attacks** (2026-11-18) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.25004v1
+
+- **Gradient-Based Defensive Poisoning Against System Identification Attacks on Cyber-Physical Systems** (2026-11-18) [Adversarial ML]  
+  https://arxiv.org/abs/2611.24662v1
+
+- **PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents** (2026-11-18) [Prompt Injection]  
+  https://arxiv.org/abs/2611.24362v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-20 (UTC)
 
 Top items:
