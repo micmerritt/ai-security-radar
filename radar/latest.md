@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-22**_
+_Last updated (UTC): **2026-11-23**_
 
 ## What this is
 
@@ -13,6 +13,20 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**Actions Speak Louder than Words: Stateful Privacy Sniffing of LLM Agents via Behavioral Covert Channels in Web Interactions**  
+- **Date:** 2026-11-20
+- **Authors:** Ruichao Liang, Wenzhong Deng, Jing Chen et al.
+- **Link:** https://arxiv.org/abs/2611.27046v1
+- **Security insight:** LLM agents increasingly rely on Web interaction, issuing searches, following links, and reading pages, to complete complex user tasks. Since each action is driven by the agent's private context, including the user's prompt, dialogue history, memory, and…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Subverting Tool Arguments: Defense-Evading Metadata Poisoning in LLM Agents**  
+- **Date:** 2026-11-20
+- **Authors:** Shih-Chieh Dai, Xinyu Sun, Haichuan Zhang et al.
+- **Link:** https://arxiv.org/abs/2611.27041v1
+- **Security insight:** Conventional indirect prompt injection (IPI) attacks hijack an LLM agent's workflow through malicious instructions embedded in retrieved external content. The growing adoption of the Model Context Protocol (MCP) exposes another attack surface: tool…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)**  
 - **Date:** 2026-11-19
@@ -56,21 +70,14 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Long-horizon LLM agents across codebases, web browsers, and enterprise infrastructure rely on an execution harness to move state between the working context, session history, persistent memory, and external environment. While conventional execution traces log…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**GapLeak: When Privacy-Preserving LLM-based Web Agents Become a Privacy Risk**  
-- **Date:** 2026-11-17
-- **Authors:** Chaklam Cheong, Tiancong Cao, Qi Li et al.
-- **Link:** https://arxiv.org/abs/2611.22223v1
-- **Security insight:** Large Language Model (LLM)-based web agents rely on data minimization and least privilege to protect user privacy. We show that these principles are necessary but insufficient: they constrain authorized sources, but not higher-sensitivity sources that remain…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
-**Threat Landscape of Vibe Coding and the Road to Secure Autonomy**  
-- **Date:** 2026-11-16
-- **Authors:** Devki Nandan Jha, Shubh Anand, Karthick Keeranagere Krishnaiah et al.
-- **Link:** https://arxiv.org/abs/2611.21822v1
-- **Security insight:** Vibe coding is reshaping software development, enabling faster implementation and allowing individuals with limited programming experience to describe requirements in natural language while AI agents write, test, and deploy the code. As these agents evolve…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
+
+**Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation**  
+- **Date:** 2026-11-20
+- **Authors:** Samarth Sarin, Lovepreet Singh, Dhagash Mehta
+- **Link:** https://arxiv.org/abs/2611.27835v1
+- **Security insight:** Financial documents combine narrative disclosures, accounting metrics, corporate structures, management commentary, and time-dependent facts, making them difficult to represent using conventional chunk-based retrieval-augmented generation systems. This paper…
+- **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
 
 **On the Impact of Feature Reduction Techniques on Adversarial Attacks**  
 - **Date:** 2026-11-18
@@ -78,15 +85,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Link:** https://arxiv.org/abs/2611.25004v1
 - **Security insight:** Adversarial attacks have posed significant threats to machine learning models by exploiting their inherent vulnerabilities. Researchers have established an interdisciplinary field called adversarial machine learning to explore these vulnerabilities and…
 - **Build idea:** Build a RAG poisoning harness: inject poisoned docs, measure retrieval changes, and capture failure modes.
-
-### Model Extraction & Privacy
-
-**Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K**  
-- **Date:** 2026-11-16
-- **Authors:** Aaron Wang, Olivia Gzamouranis, Vaibhav Lohia et al.
-- **Link:** https://arxiv.org/abs/2611.21594v1
-- **Security insight:** Cryogenic circuit design requires compact transistor models that reproduce measured low-temperature behavior and run in standard circuit simulators. We fit BSIM4 parameters to measured I-V curves of SkyWater 130 nm (SKY130) transistors at 77 K using a neural…
-- **Build idea:** Create a leakage test suite: can the system reveal secrets, training snippets, identifiers, or hidden policies?
 
 ### Adversarial ML
 

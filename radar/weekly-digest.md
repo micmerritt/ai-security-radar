@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-23 (UTC)
+
+Top items:
+
+- **Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation** (2026-11-20) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.27835v1
+
+- **Actions Speak Louder than Words: Stateful Privacy Sniffing of LLM Agents via Behavioral Covert Channels in Web Interactions** (2026-11-20) [Prompt Injection]  
+  https://arxiv.org/abs/2611.27046v1
+
+- **Subverting Tool Arguments: Defense-Evading Metadata Poisoning in LLM Agents** (2026-11-20) [Prompt Injection]  
+  https://arxiv.org/abs/2611.27041v1
+
+- **SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research** (2026-11-19) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.26601v1
+
+- **Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)** (2026-11-19) [Prompt Injection]  
+  https://arxiv.org/abs/2611.26553v1
+
+- **SEOYUN: Refusal-Inducing Exam Documents for AI-Glasses Pipelines** (2026-11-19) [Prompt Injection]  
+  https://arxiv.org/abs/2611.26033v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-22 (UTC)
 
 Top items:
