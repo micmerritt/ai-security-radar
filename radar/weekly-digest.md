@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-24 (UTC)
+
+Top items:
+
+- **Carried-Over and Agent-Native Threats in the Supply Chain of LLM Agent Skills** (2026-11-23) [Prompt Injection]  
+  https://arxiv.org/abs/2611.30932v1
+
+- **AgentBouncer: Defending Software Engineering Agents via Dynamic System-Call Mediation** (2026-11-23) [RAG & Retrieval Attacks]  
+  https://arxiv.org/abs/2611.30621v1
+
+- **Bounded Autonomy: A Trust-Anchored Defense Against Resource-Exhaustion Attacks on Tool-Augmented LLM Agents** (2026-11-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.30383v1
+
+- **Attributing Security Outcomes in LLM-Agent Evaluations: The Role of Content-Free State** (2026-11-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.30259v1
+
+- **Sequential Selection against an Adaptive Opponent** (2026-11-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.30006v1
+
+- **Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection** (2026-11-23) [Prompt Injection]  
+  https://arxiv.org/abs/2611.29977v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-23 (UTC)
 
 Top items:
