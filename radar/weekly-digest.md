@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-25 (UTC)
+
+Top items:
+
+- **SALSA: Sampling Adversarial Suffixes from Learned Distributions for LLM Safety Assessment** (2026-11-24) [Adversarial ML]  
+  https://arxiv.org/abs/2611.33030v1
+
+- **Attestation is All You Need: Toward a Zero-Trust Architecture for HPC AI Agents** (2026-11-24) [Prompt Injection]  
+  https://arxiv.org/abs/2611.32958v1
+
+- **CAPTA: Identifying LLMs Behind AI Agents** (2026-11-24) [Prompt Injection]  
+  https://arxiv.org/abs/2611.32686v1
+
+- **LLM Agent Authorization Across Context Compaction** (2026-11-24) [Prompt Injection]  
+  https://arxiv.org/abs/2611.32194v1
+
+- **Not Just Any Example: Security Requirements and Fix Patterns for Guiding LLM Vulnerability Repair** (2026-11-24) [Other (Review)]  
+  https://arxiv.org/abs/2611.31993v1
+
+- **Evaluating LLM Security Review Agents with Operationally Sourced Ground Truth** (2026-11-23) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.31606v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-24 (UTC)
 
 Top items:
