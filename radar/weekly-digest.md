@@ -1,5 +1,37 @@
 # AI Security Radar Weekly Digest
 
+## Radar Run — 2026-11-26 (UTC)
+
+Top items:
+
+- **Latent-in-the-Middle: On the Security of Cross-Model Latent Communication in Multi-Agent Systems** (2026-11-25) [Agent & Tool Security]  
+  https://arxiv.org/abs/2611.34278v1
+
+- **MINE: A Training-Free Defense against Indirect Prompt Injection via Mutual Information and Embedding Variance** (2026-11-25) [Prompt Injection]  
+  https://arxiv.org/abs/2611.34188v1
+
+- **The Detour Is the Danger: Preserving Security During LLM Agent Recovery** (2026-11-25) [Prompt Injection]  
+  https://arxiv.org/abs/2611.33605v1
+
+- **AVERT: Anomalous Value Erasure with Response Testing against Visual Prompt Injection** (2026-11-24) [Prompt Injection]  
+  https://arxiv.org/abs/2611.33532v1
+
+- **Poisoning Self-Evolving Security Policies in LLM Agents** (2026-11-24) [Prompt Injection]  
+  https://arxiv.org/abs/2611.33385v1
+
+- **SALSA: Sampling Adversarial Suffixes from Learned Distributions for LLM Safety Assessment** (2026-11-24) [Adversarial ML]  
+  https://arxiv.org/abs/2611.33030v1
+
+Theme signal (manual):
+
+- _Add 1–2 sentences after you skim the list. What pattern is emerging?_ 
+
+Build idea (manual):
+
+- _What should exist that does not exist yet?_ (tool, harness, lab, checklist)
+
+---
+
 ## Radar Run — 2026-11-25 (UTC)
 
 Top items:

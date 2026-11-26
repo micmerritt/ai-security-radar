@@ -1,6 +1,6 @@
 # AI Security Radar
 
-_Last updated (UTC): **2026-11-25**_
+_Last updated (UTC): **2026-11-26**_
 
 ## What this is
 
@@ -13,6 +13,34 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 ## New / recent research (arXiv)
 
 ### Prompt Injection
+
+**MINE: A Training-Free Defense against Indirect Prompt Injection via Mutual Information and Embedding Variance**  
+- **Date:** 2026-11-25
+- **Authors:** Truong Phan, Ngoc-Quan Pham, Dat Quoc Nguyen
+- **Link:** https://arxiv.org/abs/2611.34188v1
+- **Security insight:** Existing defenses against indirect prompt injection in retrieval-augmented generation (RAG) are inherently reactive: prompt-engineering methods are often overridden by the injected instructions, while supervised detectors must be retrained for each new attack…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**The Detour Is the Danger: Preserving Security During LLM Agent Recovery**  
+- **Date:** 2026-11-25
+- **Authors:** Boyang Ma, Jinku Li, Hao Wu et al.
+- **Link:** https://arxiv.org/abs/2611.33605v1
+- **Security insight:** LLM agents increasingly rely on external tools and reusable Skills to execute complex workflows, autonomously replanning when operations fail. However, such recovery may preserve task functionality while silently discarding the security protections required…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**AVERT: Anomalous Value Erasure with Response Testing against Visual Prompt Injection**  
+- **Date:** 2026-11-24
+- **Authors:** Newt Hue-Nam K. Nguyen, Jui-Yu Ho, Wei-Han Chen et al.
+- **Link:** https://arxiv.org/abs/2611.33532v1
+- **Security insight:** Vision Language Models (VLMs) are vulnerable to visual prompt injection, in which an adversarially perturbed image forces the model to respond with the attacker's chosen content, such as malicious tool calls, website links, or advertisements, sometimes…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
+
+**Poisoning Self-Evolving Security Policies in LLM Agents**  
+- **Date:** 2026-11-24
+- **Authors:** Aymen Noor, Honglu Jiang
+- **Link:** https://arxiv.org/abs/2611.33385v1
+- **Security insight:** Self-evolving defenses improve LLM-agent security by learning reusable policies from observed attacks. However, we demonstrate that this learning process itself can become an attack surface. Using SED (Self-Evolving Defense) in the AgentDojo benchmark, we…
+- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
 **Attestation is All You Need: Toward a Zero-Trust Architecture for HPC AI Agents**  
 - **Date:** 2026-11-24
@@ -49,13 +77,6 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 - **Security insight:** Agent skills are reusable packages that extend a large language model (LLM) agent with scripts, third-party dependencies, and natural-language instructions. An agent builds a skill's arguments from user requests and untrusted external content, so a flaw left…
 - **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
 
-**Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection**  
-- **Date:** 2026-11-23
-- **Authors:** Jiaqi Rong, Yunchen Lu, Lihai Nie et al.
-- **Link:** https://arxiv.org/abs/2611.29977v1
-- **Security insight:** Harnesses secure Computer-Using Agents by enforcing security constraints and defending against prompt injection attacks. However, we find that two core security mechanisms of agent harnesses remain vulnerable. First, consistency checking prevents agents from…
-- **Build idea:** Create a prompt injection test corpus + evaluation harness for your agent or RAG pipeline.
-
 ### RAG & Retrieval Attacks
 
 **AgentBouncer: Defending Software Engineering Agents via Dynamic System-Call Mediation**  
@@ -76,39 +97,18 @@ prompt injection, rag poisoning, llm jailbreak, adversarial machine learning, mo
 
 ### Agent & Tool Security
 
+**Latent-in-the-Middle: On the Security of Cross-Model Latent Communication in Multi-Agent Systems**  
+- **Date:** 2026-11-25
+- **Authors:** Manit Baser, Vyoman Jain, Rachel Yeo Hui Min et al.
+- **Link:** https://arxiv.org/abs/2611.34278v1
+- **Security insight:** As large language models increasingly collaborate in heterogeneous multi-agent systems, latent communication has emerged as an efficient alternative to exchanging natural-language messages. By sharing internal representations, agents can avoid repeatedly…
+- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
+
 **Evaluating LLM Security Review Agents with Operationally Sourced Ground Truth**  
 - **Date:** 2026-11-23
 - **Authors:** Mudita Khurana, Karim Liman-Tinguiri
 - **Link:** https://arxiv.org/abs/2611.31606v1
 - **Security insight:** LLM-based security review agents can reason about vulnerabilities that deterministic tools miss, but deploying them responsibly requires knowing whether they actually work. Existing benchmarks construct ground truth synthetically or from public CVE databases…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Bounded Autonomy: A Trust-Anchored Defense Against Resource-Exhaustion Attacks on Tool-Augmented LLM Agents**  
-- **Date:** 2026-11-23
-- **Authors:** Ziyuan Chen, Yueming Lyu, Songze Li et al.
-- **Link:** https://arxiv.org/abs/2611.30383v1
-- **Security insight:** Tool-augmented Large Language Model (LLM) agents are vulnerable to resource-exhaustion attacks that amplify model-token consumption through persistent context amplification, large tool output amplification, and error-induced agentic loops. Despite growing…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Attributing Security Outcomes in LLM-Agent Evaluations: The Role of Content-Free State**  
-- **Date:** 2026-11-23
-- **Authors:** Abdelmonaim Bounite, Zangir Iklassov
-- **Link:** https://arxiv.org/abs/2611.30259v1
-- **Security insight:** Security benchmarks for LLM agents record whether each attack succeeded and compare agents, attacks, and defenses by attack success rate (ASR). Such comparisons are valid only if the agent, the attack, and the defense cause each verdict. We show that verdicts…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Scoring Recovery-Time Agent Security: Proposals, Effects, and Retry Instructions**  
-- **Date:** 2026-11-23
-- **Authors:** Paul Deepakraj Retinraj
-- **Link:** https://arxiv.org/abs/2611.31318v1
-- **Security insight:** A timed-out tool write may be absent, committed, or still in flight. Evaluating an agent only on whether its goal exists can hide harmful recovery actions: auditing 12 supplied traces changes apparent completion from 10/12 to 8/12. We introduce an executable…
-- **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
-
-**Sequential Selection against an Adaptive Opponent**  
-- **Date:** 2026-11-23
-- **Authors:** Zhongyuan Lyu, Xiaocong Xu
-- **Link:** https://arxiv.org/abs/2611.30006v1
-- **Security insight:** Selecting a strategy by testing it against an opponent is common in game-playing AI, red-teaming of language models, and safety evaluations of AI agents. In many of these settings, the opponent adapts to what it observes, so a strategy that keeps winning in…
 - **Build idea:** Build a tool-call abuse harness: mutate inputs and verify tool constraints, permissions, and side effects.
 
 ### Other (Review)
